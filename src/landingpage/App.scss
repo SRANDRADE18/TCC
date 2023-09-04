@@ -1,0 +1,124 @@
+.landing-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #2A972E;
+  max-height: 100%;
+  max-width: 100%;
+  
+}
+
+.Landing-PT{
+  display: flex;
+  align-items: center;
+
+}
+
+.landing-header img{
+  width: 80px;
+  height: 80px;
+}
+
+.Icons-page2 img{
+  margin: 25px;
+ max-width: 20px;
+height: 25.806px;
+transition: transform 0.3s ease;
+}
+
+.Icons-page2:hover{
+  transform: scale(1.1);
+    width: auto;
+    height: auto;
+}
+
+.Icons-page1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Infos-Page2{
+  display: flex;
+  align-items: center;
+}
+
+.Icons-page1 input{
+  text-align: center;
+  border-radius: 40px;
+background: #F6F6F6;
+padding: 10px 210px;
+margin: 0px 215px;
+
+}
+.Icons-page1 img{
+  width: 65px;
+  height: 60px;
+}
+
+.Infos-Page1{
+  display: flex;
+  align-items: center;
+  background-color: #40A34C;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.Infos-Page1 img{
+  margin: 5px;
+ max-width: 20px;
+height: 25.806px;
+}
+
+.What-face{
+  display: flex;
+  align-items: flex-start;
+}
+.Buscas-infos{
+  margin: 0px 360px;
+}
+.Buscas-infos a {
+  margin: 0px 10px;
+}
+.Promo-tenis img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.Compra-tenis{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.Tenis-01{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tenis{
+  width: 256.292px;
+height: 208px;
+}
+.Infos-text {
+  display: flex;
+  border-radius: 19px;
+ background-color: rgba(177, 177, 177, 0.26);
+ width: 220px;
+
+}
+.Infos-text h1{
+  text-align: center;
+  font-size:18px;
+width: 590px;
+}
+.info-compra h2{
+color: #2A972E;
+}
+
+.estrelas img{
+  width: 26px;
+  height: 27.174px;
+  margin-top: 12px;
+}
