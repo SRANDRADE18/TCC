@@ -6,7 +6,7 @@
   background-color: #2A972E;
   max-height: 100%;
   max-width: 100%;
-  
+  padding: 2px;
 }
 
 .Landing-PT{
@@ -15,13 +15,8 @@
 
 }
 
-.landing-header img{
-  width: 80px;
-  height: 80px;
-}
-
 .Icons-page2 img{
-  margin: 25px;
+  margin: 12px;
  max-width: 20px;
 height: 25.806px;
 transition: transform 0.3s ease;
@@ -52,8 +47,8 @@ margin: 0px 215px;
 
 }
 .Icons-page1 img{
-  width: 65px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
 }
 
 .Infos-Page1{
@@ -62,6 +57,8 @@ margin: 0px 215px;
   background-color: #40A34C;
   max-height: 100%;
   max-width: 100%;
+  padding: 13px;
+  margin-top: 25px;
 }
 
 .Infos-Page1 img{
@@ -74,8 +71,11 @@ height: 25.806px;
   display: flex;
   align-items: flex-start;
 }
+.Insta-din{
+  display: flex;
+}
 .Buscas-infos{
-  margin: 0px 360px;
+  margin: 0px 55vh;
 }
 .Buscas-infos a {
   margin: 0px 10px;
@@ -98,9 +98,10 @@ height: 25.806px;
 }
 
 .tenis{
-  width: 256.292px;
-height: 208px;
+  width: 220px;
+ height: 200px;
 }
+
 .Infos-text {
   display: flex;
   border-radius: 19px;
@@ -108,11 +109,13 @@ height: 208px;
  width: 220px;
 
 }
+
 .Infos-text h1{
   text-align: center;
   font-size:18px;
 width: 590px;
 }
+
 .info-compra h2{
 color: #2A972E;
 }
@@ -121,4 +124,47 @@ color: #2A972E;
   width: 26px;
   height: 27.174px;
   margin-top: 12px;
+}
+
+.Tenis-Branco{
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(180deg, #F6F6F6 0%, #D9D9D9 25%, #C5C5C5 52.08%, #40A34C 100%);
+
+  flex-shrink: 0;
+}
+.Tenis-Branco img{
+  width: 500px;
+  height: 500px;
+}
+
+.Texto1 h1{
+  font-size:18px;
+  margin: 85px;
+  width: 228px;
+text-align: center;
+
+}
+.Texto3 h1{
+  font-size:18px;
+  margin: 90px;
+  width: 228px;
+text-align: center;
+}
+
+.Rodape{
+  background-color: #40A34C;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Traco{
+  
+  max-width: 50% ;
+height: 1px;
+flex-shrink: 0;
+background: #D9D9D9;
 }

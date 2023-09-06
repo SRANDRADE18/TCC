@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
 import './App.scss';
-import Logo from '../assets/images/logo tcc 2.png';
+import Logo from '../assets/images/logo tcc02.png';
 import Coração from '../assets/images/coracao 1.png';
 import Carrinho from '../assets/images/carrinho-de-compras (1) 1.png';
 import Pessoa from '../assets/images/do-utilizador 2.png';
@@ -13,6 +13,8 @@ import linkedin from '../assets/images/linkedin.png';
 import PromoTenis from '../assets/images/img1 teniss.png';
 import Tenis01 from '../assets/images/tenis_vegano_shoes_esportivo_preto_ 3.png';
 import Estrela from '../assets/images/Vector.svg';
+import PromoTenis01 from '../assets/images/Tenis-info01.png';
+import TenisBranco from '../assets/images/Tenis-Branco.png';
 
 
 
@@ -46,6 +48,7 @@ export default function landingPage () {
          <section className='Infos-Page1'>
 
           <div className='Infos-Page2'>
+
           <div className='What-face'>
            <img src={Whatsapp}></img>
            <img src={Facebook}></img>
@@ -191,6 +194,70 @@ export default function landingPage () {
         </div>
         </div>
 
+
+      </div>
+
+
+      <div className='Promo-tenis'>
+      <img src={PromoTenis01}></img>
+      </div>
+
+      <div className='Tenis-Branco'>
+
+        <div className='Textos-103'>
+
+        <div className='Texto1'>
+          <h1>
+          1. Se você se preocupa com os direitos dos animais e deseja evitar o uso de produtos derivados de animais, um tênis vegano é uma escolha adequada.
+          </h1>
+        </div>
+
+        <div className='Texto3'>
+          <h1>
+          3. Evitar substâncias tóxicas: Muitos calçados de couro são tratados com produtos químicos, como corantes e solventes, que podem ser prejudiciais ao meio ambiente e à saúde humana.
+          </h1>
+        </div>
+
+        </div>
+
+        <img src={TenisBranco}></img>
+
+
+        <div className='Texto1'>
+          <h1>
+          2.Sustentabilidade ambiental: Os tênis veganos são geralmente fabricados com materiais sintéticos e alternativos, como poliéster reciclado, borracha natural, lona e microfibras.
+          </h1>
+        </div>
+
+      </div>
+
+      <div className='Rodape'>
+        <div className='Traco'></div>
+        
+        <div className='Roda'>
+
+          <div className='Social'>
+
+            <h1>Social</h1>
+            <h2>Facebook</h2>
+            <h2>Instagram</h2>
+            <h2>Twitter</h2>
+            <h2>Whatsapp</h2>
+
+          </div>
+
+          <div className='Ajuda'>
+
+            <h1>Ajuda</h1>
+            <h2>Dúvidas Frequentes</h2>
+            <h2>Trocas e Devoluções</h2>
+            <h2>Atendimentos</h2>
+            <h2>Termos de uso</h2>
+
+          </div>
+
+        </div>
+        <div className='Traco'></div>
 
       </div>
       

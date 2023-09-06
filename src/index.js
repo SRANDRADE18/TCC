@@ -9,10 +9,8 @@ root.render(
   <React.StrictMode>
   <BrowserRouter>
   <Routes>
-  <Route path='/Landingpage' element={<LandingPages/>}/>
+  <Route path='' element={<LandingPages/>}/>
   </Routes>
  </BrowserRouter>
 </React.StrictMode>
 );
-
-
