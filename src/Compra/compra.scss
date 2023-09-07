@@ -39,9 +39,9 @@ align-items: center;
     appearance: none;
     width: 20px; /* Largura do polegar do controle deslizante */
     height: 20px; /* Altura do polegar do controle deslizante */
-    background: #000000; /* Cor do polegar do controle deslizante */
-    cursor: pointer; /* Altere o cursor para indicar que é interativo */
-    border-radius: 50%; /* Faça o polegar redondo */
+    background: #000000; 
+    cursor: pointer; 
+    border-radius: 50%; 
   }
   
   .filter_range::-moz-range-thumb {
