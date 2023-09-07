@@ -2,20 +2,13 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
 import './App.scss';
-import Logo from '../assets/images/logo tcc02.png';
-import Coração from '../assets/images/coracao 1.png';
-import Carrinho from '../assets/images/carrinho-de-compras (1) 1.png';
-import Pessoa from '../assets/images/do-utilizador 2.png';
-import Whatsapp from '../assets/images/whatsapp 1.png';
-import Facebook from '../assets/images/facebook.png';
-import instagram from '../assets/images/instagram.png';
-import linkedin from '../assets/images/linkedin.png';
 import PromoTenis from '../assets/images/img1 teniss.png';
 import Tenis01 from '../assets/images/tenis_vegano_shoes_esportivo_preto_ 3.png';
 import Estrela from '../assets/images/Vector.svg';
 import PromoTenis01 from '../assets/images/Tenis-info01.png';
 import TenisBranco from '../assets/images/Tenis-Branco.png';
-import Pagamrnto from '../assets/images/Pagamento.png'
+import Header from '../components/Header/header.js';
+import Rodape from '../components/Rodape/rodape';
 
 
 
@@ -23,61 +16,8 @@ import Pagamrnto from '../assets/images/Pagamento.png'
 export default function landingPage () {
   return (
     <div className="landing-Page">
-      <header className="landing-header">
 
-        <div className='Landing-PT'>
-
-        <div className='Icons-page1'>
- 
-          <img src={Logo}></img>
-
-          <input></input>
-
-        </div>
-
-         <div className='Icons-page2'>
-            <img src={Coração}></img>
-            <img src={Carrinho}></img>
-           <img src={Pessoa}></img>
-
-          </div>
-
-        </div>
-
-      
-         <section className='Infos-Page1'>
-
-          <div className='Infos-Page2'>
-
-          <div className='What-face'>
-           <img src={Whatsapp}></img>
-           <img src={Facebook}></img>
-
-          </div>
-
-          <div className='Buscas-infos'>
-
-            <a>ESPORTES</a>
-            <a>HOMENS</a>
-            <a>MULHERES</a>
-            <a>CRIANÇAS</a>
-            <a>ACESSÓRIOS</a>
-
-          </div>
-
-          <div className='Insta-din'>
-
-           <img src={linkedin}></img>
-           <img src={instagram}></img>
-
-          </div>
-
-          </div>
-
-          
-
-         </section>
-      </header>
+      <Header/>
 
       <div className='Promo-tenis'>
       <img src={PromoTenis}></img>
@@ -231,46 +171,8 @@ export default function landingPage () {
 
       </div>
 
-      <div className='rodape'>
+      <Rodape/>
 
-      
-
-        <div className='roda'>
-
-          <div className='Social'>
-            <h1>Social</h1>
-            <h2>Facebook</h2>
-            <h2>Instagram</h2>
-            <h2>Twitter</h2>
-            <h2>Whatsapp</h2>
-          </div>
-          
-          <div className='Social'>
-            <h1>Ajuda</h1>
-            <h2>Dúvidas Frequentes</h2>
-            <h2>Trocas e Devoluções</h2>
-            <h2>Atendimentos</h2>
-            <h2>Termos de uso</h2>
-          </div>
-
-          <img src={Pagamrnto}></img>
-
-          <div className='Social'>
-            <h1>Entregas</h1>
-            <h2>Frete grátis</h2>
-            <h2>Entrega rápida</h2>
-            <h2>Troca grátis</h2>
-          </div>
-
-        </div>
-
-        
-
-      </div>
-      
-
-      
-      
 
     </div>
   );
