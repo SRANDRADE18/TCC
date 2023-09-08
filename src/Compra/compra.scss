@@ -7,6 +7,7 @@
     flex-direction: row;
     background-color: rgba(201, 187, 187, 0.438);
 align-items: center;
+align-items: center;
 }
 
 .Compra-Filtros{
@@ -14,14 +15,20 @@ align-items: center;
     flex-direction: column;
     margin-left: 50px;
     margin-right: 100px;
+    margin-top: 50px;
     
 }
-.Filter-Preco{
+.Filtro-Preco{
     display: flex;
+}
+.Filtro-Preco h1{
+    font-size: 20px;
+
+
 }
 .filter_range {
     -webkit-appearance: none; 
-    width: 50%; 
+    width: 48%; 
     height: 5px; 
     background: #2A972E; 
     outline: none; 
@@ -58,8 +65,8 @@ align-items: center;
     align-items: center;
     background-color: #FFF;
     border-radius: 30px;
-    height: 220px;
-    width: 300px;
+    height: 200px;
+    width: 250px;
     
 }
 
@@ -83,45 +90,193 @@ stroke: #000;
     background-color: #000;
 }
 
+.Filtro-Tamanho{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    background-color: #FFF;
+    border-radius: 30px;
+    max-width: 85%;
+    margin-top: 50px;
+}
+
+.Filtro-Tamanho h1{
+    font-size: 20px;
+}
+.Filtro-Tamanho h2{
+    font-size: 20px;
+  }
+
+.Tamanhos-tenis{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.check-button {
+    width: 30px; 
+    height: 30px; 
+    background-color: #ffffff; 
+    border: 2px solid #000000;
+    border-radius: 50%; 
+    cursor: pointer; 
+    margin: 20px;
+  }
+  
+  .test{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .Filtro-Genero{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    background-color: #FFF;
+    border-radius: 30px;
+    max-width: 85%;
+    margin-top: 50px;
+  }
+
+  .Filtro-Genero h1{
+    font-size: 20px;
+  }
+  .Filtro-Genero h2{
+    font-size: 20px;
+  }
+
+.Generos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Filtro-Modelos{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    background-color: #FFF;
+    border-radius: 30px;
+    max-width: 85%;
+    margin-top: 50px;
+}
+
+.Modelos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.Filtro-Cor{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.Preto{
+    width: 56.9px;
+height: 56.072px;
+transform: rotate(0.211deg);
+border-radius: 100px;
+background: #000;
+cursor: pointer;
+}
+
+.Roxo{
+    width: 56.9px;
+height: 56.072px;
+transform: rotate(0.211deg);
+border-radius: 100px;
+background: rgba(57, 53, 246, 0.78);
+margin: 10px;
+cursor: pointer;
+}
+
+.Rosa{
+    width: 56.9px;
+height: 56.072px;
+transform: rotate(0.211deg);
+border-radius: 100px;
+background: #F095C1;
+cursor: pointer;
+}
+.Marrom{
+    width: 56.9px;
+height: 56.072px;
+transform: rotate(0.211deg);
+border-radius: 100px;
+background: rgba(142, 97, 97, 0.85);
+cursor: pointer;
+}
+
+.Laranja{
+    width: 56.9px;
+height: 56.072px;
+transform: rotate(0.211deg);
+border-radius: 100px;
+background: #FE764B;
+margin: 10px;
+cursor: pointer;
+}
+
+.Verde{
+    width: 56.9px;
+height: 56.072px;
+transform: rotate(0.211deg);
+border-radius: 100px;
+background: rgba(44, 89, 46, 0.79);
+cursor: pointer;
+}
 
 
 
 
 //////////////////////
+
+.Shoop-compra{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .Compra-Linha01{
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
     background-color: #FFF;
-    width: 260px;
-    height: 445px;
+    width: 235px;
+    height: 415px;
     margin: 25px;
 }
 
 .tenis-Preto{
-    width: 180px;
-    height: 190px;
+    width: 170px;
+    height: 180px;
 }
 
 .Compra-Texto{
     display: flex;
     border-radius: 19px;
    background-color: rgba(177, 177, 177, 0.26);
-   width: 220px;
+   width: 210px;
 }
 
 .Compra-Estrelas img{
-    width: 26px;
-    height: 27.174px;
+    width: 22px;
+    height: 25px;
+    margin: 1px;
     margin-top: 12px;
+    cursor: pointer;
 }
 
 .Compra-Texto h1{
     text-align: center;
-    font-size:18px;
+    font-size:15px;
   width: 590px;
 }
 .Compra-Preco h2{
     color: #2A972E;
 }
+

@@ -28,12 +28,12 @@
   
   .Icons-page2 img{
     margin: 12px;
-   max-width: 20px;
-  height: 25.806px;
+   width: 35px;
+  height: 25px;
   transition: transform 0.3s ease;
   }
   
-  .Icons-page2:hover{
+  .Icons-page2:hover img{
     transform: scale(1.1);
       width: auto;
       height: auto;
