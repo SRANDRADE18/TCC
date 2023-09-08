@@ -31,14 +31,14 @@ align-items: center;
   }
   
   .filter_range:hover {
-    opacity: 1; /* Aumente a opacidade quando o mouse estiver sobre o controle deslizante */
+    opacity: 1; 
   }
   
   .filter_range::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Remova o estilo padrão do polegar do controle deslizante */
+    -webkit-appearance: none; 
     appearance: none;
-    width: 20px; /* Largura do polegar do controle deslizante */
-    height: 20px; /* Altura do polegar do controle deslizante */
+    width: 20px; 
+    height: 20px; 
     background: #000000; 
     cursor: pointer; 
     border-radius: 50%; 
