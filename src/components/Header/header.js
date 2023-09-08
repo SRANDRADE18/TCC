@@ -19,7 +19,7 @@ export default function Header(){
  
           <img src={Logo}></img>
 
-          <input></input>
+          <input className='input_Header' type="search" placeholder='Pesquisar'/>
 
         </div>
 

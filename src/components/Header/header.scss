@@ -28,13 +28,12 @@
   
   .Icons-page2 img{
     margin: 12px;
-   width: 35px;
-  height: 25px;
-  transition: transform 0.3s ease;
+    width: 35px;
+    height: 25px;
   }
   
   .Icons-page2:hover img{
-    transform: scale(1.1);
+    transition: transform 0.3s ease;
       width: auto;
       height: auto;
   }
@@ -48,13 +47,22 @@
     display: flex;
     align-items: center;
   }
+
+  .Infos-Page2:hover img{
+    transition: transform 0.3s ease;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 1;
+  }
   
-  .Icons-page1 input{
+  .input_Header {
     text-align: center;
     border-radius: 40px;
-  background: #F6F6F6;
-  padding: 10px 210px;
-  margin: 0px 215px;
+    width: 80vh;
+    height: 3vw;
+  
   
   }
   .Icons-page1 img{
@@ -68,15 +76,17 @@
     background-color: #40A34C;
     max-height: 100%;
     max-width: 100%;
-    padding: 13px;
+    
     margin-top: 25px;
   }
   
   .Infos-Page1 img{
-    margin: 5px;
+    margin: 2.8px;
    max-width: 20px;
-  height: 25.806px;
+   max-width: 25px;
+  
   }
+
   
   .What-face{
     display: flex;
