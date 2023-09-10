@@ -1,0 +1,126 @@
+.Minha-conta{
+    display: flex;
+    justify-content: center;
+}
+
+.Ultimo-Pedido{
+    display: flex;
+    margin-top: 50px;
+}
+
+.Conta-perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.Conta-perfil img{
+    margin: 10px;
+}
+
+.Linha-pedidos{
+    width: 254px;
+height: 1px;
+background-color: #BCBCBC;
+}
+
+.acao-UltimoPedido{
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    max-height: auto;
+    border-radius: 11px;
+    border: 1px solid #BCBCBC;
+    background: #FFF;
+    margin-left: 25px;
+}
+
+.pedidos{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.pedidos img{
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+}
+
+.Pedidos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 75vw;
+    max-height: auto;
+    border-radius: 11px;
+    border: 1px solid #BCBCBC;
+    background: #FFF;
+    margin-left: 10px;
+    
+}
+
+.Tenis-Pedido{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.Tenis-Pedido img{
+    height: 160px;
+    width: 250px;
+}
+
+.Linha2{
+    width: 1px;
+    height: 460px;
+    background: #BCBCBC;
+    margin: 22px
+}
+
+.Status-Pedido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Cancelar{
+    color: #000000;
+    width: 268px;
+    height: 50px;
+    border-radius: 40px;
+    background: #ffffff;
+    border: 1px solid #3B0060;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.Cancelar:hover{
+    background-color: #ff0000;
+}
+
+.Acompanhar_Entrega{
+    color: #FFF;
+    width: 268px;
+    height: 50px;
+    border-radius: 40px;
+    background: #3B0060;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.Acompanhar_Entrega:hover{
+    background-color: #31AA45;
+}
+
+
+.Status-Pedido img {
+    padding: 10px;
+}
+
+.resumo_do_pedido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
