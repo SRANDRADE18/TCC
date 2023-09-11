@@ -1,0 +1,63 @@
+.Compra-pt2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Compra-imgg{
+    display: flex;
+    flex-direction: column;
+}
+
+.Compra-imgg img{
+    height: 200px;
+    width: 200px;
+}
+.imgs{
+    padding: 10px;
+}
+.imgs img {
+    margin: 5px;
+}
+
+.Compra-pt_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+    height: 850px;
+    width: 450px;
+    border: 5px solid #000;
+  
+}
+.Estrela-info-pt2{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.Filtro-Cor-pt2{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.Compra-pt_info button{
+    color: #FFF;
+    width: 260px;
+    height: 90px;
+    border-radius: 40px;
+    background: #3B0060;
+    cursor: pointer;
+    margin-top: 40px;
+
+}
+.Comppra-pt_Tamanhos{
+    display: flex;
+}
+.Comppra-pt_Tamanhos h2{
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+}

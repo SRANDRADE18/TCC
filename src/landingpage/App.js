@@ -25,7 +25,9 @@ export default function landingPage () {
 
       <div className='Compra-tenis'>
 
-        <div className='Tenis-01'>
+        <a href='http://localhost:3000/compra'>
+
+           <div className='Tenis-01'>
 
          <img className='tenis'  src={Tenis01}></img>
          <div className='infos-tenis01'>  
@@ -52,7 +54,43 @@ export default function landingPage () {
         </div>
         </div>
 
-         <div className='Tenis-02'>
+        </a>
+
+
+        <a href='http://localhost:3000/compra'>
+          <div className='Tenis-02'>
+
+
+         <img className='tenis' src={Tenis01}></img>
+         <div className='infos-tenis01'>  
+
+         <div className='Infos-text'>
+          <h1>Tênis Vegano Shoes  
+            Rocket Sport Preto</h1>
+         </div>
+         
+
+         <div className='estrelas'>
+         <img src={Estrela}></img>
+         <img src={Estrela}></img>
+         <img src={Estrela}></img>
+         <img src={Estrela}></img>
+         <img src={Estrela}></img>
+         </div>
+
+         <div className='info-compra'>
+            <h2>Frete grátis</h2>
+            <h3>R$249,90  ou 4x de 60</h3>
+         </div>
+
+         </div>
+         </div>
+          
+        </a>
+
+        <a href='http://localhost:3000/compra'>
+
+          <div className='Tenis-03'>
 
          <img className='tenis' src={Tenis01}></img>
          <div className='infos-tenis01'>  
@@ -79,8 +117,11 @@ export default function landingPage () {
         </div>
         </div>
 
-        
-        <div className='Tenis-03'>
+        </a>
+
+        <a href='http://localhost:3000/compra'>
+
+          <div className='Tenis-03'>
 
          <img className='tenis' src={Tenis01}></img>
          <div className='infos-tenis01'>  
@@ -107,33 +148,9 @@ export default function landingPage () {
         </div>
         </div>
 
-         <div className='Tenis-03'>
 
-         <img className='tenis' src={Tenis01}></img>
-         <div className='infos-tenis01'>  
 
-         <div className='Infos-text'>
-          <h1>Tênis Vegano Shoes  
-            Rocket Sport Preto</h1>
-         </div>
-         
-
-         <div className='estrelas'>
-         <img src={Estrela}></img>
-         <img src={Estrela}></img>
-         <img src={Estrela}></img>
-         <img src={Estrela}></img>
-         <img src={Estrela}></img>
-         </div>
-
-         <div className='info-compra'>
-            <h2>Frete grátis</h2>
-            <h3>R$249,90  ou 4x de 60</h3>
-         </div>
-
-        </div>
-        </div>
-
+        </a>
 
       </div>
 

@@ -5,7 +5,7 @@
 .Produtos-compra{
     display: flex;
     flex-direction: row;
-    background-color: rgba(201, 187, 187, 0.438);
+    background-color: rgba(255, 255, 255, 0.438);
 align-items: center;
 align-items: center;
 }
@@ -20,6 +20,9 @@ align-items: center;
 }
 .Filtro-Preco{
     display: flex;
+    border-radius: 30px;
+    border: 2px solid #000;
+
 }
 .Filtro-Preco h1{
     font-size: 20px;
@@ -98,6 +101,8 @@ stroke: #000;
     border-radius: 30px;
     max-width: 85%;
     margin-top: 50px;
+    border-radius: 30px;
+    border: 2px solid #000;
 }
 
 .Filtro-Tamanho h1{
@@ -137,6 +142,8 @@ stroke: #000;
     border-radius: 30px;
     max-width: 85%;
     margin-top: 50px;
+    border-radius: 30px;
+    border: 2px solid #000;
   }
 
   .Filtro-Genero h1{
@@ -248,7 +255,20 @@ cursor: pointer;
     background-color: #FFF;
     width: 235px;
     height: 415px;
-    margin: 25px;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.Compra-Linha01:hover{
+    
+    transition: transform 0.3s ease;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 1;
+    border-radius: 30px;
+    border: 2px solid #000;
 }
 
 .tenis-Preto{

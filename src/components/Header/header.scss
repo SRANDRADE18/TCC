@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #2A972E;
+    background: #38B593;
     max-height: 100%;
     max-width: 100%;
     padding: 2px;
@@ -73,7 +73,7 @@
   .Infos-Page1{
     display: flex;
     align-items: center;
-    background-color: #40A34C;
+    background: #38B593;
     max-height: 100%;
     max-width: 100%;
     
@@ -101,3 +101,53 @@
   .Buscas-infos a {
     margin: 0px 10px;
   }
+
+  .Descrisão{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    margin-left: 100px;
+    
+
+  }
+
+.Descrição-compra{
+
+  border-radius: 30px;
+  border: 5px solid #000;
+  background: #FFF;
+  margin-top: 100px;
+  width: 60vw;
+height: 150px;
+}
+
+  .Descrição-compra h1{
+    color: #000;
+    font-family: Baloo Paaji 2;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    width: 800px;
+    line-height: normal;
+    
+  }
+
+  .Descrisão-Produto{
+    border-radius: 30px;
+    border: 5px solid #000;
+    background: #FFF;
+    margin-top: 10px;
+    width: 60vw;
+  height: 600px;
+  }
+
+  .Descrisão-Produto h1{
+    color: #000;
+    font-family: Baloo Paaji 2;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    width: 500px;
+    line-height: normal;
+  }
+
