@@ -1,6 +1,6 @@
 .landing-header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background: #38B593;
     max-height: 100%;
@@ -11,20 +11,21 @@
   .Landing-PT{
     display: flex;
     align-items: center;
-    justify-content: space-around;
   }
   
   .Icons-page2 img{
-    margin: 12px;
-    width: 30px;
-    height: 35px;
+    margin: 15px;
+    width: 29px;
+    height: 29px;
   }
   
   .Icons-page2 img:hover{
     transition: transform 0.3s ease;
+    transform: scale(1.1);
       width: auto;
       height: auto;
-      padding: auto;
+      cursor: pointer;
+      opacity: 1;
   }
   
   .Icons-page1{
@@ -36,22 +37,12 @@
     align-items: center;
   }
 
-  .Infos-Page2:hover img{
-    transition: transform 0.3s ease;
-    width: auto;
-    height: auto;
-    cursor: pointer;
-    transform: scale(1.1);
-    opacity: 1;
-  }
   
   .input_Header {
     text-align: center;
     border-radius: 40px;
-    width: 80vh;
-    height: 3vw;
-  
-  
+    width: 700px;
+    height: 52px;
   }
   .Icons-page1 img{
     width: 100px;
@@ -61,19 +52,29 @@
   .Infos-Page1{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background: #38B593;
     background: #38B593;
     max-height: 100%;
     max-width: 100%;
+    padding: 10px;
 
   }
   
   .Infos-Page1 img{
-    margin: 2.8px;
+    margin: 8px;
    max-height: 20px;
    max-width: 25px;
   
+  }
+
+  .Infos-Page1 img:hover{
+    transition: transform 0.3s ease;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    transform: scale(1.5);
+    opacity: 1;
   }
 
   
@@ -91,52 +92,7 @@
   .Buscas-infos a {
     font-family: Alata;
     padding: 5px;
+    color: #FFF;
   }
 
-  .Descrisão{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin-left: 100px;
-  }
-
-.Descrição-compra{
-
-  border-radius: 30px;
-  border: 5px solid #000;
-  background: #FFF;
-  margin-top: 100px;
-  width: 60vw;
-height: 150px;
-}
-
-  .Descrição-compra h1{
-    color: #000;
-    font-family: Baloo Paaji 2;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    width: 800px;
-    line-height: normal;
-    
-  }
-
-  .Descrisão-Produto{
-    border-radius: 30px;
-    border: 5px solid #000;
-    background: #FFF;
-    margin-top: 10px;
-    width: 60vw;
-  height: 600px;
-  }
-
-  .Descrisão-Produto h1{
-    color: #000;
-    font-family: Baloo Paaji 2;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    width: 500px;
-    line-height: normal;
-  }
 

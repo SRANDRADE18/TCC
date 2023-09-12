@@ -23,17 +23,21 @@ import Estrela from '../assets/images/Vector.svg';
 
                     <div className='Compra-imgg'>
 
-                    <img className='tenis-Grande'src={TenisEsportivopreto}></img>
+                        <div className='tenis-Grande'>
 
-                     <div className='imgs'>
-                      <img src={Tenis1}/>
-                      <img src={Tenis2}/>
-                     </div>
+                        <img src={TenisEsportivopreto}></img>
 
-                     <div className='imgs'>
-                       <img src={Tenis3}/>
-                       <img src={Tenis4}/>
-                     </div>
+                       <div className='Tenis-Menores'>
+                         <img src={Tenis1}/>
+                         <img src={Tenis2}/>
+                     
+
+                     
+                         <img src={Tenis3}/>
+                         <img src={Tenis4}/>
+                       </div>
+                     
+                        </div>
 
                     </div>
 
@@ -53,7 +57,7 @@ import Estrela from '../assets/images/Vector.svg';
 
                          </div>
 
-                         <button>Comprar</button>
+                         <button className='Button-compra'>Comprar</button>
 
                          <h1>Cores</h1>
                          <div className='Filtro-Cor-pt2'>

@@ -53,7 +53,6 @@ export default function Header(){
             <a>HOMENS</a>
             <a>MULHERES</a>
             <a>CRIANÇAS</a>
-            <a>ACESSÓRIOS</a>
 
           </div>
 

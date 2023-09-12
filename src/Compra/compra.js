@@ -171,9 +171,12 @@ function CheckButton() {
 
                 </div>
 
+          
                 <div className='Shoop-Vgn'>
 
                     <div className='Shoop-compra'>
+
+                    <a href='http://localhost:3000/compra_pt2'>
 
                     <div className='Compra-Linha01'>
                     
@@ -204,7 +207,10 @@ function CheckButton() {
    
                    </div>
 
-                   <div className='Compra-Linha01'>
+                  </a>
+
+                  <a href='http://localhost:3000/compra_pt2'>
+                  <div className='Compra-Linha01'>
                     
                     <img className='tenis-Preto'  src={Tenis01}></img>
    
@@ -231,7 +237,9 @@ function CheckButton() {
    
                     </div>
    
-                   </div>
+                   </div>                     
+                  </a>
+
    
                    <a href='http://localhost:3000/compra_pt2'>
                    <div className='Compra-Linha01'>
@@ -263,8 +271,11 @@ function CheckButton() {
       
                       </div>
                    </a>
-   
-                      <div className='Compra-Linha01'>
+
+                   <a href='http://localhost:3000/compra_pt2'>
+
+                   
+                   <div className='Compra-Linha01'>
                        
                        <img className='tenis-Preto'  src={TenisPretoComlaranja }></img>
       
@@ -292,8 +303,11 @@ function CheckButton() {
                         </div>
 
                     </div>
+                   </a>
 
-                    <div className='Compra-Linha01'>
+                   <a href='http://localhost:3000/compra_pt2'>
+
+                   <div className='Compra-Linha01'>
                        
                        <img className='tenis-Preto'  src={Sapatilha}></img>
       
@@ -322,6 +336,11 @@ function CheckButton() {
 
                     </div>
 
+                   </a>
+
+                   <a href='http://localhost:3000/compra_pt2'>
+
+                     
                     <div className='Compra-Linha01'>
                        
                        <img className='tenis-Preto'  src={TenisCoral}></img>
@@ -351,7 +370,11 @@ function CheckButton() {
 
                     </div>
 
-                    <div className='Compra-Linha01'>
+                  </a>
+
+                  <a href='http://localhost:3000/compra_pt2'>
+
+                  <div className='Compra-Linha01'>
                        
                        <img className='tenis-Preto'  src={Tenis_galáxia}></img>
       
@@ -380,7 +403,10 @@ function CheckButton() {
 
                     </div>
 
-                    <div className='Compra-Linha01'>
+                  </a>
+
+                  <a href='http://localhost:3000/compra_pt2'>
+                  <div className='Compra-Linha01'>
                        
                        <img className='tenis-Preto'  src={Bota_Vegana }></img>
       
@@ -408,8 +434,11 @@ function CheckButton() {
                         </div>
 
                     </div>
+                  </a>
 
-                    <div className='Compra-Linha01'>
+                  <a href='http://localhost:3000/compra_pt2'>
+
+                  <div className='Compra-Linha01'>
                        
                        <img className='tenis-Preto'  src={Bota_Saara}></img>
       
@@ -438,7 +467,10 @@ function CheckButton() {
 
                     </div>
 
-                    <div className='Compra-Linha01'>
+                  </a>
+
+                  <a href='http://localhost:3000/compra_pt2'>
+                  <div className='Compra-Linha01'>
                        
                        <img className='tenis-Preto'  src={Tenis_Camara }></img>
       
@@ -466,8 +498,11 @@ function CheckButton() {
                         </div>
 
                     </div>
+                  </a>
 
-                    <div className='Compra-Linha01'>
+                  <a href='http://localhost:3000/compra_pt2'>
+
+                  <div className='Compra-Linha01'>
                        
                        <img className='tenis-Preto'  src={Tenis_Havana}></img>
       
@@ -496,7 +531,11 @@ function CheckButton() {
 
                     </div>
 
-                    <div className='Compra-Linha01'>
+                  </a>
+
+                  <a href='http://localhost:3000/compra_pt2'>
+
+                  <div className='Compra-Linha01'>
                        
                        <img className='tenis-Preto'  src={Tenis_Ultimo}></img>
       
@@ -524,6 +563,9 @@ function CheckButton() {
                         </div>
 
                     </div>
+                    
+                  </a>
+
 
                  </div>
 
