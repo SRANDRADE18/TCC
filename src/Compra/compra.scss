@@ -262,8 +262,8 @@ cursor: pointer;
 .Compra-Linha01:hover{
     
     transition: transform 0.3s ease;
-    width: auto;
-    height: auto;
+    padding: auto;
+    margin-block-end: 50px;
     cursor: pointer;
     transform: scale(1.1);
     opacity: 1;

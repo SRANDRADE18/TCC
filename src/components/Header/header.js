@@ -10,18 +10,22 @@ import linkedin from '../../assets/images/linkedin.png';
 
 export default function Header(){
 
-    return(
-        <header className="landing-header">
+    return(      
+        <div>
 
-        <div className='Landing-PT'>
+          <header className="landing-header">
 
-        <div className='Icons-page1'>
+         
+
+         <div className='Icons-page1'>
  
           <img src={Logo}></img>
 
+          </div>
+
           <input className='input_Header' type="search" placeholder='Pesquisar'/>
 
-        </div>
+        
 
          <div className='Icons-page2'>
             <img src={Coração}></img>
@@ -30,12 +34,12 @@ export default function Header(){
 
           </div>
 
-        </div>
+        
 
-      
-         <section className='Infos-Page1'>
+          </header>
+    
+         <div className='Infos-Page1'>
 
-          <div className='Infos-Page2'>
 
           <div className='What-face'>
            <img src={Whatsapp}></img>
@@ -60,12 +64,12 @@ export default function Header(){
 
           </div>
 
-          </div>
+
 
           
 
-         </section>
-      </header>
+         </div>
+      </div>
     )
 
 }

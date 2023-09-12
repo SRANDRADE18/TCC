@@ -58,7 +58,7 @@ export default function landingPage () {
 
 
         <a href='http://localhost:3000/compra'>
-          <div className='Tenis-02'>
+          <div className='Tenis-01'>
 
 
          <img className='tenis' src={Tenis01}></img>
@@ -90,7 +90,7 @@ export default function landingPage () {
 
         <a href='http://localhost:3000/compra'>
 
-          <div className='Tenis-03'>
+          <div className='Tenis-01'>
 
          <img className='tenis' src={Tenis01}></img>
          <div className='infos-tenis01'>  
@@ -121,7 +121,7 @@ export default function landingPage () {
 
         <a href='http://localhost:3000/compra'>
 
-          <div className='Tenis-03'>
+          <div className='Tenis-01'>
 
          <img className='tenis' src={Tenis01}></img>
          <div className='infos-tenis01'>  
@@ -155,7 +155,7 @@ export default function landingPage () {
       </div>
 
 
-      <div className='Promo-tenis'>
+      <div className='Promo-tenis01'>
       <img src={PromoTenis01}></img>
       </div>
 
