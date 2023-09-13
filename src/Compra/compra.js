@@ -47,7 +47,6 @@ function CheckButton() {
                     
                     <div className='Filter-Preco'>
                     <input class="filter_range" type="range" ></input>
-                    <input class="filter_range" type="range" ></input>
                     </div>
 
                   </div>
