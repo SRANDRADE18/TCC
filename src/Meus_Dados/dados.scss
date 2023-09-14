@@ -1,33 +1,33 @@
-.Minha-conta{
+.Meus-Dados{
     display: flex;
     justify-content: center;
     
 }
 
-.Ultimo-Pedido{
+.Dados-Usuario{
     display: flex;
     margin-top: 50px;
     margin-block-end: 100px;
 }
 
-.Conta-perfil{
+.Conta-Dados{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 10px;
 }
 
-.Conta-perfil img{
+.Conta-Dados img{
     margin: 10px;
 }
 
-.Linha-pedidos{
+.Linha-Dados{
     width: 254px;
 height: 1px;
 background-color: #BCBCBC;
 }
 
-.acao-UltimoPedido{
+.acao-MeusDados{
     display: flex;
     flex-direction: column;
     max-width: 25%;
@@ -38,19 +38,19 @@ background-color: #BCBCBC;
     margin-left: 25px;
 }
 
-.pedidos{
+.Dados{
     display: flex;
     align-items: center;
     padding: 10px;
 }
 
-.pedidos img{
+.Dados img{
     width: 30px;
     height: 30px;
     margin: 20px;
 }
 
-.Pedidos{
+.Dados{
     display: flex;
     flex-direction: row;
     align-items: center;
