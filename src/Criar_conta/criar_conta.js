@@ -16,7 +16,21 @@ export default function Criar_conta(){
             
             <Header/>
 
-            <div className='Conta-Info'>
+            <div className='wrap'>
+
+            <div className='Seja-bemVindo'>
+
+                <h1>Seja Bem-Vindo</h1>
+                <h2>Para se manter conectado conosco faça seu login com suas informações pessoais</h2>
+
+                <button>Login</button>
+
+
+            </div>
+
+            <div className='Test2'>
+
+                            <div className='Conta-Info'>
 
                 <div className='Redes-informe'>
 
@@ -28,7 +42,7 @@ export default function Criar_conta(){
                      <img src={instagram}></img>
                     </div>
 
-                    <h1>informe os seus dados</h1>
+                    <h2>informe os seus dados</h2>
 
                 </div>
 
@@ -43,13 +57,13 @@ export default function Criar_conta(){
                 <button className='Button-Criar'> CRIAR </button> 
 
 
-
+            </div>
 
 
             </div>
 
 
-
+            </div>
 
 
             <Rodape/>
