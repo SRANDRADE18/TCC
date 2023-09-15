@@ -5,16 +5,25 @@
     background: #38B593;
     max-height: 100%;
     max-width: 100%;
-    padding: 2px;
+    padding: 5px;
   }
-  
+
+    .logo{
+    height: 60px;
+    width:  60px;
+  }
+      
   .Landing-PT{
     display: flex;
     align-items: center;
   }
+
+  .Icons-page2{
+    max-height: 100%;
+  }
   
   .Icons-page2 img{
-    margin: 15px;
+    margin: 0px 15px;
     width: 29px;
     height: 29px;
   }
@@ -41,21 +50,17 @@
   .input_Header {
     text-align: center;
     border-radius: 40px;
-    padding: 11px 0px; 
-    width: 500px;
+    padding: 5px 0px; 
+    width: 250px;
     outline: none;
     border: none;
+    font-size: 14px;
   }
 
   .input_Header:hover{
     box-shadow: 0px 0px 10px #3a3a3a;
   }
 
-  .Icons-page1 img{
-    width: 80px;
-    height: 80px;
-  }
-  
   .Infos-Page1{
     display: flex;
     align-items: center;
@@ -63,7 +68,7 @@
     background: #68C2AA;
     max-height: 100%;
     max-width: 100%;
-    padding: 10px;
+    padding: 5px 10px;
 
   }
   
@@ -96,6 +101,7 @@
    justify-content: space-evenly;
   }
   .Buscas-infos a {
+    font-size: 12px;
     font-family: Alata;
     padding: 5px;
     color: #FFF;

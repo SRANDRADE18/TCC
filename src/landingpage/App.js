@@ -15,12 +15,14 @@ import Rodape from '../components/Rodape/rodape';
 
 export default function landingPage () {
   return (
+    
     <div className="landing-Page">
+
 
       <Header/>
 
       <div className='Promo-tenis'>
-      <img src={PromoTenis}></img>
+      <Link to='/Criar_Conta'> teu pai na minha cama</Link>
       </div>
 
       <div className='Compra-tenis'>

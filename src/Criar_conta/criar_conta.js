@@ -16,35 +16,19 @@ export default function Criar_conta(){
             
             <Header/>
 
-            <div className='wrap'>
-
-            <div className='Seja-bemVindo'>
-
-                <h1>Seja Bem-Vindo</h1>
-                <h2>Para se manter conectado conosco faça seu login com suas informações pessoais</h2>
-
-                <button>Login</button>
-
+           <div className='cadastro'>
+            <div className='img'>
 
             </div>
 
-            <div className='Test2'>
+            <div className='criar-conta'>
+                <h1> Criar Conta </h1>
+            </div>
 
-                            <div className='Conta-Info'>
-
-                <div className='Redes-informe'>
-
-                    <h1>CRIE UMA CONTA</h1>
-
-                    <div>
-                     <img src={Google}></img>
-                     <img src={facebook}></img>
-                     <img src={instagram}></img>
-                    </div>
-
-                    <h2>informe os seus dados</h2>
-
-                </div>
+            <div className='rede sociaveis'>
+                <img src={Google} />
+                <img src={facebook} />
+            </div>
 
                 <div className='Infos-Cliente'>
                     <input className='Input-criar_conta' type="search" placeholder='Nome Completo'/>
@@ -53,18 +37,11 @@ export default function Criar_conta(){
                     <input className='Input-criar_conta' type="search" placeholder='Email'/>
                     <input className='Input-criar_conta' type="search" placeholder='Senha'/>
                 </div>
+                
+                <p> Já tem uma conta? <Link> Entrar. </Link></p>
 
-                <button className='Button-Criar'> CRIAR </button> 
-
-
-            </div>
-
-
-            </div>
-
-
-            </div>
-
+                <button> Criar Conta </button>
+           </div>
 
             <Rodape/>
 

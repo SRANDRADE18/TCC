@@ -19,7 +19,7 @@ export default function Header(){
 
          <div className='Icons-page1'>
  
-          <img src={Logo}></img>
+          <img className='logo' src={Logo}></img>
 
           </div>
 
