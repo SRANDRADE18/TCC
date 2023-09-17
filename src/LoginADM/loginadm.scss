@@ -1,4 +1,4 @@
-.Conta-Test {
+.Conta-ADM {
     display: flex;
     flex-wrap: nowrap;
     background: rgba(235, 235, 235, 0.93);
@@ -8,7 +8,7 @@
     max-height: 100%;
 }
 
-.cadastro {
+.cadastro-ADM {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,21 +44,9 @@
     flex-direction: column;
 }
 
-.rede-sociaveis img {
-    width: 32px;
-    height: 32px;
-    margin: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
 
-.rede-sociaveis img:hover {
-    transform: scale(1.1);
-    padding: auto;
-    opacity: 1;
-}
 
-.Input-criar_conta {
+.Input-ADM {
     padding: 5px 0px 10px 10px;
     width: 25vw;
     background: #FFF;
@@ -70,33 +58,6 @@
 }
 
 
-.Bem-vindo {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-image: url(../assets/video/image.png);
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    width: 30vw;
-    height: 70vh;
-
-}
-
-.Bem-vindo02 {
-    display: flex;
-    flex-direction: column;
-}
-
-.Bem-vindo02 h2 {
-    color: #FFF;
-    width: 212px;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140.4%;
-}
 
 .cadastro-button {
     border-radius: 20px;
