@@ -33,7 +33,7 @@
 .criar-conta h1 {
     color: #38B593;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -64,10 +64,15 @@
     background: #FFF;
     margin-top: 10px;
     text-align: start;
-    border: solid #f1f1f1;
+    border: 2px solid #f1f1f1;
     outline: none;
 
 }
+.Input-criar_conta::placeholder{
+    color: #aaaaaa;
+
+}
+
 
 
 .Bem-vindo {
@@ -76,7 +81,10 @@
     text-align: center;
     justify-content: center;
     background-image: url(../assets/video/image.png);
+    background-position-x: center;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: 500px 600px;
     border-radius: 10px;
     width: 30vw;
     height: 70vh;
@@ -86,6 +94,13 @@
 .Bem-vindo02 {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.Bem-vindo02 h1 {
+    color: #FFF;
+    margin: 0px 0px 20px 10px;
 }
 
 .Bem-vindo02 h2 {
@@ -96,6 +111,20 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140.4%;
+    margin: 0px 0px 0px 25px;
+}
+
+.Bem-vindo02 button {
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: #FFF;
+    border-style: solid;
+    color: #FFF;
+    margin: 30px 0px 0px 50px;
+
 }
 
 .cadastro-button {
@@ -107,4 +136,6 @@
     padding: 5px 0px 13px 0px;
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }

@@ -7,7 +7,7 @@ import Rodape from '../components/Rodape/rodape.js';
 import Google from '../assets/images/Redes_Sociais/Google.png';
 import facebook from '../assets/images/Redes_Sociais/facebook.png';
 import instagram from '../assets/images/Redes_Sociais/instagram.png';
-import Fundo from '../assets/video/image.png';
+
 
 export default function Criar_conta(){
 
@@ -25,6 +25,8 @@ export default function Criar_conta(){
                     <h1>Seja Bem-Vindo</h1>
                     <h2>Para se manter conectado conosco faça seu login com suas informações pessoais</h2>
                     
+                    <button className='login-button'> Login </button>
+
 
                  </div>
 
