@@ -32,9 +32,7 @@ function CheckButton() {
         <div className='Pagina-compra'>
              <Header/>
 
-             
-           
-
+            
              <div className='Produtos-compra'>
 
                  <div className='Compra-Filtros'>

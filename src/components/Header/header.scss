@@ -50,8 +50,8 @@
 
 .search-box {
   display: flex;
-  position: relative;
-  left: 140px;
+
+
 
 }
 
@@ -109,9 +109,6 @@
 
 }
 
-
-
-
 .Icon-2 img {
   height: 25px;
   width: 25px;
@@ -125,4 +122,38 @@
   cursor: pointer;
   opacity: 1;
 
+}
+
+
+@media (max-width: 768px) {
+  .Icon-2 img {
+    height: 15px;
+    width: 15px;
+    margin: 10PX;
+    cursor: pointer;
+  }
+
+  .Buscas-infos {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 5px 0px 5px;
+  
+  }
+
+  .Buscas-infos a {
+    font-size: 10px;
+    font-family: Alata;
+    margin: 5px;
+    color: #FFF;
+  }
+
+  .icon-1 img {
+    height: 15px;
+    width: 15px;
+    margin: 0px 10px 0px 10px;
+  }
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
 }

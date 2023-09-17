@@ -10,6 +10,7 @@ import UltimoPedido from './Minha_Conta_Ultimo_Pedido/ultimo_pedido';
 import Comprapt2 from './Compra_PT2/compra_pt2';
 import MeusDados from './Meus_Dados/dados';
 import Loginadm from './LoginADM/loginadm';
+import Admpage from './AdmPage/adm';
 
 
 
@@ -27,6 +28,7 @@ root.render(
     <Route path='/compra_pt2' element={<Comprapt2/>}/>
     <Route path='/MeusDados' element={<MeusDados/>}/>
     <Route path='/LoginADM' element={<Loginadm/>}/>
+    <Route path='/Admpage' element={<Admpage/>}/>
   </Routes>
  </BrowserRouter>
 </React.StrictMode>

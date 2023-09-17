@@ -7,6 +7,9 @@ import Whatsapp from '../../assets/images/whatsapp 1.png';
 import instagram from '../../assets/images/instagram.png';
 
 
+import React, { useState, useEffect } from 'react';
+
+
 export default function Header() {
 
   return (

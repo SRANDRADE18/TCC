@@ -1,68 +1,69 @@
-.Pagina-compra{
+.Pagina-compra {
     background-color: rgba(255, 255, 255, 0.438);
 }
 
-.Produtos-compra{
+.Produtos-compra {
     display: flex;
     flex-direction: row;
     background-color: rgba(255, 255, 255, 0.438);
-align-items: center;
-align-items: center;
+    align-items: center;
 }
 
-.Compra-Filtros{
+.Compra-Filtros {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
     margin-right: 100px;
     margin-top: 50px;
-    
+
 }
-.Filtro-Preco{
+
+.Filtro-Preco {
     display: flex;
     border-radius: 30px;
     border: 2px solid #000;
 
 }
-.Filtro-Preco h1{
+
+.Filtro-Preco h1 {
     font-size: 20px;
 
-
 }
+
 .filter_range {
-    -webkit-appearance: none; 
-    width: 15vw; 
-    height: 5px; 
-    background: #2A972E; 
-    outline: none; 
-    opacity: 0.7; 
-    -webkit-transition: .2s; 
+    -webkit-appearance: none;
+    width: 15vw;
+    height: 5px;
+    background: #2A972E;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
     transition: opacity .2s;
-  }
-  
-  .filter_range:hover {
-    opacity: 1; 
-  }
-  
-  .filter_range::-webkit-slider-thumb {
-    -webkit-appearance: none; 
+}
+
+.filter_range:hover {
+    opacity: 1;
+}
+
+.filter_range::-webkit-slider-thumb {
+    -webkit-appearance: none;
     appearance: none;
-    width: 20px; 
-    height: 20px; 
-    background: #000000; 
-    cursor: pointer; 
-    border-radius: 50%; 
-  }
-  
-  .filter_range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.filter_range::-moz-range-thumb {
     width: 20px;
     height: 20px;
     background: #007bff;
     cursor: pointer;
     border-radius: 50%;
-  }
+}
 
-.Filtro-Preco{
+.Filtro-Preco {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,21 +71,21 @@ align-items: center;
     border-radius: 30px;
     height: 200px;
     width: 250px;
-    
+
 }
 
-.Filtro-Bola-Linha{
+.Filtro-Bola-Linha {
     display: flex;
 }
 
-.linha{
+.linha {
     width: 200px;
-height: 2px;
+    height: 2px;
     stroke-width: 3px;
-stroke: #000;
+    stroke: #000;
 }
 
-.Bola{
+.Bola {
     width: 28px;
     height: 28px;
     flex-shrink: 0;
@@ -93,10 +94,10 @@ stroke: #000;
     background-color: #000;
 }
 
-.Filtro-Tamanho{
+.Filtro-Tamanho {
     display: flex;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
     background-color: #FFF;
     border-radius: 30px;
     max-width: 85%;
@@ -105,136 +106,139 @@ stroke: #000;
     border: 2px solid #000;
 }
 
-.Filtro-Tamanho h1{
+.Filtro-Tamanho h1 {
     font-size: 20px;
 }
-.Filtro-Tamanho h2{
-    font-size: 20px;
-  }
 
-.Tamanhos-tenis{
+.Filtro-Tamanho h2 {
+    font-size: 20px;
+}
+
+.Tamanhos-tenis {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
 }
 
 .check-button {
-    width: 30px; 
-    height: 30px; 
-    background-color: #ffffff; 
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
     border: 2px solid #000000;
-    border-radius: 50%; 
-    cursor: pointer; 
+    border-radius: 50%;
+    cursor: pointer;
     margin: 20px;
-  }
-  
-  .test{
+}
+
+.test {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
+}
 
-  .Filtro-Genero{
+.Filtro-Genero {
     display: flex;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
     background-color: #FFF;
     border-radius: 30px;
     max-width: 85%;
     margin-top: 50px;
     border-radius: 30px;
     border: 2px solid #000;
-  }
+}
 
-  .Filtro-Genero h1{
+.Filtro-Genero h1 {
     font-size: 20px;
-  }
-  .Filtro-Genero h2{
-    font-size: 20px;
-  }
+}
 
-.Generos{
+.Filtro-Genero h2 {
+    font-size: 20px;
+}
+
+.Generos {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.Filtro-Modelos{
+.Filtro-Modelos {
     display: flex;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
     background-color: #FFF;
     border-radius: 30px;
     max-width: 85%;
     margin-top: 50px;
 }
 
-.Modelos{
+.Modelos {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 
-.Filtro-Cor{
+.Filtro-Cor {
     display: flex;
     margin: 10px;
     align-items: center;
 }
 
-.Preto{
-    width: 56.9px;
-height: 56.072px;
-transform: rotate(0.211deg);
-border-radius: 100px;
-background: #000;
-cursor: pointer;
+.Preto {
+    width: 25px;
+    height: 25px;
+    transform: rotate(0.211deg);
+    border-radius: 100px;
+    background: #000;
+    cursor: pointer;
 }
 
-.Roxo{
-    width: 56.9px;
-height: 56.072px;
-transform: rotate(0.211deg);
-border-radius: 100px;
-background: rgba(57, 53, 246, 0.78);
-margin: 10px;
-cursor: pointer;
+.Roxo {
+    width: 25px;
+    height: 25px;
+    transform: rotate(0.211deg);
+    border-radius: 100px;
+    background: rgba(57, 53, 246, 0.78);
+    margin: 10px;
+    cursor: pointer;
 }
 
-.Rosa{
-    width: 56.9px;
-height: 56.072px;
-transform: rotate(0.211deg);
-border-radius: 100px;
-background: #F095C1;
-cursor: pointer;
-}
-.Marrom{
-    width: 56.9px;
-height: 56.072px;
-transform: rotate(0.211deg);
-border-radius: 100px;
-background: rgba(142, 97, 97, 0.85);
-cursor: pointer;
+.Rosa {
+    width: 25px;
+    height: 25px;
+    transform: rotate(0.211deg);
+    border-radius: 100px;
+    background: #F095C1;
+    cursor: pointer;
 }
 
-.Laranja{
-    width: 56.9px;
-height: 56.072px;
-transform: rotate(0.211deg);
-border-radius: 100px;
-background: #FE764B;
-margin: 10px;
-cursor: pointer;
+.Marrom {
+    width: 25px;
+    height: 25px;
+    transform: rotate(0.211deg);
+    border-radius: 100px;
+    background: rgba(142, 97, 97, 0.85);
+    cursor: pointer;
 }
 
-.Verde{
-    width: 56.9px;
-height: 56.072px;
-transform: rotate(0.211deg);
-border-radius: 100px;
-background: rgba(44, 89, 46, 0.79);
-cursor: pointer;
+.Laranja {
+    width: 25px;
+    height: 25px;
+    transform: rotate(0.211deg);
+    border-radius: 100px;
+    background: #FE764B;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Verde {
+    width: 25px;
+    height: 25px;
+    transform: rotate(0.211deg);
+    border-radius: 100px;
+    background: rgba(44, 89, 46, 0.79);
+    cursor: pointer;
 }
 
 
@@ -242,12 +246,12 @@ cursor: pointer;
 
 //////////////////////
 
-.Shoop-compra{
+.Shoop-compra {
     display: flex;
     flex-wrap: wrap;
 }
 
-.Compra-Linha01{
+.Compra-Linha01 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -259,8 +263,8 @@ cursor: pointer;
     padding: 30px;
 }
 
-.Compra-Linha01:hover{
-    
+.Compra-Linha01:hover {
+
     transition: transform 0.3s ease;
     padding: auto;
     margin-block-end: 50px;
@@ -268,22 +272,22 @@ cursor: pointer;
     transform: scale(1.1);
     opacity: 1;
     border-radius: 30px;
-    box-shadow: 0px 0px 10px #6b6b6b ;
+    box-shadow: 0px 0px 10px #6b6b6b;
 }
 
-.tenis-Preto{
+.tenis-Preto {
     width: 170px;
     height: 180px;
 }
 
-.Compra-Texto{
+.Compra-Texto {
     display: flex;
     border-radius: 19px;
-   background-color: rgba(177, 177, 177, 0.26);
-   width: 210px;
+    background-color: rgba(177, 177, 177, 0.26);
+    width: 210px;
 }
 
-.Compra-Estrelas img{
+.Compra-Estrelas img {
     width: 22px;
     height: 25px;
     margin: 1px;
@@ -291,12 +295,178 @@ cursor: pointer;
     cursor: pointer;
 }
 
-.Compra-Texto h1{
+.Compra-Texto h1 {
     text-align: center;
-    font-size:15px;
-  width: 590px;
+    font-size: 15px;
+    width: 590px;
 }
-.Compra-Preco h2{
+
+.Compra-Preco h2 {
     color: #2A972E;
 }
 
+@media (max-width: 768px) {
+
+    .Compra-Linha01 {
+        border-radius: 20px;
+        background-color: #FFF;
+        width: 120px;
+        height: 255px;
+        margin-top: 25px;
+        padding: 30px;
+    }
+
+    .Compra-Filtros {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 10px;
+    
+    }
+
+    .tenis-Preto {
+        width: 120px;
+        height: 140px;
+    }
+
+    .Compra-Texto {
+        display: flex;
+        border-radius: 19px;
+        background-color: rgba(177, 177, 177, 0.26);
+        width: 110px;
+    }
+    .Compra-Estrelas img {
+        width: 15px;
+        height: 15px;
+        margin: 1px;
+        margin-top: 12px;
+        cursor: pointer;
+    }
+
+    .Compra-Texto h1 {
+        text-align: center;
+        font-size: 10px;
+        width: 500px;
+    }
+    
+    .Compra-Preco h2 {
+        font-size: 12px;
+        color: #2A972E;
+    }
+
+    .Compra-Preco h3 {
+        font-size: 10px;
+        color: #000;
+    }
+
+
+    .Compra-Filtros {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    
+    }
+
+    
+    .Filtro-Preco {
+        display: flex;
+        border-radius: 30px;
+        border: 2px solid #000;
+    
+    }
+    
+    .Filtro-Preco h1 {
+        font-size: 15px;
+    }
+    .Filtro-Preco h2 {
+        font-size: 15px;
+    
+    }
+       
+    .Filtro-Preco {
+ 
+        height: 150px;
+        width: 150px;
+    
+    }
+    
+    .Filtro-Tamanho {
+
+        border-radius: 30px;
+        max-width: 75%;
+        margin-top: 20px;
+
+    }
+    
+    .Filtro-Tamanho h1 {
+        font-size: 15px;
+    }
+    
+    .Filtro-Tamanho h2 {
+        font-size: 15px;
+    }
+
+    .Filtro-Genero {
+        max-width: 75%;
+        margin-top: 20px;
+    }
+    
+    .Filtro-Genero h1 {
+        font-size: 15px;
+    }
+    
+    .Filtro-Genero h2 {
+        font-size: 15px;
+    }
+    
+    
+.Filtro-Cor {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.Preto {
+    width: 25px;
+    height: 25px;
+    transform: rotate(0.211deg);
+    border-radius: 100px;
+    background: #000;
+    cursor: pointer;
+}
+
+.Roxo {
+    width: 25px;
+    height: 25px;
+;
+}
+
+.Rosa {
+    width: 25px;
+    height: 25px;
+
+}
+
+.Marrom {
+    width: 25px;
+    height: 25px;
+ 
+}
+
+.Laranja {
+    width: 25px;
+    height: 25px;
+
+}
+
+.Verde {
+    width: 25px;
+    height: 25px;
+
+}
+
+   
+}

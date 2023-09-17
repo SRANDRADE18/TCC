@@ -1,15 +1,15 @@
-
-.Promo-tenis img{
+.Promo-tenis img {
   max-height: 100%;
   max-width: 100%;
 }
-.Promo-tenis01 img{
+
+.Promo-tenis01 img {
   margin-top: 15px;
   max-height: 100%;
   max-width: 100%;
 }
 
-.Compra-tenis{
+.Compra-tenis {
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
@@ -21,10 +21,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
 }
 
-.Tenis-01:hover{
+.Tenis-01:hover {
   transition: transform 0.3s ease;
   padding: auto;
   cursor: pointer;
@@ -35,63 +35,137 @@
 }
 
 
-.tenis{
+.tenis {
   width: 150px;
- height: 180px;
+  height: 180px;
 }
 
 .Infos-text {
   display: flex;
   border-radius: 19px;
- background-color: rgba(177, 177, 177, 0.26);
- width: 220px;
+  background-color: rgba(177, 177, 177, 0.26);
+  width: 220px;
 
 }
 
-.Infos-text h1{
-  color: black ;
+.Infos-text h1 {
+  color: black;
   text-align: center;
-  font-size:18px;
-width: 590px;
+  font-size: 18px;
+  width: 590px;
 
 }
 
-.info-compra h2{
-color: #2A972E;
+.info-compra h2 {
+  color: #2A972E;
 }
 
-.estrelas img{
+.estrelas img {
   width: 26px;
   height: 27.174px;
   margin-top: 12px;
 }
 
-.Tenis-Branco{
+.Tenis-Branco {
   display: flex;
   flex-direction: row;
   background: linear-gradient(180deg, #38B593 0%, #D9D9D9 35.09%, #C5C5C5 66.23%, #38B593 100%);
   flex-shrink: 0;
 }
-.Tenis-Branco img{
+
+.Tenis-Branco img {
   width: 500px;
   height: 500px;
 }
 
-.Texto1 h1{
-  
-  font-size:18px;
- padding: 55PX;
+.Texto1 h1 {
+
+  font-size: 18px;
+  padding: 55PX;
   width: 228px;
-text-align: center;
+  text-align: center;
 
 }
-.Texto3 h1{
-  font-size:18px;
+
+.Texto3 h1 {
+  font-size: 18px;
   margin: 90px;
   width: 228px;
-text-align: center;
+  text-align: center;
 }
 
-a{
+a {
   text-decoration: none;
 }
+
+
+@media (max-width: 768px) {
+
+  .Infos-text {
+    display: flex;
+    border-radius: 19px;
+    background-color: rgba(177, 177, 177, 0.26);
+    width: 130px;
+  }
+
+  .Infos-text h1 {
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    width: 500px;
+  }
+
+  .tenis {
+    width: 80px;
+    height: 120px;
+  }
+
+  .estrelas img {
+    width: 26px;
+    height: 20px;
+    margin-top: 12px;
+  }
+  
+  .info-compra h2 {
+    font-size: 12px;
+    color: #2A972E;
+  }
+
+  .info-compra h3{
+    font-size: 12px;
+  }
+
+
+  .Tenis-Branco {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(180deg, #38B593 0%, #D9D9D9 35.09%, #C5C5C5 66.23%, #38B593 100%);
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .Tenis-Branco img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .Texto1 h1 {
+  
+    font-size: 12px;
+    padding: 25PX;
+    width: 158px;
+    text-align: center;
+  
+  }
+  
+  .Texto3 h1 {
+    font-size: 12px;
+    margin: 40px;
+    width: 158px;
+    text-align: center;
+  }
+  
+
+}
+
+

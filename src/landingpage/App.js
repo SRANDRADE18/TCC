@@ -150,8 +150,6 @@ export default function landingPage () {
         </div>
         </div>
 
-
-
         </a>
 
       </div>
