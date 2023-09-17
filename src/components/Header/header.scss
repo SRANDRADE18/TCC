@@ -1,110 +1,128 @@
-.landing-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #38B593;
-    max-height: 100%;
-    max-width: 100%;
-    padding: 5px;
-  }
+.landing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #38B593;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 5px;
+}
 
-    .logo{
-    height: 60px;
-    width:  60px;
-  }
-      
-  .Landing-PT{
-    display: flex;
-    align-items: center;
-  }
+.conjunto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
+}
 
-  .Icons-page2{
-    max-height: 100%;
-  }
-  
-  .Icons-page2 img{
-    margin: 0px 15px;
-    width: 29px;
-    height: 29px;
-  }
-  
-  .Icons-page2 img:hover{
-    transition: transform 0.3s ease;
-    transform: scale(1.1);
-      width: auto;
-      height: auto;
-      cursor: pointer;
-      opacity: 1;
-  }
-  
-  .Icons-page1{
-    display: flex;
-    align-items: center;
-  }
-  .Infos-Page2{
-    display: flex;
-    align-items: center;
-  }
+.logo {
+  height: 60px;
+  width: 60px;
+}
 
-  
-  .input_Header {
-    text-align: center;
-    border-radius: 40px;
-    padding: 5px 0px; 
-    width: 250px;
-    outline: none;
-    border: none;
-    font-size: 14px;
-  }
+.icon-1 {
 
-  .input_Header:hover{
-    box-shadow: 0px 0px 10px #3a3a3a;
-  }
+  display: flex;
+  flex-direction: row;
+  padding: 0px 20px 0px 20px;
 
-  .Infos-Page1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #68C2AA;
-    max-height: 100%;
-    max-width: 100%;
-    padding: 5px 10px;
+}
 
-  }
-  
-  .Infos-Page1 img{
-    margin: 8px;
-   max-height: 20px;
-   max-width: 25px;
-  
-  }
+.icon-1 img {
+  height: 25px;
+  width: 25px;
+  margin: 0px 10px 0px 10px;
+}
 
-  .Infos-Page1 img:hover{
-    transition: transform 0.3s ease;
-    width: auto;
-    height: auto;
-    cursor: pointer;
-    transform: scale(1.5);
-    opacity: 1;
-  }
+.Buscas-infos {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 10px 0px 70px;
 
-  
-  .What-face{
-    display: flex;
-    align-items: flex-start;
-  }
-  .Insta-din{
-    display: flex;
-  }
-  .Buscas-infos{
-   display: flex;
-   justify-content: space-evenly;
-  }
-  .Buscas-infos a {
-    font-size: 12px;
-    font-family: Alata;
-    padding: 5px;
-    color: #FFF;
-  }
+}
+
+.Buscas-infos a {
+  font-size: 12px;
+  font-family: Alata;
+  margin: 10px;
+  color: #FFF;
+}
+
+.search-box {
+  display: flex;
+  position: relative;
+  left: 140px;
+
+}
+
+.search-box-input::placeholder {
+
+  color: #000000;
+  opacity: 0.4;
+}
+
+.search-box-input::-moz-placeholder {
+  color: #000000;
+}
+
+.search-box form {
+
+  display: flex;
+  border-radius: 50px;
+  background-color: #ffffff;
+  height: 35px;
+}
+
+.search-box:hover .search-box-input {
+
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 200px;
+
+}
+
+.search-box-input {
+  outline: 0;
+  font-size: 1.2em;
+  color: #000000;
+  width: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  transition: .55s;
+}
+
+.search-box-button {
+  display: flex;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: .8s;
+  background-image: url("../../assets/images/pesq.png");
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+  background-size: 17px;
+
+}
 
 
+
+
+.Icon-2 img {
+  height: 25px;
+  width: 25px;
+  margin: 10PX;
+  cursor: pointer;
+}
+
+.Icon-2 img:hover {
+  transition: transform 0.1s ease;
+  transform: scale(1.2);
+  cursor: pointer;
+  opacity: 1;
+
+}

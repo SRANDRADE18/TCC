@@ -4,71 +4,56 @@ import Coração from '../../assets/images/coracao 1.png';
 import Carrinho from '../../assets/images/carrinho-de-compras (1) 1.png';
 import Pessoa from '../../assets/images/do-utilizador 2.png';
 import Whatsapp from '../../assets/images/whatsapp 1.png';
-import Facebook from '../../assets/images/facebook.png';
 import instagram from '../../assets/images/instagram.png';
-import linkedin from '../../assets/images/linkedin.png';
 
-export default function Header(){
 
-    return(      
-        <div>
+export default function Header() {
 
-          <header className="landing-header">
+  return (
+    <div>
 
-         
+      <header className="landing-header">
+      <div className='conjunto'>
+        <img className='logo' src={Logo}></img>
 
-         <div className='Icons-page1'>
- 
-          <img className='logo' src={Logo}></img>
+        <div className='icon-1'>
+          <img src={instagram}></img>
+          <img src={Whatsapp}></img>
 
-          </div>
 
-          <input className='input_Header' type="search" placeholder='Pesquisar'/>
+        </div>
+       </div>
+        <div className='Buscas-infos'>
 
+          <a>ESPORTES</a>
+          <a>HOMENS</a>
+          <a>MULHERES</a>
+          <a>CRIANÇAS</a>
+
+        </div>
         
-
-         <div className='Icons-page2'>
-            <img src={Coração}></img>
-            <img src={Carrinho}></img>
-           <img src={Pessoa}></img>
-
-          </div>
-
-        
-
-          </header>
-    
-         <div className='Infos-Page1'>
-
-
-          <div className='What-face'>
-           <img src={Whatsapp}></img>
-           <img src={Facebook}></img>
-
-          </div>
-
-          <div className='Buscas-infos'>
-
-            <a>ESPORTES</a>
-            <a>HOMENS</a>
-            <a>MULHERES</a>
-            <a>CRIANÇAS</a>
-
-          </div>
-
-          <div className='Insta-din'>
-
-           <img src={linkedin}></img>
-           <img src={instagram}></img>
-
-          </div>
-
-
-
+        <div class="search-box">
+            
+            <form method="post" action="#">
+                <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa"/>
+                <button class="search-box-button"><i class="search-box-icone icon icon-search"></i></button>
+            
+            </form>
+            
+        </div>
           
+            
+        <div className='Icon-2'>
+          <img src={Coração}></img>
+          <img src={Carrinho}></img>
+          <img src={Pessoa}></img>
 
-         </div>
-      </div>
-    )
+        </div>
+
+       
+      </header>
+
+    </div>
+  )
 
 }
