@@ -35,18 +35,25 @@ export default function Admpage() {
                     <div className='ADM-Header'>
 
 
-                        <div className="hamburguer-icon">
-                            <div className="line"></div>
-                            <div className="line"></div>
-                            <div className="line"></div>
+                        <div className='ADM-Cabecalho'>
+
+                            <div className="hamburguer-icon">
+                                <div className="line"></div>
+                                <div className="line"></div>
+                                <div className="line"></div>
+
+                            </div>
+
+                            <div className='ADM-Pessoa'>
+
+                                <img src={Pessoa} />
+                                <h2> oLá, Sr.Andrade </h2>
+
+                            </div>
                         </div>
 
-                        <div className='ADM-Pessoa'>
 
-                            <img src={Pessoa} />
-                            <h2> oLá, Sr.Andrade </h2>
 
-                        </div>
 
                         <div className='VGN-Shoes'>
 
@@ -59,21 +66,24 @@ export default function Admpage() {
                                 </form>
                             </div>
 
-                            <div className='Sr-no'>
+                            <div>
+                                <div className='Sr-no'>
 
-                                <div>
+
                                     <h1>Sr no</h1>
                                     <h1>Organization</h1>
+                                    <h1>Action</h1>
+
                                 </div>
-                                <h1>Action</h1>
+
+                                <div className='Fulano'>
+                                   
+                                    <h1>Sr no</h1>
+                                    <h1>Organization</h1>
+                                    <h1>Action</h1>
+                                </div>
                             </div>
 
-                            <div className='Fulano'>
-                                <h1>1</h1>
-                                <h1>Sr no</h1>
-                                <h1>Organization</h1>
-                                <h1>Action</h1>
-                            </div>
 
 
                         </div>

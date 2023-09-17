@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './header.scss';
 import Logo from '../../assets/images/logo tcc02.png';
 import Coração from '../../assets/images/coracao 1.png';
@@ -16,16 +18,16 @@ export default function Header() {
     <div>
 
       <header className="landing-header">
-      <div className='conjunto'>
-        <img className='logo' src={Logo}></img>
+        <div className='conjunto'>
+          <img className='logo' src={Logo}></img>
 
-        <div className='icon-1'>
-          <img src={instagram}></img>
-          <img src={Whatsapp}></img>
+          <div className='icon-1'>
+            <img src={instagram}></img>
+            <img src={Whatsapp}></img>
 
 
+          </div>
         </div>
-       </div>
         <div className='Buscas-infos'>
 
           <a>ESPORTES</a>
@@ -34,26 +36,30 @@ export default function Header() {
           <a>CRIANÇAS</a>
 
         </div>
-        
+
         <div class="search-box">
-            
-            <form method="post" action="#">
-                <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa"/>
-                <button class="search-box-button"><i class="search-box-icone icon icon-search"></i></button>
-            
-            </form>
-            
+
+          <form method="post" action="#">
+            <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa" />
+            <button class="search-box-button"><i class="search-box-icone icon icon-search"></i></button>
+
+          </form>
+
         </div>
-          
-            
+
+
         <div className='Icon-2'>
           <img src={Coração}></img>
+          
           <img src={Carrinho}></img>
-          <img src={Pessoa}></img>
+
+          <Link to='/Criar_Conta'>
+            <img src={Pessoa}></img>
+          </Link>
 
         </div>
 
-       
+
       </header>
 
     </div>

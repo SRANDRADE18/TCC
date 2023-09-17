@@ -11,6 +11,7 @@ import Comprapt2 from './Compra_PT2/compra_pt2';
 import MeusDados from './Meus_Dados/dados';
 import Loginadm from './LoginADM/loginadm';
 import Admpage from './AdmPage/adm';
+import Admaddproduto from './AdmADDProduto/admProdutoadd';
 
 
 
@@ -29,6 +30,7 @@ root.render(
     <Route path='/MeusDados' element={<MeusDados/>}/>
     <Route path='/LoginADM' element={<Loginadm/>}/>
     <Route path='/Admpage' element={<Admpage/>}/>
+    <Route path='/Adicionar/Produto' element={<Admaddproduto/>}/>
   </Routes>
  </BrowserRouter>
 </React.StrictMode>

@@ -25,7 +25,7 @@ export default function landingPage() {
           <img src={PromoTenis}></img>
       </div>
 
-      <Link to='/Criar_Conta'> teu pai na minha cama</Link>
+    
       <div className='Compra-tenis'>
 
         <a href='http://localhost:3000/compra'>

@@ -52,14 +52,19 @@
 .ADM-Header {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 1px;
+}
 
+.ADM-Cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .ADM-Pessoa {
     display: flex;
     flex-direction: row;
-    margin-left: 1020px;
+    align-items: center;
 }
 
 .ADM-Pessoa img {
@@ -78,8 +83,6 @@
 
 .search-box {
     display: flex;
-
-
 
 }
 
@@ -143,8 +146,9 @@
     border-radius: 12px;
     background: #FFFDFD;
     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
-    width: 1077.613px;
-    height: 788.37px;
+    width: 85vw;
+    height: 100%;
+    padding: 15px;
 }
 
 .Shoes {
@@ -157,11 +161,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     background: #2A3042;
     color: #FFF;
-    width: 1077.613px;
-    height: 54.298px;
+
 }
 
 .Sr-no h1 {
@@ -172,19 +174,25 @@
     line-height: normal;
 }
 
+
+.Test01{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .Fulano {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: #ffffff;
-    width: 1077.613px;
-    height: 54.298px;
+    color: #000000;
+
 }
 .Fulano h1{
     font-family: Poppins;
     font-size: 17px;
     font-style: normal;
-    font-weight: 600;
     line-height: normal;
 }
