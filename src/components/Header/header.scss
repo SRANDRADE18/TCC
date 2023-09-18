@@ -34,6 +34,14 @@
   margin: 0px 10px 0px 10px;
 }
 
+.icon-1 img:hover {
+  transition: transform 0.1s ease;
+  transform: scale(1.2);
+  cursor: pointer;
+  opacity: 1;
+
+}
+
 .Buscas-infos {
   display: flex;
   justify-content: space-evenly;

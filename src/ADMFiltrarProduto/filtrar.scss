@@ -1,0 +1,194 @@
+.ADM-add {
+    display: flex;
+    flex-direction: column;
+}
+
+.adm-add {
+    display: flex;
+    flex-direction: row;
+}
+
+.Filtro-ADM-add {
+
+    background-color: #2A3042;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+}
+
+.Filtro-ADM-add p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Filtro-ADM-add h1 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hamburguer-icon {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .line {
+        width: 100%;
+        height: 4px;
+        background-color: #333;
+        border-radius: 2px;
+    }
+}
+
+.ADM-Header {
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+}
+
+.ADM-Cabecalho-add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 14px 0px rgba(36, 23, 23, 0.25);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.ADM-Pessoa-add {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.ADM-Pessoa-add img {
+    width: 19px;
+    height: 19px;
+    margin: 10px;
+}
+
+.ADM-Pessoa-add h2 {
+    color: #494949;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px;
+}
+
+.VGN-Shoes-filtar {
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    background: #FFFDFD;
+    box-shadow: 0px 4px 14px 0px rgba(36, 23, 23, 0.25);
+    width: 85vw;
+    max-height: 100%;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.Header-Filtar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header-Filtar h1 {
+    color: #000;
+    font-family: Archivo Black;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 40px;
+    background: #E3E3E3;
+    padding: 10px;
+}
+
+.Info-Tenis-Compra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Info-Tenis-Compra h1 {
+    color: #000;
+    font-family: Archivo Black;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.Info-Tenis-Compra h2 {
+    color: #000;
+    font-family: Archivo Black;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 140.565px;
+    height: 22.607px;
+
+}
+
+
+.main-page {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.menu {
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin: 10px 0;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.show-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.hide-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

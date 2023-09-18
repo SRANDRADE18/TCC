@@ -1,62 +1,141 @@
-.Login-Conta{
+.Conta-Test {
+    display: flex;
+    flex-wrap: nowrap;
+    background: rgba(235, 235, 235, 0.93);
+    justify-content: center;
+    padding: 70px;
     max-width: 100%;
     max-height: 100%;
-    background: linear-gradient(180deg, #EEE 0%, #31AA45 100%);
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
 }
 
-.Redes{
+.cadastro {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.Redes img{
+    justify-content: center;
+    margin-right: 10px;
+    background-color: #FFF;
+    border-radius: 10px;
     padding: 50px;
-    cursor: pointer;
-    transition: transform 0.3s ease;    
+    width: 30vw;
+    height: 54vh;
 }
 
-.Redes img:hover{
+.cadastro p {
+    color: #38B593;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.criar-conta h1 {
+    color: #38B593;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Infos-Cliente {
+    display: flex;
+    flex-direction: column;
+}
+
+.rede-sociaveis img {
+    width: 32px;
+    height: 32px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.rede-sociaveis img:hover {
     transform: scale(1.1);
-    width: auto;
-    height: auto;
+    padding: auto;
     opacity: 1;
 }
 
-
-
-.Login-Info{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.Login-Cliente{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.Input-Login{
-    width: 100vh;
-    height: 5vw;
-    border-radius: 40px;
+.Input-criar_conta {
+    padding: 5px 0px 10px 10px;
+    width: 25vw;
     background: #FFF;
-    margin-top: 100px;
-    text-align: center;
+    margin-top: 10px;
+    text-align: start;
+    border: 2px solid #f1f1f1;
+    outline: none;
+
+}
+.Input-criar_conta::placeholder{
+    color: #aaaaaa;
+
 }
 
-.Login-Button{
-    color: #FFF;
-    width: 260px;
-    height: 90px;
-    border-radius: 40px;
-    background: #3B0060;
-    cursor: pointer;
-    margin-top: 100px;
-    margin-block-end: 100px;
+
+
+.Bem-vindo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url(../assets/video/image.png);
+    background-position-x: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px 600px;
+    border-radius: 10px;
+    width: 30vw;
+    height: 70vh;
+
 }
-.Login-Button:hover{
-    background-color: #31AA45;
+
+.Bem-vindo02 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.Bem-vindo02 h1 {
+    color: #FFF;
+    margin: 0px 0px 20px 10px;
+}
+
+.Bem-vindo02 h2 {
+    color: #FFF;
+    width: 212px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.4%;
+    margin: 0px 0px 0px 25px;
+}
+
+.Bem-vindo02 button {
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: #FFF;
+    border-style: solid;
+    color: #FFF;
+    margin: 30px 0px 0px 50px;
+
+}
+
+.cadastro-button {
+    border-radius: 20px;
+    background: #38B593;
+    color: #FFF;
+    width: 150px;
+    height: 30px;
+    padding: 5px 0px 13px 0px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
