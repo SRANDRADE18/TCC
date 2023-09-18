@@ -11,26 +11,17 @@ import Baixar from '../assets/image 94.png';
 export default function Admaddproduto() {
 
     const [nome, setnome] = useState([]);
-    const [cpf, setcpf] = useState([]);
-    const [data, setdata] = useState([]);
+    const [cor, setcor] = useState([]);
+    const [tamanho, settamanho] = useState([]);
     const [Email, setEmail] = useState([]);
     const [senha, setsenha] = useState([]);
 
     function Adicionarproduto() {
+
+
         
-        useEffect(() => {
-          axios.post('localhost:6000/criarconta')
-            .then((response) => {
-              nome(response.data);
-              cpf(response.data);
-              data(response.data);
-              Email(response.data);
-              senha(response.data);
-            })
-            .catch((error) => {
-              console.error('Erro ao buscar produtos:', error);
-            });
-        }, []);
+    }
+
 
     return (
 
