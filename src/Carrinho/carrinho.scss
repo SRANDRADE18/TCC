@@ -1,0 +1,79 @@
+.Carrinho-Produto {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.Carrinho-Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.Carrinho-Info h1 {
+    color: #444;
+    font-family: Aoboshi One;
+    font-size: 20px;
+    line-height: normal;
+}
+
+.Carrinho-Info span {
+    color: #AE0606;
+}
+
+.Linha-Carrinho {
+    margin-left: 90px;
+    max-width: 85%;
+    height: 5px;
+    flex-shrink: 0;
+    stroke-width: 3px;
+    background-color: black;
+}
+
+.Tenis_galáxia {
+    width: 370px;
+    height: 264px;
+}
+
+.Test-Carrinho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px;
+    text-align: center;
+}
+
+.Carrinho-Salvar {
+    display: flex;
+    
+}
+
+.Carrinho-Salvar h2 {
+    color: #AE0606;
+    text-align: center;
+    font-family: Aoboshi One;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px;
+}
+
+.Carrinho-Salvar span {
+    width: 2px;
+    height: 40px;
+    background-color: #000;
+}
+
+.Carrinho-Preco h3 {
+    color: #000;
+    text-align: center;
+    font-family: Baloo Bhaina;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

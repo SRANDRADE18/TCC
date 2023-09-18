@@ -31,7 +31,7 @@ export default function Criar_conta() {
                 senha: senha
             });
         if (a.status === 401) {
-            setErro(r.data.erro);
+            setErro(a.data.erro);
         } else {
             Navigate('/adim');
         }
@@ -81,7 +81,8 @@ export default function Criar_conta() {
                         <input className='Input-criar_conta' type="search" placeholder='Senha' onChange={e => setsenha(e.target.value)} />
                     </div>
 
-                    <p> Já tem uma conta? <Link> Entrar. </Link></p>
+                    <p> Já tem uma conta? <Link to='/Tela_Login'> Entrar. </Link></p>
+
 
                     <button className='cadastro-button'> Criar Conta </button>
                 </div>

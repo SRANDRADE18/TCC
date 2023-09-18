@@ -13,6 +13,7 @@ import Loginadm from './LoginADM/loginadm';
 import Admpage from './AdmPage/adm';
 import Admaddproduto from './AdmADDProduto/admProdutoadd';
 import Filtraproduto from './ADMFiltrarProduto/filtrar';
+import Carrinho from './Carrinho/carrinho';
 
 
 
@@ -34,6 +35,7 @@ root.render(
     <Route path='/Admpage' element={<Admpage/>}/>
     <Route path='/Adicionar/Produto' element={<Admaddproduto/>}/>
     <Route path='/Filtrarproduto' element={<Filtraproduto/>}/>
+    <Route path='/Carrinho' element={<Carrinho/>}/>
   </Routes>
  </BrowserRouter>
 </React.StrictMode>
