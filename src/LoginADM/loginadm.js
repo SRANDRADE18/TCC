@@ -31,7 +31,7 @@ export default function Login_ADM(){
                     <input className='Input-ADM' type="search" placeholder='Senha'/>
                 </div>
                 
-                <p> Já tem uma conta? <Link> Entrar. </Link></p>
+                <br/>
 
                 <button className='cadastro-button'> Entrar </button>
            </div>
