@@ -2,13 +2,15 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
 import './App.scss';
-import PromoTenis from '../assets/images/img1 teniss.png';
 import Tenis01 from '../assets/images/tenis_vegano_shoes_esportivo_preto_ 3.png';
 import Estrela from '../assets/images/Vector.svg';
-import PromoTenis01 from '../assets/images/Tenis-info01.png';
+import TenisEsportivopreto from '../assets/images/tenis/tenis_esportivo_preto.svg'
 import TenisBranco from '../assets/images/Tenis-Branco.png';
 import Header from '../components/Header/header.js';
 import Rodape from '../components/Rodape/rodape';
+import quadradinhos from '../assets/images/qudrado.png';
+import tenisPlataforma from '../assets/images/tenis na plataforma.png';
+
 
 
 
@@ -19,13 +21,35 @@ export default function landingPage() {
     <div className="landing-Page">
 
 
+
       <Header />
 
       <div className='Promo-tenis'>
-          <img src={PromoTenis}></img>
+
+        <div className='texto'>
+          <h1>Produtos 100% VEGANOS</h1>
+          <p>Todos os produtos VGN Shoes são fabricados a partir de matérias-primas totalmente isentas de origem animal ou qualquer tipo de teste em animais. A VG Shoes tem o cuidado e responsabilidade de rastrear todo material que compõe os produtos, esse procedimento garante que nenhum tipo de borracha, poliuretano, cola, tecido, tintas ou até mesmo fôrmas e matrizes utilizadas na fabricação dos componentes tenham qualquer composição de origem animal. Além disso, existe a preocupação com o meio ambiente, por isso, prioriza-se o uso de materiais reciclados.</p>
+        </div>
+
+        <div className='plataforma'>
+
+          <div className='Quadrados'>
+            <img className='quadradinhos' src={quadradinhos} />
+            <img className='quadradinhos' src={quadradinhos} />
+            <img className='quadradinhos' src={quadradinhos} />
+            <img className='quadradinhos' src={quadradinhos} />
+            <img className='quadradinhos' src={quadradinhos} />
+            <img className='quadradinhos' src={quadradinhos} />
+          </div>
+
+
+          <img className='Tenis-Parado0' src={tenisPlataforma}></img>
+
+
+        </div>
       </div>
 
-    
+
       <div className='Compra-tenis'>
 
         <a href='http://localhost:3000/compra'>
@@ -157,7 +181,7 @@ export default function landingPage() {
 
 
       <div className='Promo-tenis01'>
-        <img src={PromoTenis01}></img>
+        <img className='tenis-Preto' src={TenisEsportivopreto}></img>
       </div>
 
       <div className='Tenis-Branco'>

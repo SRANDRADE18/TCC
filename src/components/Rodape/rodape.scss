@@ -1,67 +1,88 @@
-.rodape{
-    display: flex;
-    justify-content: center;
-    padding: 50px; 
-    flex-direction: column;
-    background: #38B593;
-    
-  }
-  
-  .linha {
+.rodape {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  flex-direction: column;
+  background: #38B593;
+
+}
+
+.linha {
   width: 80vw;
   height: 0.3vh;
   flex-shrink: 0;
-  background-color: #000000;
+  // background-color: #000000;//
   margin-top: 20px;
-  }
-  
-  .roda{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    border-top: #ffffff 1px solid;
-    border-bottom: #ffffff 1px solid;
-    margin-top: 20px;
-  }
-  
-  .roda img{
-    width: 400px;
-    height: 120px;
+}
+
+.roda {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  border-top: #ffffff 1px solid;
+  border-bottom: #ffffff 1px solid;
+  margin-top: 20px;
+  padding: 80px 0PX 80PX;
+}
+
+.rodape a {
+  color: #FFF;
+  font-family: Montserrat;
+  font: 14px 'Font1';
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+}
+
+.Roda-Test {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.roda img {
+  width: 300px;
+  height: 90px;
+  flex-shrink: 0;
+  margin-top: 50px;
+}
+
+.Social {
+  display: flex;
+  flex-direction: column;
+}
+
+.Social h1 {
+  font-size: 23px;
+  color: #F6F6F6;
+
+}
+
+.Social h2 {
+  font-size: 12px;
+  color: #F6F6F6;
+  margin-bottom: 7px;
+}
+
+@media (max-width: 768px) {
+  .roda img {
+    width: 210px;
+    height: 80px;
     flex-shrink: 0;
     margin-top: 100px;
   }
-  
-  .Social{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .Social h1{
-    font-size:25px;
-    color: #F6F6F6;
-  }
-  
-  .Social h2{
-    font-size:18px;
+
+  .Social h1 {
+    font-size: 18px;
     color: #F6F6F6;
   }
 
-  @media (max-width: 768px) {
-    .roda img{
-      width: 210px;
-      height: 80px;
-      flex-shrink: 0;
-      margin-top: 100px;
-    }
-
-    .Social h1{
-      font-size:18px;
-      color: #F6F6F6;
-    }
-
-    .Social h2{
-      font-size:12px;
-      color: #F6F6F6;
-    }
-    
+  .Social h2 {
+    font-size: 12px;
+    color: #F6F6F6;
   }
+
+}
