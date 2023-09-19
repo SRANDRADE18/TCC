@@ -206,7 +206,7 @@ function CheckButton() {
 
                   </a>
 
-                  <a href='http://localhost:3000/compra_pt2'>
+                  <a  href='http://localhost:3000/compra_pt2'>
                   <div className='Compra-Linha01'>
                     
                     <img className='tenis-Preto'  src={Tenis01}></img>

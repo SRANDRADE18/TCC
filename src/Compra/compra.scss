@@ -26,7 +26,7 @@
 }
 
 .Filtro-Preco h1 {
-    font-size: 20px;
+    font-size: 15px;
 
 }
 
@@ -107,11 +107,11 @@
 }
 
 .Filtro-Tamanho h1 {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .Filtro-Tamanho h2 {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .Tamanhos-tenis {
@@ -149,11 +149,11 @@
 }
 
 .Filtro-Genero h1 {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .Filtro-Genero h2 {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .Generos {
@@ -243,6 +243,10 @@
 
 
 
+a {
+    color: #000;
+    text-decoration: none;
+  }
 
 //////////////////////
 
@@ -257,16 +261,17 @@
     align-items: center;
     border-radius: 20px;
     background-color: #FFF;
-    width: 210px;
-    height: 385px;
+    width: 190px;
+    height: 345px;
     margin-top: 50px;
-    padding: 30px;
+    padding: 22px;
+    margin: 40PX;
 }
 
 .Compra-Linha01:hover {
 
     transition: transform 0.3s ease;
-    padding: auto;
+    
     margin-block-end: 50px;
     cursor: pointer;
     transform: scale(1.1);
@@ -276,8 +281,8 @@
 }
 
 .tenis-Preto {
-    width: 170px;
-    height: 180px;
+    width: 160px;
+    height: 170px;
 }
 
 .Compra-Texto {
@@ -297,13 +302,15 @@
 
 .Compra-Texto h1 {
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     width: 590px;
 }
 
 .Compra-Preco h2 {
+    font-size: 14px;
     color: #2A972E;
 }
+
 
 @media (max-width: 768px) {
 
@@ -322,7 +329,7 @@
         margin-left: 50px;
         margin-right: 50px;
         margin-top: 10px;
-    
+
     }
 
     .tenis-Preto {
@@ -336,6 +343,7 @@
         background-color: rgba(177, 177, 177, 0.26);
         width: 110px;
     }
+
     .Compra-Estrelas img {
         width: 15px;
         height: 15px;
@@ -349,7 +357,7 @@
         font-size: 10px;
         width: 500px;
     }
-    
+
     .Compra-Preco h2 {
         font-size: 12px;
         color: #2A972E;
@@ -367,32 +375,33 @@
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 20px;
-    
+
     }
 
-    
+
     .Filtro-Preco {
         display: flex;
         border-radius: 30px;
         border: 2px solid #000;
-    
+
     }
-    
+
     .Filtro-Preco h1 {
         font-size: 15px;
     }
+
     .Filtro-Preco h2 {
         font-size: 15px;
-    
+
     }
-       
+
     .Filtro-Preco {
- 
+
         height: 150px;
         width: 150px;
-    
+
     }
-    
+
     .Filtro-Tamanho {
 
         border-radius: 30px;
@@ -400,11 +409,11 @@
         margin-top: 20px;
 
     }
-    
+
     .Filtro-Tamanho h1 {
         font-size: 15px;
     }
-    
+
     .Filtro-Tamanho h2 {
         font-size: 15px;
     }
@@ -413,60 +422,60 @@
         max-width: 75%;
         margin-top: 20px;
     }
-    
+
     .Filtro-Genero h1 {
         font-size: 15px;
     }
-    
+
     .Filtro-Genero h2 {
         font-size: 15px;
     }
-    
-    
-.Filtro-Cor {
-    display: flex;
-    margin: 10px;
-    align-items: center;
-}
 
-.Preto {
-    width: 25px;
-    height: 25px;
-    transform: rotate(0.211deg);
-    border-radius: 100px;
-    background: #000;
-    cursor: pointer;
-}
 
-.Roxo {
-    width: 25px;
-    height: 25px;
-;
-}
+    .Filtro-Cor {
+        display: flex;
+        margin: 10px;
+        align-items: center;
+    }
 
-.Rosa {
-    width: 25px;
-    height: 25px;
+    .Preto {
+        width: 25px;
+        height: 25px;
+        transform: rotate(0.211deg);
+        border-radius: 100px;
+        background: #000;
+        cursor: pointer;
+    }
 
-}
+    .Roxo {
+        width: 25px;
+        height: 25px;
+        ;
+    }
 
-.Marrom {
-    width: 25px;
-    height: 25px;
- 
-}
+    .Rosa {
+        width: 25px;
+        height: 25px;
 
-.Laranja {
-    width: 25px;
-    height: 25px;
+    }
 
-}
+    .Marrom {
+        width: 25px;
+        height: 25px;
 
-.Verde {
-    width: 25px;
-    height: 25px;
+    }
 
-}
+    .Laranja {
+        width: 25px;
+        height: 25px;
 
-   
+    }
+
+    .Verde {
+        width: 25px;
+        height: 25px;
+
+    }
+
+
 }
