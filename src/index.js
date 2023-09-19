@@ -14,6 +14,7 @@ import Admpage from './AdmPage/adm';
 import Admaddproduto from './AdmADDProduto/admProdutoadd';
 import Filtraproduto from './ADMFiltrarProduto/filtrar';
 import Carrinho from './Carrinho/carrinho';
+import Header from './components/Header/header';
 
 
 
@@ -27,7 +28,7 @@ root.render(
     <Route path='' element={<LandingPages/>}/>
     <Route path='/compra' element={<Compra/>}/>
     <Route path='/Criar_Conta' element={<Criar_conta/>}/>
-    <Route path='/Tela_Login' element={<Tela_login/>}/>
+    <Route path='/Login' element={<Tela_login/>}/>
     <Route path='/UltimoPedido' element={<UltimoPedido/>}/>
     <Route path='/compra_pt2' element={<Comprapt2/>}/>
     <Route path='/MeusDados' element={<MeusDados/>}/>
@@ -36,6 +37,7 @@ root.render(
     <Route path='/Adicionar/Produto' element={<Admaddproduto/>}/>
     <Route path='/Filtrarproduto' element={<Filtraproduto/>}/>
     <Route path='/Carrinho' element={<Carrinho/>}/>
+    <Route path='/header' element={<Header/>}/>
   </Routes>
  </BrowserRouter>
 </React.StrictMode>

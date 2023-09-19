@@ -7,61 +7,67 @@ import Carrinho from '../../assets/images/carrinho-de-compras (1) 1.png';
 import Pessoa from '../../assets/images/do-utilizador 2.png';
 import Whatsapp from '../../assets/images/whatsapp 1.png';
 import instagram from '../../assets/images/instagram.png';
+import Menu from '../../assets/images/menu.png';
+import Pesquisa from '../../assets/images/pesq.png';
+import facebook from '../../assets/images/facebook (1).png'
+import Instagram from '../../assets/images/instagram (1).png'
+import Twitter from '../../assets/images/twitter.png'
 
 
-import React, { useState, useEffect } from 'react';
+
 
 
 export default function Header() {
 
+  function BTcarrinho(){
+    window.location.href = 'http://localhost:3000/Carrinho'
+  }
+
+  function BTuser(){
+    window.location.href = 'http://localhost:3000/login'
+  }
+
+
+
   return (
-    <div>
-
-      <header className="landing-header">
-        <div className='conjunto'>
-          <img className='logo' src={Logo}></img>
-
-          <div className='icon-1'>
-            <img src={instagram}></img>
-            <img src={Whatsapp}></img>
-
-
-          </div>
+    <div className='page-header'>
+      <div className='header'>
+        <div className='header-logo'>
+          <img className='img-logo' src={Logo}/>
         </div>
-        <div className='Buscas-infos'>
 
+        <div className='header-input'>
+          <input placeholder='O que você está procurando?'></input>
+          <button><img src={Pesquisa}/></button>
+        </div>
+
+        <div className='header-menu'>
+            <img src={Coração}/>
+            <img onClick={BTcarrinho} src={Carrinho}/>
+            <img onClick={BTuser} src={Pessoa}/>
+            <img id='menu' src={Menu} />
+        </div>
+
+      </div>
+
+      <div className='sub-menu'>
+        <div className='sub-menu-esq'>
+            <img src={Whatsapp}/>
+            <img src={facebook}/>
+        </div>
+
+        <div className='sub-menu-links'>
           <a>ESPORTES</a>
           <a>HOMENS</a>
           <a>MULHERES</a>
-          <a>CRIANÇAS</a>
-
         </div>
 
-        <div class="search-box">
-
-          <form method="post" action="#">
-            <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa" />
-            <button class="search-box-button"><i class="search-box-icone icon icon-search"></i></button>
-
-          </form>
-
+        <div className='sub-menu-dir'>
+          <img src={Instagram}/>
+          <img src={Twitter}/>
         </div>
 
-
-        <div className='Icon-2'>
-          <img src={Coração}></img>
-          
-          <img src={Carrinho}></img>
-
-          <Link to='/Criar_Conta'>
-            <img src={Pessoa}></img>
-          </Link>
-
-        </div>
-
-
-      </header>
-
+      </div>
     </div>
   )
 
