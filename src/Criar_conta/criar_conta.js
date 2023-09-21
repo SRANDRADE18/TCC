@@ -47,9 +47,9 @@ export default function Criar_conta() {
 
                 <div className='Bem-vindo'>
 
-                    <div className='Bem-vindo02'>
+                    <div className='Bem-vindo03'>
                         <h1>Seja Bem-Vindo</h1>
-                        <h2>Para se manter conectado conosco faça seu login com suas informações pessoais</h2>
+                        <p>Para se manter conectado conosco faça seu login com suas informações pessoais</p>
 
                         <button className='login-button'> Login </button>
 
