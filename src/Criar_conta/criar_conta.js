@@ -7,35 +7,23 @@ import Rodape from '../components/Rodape/rodape.js';
 import Google from '../assets/images/Redes_Sociais/Google.png';
 import facebook from '../assets/images/Redes_Sociais/facebook.png';
 import instagram from '../assets/images/Redes_Sociais/instagram.png';
+import Olho from '../assets/icons/visivel.png'
 
 
 export default function Criar_conta() {
 
+    //////////////////////////////////////////////////////////
+    const [senha, setSenha] = useState('');
+    const [mostrarSenha, setMostrarSenha] = useState(false);
 
-    const [nome, setnome] = useState('');
-    const [cpf, setcpf] = useState('');
-    const [data, setdata] = useState('');
-    const [Email, setEmail] = useState('');
-    const [senha, setsenha] = useState('');
-    const [erro, setErro] = useState('');
-    const Navigate=useNavigate();
+    const Olharsenha = (e) => {
+        setSenha(e.target.value);
+    };
 
-    async function Cadastar() {
-
-        const a = await axios.post('http:localhost:6000/criarconta',
-            {
-                nome: nome,
-                cpf: cpf,
-                data: data,
-                Email: Email,
-                senha: senha
-            });
-        if (a.status === 401) {
-            setErro(a.data.erro);
-        } else {
-            Navigate('/adim');
-        }
-    }
+    const handleMostrarSenhaToggle = () => {
+        setMostrarSenha(!mostrarSenha);
+    };
+    ///////////////////////////////////////////////////////////////   
 
     return (
 
@@ -74,11 +62,33 @@ export default function Criar_conta() {
                     </div>
 
                     <div className='Infos-Cliente'>
-                        <input className='Input-criar_conta' type="search" placeholder='Nome Completo' onChange={e => setnome(e.target.value)} />
-                        <input className='Input-criar_conta' type="search" placeholder='CPF' onChange={e => setcpf(e.target.value)} />
-                        <input className='Input-criar_conta' type="search" placeholder='Data de Nascimento' onChange={e => setdata(e.target.value)} />
-                        <input className='Input-criar_conta' type="search" placeholder='Email' onChange={e => setEmail(e.target.value)} />
-                        <input className='Input-criar_conta' type="search" placeholder='Senha' onChange={e => setsenha(e.target.value)} />
+
+                        <input className='Input-criar_conta' type="search" placeholder='Nome Completo' />
+
+                        <input className='Input-criar_conta' type="search" placeholder='CPF' />
+
+                        <input className='Input-criar_conta-data' type="date" placeholder='Data de Nascimento' />
+
+                        <input className='Input-criar_conta' type="search" placeholder='Email' />
+
+                        <div className='Button-Senha'>
+
+                            <input
+
+                                className='Input-criar_conta'
+                                placeholder='Senha'
+                                type={mostrarSenha ? 'text' : 'password'}
+                                id="senha"
+                                name="senha"
+                                value={senha}
+                                onChange={Olharsenha}
+                            />
+
+                            <img src={Olho} onClick={handleMostrarSenhaToggle} />
+
+                        </div>
+
+
                     </div>
 
                     <p> Já tem uma conta? <Link to='/Tela_Login'> Entrar. </Link></p>
