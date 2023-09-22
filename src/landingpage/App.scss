@@ -1,236 +1,316 @@
-.Promo-tenis {
-  max-height: 100%;
-  max-width: 100%;
-  padding: 6px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  background-image: url(../assets//images/Fundo.png);
-  background-repeat: no-repeat
-}
-
-.texto {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-
-  h1 {
-    font: 30px 'Font3';
-    color: #3B0060;
-    font-weight: 1000px;
+.landing-Page{
+  .Promo-tenis {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 6px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-image: url(../assets//images/Fundo.png);
+    background-repeat: no-repeat;
+    padding: 10px;
   }
 
-  p {
-    font: 16px 'Font1';
-    width: 580px;
-  }
-}
-
-
-.Plataforma {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-}
-
-.Tenis-Parado {
-  margin-top: 22px;
-}
-
-.Tenis-Parado:hover {
-  transition: transform 0.3s ease;
-  padding: auto;
-  cursor: pointer;
-  transform: scale(1.1);
-  opacity: 1;
-  border-radius: 20px;
-  transform: rotate(5deg);
-  transform: rotate(-5deg);
-  transition: transform 0.7s ease;
-}
-
-.Quadrados {
-  display: flex;
-  flex-direction: row;
-  margin-top: 18px;
-}
-
-.quadradinhos {
-  margin: -10px;
-}
-
-.Compra-tenis {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px;
-  margin-block-end: 20px;
-}
-
-
-.Tenis-01 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 330px;
-  width: 240px;
-  margin-top: 10px;
-
-}
-
-.Tenis-01:hover {
-  transition: transform 0.3s ease;
-  padding: auto;
-  cursor: pointer;
-  transform: scale(1.1);
-  opacity: 1;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px #929292;
-}
-
-
-.tenis {
-  width: 150px;
-  height: 180px;
-}
-
-.Infos-text {
-  display: flex;
-  border-radius: 19px;
-  background-color: rgba(177, 177, 177, 0.26);
-  width: 220px;
-
-  h1 {
-
-    color: black;
+  .texto {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    font: 14px 'Font1';
-    width: 590px;
+    justify-content: space-evenly;
+    
 
+    h1 {
+      font: 32px 'Font3';
+      color: #3B0060;
+      font-weight: 1000px;
+      margin: 0;
+    }
+
+    p {
+      font: 16px 'Font1';
+      width: 580px;
+      margin: 0;
+    }
   }
 
-}
+
+  .Plataforma {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .Tenis-Parado {
+    max-height: 255px;
+    max-width:  280px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Tenis-Parado:hover {
+    transition: transform 0.3s ease;
+    padding: auto;
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 1;
+    border-radius: 20px;
+    transform: rotate(5deg);
+    transform: rotate(-5deg);
+    transition: transform 0.7s ease;
+  }
+
+  .Quadrados {
+    display: flex;
+    flex-direction: row;
+    margin-top: 18px;
+  }
+
+  .quadradinhos {
+    margin: -10px;
+  }
+
+  .Compra-tenis {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    max-height:390px;
+    height: 100%;
+  }
 
 
+  .Tenis-01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 350px;
+    max-width: 240px;
+    height: 100%;
+    width: 100%;
+  }
 
-.info-compra h2 {
-  font: 14px 'Font1';
-  color: #2A972E;
-}
-
-.info-compra h3 {
-  font: 14px 'Font2';
-  color: #000;
-  font-style: normal;
-  font-weight: 1000;
-  line-height: normal;
-}
-
-.estrelas img {
-  width: 22px;
-  height: 20px;
-  margin-top: 12px;
-}
-
-.Tenis-Branco {
-  display: flex;
-  flex-direction: row;
-  background: linear-gradient(180deg, #38B593 0%, #D9D9D9 35.09%, #C5C5C5 66.23%, #38B593 100%);
-  flex-shrink: 0;
-}
-
-.Tenis-Branco img {
-  width: 500px;
-  height: 500px;
-}
-
-.Texto1 h1 {
-
-  font: 14px 'Font2';
-  padding: 55PX;
-  width: 228px;
-  text-align: center;
-
-}
-
-.Texto3 h1 {
-  font-size: 14px;
-  margin: 90px;
-  width: 228px;
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-}
+  .Tenis-01:hover {
+    transition: transform 0.3s ease;
+    padding: auto;
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 1;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #929292;
+  }
 
 
-
-
-@media (max-width: 768px) {
+  .tenis {
+    max-width: 180px;
+    max-height: 180px;
+    width: 100%;
+    height: 100%;
+  }
 
   .Infos-text {
     display: flex;
     border-radius: 19px;
     background-color: rgba(177, 177, 177, 0.26);
-    width: 130px;
+    max-width: 220px;
+    width: 100%;
+
+    h1 {
+
+      color: black;
+      text-align: center;
+      font: 14px 'Font1';
+      max-width: 590px;
+      width: 100%;
+
+      margin: 0;
+      padding: 8px;
+    }
+
   }
 
-  .Infos-text h1 {
-    color: black;
-    text-align: center;
-    font-size: 12px;
-    width: 500px;
-  }
 
-  .tenis {
-    width: 80px;
-    height: 120px;
-  }
-
-  .estrelas img {
-    width: 26px;
-    height: 20px;
-    margin-top: 12px;
-  }
 
   .info-compra h2 {
-    font-size: 12px;
+    font: 14px 'Font1';
     color: #2A972E;
+    margin: 0;
   }
 
   .info-compra h3 {
-    font-size: 12px;
+    font: 14px 'Font2';
+    color: #000;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: normal;
+    margin: 0;
   }
 
+  .estrelas img {
+    max-width: 22px;
+    max-height: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Promo-tenis01{
+    display:  flex;
+    flex-direction: row;
+    background-color: #f6f6f6;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+
+  .tenis-Preto{
+    max-width: 300px ;
+    max-height: 300px ;
+    width: 100% ;
+  }
+
+  .promo-tenis-text{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+  }
+
+  .promo-tenis-text h1{
+    font-size: 36px;
+    font-weight: 900;
+    font-family: Font1 ;
+    letter-spacing: 1px;
+  }
+
+  .promo-tenis-text label{
+    color: #3B0060;
+  }
+
+  .promo-tenis-text p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Font1;
+    text-align: center;
+    line-height: 20px;
+  }
 
   .Tenis-Branco {
     display: flex;
     flex-direction: row;
-    background: linear-gradient(180deg, #38B593 0%, #D9D9D9 35.09%, #C5C5C5 66.23%, #38B593 100%);
-    max-width: 100%;
-    max-height: 100%;
+    justify-content: space-around;
+    background: linear-gradient(180deg, #f6f6f6 0%, #d6d6d6 35.09%, #65bea7 66.23%, #38B593 100%);
+    flex-shrink: 0;
+    height: auto;
+    padding: 20px;
+  }
+
+  .Textos-103{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .Tenis-Branco img {
-    width: 300px;
-    height: 300px;
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Texto1{
+    display: flex;
+    align-items: center;
   }
 
   .Texto1 h1 {
 
-    font-size: 12px;
-    padding: 25PX;
-    width: 158px;
+    font: 14px 'Font2';
+    max-width: 228px;
+    width: 100%;
     text-align: center;
 
   }
 
   .Texto3 h1 {
-    font-size: 12px;
-    margin: 40px;
-    width: 158px;
+    font-size: 14px;
+    max-width: 228px;
+    width: 100%;
     text-align: center;
   }
 
+  a {
+    text-decoration: none;
+  }
 
+
+
+
+  @media (max-width: 768px) {
+
+    .Infos-text {
+      display: flex;
+      border-radius: 19px;
+      background-color: rgba(177, 177, 177, 0.26);
+      width: 130px;
+    }
+
+    .Infos-text h1 {
+      color: black;
+      text-align: center;
+      font-size: 12px;
+      width: 500px;
+    }
+
+    .tenis {
+      width: 80px;
+      height: 120px;
+    }
+
+    .estrelas img {
+      width: 26px;
+      height: 20px;
+      margin-top: 12px;
+    }
+
+    .info-compra h2 {
+      font-size: 12px;
+      color: #2A972E;
+    }
+
+    .info-compra h3 {
+      font-size: 12px;
+    }
+
+
+
+
+    .Tenis-Branco {
+      display: flex;
+      flex-direction: row;
+      background: linear-gradient(180deg, #38B593 0%, #D9D9D9 35.09%, #C5C5C5 66.23%, #38B593 100%);
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .Tenis-Branco img {
+      width: 300px;
+      height: 300px;
+    }
+
+    .Texto1 h1 {
+
+      font-size: 12px;
+      padding: 25PX;
+      width: 158px;
+      text-align: center;
+
+    }
+
+    .Texto3 h1 {
+      font-size: 12px;
+      margin: 40px;
+      width: 158px;
+      text-align: center;
+    }
+
+
+  }
 }
