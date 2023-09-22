@@ -8,6 +8,7 @@ import Google from '../assets/images/Redes_Sociais/Google.png';
 import facebook from '../assets/images/Redes_Sociais/facebook.png';
 import instagram from '../assets/images/Redes_Sociais/instagram.png';
 import Olho from '../assets/icons/visivel.png'
+import Fundo from '../assets/video/image.png'
 
 
 export default function Criar_conta() {
@@ -23,6 +24,7 @@ export default function Criar_conta() {
     const handleMostrarSenhaToggle = () => {
         setMostrarSenha(!mostrarSenha);
     };
+
     ///////////////////////////////////////////////////////////////   
 
     return (
@@ -33,20 +35,18 @@ export default function Criar_conta() {
 
             <div className='Conta-Test'>
 
-                <div className='Bem-vindo'>
+                <div className='Bem-vindo02'>
 
                     <div className='Bem-vindo03'>
                         <h1>Seja Bem-Vindo</h1>
                         <p>Para se manter conectado conosco faça seu login com suas informações pessoais</p>
 
                         <button className='login-button'> Login </button>
-
-
                     </div>
 
                 </div>
 
-                <div className='cadastro'>
+                <div className='cadastro02'>
                     <div className='img'>
 
                     </div>
@@ -67,7 +67,7 @@ export default function Criar_conta() {
 
                         <input className='Input-criar_conta' type="search" placeholder='CPF' />
 
-                        <input className='Input-criar_conta-data' type="date" placeholder='Data de Nascimento' />
+                        <input className='Input-criar_conta-data' type="search" placeholder='Data de Nascimento' />
 
                         <input className='Input-criar_conta' type="search" placeholder='Email' />
 
@@ -84,9 +84,10 @@ export default function Criar_conta() {
                                 onChange={Olharsenha}
                             />
 
-                            <img src={Olho} onClick={handleMostrarSenhaToggle} />
+                            <button src={Olho} onClick={handleMostrarSenhaToggle} />
 
                         </div>
+
 
 
                     </div>

@@ -35,11 +35,12 @@ export default function Meusdados() {
                 <div className='Conta-Dados'>
 
                     <img src={Pessoa} />
-                    <h2> oLá, Sr.Andrade </h2>
-
+                    <h2> OLá, Lidio </h2>
+                    
                 </div>
 
                 <div className='Dados-Usuario'>
+                    
 
                     <div className='acao-MeusDados'>
 
