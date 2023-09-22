@@ -7,7 +7,7 @@ import Rodape from '../components/Rodape/rodape.js';
 import Tenis01 from '../assets/images/tenis_vegano_shoes_esportivo_preto_ 3.png';
 import Estrela from '../assets/images/Vector.svg';
 import TenisRosa from '../assets/images/tenis/Tenis Rosa.png'
-import TenisEsportivopreto from '../assets/images/tenis/tenis_esportivo_preto.svg'
+import TenisEsportivopreto from '../assets/images/tenis/tenis_vegano_shoes_easeful_preto.png'
 import TenisPretoComlaranja from '../assets/images/tenis/Tenis_preto_laranja.png'
 import Sapatilha from '../assets/images/tenis/Sapatilha.png'
 import TenisCoral from '../assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png'

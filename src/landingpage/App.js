@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
 import './App.scss';
-import Tenis01 from '../assets/images/tenis_vegano_shoes_esportivo_preto_ 3.png';
+import Tenis012 from '../assets/images/tenis_vegano_shoes_esportivo_preto_ 3.png';
 import Estrela from '../assets/images/Vector.svg';
-import TenisEsportivopreto from '../assets/images/tenis/tenis_esportivo_preto.svg'
+import TenisEsportivopreto from '../assets/images/tenis/tenis_vegano_shoes_easeful_preto.png'
 import TenisBranco from '../assets/images/Tenis-Branco.png';
 import Header from '../components/Header/header.js';
 import Rodape from '../components/Rodape/rodape';
@@ -43,7 +43,7 @@ export default function landingPage() {
           </div>
 
 
-          <img className='Tenis-Parado0' src={tenisPlataforma}></img>
+          <img className='Tenis-Parado' src={tenisPlataforma}></img>
 
 
         </div>
@@ -56,7 +56,7 @@ export default function landingPage() {
 
           <div className='Tenis-01'>
 
-            <img className='tenis' src={Tenis01}></img>
+            <img className='tenis' src={Tenis012}></img>
             <div className='infos-tenis01'>
 
               <div className='Infos-text'>
@@ -88,7 +88,7 @@ export default function landingPage() {
           <div className='Tenis-01'>
 
 
-            <img className='tenis' src={Tenis01}></img>
+            <img className='tenis' src={Tenis012}></img>
             <div className='infos-tenis01'>
 
               <div className='Infos-text'>
@@ -119,7 +119,7 @@ export default function landingPage() {
 
           <div className='Tenis-01'>
 
-            <img className='tenis' src={Tenis01}></img>
+            <img className='tenis' src={Tenis012}></img>
             <div className='infos-tenis01'>
 
               <div className='Infos-text'>
@@ -150,7 +150,7 @@ export default function landingPage() {
 
           <div className='Tenis-01'>
 
-            <img className='tenis' src={Tenis01}></img>
+            <img className='tenis' src={Tenis012}></img>
             <div className='infos-tenis01'>
 
               <div className='Infos-text'>
@@ -182,6 +182,11 @@ export default function landingPage() {
 
       <div className='Promo-tenis01'>
         <img className='tenis-Preto' src={TenisEsportivopreto}></img>
+        <div className='promo-tenis-text'>
+          <h1> <label>ESTILO </label> INOVADOR</h1>
+          <p> Os novos tênis veganos combinam design moderno e contemporâneo, sem comprometer os valores éticos. Eles seguem as últimas tendências da moda, com uma variedade de estilos, cores e materiais que atendem aos gostos e preferências de todas as pessoas</p>
+
+        </div>
       </div>
 
       <div className='Tenis-Branco'>

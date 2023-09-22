@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import Header from '../components/Header/header';
 import Rodape from '../components/Rodape/rodape.js';
-import TenisEsportivopreto from '../assets/images/tenis/tenis_esportivo_preto.svg'
+import TenisEsportivopreto from '../assets/images/tenis/tenis_vegano_shoes_easeful_preto.png'
 import Tenis1 from '../assets/images/compra_pt2/Tenis-img1.png'
 import Tenis2 from '../assets/images/compra_pt2/Tenis-img2.png'
 import Tenis3 from '../assets/images/compra_pt2/Tenis-img3.png'
