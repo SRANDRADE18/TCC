@@ -1,141 +1,154 @@
-.Conta-Test {
-    display: flex;
-    flex-wrap: nowrap;
-    background: rgba(235, 235, 235, 0.93);
-    justify-content: center;
-    padding: 70px;
-    max-width: 100%;
-    max-height: 100%;
-}
+.tela-login {
 
-.cadastro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    background-color: #FFF;
-    border-radius: 10px;
-    padding: 50px;
-    width: 30vw;
-    height: 54vh;
-}
 
-.cadastro p {
-    color: #38B593;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+    .Conta-Test {
+        display: flex;
+        flex-wrap: nowrap;
+        background: rgba(235, 235, 235, 0.93);
+        justify-content: center;
+        align-items: center;
+        padding: 70px;
+        max-width: 100%;
+        max-height: 100%;
+    }
 
-.criar-conta h1 {
-    color: #38B593;
-    font-family: Montserrat;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+    .cadastro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        background-color: #FFF;
+        border-radius: 10px;
+        max-width: 100%;
+        max-height: 100%;
+        width: 341px;
+        height: 470px;
 
-.Infos-Cliente {
-    display: flex;
-    flex-direction: column;
-}
+        p {
+            color: #38B593;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
 
-.rede-sociaveis img {
-    width: 32px;
-    height: 32px;
-    margin: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
+        button {
+            border-radius: 20px;
+            background: #38B593;
+            color: #FFF;
+            width: 150px;
+            height: 30px;
+            padding: 5px 0px 13px 0px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+        }
 
-.rede-sociaveis img:hover {
-    transform: scale(1.1);
-    padding: auto;
-    opacity: 1;
-}
-
-.Input-criar_conta {
-    padding: 5px 0px 10px 10px;
-    width: 25vw;
-    background: #FFF;
-    margin-top: 10px;
-    text-align: start;
-    border: 2px solid #f1f1f1;
-    outline: none;
-
-}
-.Input-criar_conta::placeholder{
-    color: #aaaaaa;
-
-}
+        input {
+            padding: 5px 0px 10px 0px;
+            max-width: 200px;
+            width: 100%;
+            margin-top: 10px;
+            text-align: start;
+            border: 2px solid #656060;
+            outline: none;
+            cursor: pointer;
+        }
+    }
 
 
 
-.Bem-vindo {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-image: url(../assets/video/image.png);
-    background-position-x: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 500px 600px;
-    border-radius: 10px;
-    width: 30vw;
-    height: 70vh;
+    .criar-conta h1 {
+        color: #38B593;
+        font-family: Montserrat;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
 
-}
+    .infos-cliente-login {
+        display: flex;
+        flex-direction: column;
+    }
 
-.Bem-vindo02 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
+    .rede-sociaveis img {
+        width: 32px;
+        height: 32px;
+        margin: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
 
-.Bem-vindo02 h1 {
-    color: #FFF;
-    margin: 0px 0px 20px 10px;
-}
+    .rede-sociaveis img:hover {
+        transform: scale(1.1);
+        padding: auto;
+        opacity: 1;
+    }
 
-.Bem-vindo02 h2 {
-    color: #FFF;
-    width: 212px;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140.4%;
-    margin: 0px 0px 0px 25px;
-}
 
-.Bem-vindo02 button {
-    border-radius: 20px;
-    width: 150px;
-    height: 30px;
-    cursor: pointer;
-    background-color: transparent;
-    border-color: #FFF;
-    border-style: solid;
-    color: #FFF;
-    margin: 30px 0px 0px 50px;
 
-}
+    .Bem-vindo {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background: #06A67E;
+        justify-content: center;
+        border-radius: 10px;
+        max-width: 100%;
+        max-height: 100%;
+        width: 321px;
+        height: 470px;
 
-.cadastro-button {
-    border-radius: 20px;
-    background: #38B593;
-    color: #FFF;
-    width: 150px;
-    height: 30px;
-    padding: 5px 0px 13px 0px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
+
+    }
+
+    .Bem-vindo-login {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        p {
+            color: #FFF;
+            width: 170px;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140.4%;
+        }
+
+        button {
+            text-align: center;
+            border-radius: 20px;
+            background: #38B593;
+            color: #FFF;
+            padding: 5px 50px 13px 50px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+
+    
+
+
+
+
 }

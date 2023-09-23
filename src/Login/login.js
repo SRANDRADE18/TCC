@@ -12,7 +12,7 @@ import instagram from '../assets/images/Redes_Sociais/instagram.png';
 export default function Login() {
 
     return (
-        <div className='Criar-Conta'>
+        <div className='tela-login'>
 
             <Header />
 
@@ -20,11 +20,11 @@ export default function Login() {
 
                 <div className='Bem-vindo'>
 
-                    <div className='Bem-vindo02'>
+                    <div className='Bem-vindo-login'>
                         <h1>Seja Bem-Vindo</h1>
-                        <h2>Para se manter conectado conosco faça seu login com suas informações pessoais</h2>
+                        <p>Para se manter conectado conosco faça seu login com suas informações pessoais</p>
 
-                        <button className='login-button'> Login </button>
+                        <button> Login </button>
 
 
                     </div>
@@ -47,15 +47,15 @@ export default function Login() {
                         <img src={instagram} />
                     </div>
 
-                    <div className='Infos-Cliente'>
-                        <input className='Input-criar_conta' type="search" placeholder='Nome Completo' />
-                        <input className='Input-criar_conta' type="search" placeholder='Email' />
-                        <input className='Input-criar_conta' type="search" placeholder='Senha' />
+                    <div className='infos-cliente-login'>
+            
+                        <input  type="search" placeholder='Email' />
+                        <input  type="search" placeholder='Senha' />
                     </div>
 
                     <p>Não tem uma conta <Link to='/Criar_Conta'> Crie. </Link></p>
 
-                    <button className='cadastro-button'> Criar Conta </button>
+                    <button> Criar Conta </button>
                     
                 </div>
 
