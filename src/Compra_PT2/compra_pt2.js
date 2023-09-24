@@ -15,7 +15,7 @@ import Estrela from '../assets/images/Vector.svg';
     export default function compraPt2(){
         return(
 
-            <div className='Pagina_Compra-pt2'>
+            <div className='pagina-compra-pt2'>
 
                 <Header/>
 
