@@ -9,7 +9,7 @@ import Tenis_galáxia from '../assets/images/tenis/Tenis_galáxia.png'
 export default function Carrinho() {
 
     return (
-        <div className='Carrinho-Pagina'>
+        <div className='carrinho-pagina'>
             <Header />
 
             <div className='Carrinho'>
