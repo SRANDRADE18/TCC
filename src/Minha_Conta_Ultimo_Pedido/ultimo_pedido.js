@@ -19,7 +19,7 @@ export default function UltimoPedido(){
 
 return(
 
-    <div className='pagina-ultimoPedido'>
+    <div className='pagina-ultimopedido'>
         <Header/>
 
         <div className='Minha-conta'>
