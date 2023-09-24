@@ -25,7 +25,7 @@ export default function Admaddproduto() {
 
     return (
 
-        <div className='ADM-page'>
+        <div className='adm-page'>
 
             <Header />
 
