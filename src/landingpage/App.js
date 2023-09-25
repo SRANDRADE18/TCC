@@ -79,6 +79,7 @@ export default function landingPage() {
               </div>
 
             </div>
+
           </div>
 
         </a>
@@ -181,12 +182,14 @@ export default function landingPage() {
 
 
       <div className='Promo-tenis01'>
+
         <img className='tenis-Preto' src={TenisEsportivopreto}></img>
         <div className='promo-tenis-text'>
           <h1> <label>ESTILO </label> INOVADOR</h1>
           <p> Os novos tênis veganos combinam design moderno e contemporâneo, sem comprometer os valores éticos. Eles seguem as últimas tendências da moda, com uma variedade de estilos, cores e materiais que atendem aos gostos e preferências de todas as pessoas</p>
 
         </div>
+
       </div>
 
       <div className='Tenis-Branco'>

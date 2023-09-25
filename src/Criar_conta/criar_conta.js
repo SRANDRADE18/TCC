@@ -46,7 +46,7 @@ export default function Criar_conta() {
 
                 </div>
 
-                <div className='cadastro02'>
+                <div className='cadastro-cliente'>
                     <div className='img'>
 
                     </div>
@@ -61,7 +61,7 @@ export default function Criar_conta() {
                         <img src={instagram} />
                     </div>
 
-                    <div className='Infos-Cliente'>
+                    <div className='infos-cliente'>
 
                         <input className='Input-criar_conta' type="search" placeholder='Nome Completo' />
 

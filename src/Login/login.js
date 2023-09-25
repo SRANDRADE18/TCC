@@ -20,7 +20,7 @@ export default function Login() {
 
                 <div className='Bem-vindo'>
 
-                    <div className='Bem-vindo-login'>
+                    <div className='bem-vindo-login'>
                         <h1>Seja Bem-Vindo</h1>
                         <p>Para se manter conectado conosco faça seu login com suas informações pessoais</p>
 
