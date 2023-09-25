@@ -14,6 +14,11 @@ import Fundo from '../assets/video/image.png'
 export default function Criar_conta() {
 
     //////////////////////////////////////////////////////////
+    const [nome, setNome] = useState('')
+    const [cpf, setCpf] = useState('')
+    const [data, setData] = useState('')
+    const [email, setEmail] = useState('')
+    
     const [senha, setSenha] = useState('');
     const [mostrarSenha, setMostrarSenha] = useState(false);
 
@@ -24,6 +29,21 @@ export default function Criar_conta() {
     const handleMostrarSenhaToggle = () => {
         setMostrarSenha(!mostrarSenha);
     };
+
+
+
+    async function cadastrar(){
+        let cliente= {
+            nome: nome,
+            cpf: cpf,
+            data: data,
+            email: email,
+            senha: senha
+        };
+
+        let r = await axios.post('http://localhost:6000/criarconta', cliente)
+    
+    }
 
     ///////////////////////////////////////////////////////////////   
 
@@ -63,13 +83,13 @@ export default function Criar_conta() {
 
                     <div className='infos-cliente'>
 
-                        <input className='Input-criar_conta' type="search" placeholder='Nome Completo' />
+                        <input className='Input-criar_conta' type="search" placeholder='Nome Completo'value={nome} onChange={e => (setNome(e.target.value))} />
 
-                        <input className='Input-criar_conta' type="search" placeholder='CPF' />
+                        <input className='Input-criar_conta' type="search" placeholder='CPF' value={cpf} onChange={e => (setCpf(e.target.value))} />
 
-                        <input className='Input-criar_conta-data' type="search" placeholder='Data de Nascimento' />
+                        <input className='Input-criar_conta-data' type="search" placeholder='data' value={data} onChange={e => (setData(e.target.value))} />
 
-                        <input className='Input-criar_conta' type="search" placeholder='Email' />
+                        <input className='Input-criar_conta' type="search" placeholder='Email' value={email} onChange={e => (setEmail(e.target.value))} />
 
                         <div className='Button-Senha'>
 
@@ -95,9 +115,26 @@ export default function Criar_conta() {
                     <p> Já tem uma conta? <Link to='/Tela_Login'> Entrar. </Link></p>
 
 
-                    <button className='cadastro-button'> Criar Conta </button>
+                    <button className='cadastro-button' onClick={cadastrar}> Criar Conta </button>
                 </div>
 
+                <div>
+                    <p>
+                    {nome}
+                    </p>
+                    <p>
+                    {cpf}
+                    </p>
+                    <p>
+                    {data}
+                    </p>
+                    <p>
+                    {email}
+                    </p>
+                    <p>
+                    {senha}
+                    </p>
+                </div>
 
             </div>
 
