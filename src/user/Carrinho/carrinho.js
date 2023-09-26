@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import Header from '../components/Header/header.js';
 import Rodape from '../components/Rodape/rodape.js';
-import Tenis_galáxia from '../assets/images/tenis/Tenis_galáxia.png'
+import Tenis_galáxia from '../../../public/assets/images/tenis/Tenis_galáxia.png'
 
 export default function Carrinho() {
 
