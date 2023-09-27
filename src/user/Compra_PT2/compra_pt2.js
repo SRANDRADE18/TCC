@@ -2,14 +2,14 @@ import './compra_pt2.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
-import Header from '../components/Header/header';
-import Rodape from '../components/Rodape/rodape.js';
-import TenisEsportivopreto from '../assets/images/tenis/tenis_vegano_shoes_easeful_preto.png'
-import Tenis1 from '../assets/images/compra_pt2/Tenis-img1.png'
-import Tenis2 from '../assets/images/compra_pt2/Tenis-img2.png'
-import Tenis3 from '../assets/images/compra_pt2/Tenis-img3.png'
-import Tenis4 from '../assets/images/compra_pt2/Tenis-img4.png'
-import Estrela from '../assets/images/Vector.svg';
+import Header from '../../components/Header/header';
+import Rodape from '../../components/Rodape/rodape.js';
+import TenisEsportivopreto from '../../assets/images/tenis/tenis_vegano_shoes_easeful_preto.png'
+import Tenis1 from '../../assets/images/compra_pt2/Tenis-img1.png'
+import Tenis2 from '../../assets/images/compra_pt2/Tenis-img2.png'
+import Tenis3 from '../../assets/images/compra_pt2/Tenis-img3.png'
+import Tenis4 from '../../assets/images/compra_pt2/Tenis-img4.png'
+import Estrela from '../../assets/images/Vector.svg';
 
 
     export default function compraPt2(){

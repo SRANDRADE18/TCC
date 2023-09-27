@@ -2,17 +2,17 @@ import './ultimo_pedido.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
-import Header from '../components/Header/header.js';
-import Rodape from '../components/Rodape/rodape.js';
-import Pedidos from '../assets/images/Minha_Conta/monitorando 1.png'
-import troca from '../assets/images/Minha_Conta/troca 1.png'
-import Pessoa from '../assets/images/Minha_Conta/do-utilizador 3.png'
-import pedidos from '../assets/images/Minha_Conta/monitorando 1.png'
-import cartoes from '../assets/images/Minha_Conta/cartoes.png'
-import saida from '../assets/images/Minha_Conta/saida.png'
-import casa from '../assets/images/Minha_Conta/casa.png'
-import Tenis from '../assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png'
-import Status from '../assets/images/Minha_Conta/Status.png'
+import Header from '../../components/Header/header.js';
+import Rodape from '../../components/Rodape/rodape.js';
+import Pedidos from '../../assets/images/Minha_Conta/monitorando 1.png'
+import troca from '../../assets/images/Minha_Conta/troca 1.png'
+import Pessoa from '../../assets/images/Minha_Conta/do-utilizador 3.png'
+import pedidos from '../../assets/images/Minha_Conta/monitorando 1.png'
+import cartoes from '../../assets/images/Minha_Conta/cartoes.png'
+import saida from '../../assets/images/Minha_Conta/saida.png'
+import casa from '../../assets/images/Minha_Conta/casa.png'
+import Tenis from '../../assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png'
+import Status from '../../assets/images/Minha_Conta/Status.png'
 
 
 export default function UltimoPedido(){

@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
 import './App.scss';
-import Tenis012 from '../assets/images/tenis_vegano_shoes_esportivo_preto_ 3.png';
-import Estrela from '../assets/images/Vector.svg';
-import TenisEsportivopreto from '../assets/images/tenis/tenis_vegano_shoes_easeful_preto.png'
-import TenisBranco from '../assets/images/Tenis-Branco.png';
-import Header from '../components/Header/header.js';
-import Rodape from '../components/Rodape/rodape';
-import quadradinhos from '../assets/images/qudrado.png';
-import tenisPlataforma from '../assets/images/tenis na plataforma.png';
+import Tenis012 from '../../assets/images/tenis_vegano_shoes_esportivo_preto_ 3.png';
+import Estrela from '../../assets/images/Vector.svg';
+import TenisEsportivopreto from '../../assets/images/tenis/tenis_vegano_shoes_easeful_preto.png'
+import TenisBranco from '../../assets/images/Tenis-Branco.png';
+import Header from '../../components/Header/header.js';
+import Rodape from '../../components/Rodape/rodape';
+import quadradinhos from '../../assets/images/qudrado.png';
+import tenisPlataforma from '../../assets/images/tenis na plataforma.png';
 
 
 

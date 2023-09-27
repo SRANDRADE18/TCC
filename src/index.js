@@ -2,18 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import LandingPages from './landingpage/App';
-import Compra from './Compra/compra.js'
-import Criar_conta from './Criar_conta/criar_conta';
-import Tela_login from './Login/login';
-import UltimoPedido from './Minha_Conta_Ultimo_Pedido/ultimo_pedido';
-import Comprapt2 from './Compra_PT2/compra_pt2';
-import MeusDados from './Meus_Dados/dados';
-import Loginadm from './LoginADM/loginadm';
-import Admpage from './AdmPage/adm';
-import Admaddproduto from './AdmADDProduto/admProdutoadd';
-import Filtraproduto from './ADMFiltrarProduto/filtrar';
-import Carrinho from './Carrinho/carrinho';
+import LandingPages from './user/landingpage/App.js';
+import Compra from './user/Compra/compra.js'
+import Criar_conta from './user/Criar_conta/criar_conta';
+import Tela_login from './user/Login/login';
+import UltimoPedido from './user/Minha_Conta_Ultimo_Pedido/ultimo_pedido';
+import Comprapt2 from './user/Compra_PT2/compra_pt2';
+import MeusDados from './user/Meus_Dados/dados';
+import Loginadm from './user/LoginADM/loginadm';
+import Admpage from './ADM/AdmPage/adm.js';
+import Admaddproduto from './ADM/AdmADDProduto/admProdutoadd.js';
+import Filtraproduto from './ADM/ADMFiltrarProduto/filtrar.js';
+import Carrinho from './user/Carrinho/carrinho';
 import Header from './components/Header/header';
 
 

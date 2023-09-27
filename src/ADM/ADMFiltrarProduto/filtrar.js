@@ -2,8 +2,8 @@ import './filtrar.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
-import Header from '../components/Header/header.js';
-import Rodape from '../components/Rodape/rodape.js';
+import Header from '../../components/Header/header.js';
+import Rodape from '../../components/Rodape/rodape.js';
 
 import { confirmAlert } from 'react-confirm-alert'; 
 import 'react-confirm-alert/src/react-confirm-alert.css'; 

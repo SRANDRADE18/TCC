@@ -2,14 +2,14 @@ import './dados.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
-import Header from '../components/Header/header.js';
-import Rodape from '../components/Rodape/rodape.js';
-import troca from '../assets/images/Minha_Conta/troca 1.png'
-import Pessoa from '../assets/images/Minha_Conta/do-utilizador 3.png'
-import MeusDados from '../assets/images/Minha_Conta/monitorando 1.png'
-import cartoes from '../assets/images/Minha_Conta/cartoes.png'
-import saida from '../assets/images/Minha_Conta/saida.png'
-import casa from '../assets/images/Minha_Conta/casa.png'
+import Header from '../../components/Header/header.js';
+import Rodape from '../../components/Rodape/rodape.js';
+import troca from '../../assets/images/Minha_Conta/troca 1.png'
+import Pessoa from '../../assets/images/Minha_Conta/do-utilizador 3.png'
+import MeusDados from '../../assets/images/Minha_Conta/monitorando 1.png'
+import cartoes from '../../assets/images/Minha_Conta/cartoes.png'
+import saida from '../../assets/images/Minha_Conta/saida.png'
+import casa from '../../assets/images/Minha_Conta/casa.png'
 
 
 

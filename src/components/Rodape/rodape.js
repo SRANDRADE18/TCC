@@ -1,6 +1,6 @@
 import './rodape.scss'
 import Pagamrnto from '../../assets/images/Pagamento.png'
-import '../../fonts.scss'
+import '../../assets/fonts/fonts.scss'
 export default function Rodape() {
 
   return (
