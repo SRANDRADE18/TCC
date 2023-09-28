@@ -24,7 +24,7 @@ export default function Header() {
   }
 
   function BTuser(){
-    window.location.href = 'http://localhost:3000/login'
+    window.location.href = 'http://localhost:3000/Criar_Conta'
   }
 
 

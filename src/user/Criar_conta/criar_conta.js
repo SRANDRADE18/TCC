@@ -31,17 +31,21 @@ export default function Criar_conta() {
 
 
 
-    async function cadastrar(){
-        let cliente= {
-            nome: nome,
-            cpf: cpf,
-            data: data,
-            email: email,
-            senha: senha
-        };
-
-        let r = await axios.post('http://localhost:6000/criarconta', cliente)
+    async function cadastrar() {
+        try {
+            let cliente = {
+                nome: nome,
+                cpf: cpf,
+                data: data,
+                email: email,
+                senha: senha
+            };
     
+            let r = await axios.post('http://localhost:7777/criarconta', cliente);
+            console.log('Resposta do servidor:', r.data);
+        } catch (error) {
+            console.error('Erro ao cadastrar:', error);
+        }
     }
 
     ///////////////////////////////////////////////////////////////   
@@ -115,24 +119,6 @@ export default function Criar_conta() {
 
 
                     <button className='cadastro-button' onClick={cadastrar}> Criar Conta </button>
-                </div>
-
-                <div>
-                    <p>
-                    {nome}
-                    </p>
-                    <p>
-                    {cpf}
-                    </p>
-                    <p>
-                    {data}
-                    </p>
-                    <p>
-                    {email}
-                    </p>
-                    <p>
-                    {senha}
-                    </p>
                 </div>
 
             </div>

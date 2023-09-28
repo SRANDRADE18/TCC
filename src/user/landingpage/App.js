@@ -10,6 +10,9 @@ import Header from '../../components/Header/header.js';
 import Rodape from '../../components/Rodape/rodape';
 import quadradinhos from '../../assets/images/qudrado.png';
 import tenisPlataforma from '../../assets/images/tenis na plataforma.png';
+import tenisrosa from '../../assets/images/tenis/Tenis Rosa.png';
+import tenis2 from '../../assets/images/tenis/Tenis_galáxia.png';
+import tenis3 from '../../assets/images/tenis/tenis_vegano_shoes_esportivo_Havana_ 5.png'
 
 
 
@@ -89,7 +92,7 @@ export default function landingPage() {
           <div className='Tenis-01'>
 
 
-            <img className='tenis' src={Tenis012}></img>
+            <img className='tenis' src={tenis2}></img>
             <div className='infos-tenis01'>
 
               <div className='Infos-text'>
@@ -120,7 +123,7 @@ export default function landingPage() {
 
           <div className='Tenis-01'>
 
-            <img className='tenis' src={Tenis012}></img>
+            <img className='tenis' src={tenisrosa}></img>
             <div className='infos-tenis01'>
 
               <div className='Infos-text'>
@@ -151,7 +154,7 @@ export default function landingPage() {
 
           <div className='Tenis-01'>
 
-            <img className='tenis' src={Tenis012}></img>
+            <img className='tenis' src={tenis3}></img>
             <div className='infos-tenis01'>
 
               <div className='Infos-text'>
