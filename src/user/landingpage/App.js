@@ -180,7 +180,6 @@ export default function landingPage() {
           </div>
 
         </a>
-
         <a href='http://localhost:3000/compra'>
 
           <div className='Tenis-01'>
@@ -307,6 +306,7 @@ export default function landingPage() {
 
         </a>
 
+        
 
       </div>
 
