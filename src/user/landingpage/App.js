@@ -181,6 +181,133 @@ export default function landingPage() {
 
         </a>
 
+        <a href='http://localhost:3000/compra'>
+
+          <div className='Tenis-01'>
+
+            <img className='tenis' src={Tenis012}></img>
+            <div className='infos-tenis01'>
+
+              <div className='Infos-text'>
+                <h1>Tênis Vegano Shoes
+                  Rocket Sport Preto</h1>
+              </div>
+
+
+              <div className='estrelas'>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+              </div>
+
+              <div className='info-compra'>
+                <h2>Frete grátis</h2>
+                <h3>R$249,90  ou 4x de 60</h3>
+              </div>
+
+            </div>
+
+          </div>
+
+        </a>
+
+
+        <a href='http://localhost:3000/compra'>
+          <div className='Tenis-01'>
+
+
+            <img className='tenis' src={tenis2}></img>
+            <div className='infos-tenis01'>
+
+              <div className='Infos-text'>
+                <h1>Tênis Vegano Shoes
+                  Rocket Sport Preto</h1>
+              </div>
+
+
+              <div className='estrelas'>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+              </div>
+
+              <div className='info-compra'>
+                <h2>Frete grátis</h2>
+                <h3>R$249,90  ou 4x de 60</h3>
+              </div>
+
+            </div>
+          </div>
+
+        </a>
+
+        <a href='http://localhost:3000/compra'>
+
+          <div className='Tenis-01'>
+
+            <img className='tenis' src={tenisrosa}></img>
+            <div className='infos-tenis01'>
+
+              <div className='Infos-text'>
+                <h1>Tênis Vegano Shoes
+                  Rocket Sport Preto</h1>
+              </div>
+
+
+              <div className='estrelas'>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+              </div>
+
+              <div className='info-compra'>
+                <h2>Frete grátis</h2>
+                <h3>R$249,90  ou 4x de 60</h3>
+              </div>
+
+            </div>
+          </div>
+
+        </a>
+
+        <a href='http://localhost:3000/compra'>
+
+          <div className='Tenis-01'>
+
+            <img className='tenis' src={tenis3}></img>
+            <div className='infos-tenis01'>
+
+              <div className='Infos-text'>
+                <h1>Tênis Vegano Shoes
+                  Rocket Sport Preto</h1>
+              </div>
+
+
+              <div className='estrelas'>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+                <img src={Estrela}></img>
+              </div>
+
+              <div className='info-compra'>
+                <h2>Frete grátis</h2>
+                <h3>R$249,90  ou 4x de 60</h3>
+              </div>
+
+            </div>
+          </div>
+
+        </a>
+
+
       </div>
 
 
@@ -188,7 +315,7 @@ export default function landingPage() {
 
         <img className='tenis-Preto' src={TenisEsportivopreto}></img>
         <div className='promo-tenis-text'>
-          <h1> <label>ESTILO </label> INOVADOR</h1>
+          <h1> <label>ESTILO <br></br></label> INOVADOR</h1>
           <p> Os novos tênis veganos combinam design moderno e contemporâneo, sem comprometer os valores éticos. Eles seguem as últimas tendências da moda, com uma variedade de estilos, cores e materiais que atendem aos gostos e preferências de todas as pessoas</p>
 
         </div>

@@ -8,6 +8,9 @@ import Google from '../../assets/images/Redes_Sociais/Google.png';
 import facebook from '../../assets/images/Redes_Sociais/facebook.png';
 import instagram from '../../assets/images/Redes_Sociais/instagram.png';
 import Olho from '../../assets/icons/visivel.png'
+import ReactInputMask from 'react-input-mask';
+import InputMask from "react-input-mask";
+
 
 
 export default function Criar_conta() {
@@ -86,11 +89,11 @@ export default function Criar_conta() {
 
                     <div className='infos-cliente'>
 
-                        <input className='Input-criar_conta' type="search" placeholder='Nome Completo'value={nome} onChange={e => (setNome(e.target.value))} />
+                        <InputMask className='Input-criar_conta' type="search" placeholder='Nome Completo'value={nome} onChange={e => (setNome(e.target.value))} />
 
-                        <input className='Input-criar_conta' type="search" placeholder='CPF' value={cpf} onChange={e => (setCpf(e.target.value))} />
+                        <InputMask mask="999.999.999-99" className='Input-criar_conta' type="search" placeholder='CPF' value={cpf} onChange={e => (setCpf(e.target.value))} />
 
-                        <input className='Input-criar_conta-data' type="search" placeholder='data' value={data} onChange={e => (setData(e.target.value))} />
+                        <InputMask mask="99/99/9999" className='Input-criar_conta-data' type="search" placeholder='Data de Nascimento' value={data} onChange={e => (setData(e.target.value))} />
 
                         <input className='Input-criar_conta' type="search" placeholder='Email' value={email} onChange={e => (setEmail(e.target.value))} />
 
