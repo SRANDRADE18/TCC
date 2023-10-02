@@ -7,7 +7,9 @@ import Rodape from '../../components/Rodape/rodape.js';
 import Google from '../../assets/images/Redes_Sociais/Google.png';
 import facebook from '../../assets/images/Redes_Sociais/facebook.png';
 import instagram from '../../assets/images/Redes_Sociais/instagram.png';
-import Olho from '../../assets/icons/visivel.png'
+import Olho from '../../assets/images/olhinho.png'
+import InputMask from "react-input-mask";
+
 
 
 export default function Criar_conta() {
@@ -88,15 +90,15 @@ export default function Criar_conta() {
 
                         <input className='Input-criar_conta' type="text" placeholder='Nome Completo'value={nome} onChange={e => (setNome(e.target.value))} />
 
-                        <input className='Input-criar_conta' type="number" placeholder='CPF' value={cpf} onChange={e => (setCpf(e.target.value))} />
+                        <InputMask mask="999.999.999-99" className='Input-criar_conta' type="text" placeholder='CPF' value={cpf} onChange={e => (setCpf(e.target.value))} />
 
-                        <input className='Input-criar_conta-data' type="text" placeholder='data' value={data} onChange={e => (setData(e.target.value))} />
+                        <InputMask mask="99/99/9999" className='Input-criar_conta-data' type="text" placeholder='data' value={data} onChange={e => (setData(e.target.value))} />
 
                         <input className='Input-criar_conta' type="email" placeholder='Email' value={email} onChange={e => (setEmail(e.target.value))} />
                        
                         <div className='div-senha'>
-                        <input className='Inpult-senha'
-                                placeholder='Senha'
+                        <input className='Input-senha'
+                               placeholder='Senha'
                                 type={mostrarSenha ? 'text' : 'password'}
                                 id="senha"
                                 name="senha"
@@ -104,7 +106,7 @@ export default function Criar_conta() {
                                 onChange={Olharsenha}  />
                         
 
-                               <button className='revelador' src={Olho} onClick={handleMostrarSenhaToggle} />
+                                <button className='revelador'  onClick={handleMostrarSenhaToggle}><img src={Olho}></img></button>
                               
                               
                         </div>
