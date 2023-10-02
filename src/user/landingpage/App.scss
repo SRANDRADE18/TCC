@@ -45,19 +45,10 @@
     max-width:  280px;
     height: 100%;
     width: 100%;
+    margin-top: 15px;
   }
 
-  .Tenis-Parado:hover {
-    transition: transform 0.3s ease;
-    padding: auto;
-    cursor: pointer;
-    transform: scale(1.1);
-    opacity: 1;
-    border-radius: 20px;
-    transform: rotate(5deg);
-    transform: rotate(-5deg);
-    transition: transform 0.7s ease;
-  }
+
 
   .Quadrados {
     display: flex;

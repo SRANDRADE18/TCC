@@ -44,21 +44,23 @@
         font-weight: 700;
         line-height: normal;
     }
+   
 
     .infos-cliente {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        height:100% ;
+        width:100% ;
+        max-width:400px ;
+        max-height:200px ;
 
-        .Button-Senha {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
 
-            button {
+            button  {
                 text-align: center;
                 border-radius: 20px;
-                background: #38B593;
+                background: #752b5c;
                 color: #FFF;
                 max-width: 15px;
                 max-height: 25px;
@@ -69,11 +71,11 @@
 
             }
 
-        }
+    
 
         Input {
             padding: 5px 0px 10px 0px;
-            max-width: 260px;
+            max-width: 220px;
             width: 100%;
             margin-top: 10px;
             text-align: start;
@@ -82,23 +84,24 @@
             cursor: pointer;
         }
 
-        Input {
-            padding: 5px 0px 10px 0px;
-            max-width: 255px;
-            width: 100%;
-            margin-top: 10px;
-            text-align: start;
-            border: 2px solid #f1f1f1;
-            outline: none;
-            cursor: pointer;
-        }
 
         Input {
             color: #aaaaaa;
 
         }
-    }
+    
+        .div-senha{
+            display: flex;
+            flex-direction: row;
+            height:400px ;
+            width:200px ;
+            max-width:100% ;
+            max-height:100% ;
 
+            
+        }
+    }
+    
     .rede-sociaveis img {
         max-width: 32px;
         max-height: 32px;
@@ -166,6 +169,7 @@
         }
 
     }
+    
 
 
     .cadastro-button {

@@ -86,34 +86,37 @@ export default function Criar_conta() {
 
                     <div className='infos-cliente'>
 
-                        <input className='Input-criar_conta' type="search" placeholder='Nome Completo'value={nome} onChange={e => (setNome(e.target.value))} />
+                        <input className='Input-criar_conta' type="text" placeholder='Nome Completo'value={nome} onChange={e => (setNome(e.target.value))} />
 
-                        <input className='Input-criar_conta' type="search" placeholder='CPF' value={cpf} onChange={e => (setCpf(e.target.value))} />
+                        <input className='Input-criar_conta' type="number" placeholder='CPF' value={cpf} onChange={e => (setCpf(e.target.value))} />
 
-                        <input className='Input-criar_conta-data' type="search" placeholder='data' value={data} onChange={e => (setData(e.target.value))} />
+                        <input className='Input-criar_conta-data' type="text" placeholder='data' value={data} onChange={e => (setData(e.target.value))} />
 
-                        <input className='Input-criar_conta' type="search" placeholder='Email' value={email} onChange={e => (setEmail(e.target.value))} />
-
-                        <div className='Button-Senha'>
-
-                            <input
-
-                                className='Input-criar_conta'
+                        <input className='Input-criar_conta' type="email" placeholder='Email' value={email} onChange={e => (setEmail(e.target.value))} />
+                       
+                        <div className='div-senha'>
+                        <input className='Inpult-senha'
                                 placeholder='Senha'
                                 type={mostrarSenha ? 'text' : 'password'}
                                 id="senha"
                                 name="senha"
                                 value={senha}
-                                onChange={Olharsenha}
-                            />
+                                onChange={Olharsenha}  />
+                        
 
-                            <button src={Olho} onClick={handleMostrarSenhaToggle} />
-
+                               <button className='revelador' src={Olho} onClick={handleMostrarSenhaToggle} />
+                              
+                              
                         </div>
-
-
-
                     </div>
+                        
+                    
+                   
+                            
+
+
+
+                    
 
                     <p> Já tem uma conta? <Link to='/Tela_Login'> Entrar. </Link></p>
 
