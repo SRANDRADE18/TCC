@@ -1,83 +1,93 @@
-.carrinho-pagina{
+.carrinho-pagina {
 
 
-.Carrinho-Produto {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    .Carrinho-Produto {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 5px;
+        
+        .Linha-Carrinho {
+            max-width: 1000px;
+            width: 100%;
+            height: 2px;
+            flex-shrink: 0;
+            stroke-width: 3px;
+            background-color: black;
+        }
+        .test-carrinho{
+            display: flex;
+            align-items: center;
+            flex-direction: column
+        }
+        .texto-verde{
+            font: 14px 'Font1';
+            color: #40A34C;
+        }
+    }
 
-}
+    .Carrinho-Info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-.Carrinho-Info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    }
+
+    .Carrinho-Info h1 {
+        color: #444;
+        font: 14px 'Font1';
+        line-height: normal;
+    }
+
+    .Carrinho-Info span {
+        color: #AE0606;
+    }
+
    
-}
 
-.Carrinho-Info h1 {
-    color: #444;
-    font-family: Aoboshi One;
-    font-size: 20px;
-    line-height: normal;
-}
+    .Tenis_galáxia {
+        width: 260px;
+        height: 164px;
+    }
 
-.Carrinho-Info span {
-    color: #AE0606;
-}
+    .Test-Carrinho {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 50px;
+        text-align: center;
+    }
 
-.Linha-Carrinho {
-    margin-left: 90px;
-    max-width: 85%;
-    height: 5px;
-    flex-shrink: 0;
-    stroke-width: 3px;
-    background-color: black;
-}
+    .Carrinho-Salvar {
+        display: flex;
 
-.Tenis_galáxia {
-    width: 370px;
-    height: 264px;
-}
+    }
 
-.Test-Carrinho {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 50px;
-    text-align: center;
-}
+    .Carrinho-Salvar h2 {
+        color: #AE0606;
+        text-align: center;
+        font-family: Aoboshi One;
+        font: 15px 'Font1';
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 10px;
+    }
 
-.Carrinho-Salvar {
-    display: flex;
-    
-}
+    .Carrinho-Salvar span {
+        width: 2px;
+        height: 40px;
+        background-color: #000;
+    }
 
-.Carrinho-Salvar h2 {
-    color: #AE0606;
-    text-align: center;
-    font-family: Aoboshi One;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: 10px;
+    .Carrinho-Preco h3 {
+        color: #000;
+        text-align: center;
+        font-family: Baloo Bhaina;
+        font: 25px 'Font1'; 
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 }
-
-.Carrinho-Salvar span {
-    width: 2px;
-    height: 40px;
-    background-color: #000;
-}
-
-.Carrinho-Preco h3 {
-    color: #000;
-    text-align: center;
-    font-family: Baloo Bhaina;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-} 
