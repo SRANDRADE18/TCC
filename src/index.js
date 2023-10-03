@@ -3,17 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPages from './user/landingpage/App.js';
-import Compra from './user/Compra/compra.js'
+import Compra from './pages/Compra/compra.js'
 import Criar_conta from './user/Criar_conta/criar_conta';
 import Telalogin from './user/Login/login';
 import UltimoPedido from './user/Minha_Conta_Ultimo_Pedido/ultimo_pedido';
 import Comprapt2 from './user/Compra_PT2/compra_pt2';
 import MeusDados from './user/Meus_Dados/dados';
 import Loginadm from './user/LoginADM/loginadm';
-import Admpage from './ADM/AdmPage/adm.js';
+import Admpage from './pages/AdmPage/adm.js';
 import Admaddproduto from './ADM/AdmADDProduto/admProdutoadd.js';
-import Filtraproduto from './ADM/ADMFiltrarProduto/filtrar.js';
-import Carrinho from './user/Carrinho/carrinho';
+import Filtraproduto from './pages/ADMFiltrarProduto/filtrar.js';
+import Carrinho from './pages/user/Carrinho/carrinho';
 import Header from './components/Header/header';
 import Footer from './components/Rodape/rodape.js'
   
