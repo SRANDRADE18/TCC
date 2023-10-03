@@ -4,12 +4,12 @@
     .Conta-Test {
         display: flex;
         flex-wrap: nowrap;
+        align-items: center;
         background: rgba(235, 235, 235, 0.93);
         justify-content: center;
-        align-items: center;
-        padding: 70px;
         max-width: 100%;
         max-height: 100%;
+        padding: 40px 0px;
     }
 
     .cadastro {
@@ -17,13 +17,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-right: 10px;
-        background-color: #FFF;
-        border-radius: 10px;
-        max-width: 100%;
-        max-height: 100%;
-        width: 450px;
-        height: 500px;
+        background-color: #ffffff;
+        max-width: 450px;
+        max-height: 500px;
+        height: 600px;
+        width: 100%;
 
         p {
             color: #38B593;
@@ -47,13 +45,12 @@
 
         input {
             padding: 5px 0px 10px 0px;
-            max-width: 255px;
+            max-width: 200px;
             width: 100%;
             margin-top: 10px;
             text-align: start;
             border: 2px solid #f1f1f1;
-            outline: none;
-            cursor: pointer;
+            outline: none; 
         }
     }
 
@@ -71,6 +68,13 @@
     .infos-cliente-login {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:100% ;
+        width:100% ;
+        max-width:400px ;
+        max-height:100px ;
+
     }
 
     .rede-social {
@@ -122,21 +126,15 @@
         align-items: center;
 
         h1 {
+            font-size: 20px;
             color: #FFF;
-            font-family: Montserrat;
-            font-size: 25px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
+
         }
 
         p {
             color: #FFF;
-            font-family: Montserrat;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 200;
-            line-height: 140.4%;
+            font-size: 0.8em;
+            font-weight: 400;
         }
 
         button {

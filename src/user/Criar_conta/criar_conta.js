@@ -81,9 +81,9 @@ export default function Criar_conta() {
                     </div>
 
                     <div className='rede-sociaveis'>
-                        <img src={Google} />
-                        <img src={facebook} />
-                        <img src={instagram} />
+                    <img className='google' src={Google} />
+                        <img className='rede-social'src={facebook} />
+                        <img className='rede-social' src={instagram} />
                     </div>
 
                     <div className='infos-cliente'>
@@ -120,7 +120,7 @@ export default function Criar_conta() {
 
                     
 
-                    <p> Já tem uma conta? <Link to='/Tela_Login'> Entrar. </Link></p>
+                    <p> Já tem uma conta? <Link to='/Login'> Entrar. </Link></p>
 
 
                     <button className='cadastro-button' onClick={cadastrar}> Criar Conta </button>
