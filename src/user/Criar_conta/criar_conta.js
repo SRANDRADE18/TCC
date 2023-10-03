@@ -19,7 +19,7 @@ export default function Criar_conta() {
     const [cpf, setCpf] = useState('')
     const [data, setData] = useState('')
     const [email, setEmail] = useState('')
-    
+
     const [senha, setSenha] = useState('');
     const [mostrarSenha, setMostrarSenha] = useState(false);
 
@@ -42,7 +42,7 @@ export default function Criar_conta() {
                 email: email,
                 senha: senha
             };
-    
+
             let r = await axios.post('http://localhost:7777/criarconta', cliente);
             console.log('Resposta do servidor:', r.data);
         } catch (error) {
@@ -88,37 +88,37 @@ export default function Criar_conta() {
 
                     <div className='infos-cliente'>
 
-                        <input className='Input-criar_conta' type="text" placeholder='Nome Completo'value={nome} onChange={e => (setNome(e.target.value))} />
+                        <input className='Input-criar_conta' type="text" placeholder='Nome Completo' value={nome} onChange={e => (setNome(e.target.value))} />
 
                         <InputMask mask="999.999.999-99" className='Input-criar_conta' type="text" placeholder='CPF' value={cpf} onChange={e => (setCpf(e.target.value))} />
 
                         <InputMask mask="99/99/9999" className='Input-criar_conta-data' type="text" placeholder='data' value={data} onChange={e => (setData(e.target.value))} />
 
                         <input className='Input-criar_conta' type="email" placeholder='Email' value={email} onChange={e => (setEmail(e.target.value))} />
-                       
+
                         <div className='div-senha'>
-                        <input className='Input-senha'
-                               placeholder='Senha'
+                            <input className='Input-senha'
+                                placeholder='Senha'
                                 type={mostrarSenha ? 'text' : 'password'}
                                 id="senha"
                                 name="senha"
                                 value={senha}
-                                onChange={Olharsenha}  />
-                        
+                                onChange={Olharsenha} />
 
-                                <button className='revelador'  onClick={handleMostrarSenhaToggle}><img src={Olho}></img></button>
-                              
-                              
+
+                            <button className='revelador' onClick={handleMostrarSenhaToggle}><img src={Olho}></img></button>
+
+
                         </div>
                     </div>
-                        
-                    
-                   
-                            
 
 
 
-                    
+
+
+
+
+
 
                     <p> Já tem uma conta? <Link to='/Login'> Entrar. </Link></p>
 
