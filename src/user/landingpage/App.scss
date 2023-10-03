@@ -65,23 +65,20 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap ;
-    min-height: 400px ;
     overflow: hidden;
-    max-width: 4000px;
 
   }
-  
-  
+  .inferno{
+    width: 270px;
+    height: 350px;
+  }
+
 
   .Tenis-01 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    max-width: 350px;
-    max-height: 360px;
-    height: 100%;
-    width: 100%;
   }
 
   .Tenis-01:hover {
