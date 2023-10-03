@@ -15,7 +15,8 @@ import Admaddproduto from './ADM/AdmADDProduto/admProdutoadd.js';
 import Filtraproduto from './ADM/ADMFiltrarProduto/filtrar.js';
 import Carrinho from './user/Carrinho/carrinho';
 import Header from './components/Header/header';
-
+import Footer from './components/Rodape/rodape.js'
+  
 
 
 
@@ -38,6 +39,7 @@ root.render(
     <Route path='/Filtrarproduto' element={<Filtraproduto/>}/>
     <Route path='/Carrinho' element={<Carrinho/>}/>
     <Route path='/header' element={<Header/>}/>
+    <Route path='/rodape' element={<Footer/>}/>
   </Routes>
  </BrowserRouter>
 </React.StrictMode>
