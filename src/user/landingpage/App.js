@@ -58,12 +58,15 @@ export default function landingPage() {
         naturalSlideHeight={350}
         naturalSlideWidth={270}
         totalSlides={4}
-        visibleSlides={2}
-        infinite={true}
+        step={1}
         isIntrinsicHeight={true}
-        className='compra-test'
+        visibleSlides={4}
+        infinite={true}
+        
+
       >
-        <ButtonBack> antérior </ButtonBack>
+        <div         className='compra-test'>
+        <ButtonBack className='seta'> antérior </ButtonBack>
 
         <Slider>
           <Slide index={0}>
@@ -200,7 +203,8 @@ export default function landingPage() {
           </Slide>
         </Slider>
 
-        <ButtonNext> próximo </ButtonNext>
+        <ButtonNext className='seta-2'> próximo </ButtonNext>
+        </div>
       </CarouselProvider>
 
 
