@@ -2,12 +2,12 @@ import './criar_conta.scss';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
-import Header from '../../components/Header/header.js';
-import Rodape from '../../components/Rodape/rodape.js';
-import Google from '../../assets/images/Redes_Sociais/Google.png';
-import facebook from '../../assets/images/Redes_Sociais/facebook.png';
-import instagram from '../../assets/images/Redes_Sociais/instagram.png';
-import Olho from '../../assets/images/olhinho.png'
+import Header from '//components/Header/header.js';
+import Rodape from '//components/Rodape/rodape.js';
+import Google from '//assets/images/Redes_Sociais/Google.png';
+import facebook from '//assets/images/Redes_Sociais/facebook.png';
+import instagram from '//assets/images/Redes_Sociais/instagram.png';
+import Olho from '//assets/images/olhinho.png'
 import InputMask from "react-input-mask";
 
 

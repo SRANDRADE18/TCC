@@ -2,10 +2,10 @@ import './carrinho.scss';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
-import Header from '../../../components/Header/header.js';
-import Rodape from '../../../components/Rodape/rodape.js';
-import Tenis_galáxia from '../../assets/images/tenis/Tenis_galáxia.png'
-import localiza from '../../assets/images/localiza-2.png'
+import Header from '//../../public/components/Header/header';
+import Rodape from '//../components/Rodape/rodape.js';
+import Tenis_galáxia from '//assets/images/tenis/Tenis_galáxia.png'
+import localiza from '//assets/images/localiza-2.png'
 
 
 export default function Carrinho() {

@@ -2,11 +2,11 @@ import './admProdutoadd.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
-import Header from '../../components/Header/header.js';
-import Rodape from '../../components/Rodape/rodape.js';
-import Logo from '../../assets/images/logo tcc02.png';
-import Pessoa from '../../assets/images/Minha_Conta/do-utilizador 3.png';
-import Baixar from '../../assets/image 94.png';
+import Header from '//components/Header/header.js';
+import Rodape from '//components/Rodape/rodape.js';
+import Logo from '//assets/images/logo tcc02.png';
+import Pessoa from '//assets/images/Minha_Conta/do-utilizador 3.png';
+import Baixar from '//assets/image 94.png';
 
 export default function Admaddproduto() {
 

@@ -2,44 +2,38 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import LandingPages from './user/landingpage/App.js';
-import Compra from './pages/Compra/compra.js'
-import Criar_conta from './user/Criar_conta/criar_conta';
-import Telalogin from './user/Login/login';
-import UltimoPedido from './user/Minha_Conta_Ultimo_Pedido/ultimo_pedido';
-import Comprapt2 from './user/Compra_PT2/compra_pt2';
-import MeusDados from './user/Meus_Dados/dados';
-import Loginadm from './user/LoginADM/loginadm';
-import Admpage from './pages/AdmPage/adm.js';
-import Admaddproduto from './ADM/AdmADDProduto/admProdutoadd.js';
-import Filtraproduto from './pages/ADMFiltrarProduto/filtrar.js';
+import Landin from './pages/user/landingpage/App.js';
+import Compra from './pages/user/landingpage/App.js'
+import Criarconta from './pages/user/Criar_conta/criar_conta';
+import Telalogin from './pages/user/Login/login';
+import UltimoPedido from './pages/user/Minha_Conta_Ultimo_Pedido/ultimo_pedido';
+import Comprapt2 from './pages/user/Compra_PT2/compra_pt2';
+import MeusDados from './pages/user/Meus_Dados/dados';
+import Loginadm from './pages/user/LoginADM/loginadm';
+import Admpage from './pages/ADM/AdmPage/adm';
+import Admaddproduto from './pages/ADM/AdmADDProduto/admProdutoadd';
+import Filtraproduto from './pages/ADM/ADMFiltrarProduto/filtrar.js';
 import Carrinho from './pages/user/Carrinho/carrinho';
-import Header from './components/Header/header';
-import Footer from './components/Rodape/rodape.js'
+
   
-
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   <BrowserRouter>
   <Routes>
-    <Route path='' element={<LandingPages/>}/>
+    <Route path='' element={<Landin/>}/>
     <Route path='/compra' element={<Compra/>}/>
-    <Route path='/Criar_Conta' element={<Criar_conta/>}/>
+    <Route path='/Criar_Conta' element={<Criarconta/>}/>
     <Route path='/Login' element={<Telalogin/>}/>
     <Route path='/UltimoPedido' element={<UltimoPedido/>}/>
-    <Route path='/compra_pt2' element={<Comprapt2/>}/>
+    <Route path='/comprapt2' element={<Comprapt2/>}/>
     <Route path='/MeusDados' element={<MeusDados/>}/>
     <Route path='/LoginADM' element={<Loginadm/>}/>
     <Route path='/Admpage' element={<Admpage/>}/>
     <Route path='/Adicionar/Produto' element={<Admaddproduto/>}/>
     <Route path='/Filtrarproduto' element={<Filtraproduto/>}/>
     <Route path='/Carrinho' element={<Carrinho/>}/>
-    <Route path='/header' element={<Header/>}/>
-    <Route path='/rodape' element={<Footer/>}/>
   </Routes>
  </BrowserRouter>
 </React.StrictMode>
