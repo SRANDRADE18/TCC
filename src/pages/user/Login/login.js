@@ -53,7 +53,7 @@ export default function Login() {
                         <input  type="search" placeholder='Senha' />
                     </div>
 
-                    <p>Não tem uma conta <Link to='/Criar_Conta'> Crie. </Link></p>
+                    <p>Não tem uma conta? <Link to='/Criar_Conta'> Crie. </Link></p>
 
                     <button> Criar Conta </button>
                     
