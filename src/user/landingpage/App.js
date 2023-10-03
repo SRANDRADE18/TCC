@@ -60,7 +60,7 @@ export default function landingPage() {
         totalSlides={4}
         step={1}
         isIntrinsicHeight={true}
-        visibleSlides={2}
+        visibleSlides={4}
         infinite={true}
         
 
@@ -203,7 +203,7 @@ export default function landingPage() {
           </Slide>
         </Slider>
 
-        <ButtonNext className='seta'> próximo </ButtonNext>
+        <ButtonNext className='seta-2'> próximo </ButtonNext>
         </div>
       </CarouselProvider>
 
