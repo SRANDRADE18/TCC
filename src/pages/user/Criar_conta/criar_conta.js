@@ -2,12 +2,12 @@ import './criar_conta.scss';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
-import Header from '//components/Header/header.js';
-import Rodape from '//components/Rodape/rodape.js';
-import Google from '//assets/images/Redes_Sociais/Google.png';
-import facebook from '//assets/images/Redes_Sociais/facebook.png';
-import instagram from '//assets/images/Redes_Sociais/instagram.png';
-import Olho from '//assets/images/olhinho.png'
+
+import Rodape from '../../../components/Rodape/rodape';
+import Header from '../../../components/Header/header';
+
+
+
 import InputMask from "react-input-mask";
 
 
@@ -81,9 +81,9 @@ export default function Criar_conta() {
                     </div>
 
                     <div className='rede-sociaveis'>
-                    <img className='google' src={Google} />
-                        <img className='rede-social'src={facebook} />
-                        <img className='rede-social' src={instagram} />
+                    <img className='google' src="../../../../public/assets/images/Redes_Sociais/Google.png" />
+                        <img className='rede-social'src="../../../../public/assets/images/Redes_Sociais/Google.png" />
+                        <img className='rede-social' src="../../../../public/assets/images/Redes_Sociais/Google.png" />
                     </div>
 
                     <div className='infos-cliente'>
@@ -106,7 +106,7 @@ export default function Criar_conta() {
                                 onChange={Olharsenha} />
 
 
-                            <button className='revelador' onClick={handleMostrarSenhaToggle}><img src={Olho}></img></button>
+                            <button className='revelador' onClick={handleMostrarSenhaToggle}><img src="../../../../public/assets/images/olhinho.png"></img></button>
 
 
                         </div>

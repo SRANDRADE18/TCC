@@ -2,11 +2,12 @@ import './admProdutoadd.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
-import Header from '//components/Header/header.js';
-import Rodape from '//components/Rodape/rodape.js';
-import Logo from '//assets/images/logo tcc02.png';
-import Pessoa from '//assets/images/Minha_Conta/do-utilizador 3.png';
-import Baixar from '//assets/image 94.png';
+
+import Rodape from '../../../components/Rodape/rodape';
+import Header from '../../../components/Header/header';
+
+
+
 
 export default function Admaddproduto() {
 
@@ -58,7 +59,7 @@ export default function Admaddproduto() {
 
                             <div className='ADM-Pessoa-add'>
 
-                                <img src={Pessoa} />
+                                <img src="../../../../public/assets/images/Minha_Conta/do-utilizador 3.png" />
                                 <h2> oLá, Sr.Andrade </h2>
 
                             </div>
@@ -80,7 +81,7 @@ export default function Admaddproduto() {
 
 
                                     <h2>Colar Imagem</h2>
-                                    <img src={Baixar}></img>
+                                    <img src="../../../../public/assets/images/image 94.png"></img>
 
                                     <h2>Descrição</h2>
                                     <input className='Descriçao-Input'></input>

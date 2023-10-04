@@ -2,21 +2,10 @@ import './compra.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
-import Header from '//components/Header/header.js';
-import Rodape from '//components/Rodape/rodape.js';
-import Tenis01 from '//assets/images/tenis_vegano_shoes_esportivo_preto_ 3.png';
-import Estrela from '//assets/images/Vector.svg';
-import TenisRosa from '//assets/images/tenis/Tenis Rosa.png'
-import TenisEsportivopreto from '//assets/images/tenis/tenis_vegano_shoes_easeful_preto.png'
-import TenisPretoComlaranja from '//assets/images/tenis/Tenis_preto_laranja.png'
-import Sapatilha from '//assets/images/tenis/Sapatilha.png'
-import TenisCoral from '//assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png'
-import Tenis_galáxia from '//assets/images/tenis/Tenis_galáxia.png'
-import Bota_Vegana from '//assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 4.png'
-import Bota_Saara from '//assets/images/tenis/tennis_saara.png'
-import Tenis_Camara from '//assets/images/tenis/tennis_Camara.png'
-import Tenis_Havana from '//assets/images/tenis/tenis_vegano_shoes_esportivo_Havana_ 5.png'
-import Tenis_Ultimo from '//assets/images/tenis/tennis_Ultimo.png'
+
+import Header from '../../../components/Header/header.js';
+import Rodape from '../../../components/Rodape/rodape.js';
+
 
 export default function Compra() {
 
@@ -220,11 +209,11 @@ export default function Compra() {
 
           <div className='Shoop-compra'>
 
-            <a href='http://localhost:3000/compra_pt2'>
+            <a href='http:./localhost:3000/compra_pt2'>
 
               <div className='Compra-Linha01'>
 
-                <img className='tenis-Preto' src={TenisRosa}></img>
+                <img className='tenis-Preto' src="./assets/images/tenis/Tenis Rosa.png"></img>
 
                 <div className='Compra-Info'>
 
@@ -234,11 +223,11 @@ export default function Compra() {
 
 
                   <div className='Compra-Estrelas'>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='Compra-Preco'>
@@ -253,10 +242,10 @@ export default function Compra() {
 
             </a>
 
-            <a href='http://localhost:3000/compra_pt2'>
+            <a href='http:./localhost:3000/compra_pt2'>
               <div className='Compra-Linha01'>
 
-                <img className='tenis-Preto' src={Tenis01}></img>
+                <img className='tenis-Preto' src="./assets/images/tenis_vegano_shoes_esportivo_preto_ 3.png"></img>
 
                 <div className='Compra-Info'>
 
@@ -266,11 +255,11 @@ export default function Compra() {
 
 
                   <div className='Compra-Estrelas'>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='Compra-Preco'>
@@ -285,10 +274,10 @@ export default function Compra() {
             </a>
 
 
-            <a href='http://localhost:3000/compra_pt2'>
+            <a href='http:./localhost:3000/compra_pt2'>
               <div className='Compra-Linha01'>
 
-                <img className='tenis-Preto' src={TenisEsportivopreto}></img>
+                <img className='tenis-Preto' src=".././assets/images/tenis_vegano_shoes_esportivo_preto_ 3.png"></img>
 
                 <div className='Compra-Info'>
 
@@ -298,11 +287,11 @@ export default function Compra() {
 
 
                   <div className='Compra-Estrelas'>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='Compra-Preco'>
@@ -316,12 +305,12 @@ export default function Compra() {
               </div>
             </a>
 
-            <a href='http://localhost:3000/compra_pt2'>
+            <a href='http:./localhost:3000/compra_pt2'>
 
 
               <div className='Compra-Linha01'>
 
-                <img className='tenis-Preto' src={TenisPretoComlaranja}></img>
+                <img className='tenis-Preto' src="./assets/images/tenis/Tenis_preto_laranja.png"></img>
 
                 <div className='Compra-Info'>
 
@@ -331,11 +320,11 @@ export default function Compra() {
 
 
                   <div className='Compra-Estrelas'>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='Compra-Preco'>
@@ -349,11 +338,11 @@ export default function Compra() {
               </div>
             </a>
 
-            <a href='http://localhost:3000/compra_pt2'>
+            <a href='http:./localhost:3000/compra_pt2'>
 
               <div className='Compra-Linha01'>
 
-                <img className='tenis-Preto' src={Sapatilha}></img>
+                <img className='tenis-Preto' src="./assets/images/tenis/Sapatilha.png"></img>
 
                 <div className='Compra-Info'>
 
@@ -363,11 +352,11 @@ export default function Compra() {
 
 
                   <div className='Compra-Estrelas'>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='Compra-Preco'>
@@ -382,12 +371,12 @@ export default function Compra() {
 
             </a>
 
-            <a href='http://localhost:3000/compra_pt2'>
+            <a href='http:./localhost:3000/compra_pt2'>
 
 
               <div className='Compra-Linha01'>
 
-                <img className='tenis-Preto' src={TenisCoral}></img>
+                <img className='tenis-Preto' src="./assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png"></img>
 
                 <div className='Compra-Info'>
 
@@ -397,11 +386,11 @@ export default function Compra() {
 
 
                   <div className='Compra-Estrelas'>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='Compra-Preco'>
@@ -416,11 +405,11 @@ export default function Compra() {
 
             </a>
 
-            <a href='http://localhost:3000/compra_pt2'>
+            <a href='http:./localhost:3000/compra_pt2'>
 
               <div className='Compra-Linha01'>
 
-                <img className='tenis-Preto' src={Tenis_galáxia}></img>
+                <img className='tenis-Preto' src="./assets/images/tenis/Tenis_galáxia.png"></img>
 
                 <div className='Compra-Info'>
 
@@ -430,11 +419,11 @@ export default function Compra() {
 
 
                   <div className='Compra-Estrelas'>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='Compra-Preco'>
@@ -449,10 +438,10 @@ export default function Compra() {
 
             </a>
 
-            <a href='http://localhost:3000/compra_pt2'>
+            <a href='http:./localhost:3000/compra_pt2'>
               <div className='Compra-Linha01'>
 
-                <img className='tenis-Preto' src={Bota_Vegana}></img>
+                <img className='tenis-Preto' src="./assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 4.png"></img>
 
                 <div className='Compra-Info'>
 
@@ -462,11 +451,11 @@ export default function Compra() {
 
 
                   <div className='Compra-Estrelas'>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='Compra-Preco'>
@@ -480,11 +469,11 @@ export default function Compra() {
               </div>
             </a>
 
-            <a href='http://localhost:3000/compra_pt2'>
+            <a href='http:./localhost:3000/compra_pt2'>
 
               <div className='Compra-Linha01'>
 
-                <img className='tenis-Preto' src={Bota_Saara}></img>
+                <img className='tenis-Preto' src="./assets/images/tenis/tennis_saara.png"></img>
 
                 <div className='Compra-Info'>
 
@@ -494,11 +483,11 @@ export default function Compra() {
 
 
                   <div className='Compra-Estrelas'>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='Compra-Preco'>
@@ -513,10 +502,10 @@ export default function Compra() {
 
             </a>
 
-            <a href='http://localhost:3000/compra_pt2'>
+            <a href='http:./localhost:3000/compra_pt2'>
               <div className='Compra-Linha01'>
 
-                <img className='tenis-Preto' src={Tenis_Camara}></img>
+                <img className='tenis-Preto' src="./assets/images/tenis/tennis_Camara.png"></img>
 
                 <div className='Compra-Info'>
 
@@ -526,11 +515,11 @@ export default function Compra() {
 
 
                   <div className='Compra-Estrelas'>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='Compra-Preco'>
@@ -544,11 +533,11 @@ export default function Compra() {
               </div>
             </a>
 
-            <a href='http://localhost:3000/compra_pt2'>
+            <a href='http:./localhost:3000/compra_pt2'>
 
               <div className='Compra-Linha01'>
 
-                <img className='tenis-Preto' src={Tenis_Havana}></img>
+                <img className='tenis-Preto' src="./assets/images/tenis/tenis_vegano_shoes_esportivo_Havana_ 5.png"></img>
 
                 <div className='Compra-Info'>
 
@@ -558,11 +547,11 @@ export default function Compra() {
 
 
                   <div className='Compra-Estrelas'>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='Compra-Preco'>
@@ -577,11 +566,11 @@ export default function Compra() {
 
             </a>
 
-            <a href='http://localhost:3000/compra_pt2'>
+            <a href='http:./localhost:3000/compra_pt2'>
 
               <div className='Compra-Linha01'>
 
-                <img className='tenis-Preto' src={Tenis_Ultimo}></img>
+                <img className='tenis-Preto' src="./assets/images/tenis/tennis_Ultimo.png"></img>
 
                 <div className='Compra-Info'>
 
@@ -591,11 +580,11 @@ export default function Compra() {
 
 
                   <div className='Compra-Estrelas'>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
-                    <img src={Estrela}></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='Compra-Preco'>

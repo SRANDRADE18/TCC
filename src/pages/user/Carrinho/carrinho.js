@@ -2,10 +2,11 @@ import './carrinho.scss';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
-import Header from '//../../public/components/Header/header';
-import Rodape from '//../components/Rodape/rodape.js';
-import Tenis_galáxia from '//assets/images/tenis/Tenis_galáxia.png'
-import localiza from '//assets/images/localiza-2.png'
+
+import Rodape from '../../../components/Rodape/rodape';
+import Header from '../../../components/Header/header';
+
+
 
 
 export default function Carrinho() {
@@ -26,7 +27,7 @@ export default function Carrinho() {
                     <div className='Test-Carrinho'>
 
 
-                        <img className='Tenis_galáxia' src={Tenis_galáxia}></img>
+                        <img className='Tenis_galáxia' src=""></img>
 
                         <div className='Carrinho-Info'>
 
@@ -68,7 +69,7 @@ export default function Carrinho() {
                     <div className='Test-Carrinho'>
 
 
-                        <img className='Tenis_galáxia' src={Tenis_galáxia}></img>
+                        <img className='Tenis_galáxia' src="../../../../public/assets/images/tenis/Tenis_galáxia.png"></img>
 
                         <div className='Carrinho-Info'>
 
@@ -109,7 +110,7 @@ export default function Carrinho() {
                     <h2>Entrega calculada para: </h2>
 
                     <div className='localiza'>
-                        <img src={localiza} />
+                        <img src="../../../../public/assets/images/localiza-2.png" />
                     </div>
 
 

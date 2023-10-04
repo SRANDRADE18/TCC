@@ -3,8 +3,8 @@ import axios from 'axios';
 import { useState } from 'react';
 import './App.scss';
 
-import Header from '../../public/components/Header/header';
-import Rodape from '../../components/Rodape/rodape';
+import Rodape from '../../../components/Rodape/rodape';
+import Header from '../../../components/Header/header';
 
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
@@ -31,16 +31,16 @@ export default function landingPage() {
         <div className='plataforma'>
 
           <div className='Quadrados'>
-            <img className='quadradinhos' src="/public/assets/images/qudrado.png" />
-            <img className='quadradinhos' src="/public/assets/images/qudrado.png" />
-            <img className='quadradinhos' src="/public/assets/images/qudrado.png" />
-            <img className='quadradinhos' src="/public/assets/images/qudrado.png" />
-            <img className='quadradinhos' src="/public/assets/images/qudrado.png" />
-            <img className='quadradinhos' src="/public/assets/images/qudrado.png" />
+            <img className='quadradinhos' src="/assets/images/qudrado.png" />
+            <img className='quadradinhos' src="/assets/images/qudrado.png" />
+            <img className='quadradinhos' src="/assets/images/qudrado.png" />
+            <img className='quadradinhos' src="/assets/images/qudrado.png" />
+            <img className='quadradinhos' src="/assets/images/qudrado.png" />
+            <img className='quadradinhos' src="/assets/images/qudrado.png" />
           </div>
 
 
-          <img className='Tenis-Parado' src="/public/assets/images/tenis na plataforma.png"></img>
+          <img className='Tenis-Parado' src="/assets/images/tenis na plataforma.png"></img>
 
 
         </div>
@@ -67,7 +67,7 @@ export default function landingPage() {
 
               <div className='Tenis-01'>
 
-                <img className='tenis' src="/public/assets/images/tenis_vegano_shoes_esportivo_preto_ 3"></img>
+                <img className='tenis' src="/assets/images/tenis_vegano_shoes_esportivo_preto_ 3"></img>
                 <div className='infos-tenis01'>
 
                   <div className='Infos-text'>
@@ -77,11 +77,11 @@ export default function landingPage() {
 
 
                   <div className='estrelas'>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='info-compra'>
@@ -100,7 +100,7 @@ export default function landingPage() {
 
               <div className='Tenis-01'>
 
-                <img className='tenis' src="/public/assets/images/tenis_vegano_shoes_esportivo_preto_ 3"></img>
+                <img className='tenis' src="/assets/images/tenis_vegano_shoes_esportivo_preto_ 3"></img>
                 <div className='infos-tenis01'>
 
                   <div className='Infos-text'>
@@ -110,11 +110,11 @@ export default function landingPage() {
 
 
                   <div className='estrelas'>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='info-compra'>
@@ -133,7 +133,7 @@ export default function landingPage() {
 
               <div className='Tenis-01'>
 
-                <img className='tenis' src="/public/assets/images/tenis_vegano_shoes_esportivo_preto_ 3"></img>
+                <img className='tenis' src="/assets/images/tenis_vegano_shoes_esportivo_preto_ 3"></img>
                 <div className='infos-tenis01'>
 
                   <div className='Infos-text'>
@@ -143,11 +143,11 @@ export default function landingPage() {
 
 
                   <div className='estrelas'>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='info-compra'>
@@ -166,7 +166,7 @@ export default function landingPage() {
 
               <div className='Tenis-01'>
 
-                <img className='tenis' src="/public/assets/images/tenis_vegano_shoes_esportivo_preto_ 3"></img>
+                <img className='tenis' src="/assets/images/tenis_vegano_shoes_esportivo_preto_ 3"></img>
                 <div className='infos-tenis01'>
 
                   <div className='Infos-text'>
@@ -176,11 +176,11 @@ export default function landingPage() {
 
 
                   <div className='estrelas'>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
-                    <img src="/public/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
+                    <img src="/assets/images/Vector.svg"></img>
                   </div>
 
                   <div className='info-compra'>
@@ -203,7 +203,7 @@ export default function landingPage() {
 
       <div className='Promo-tenis01'>
 
-        <img className='tenis-Preto' src="/public/assets/images/tenis/tenis_vegano_shoes_easeful_preto.png"></img>
+        <img className='tenis-Preto' src="/assets/images/tenis/tenis_vegano_shoes_easeful_preto.png"></img>
         <div className='promo-tenis-text'>
           <h1> <label>ESTILO <br></br></label> INOVADOR</h1>
           <p> Os novos tênis veganos combinam design moderno e contemporâneo, sem comprometer os valores éticos. Eles seguem as últimas tendências da moda, com uma variedade de estilos, cores e materiais que atendem aos gostos e preferências de todas as pessoas</p>
@@ -230,7 +230,7 @@ export default function landingPage() {
 
         </div>
 
-        <img src="/public/assets/images/Tenis-Branco.png"></img>
+        <img src="/assets/images/Tenis-Branco.png"></img>
 
 
         <div className='Texto1'>

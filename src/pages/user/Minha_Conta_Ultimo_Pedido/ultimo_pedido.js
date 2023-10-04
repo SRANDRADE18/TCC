@@ -2,17 +2,12 @@ import './ultimo_pedido.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
-import Header from '//components/Header/header.js';
-import Rodape from '//components/Rodape/rodape.js';
-import Pedidos from '//assets/images/Minha_Conta/monitorando 1.png'
-import troca from '//assets/images/Minha_Conta/troca 1.png'
-import Pessoa from '//assets/images/Minha_Conta/do-utilizador 3.png'
-import pedidos from '//assets/images/Minha_Conta/monitorando 1.png'
-import cartoes from '//assets/images/Minha_Conta/cartoes.png'
-import saida from '//assets/images/Minha_Conta/saida.png'
-import casa from '//assets/images/Minha_Conta/casa.png'
-import Tenis from '//assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png'
-import Status from '//assets/images/Minha_Conta/Status.png'
+
+import Rodape from '../../../components/Rodape/rodape';
+import Header from '../../../components/Header/header';
+
+
+
 
 
 export default function UltimoPedido(){
@@ -28,12 +23,10 @@ return(
             
         </div>        
             
-            
-        
 
         <div className='Conta-perfil'>
 
-            <img src={Pessoa}/>
+            <img src="../../../public/assets/images/Minha_Conta/do-utilizador 3.png"/>
             <h2> oLá, Sr.Andrade </h2>
 
         </div>
@@ -43,42 +36,42 @@ return(
              <div className='acao-UltimoPedido'>
 
                 <div className='pedidos'>
-                    <img src={pedidos}/>
+                    <img src="../../../public/assets/images/Minha_Conta/monitorando 1.png"/>
                     <h3>Pedidos</h3>
                 </div>
 
                 <div className='Linha-pedidos'></div>
 
                 <div className='pedidos'>
-                    <img src={troca}/>
+                    <img src="../../../public/assets/images/Minha_Conta/troca 1.png"/>
                     <h3>Troca</h3>
                 </div>
 
                 <div className='Linha-pedidos'></div>
 
                 <div className='pedidos'>
-                    <img src={Pessoa}/>
+                    <img src="../../../public/assets/images/Minha_Conta/do-utilizador 3.png"/>
                     <h3>Meus Dados</h3>
                 </div>
 
                 <div className='Linha-pedidos'></div>
 
                 <div className='pedidos'>
-                    <img src={casa}/>
+                    <img src="../../../public/assets/images/Minha_Conta/casa.png"/>
                     <h3>Endereços</h3>
                 </div>
 
                 <div className='Linha-pedidos'></div>
 
                 <div className='pedidos'>
-                    <img src={cartoes}/>
+                    <img src="../../../public/assets/images/Minha_Conta/cartoes.png"/>
                     <h3>cartões Salvos</h3>
                 </div>
 
                 <div className='Linha-pedidos'></div>
 
                 <div className='pedidos'>
-                    <img src={saida}/>
+                    <img src="../../../public/assets/images/Minha_Conta/saida.png"/>
                     <h3>Sair</h3>
                 </div>
                 
@@ -89,7 +82,7 @@ return(
 
                 <div className='Tenis-Pedido'>
 
-                    <img src={Tenis}/>
+                    <img src="../../../public/assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png"/>
 
                     <h4>Tênis Vegano Shoes Easeful</h4>
                     <h4>Cor:  <a>Preto</a> </h4>
@@ -103,7 +96,7 @@ return(
 
                 <div className='Status-Pedido'>
 
-                    <img src={Status}/>
+                    <img src="../../../public/assets/images/Minha_Conta/Status.png"/>
 
                     <h5>Status: <a>Pedido entregue - 26/05/2023 13:00</a> </h5>
 

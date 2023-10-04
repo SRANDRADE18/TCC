@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function Conta_adm(){
 
     return(
-        
+        <div></div>
     )
 
 

@@ -1,7 +1,9 @@
 import './rodape.scss'
-import Pagamrnto from '../../assets/images/Pagamento.png'
-import '../../assets/fonts/fonts.scss'
-import metodopag from '../../assets/images/metodo-pag.svg' 
+
+
+
+
+
 export default function Rodape() {
 
   return (
@@ -32,7 +34,7 @@ export default function Rodape() {
         </div>
         <div className='cards' id='card-pag'>
           <h1>Metodos de Pagamento</h1>
-          <img src={metodopag}></img>
+          <img src="../../../public/assets/images/metodo-pag.svg"></img>
         </div>
       </div>
       <div className='linha-fantasma'></div>

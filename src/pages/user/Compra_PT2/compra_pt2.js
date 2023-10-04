@@ -2,14 +2,9 @@ import './compra_pt2.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
-import Header from '//components/Header/header';
-import Rodape from '//components/Rodape/rodape.js';
-import TenisEsportivopreto from '//assets/images/tenis/tenis_vegano_shoes_easeful_preto.png'
-import Tenis1 from '//assets/images/compra_pt2/Tenis-img1.png'
-import Tenis2 from '//assets/images/compra_pt2/Tenis-img2.png'
-import Tenis3 from '//assets/images/compra_pt2/Tenis-img3.png'
-import Tenis4 from '//assets/images/compra_pt2/Tenis-img4.png'
-import Estrela from '//assets/images/Vector.svg';
+
+import Rodape from '../../../components/Rodape/rodape';
+import Header from '../../../components/Header/header';
 
 
     export default function compraPt2(){
@@ -25,16 +20,16 @@ import Estrela from '//assets/images/Vector.svg';
 
                         <div className='tenis-Grande'>
 
-                        <img src={TenisEsportivopreto}></img>
+                        <img src="../../../../public/assets/images/tenis/tenis_vegano_shoes_easeful_preto.png"></img>
 
                        <div className='Tenis-Menores'>
-                         <img src={Tenis1}/>
-                         <img src={Tenis2}/>
+                         <img src="../../../../public/assets/images/compra_pt2/Tenis-img1.png"/>
+                         <img src="../../../../public/assets/images/compra_pt2/Tenis-img2.png"/>
                      
 
                      
-                         <img src={Tenis3}/>
-                         <img src={Tenis4}/>
+                         <img src="../../../../public/assets/images/compra_pt2/Tenis-img3.png"/>
+                         <img src="../../../../public/assets/images/compra_pt2/Tenis-img4.png"/>
                        </div>
                      
                         </div>
@@ -49,11 +44,11 @@ import Estrela from '//assets/images/Vector.svg';
                         <h4>R$ 284,91 à vista com desconto</h4>
                         
                         <div className='Estrela-info-pt2'>
-                          <img src={Estrela}></img>
-                           <img src={Estrela}></img>
-                           <img src={Estrela}></img>
-                           <img src={Estrela}></img>
-                           <img src={Estrela}></img>
+                          <img src="../../../../public/assets/images/Vector.svg"></img>
+                          <img src="../../../../public/assets/images/Vector.svg"></img>
+                          <img src="../../../../public/assets/images/Vector.svg"></img>
+                          <img src="../../../../public/assets/images/Vector.svg"></img>
+                          <img src="../../../../public/assets/images/Vector.svg"></img>
 
                          </div>
 
