@@ -20,7 +20,7 @@ export default function Header() {
     <div className='page-header'>
       <div className='header'>
         <div className='header-logo'>
-          <img className='img-logo' src="/public/assets/images/logo tcc 2.png"/>
+          <img className='img-logo' src="/assets/images/logo tcc 2.png"/>
         </div>
 
         <div className='header-input'>
@@ -29,7 +29,7 @@ export default function Header() {
         </div>
 
         <div className='header-menu'>
-            <img src="/public/assets/images/coracao 1.png"/>
+            <img src="assets/images/coracao 1.png"/>
             <img onClick={BTcarrinho} src="/assets/images/carrinho-de-compras (1) 1.png"/>
             <img onClick={BTuser} src="/assets/images/do-utilizador 2.png"/>
             <img id='menu' src="/assets/images/menu.png" />
