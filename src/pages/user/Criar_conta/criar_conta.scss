@@ -34,6 +34,8 @@
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+          margin-top: 19px;
+          margin-bottom: 9px;
         }
     }
 
@@ -147,6 +149,7 @@
         background-size: 500px 600px;
         height: 500px;
         width: 350px;
+       
     }
 
 
@@ -158,12 +161,15 @@
         text-align: center;
         align-items: center;
         justify-content: center;
-        padding: 10px;
+       padding: 10px;
 
 
         h1 {
             font-size: 20px;
             color: #FFF;
+            margin-bottom: 10px;
+
+        
 
         }
 
@@ -171,6 +177,8 @@
             color: #FFF;
             font-size: 0.8em;
             font-weight: 400;
+            margin-bottom: 10px;
+          
 
         }
 
@@ -195,7 +203,7 @@
         border-radius: 20px;
         background: #38B593;
         color: #FFF;
-        padding: 8px 20px;
+        padding: 8px 40px;
         border: none;
         cursor: pointer;
     }
