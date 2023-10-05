@@ -42,9 +42,9 @@ export default function Login() {
                     </div>
 
                     <div className='rede-sociaveis'>
-                        <img className='google' src="../../../../public/assets/images/Redes_Sociais/Google.png" />
-                        <img className='rede-social'src="../../../../public/assets/images/Redes_Sociais/Google.png" />
-                        <img className='rede-social' src="../../../../public/assets/images/Redes_Sociais/Google.png" />
+                        <img className='google' src="/assets/images/Redes_Sociais/Google.png" />
+                        <img className='rede-social'src="/assets/images/Redes_Sociais/Google.png" />
+                        <img className='rede-social' src="/assets/images/Redes_Sociais/Google.png" />
                     </div>
 
                     <div className='infos-cliente-login'>

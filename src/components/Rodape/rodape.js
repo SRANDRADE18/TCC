@@ -1,9 +1,6 @@
 import './rodape.scss'
 
 
-
-
-
 export default function Rodape() {
 
   return (
@@ -34,7 +31,7 @@ export default function Rodape() {
         </div>
         <div className='cards' id='card-pag'>
           <h1>Metodos de Pagamento</h1>
-          <img src="../../../public/assets/images/metodo-pag.svg"></img>
+          <img src="/assets/images/metodo-pag.svg"></img>
         </div>
       </div>
       <div className='linha-fantasma'></div>

@@ -45,7 +45,7 @@ export default function landingPage() {
 
         </div>
       </div>
-      
+
 
       <CarouselProvider
         naturalSlideHeight={350}
@@ -55,148 +55,148 @@ export default function landingPage() {
         isIntrinsicHeight={true}
         visibleSlides={4}
         infinite={true}
-        
+
 
       >
-        <div         className='compra-test'>
-        <ButtonBack className='seta'> antérior </ButtonBack>
+        <div className='compra-test'>
+          <ButtonBack className='seta'> antérior </ButtonBack>
 
-        <Slider>
-          <Slide index={0}>
-            <a className='inferno' href='http://localhost:3000/compra'>
+          <Slider>
+            <Slide index={0}>
+              <a className='inferno' href='http://localhost:3000/compra'>
 
-              <div className='Tenis-01'>
+                <div className='Tenis-01'>
 
-                <img className='tenis' src="/assets/images/tenis_vegano_shoes_esportivo_preto_ 3"></img>
-                <div className='infos-tenis01'>
+                  <img className='tenis' src="/assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png"></img>
+                  <div className='infos-tenis01'>
 
-                  <div className='Infos-text'>
-                    <h1>Tênis Vegano Shoes
-                      Rocket Sport Preto</h1>
-                  </div>
-
-
-                  <div className='estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
-
-                  <div className='info-compra'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$249,90  ou 4x de 60</h3>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </a>
-          </Slide>
-          <Slide index={1}>
-            <a className='inferno' href='http://localhost:3000/compra'>
-
-              <div className='Tenis-01'>
-
-                <img className='tenis' src="/assets/images/tenis_vegano_shoes_esportivo_preto_ 3"></img>
-                <div className='infos-tenis01'>
-
-                  <div className='Infos-text'>
-                    <h1>Tênis Vegano Shoes
-                      Rocket Sport Preto</h1>
-                  </div>
+                    <div className='Infos-text'>
+                      <h1>Tênis Vegano Shoes
+                        Rocket Sport Preto</h1>
+                    </div>
 
 
-                  <div className='estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
+                    <div className='estrelas'>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                    </div>
 
-                  <div className='info-compra'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$249,90  ou 4x de 60</h3>
+                    <div className='info-compra'>
+                      <h2>Frete grátis</h2>
+                      <h3>R$249,90  ou 4x de 60</h3>
+                    </div>
+
                   </div>
 
                 </div>
 
-              </div>
+              </a>
+            </Slide>
+            <Slide index={1}>
+              <a className='inferno' href='http://localhost:3000/compra'>
 
-            </a>
-          </Slide>
-          <Slide index={2}>
-            <a className='inferno' href='http://localhost:3000/compra'>
+                <div className='Tenis-01'>
 
-              <div className='Tenis-01'>
+                  <img className='tenis' src="/assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png"></img>
+                  <div className='infos-tenis01'>
 
-                <img className='tenis' src="/assets/images/tenis_vegano_shoes_esportivo_preto_ 3"></img>
-                <div className='infos-tenis01'>
-
-                  <div className='Infos-text'>
-                    <h1>Tênis Vegano Shoes
-                      Rocket Sport Preto</h1>
-                  </div>
+                    <div className='Infos-text'>
+                      <h1>Tênis Vegano Shoes
+                        Rocket Sport Preto</h1>
+                    </div>
 
 
-                  <div className='estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
+                    <div className='estrelas'>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                    </div>
 
-                  <div className='info-compra'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$249,90  ou 4x de 60</h3>
-                  </div>
+                    <div className='info-compra'>
+                      <h2>Frete grátis</h2>
+                      <h3>R$249,90  ou 4x de 60</h3>
+                    </div>
 
-                </div>
-
-              </div>
-
-            </a>
-          </Slide>
-          <Slide index={3}>
-            <a className='inferno' href='http://localhost:3000/compra'>
-
-              <div className='Tenis-01'>
-
-                <img className='tenis' src="/assets/images/tenis_vegano_shoes_esportivo_preto_ 3"></img>
-                <div className='infos-tenis01'>
-
-                  <div className='Infos-text'>
-                    <h1>Tênis Vegano Shoes
-                      Rocket Sport Preto</h1>
-                  </div>
-
-
-                  <div className='estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
-
-                  <div className='info-compra'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$249,90  ou 4x de 60</h3>
                   </div>
 
                 </div>
 
-              </div>
+              </a>
+            </Slide>
+            <Slide index={2}>
+              <a className='inferno' href='http://localhost:3000/compra'>
 
-            </a>
-          </Slide>
-        </Slider>
+                <div className='Tenis-01'>
 
-        <ButtonNext className='seta-2'> próximo </ButtonNext>
+                  <img className='tenis' src="/assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png"></img>
+                  <div className='infos-tenis01'>
+
+                    <div className='Infos-text'>
+                      <h1>Tênis Vegano Shoes
+                        Rocket Sport Preto</h1>
+                    </div>
+
+
+                    <div className='estrelas'>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                    </div>
+
+                    <div className='info-compra'>
+                      <h2>Frete grátis</h2>
+                      <h3>R$249,90  ou 4x de 60</h3>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </a>
+            </Slide>
+            <Slide index={3}>
+              <a className='inferno' href='http://localhost:3000/compra'>
+
+                <div className='Tenis-01'>
+
+                  <img className='tenis' src="/assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png"></img>
+                  <div className='infos-tenis01'>
+
+                    <div className='Infos-text'>
+                      <h1>Tênis Vegano Shoes
+                        Rocket Sport Preto</h1>
+                    </div>
+
+
+                    <div className='estrelas'>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                      <img src="/assets/images/Vector.svg"></img>
+                    </div>
+
+                    <div className='info-compra'>
+                      <h2>Frete grátis</h2>
+                      <h3>R$249,90  ou 4x de 60</h3>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </a>
+            </Slide>
+          </Slider>
+
+          <ButtonNext className='seta-2'> próximo </ButtonNext>
         </div>
       </CarouselProvider>
 

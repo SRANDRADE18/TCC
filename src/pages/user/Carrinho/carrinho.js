@@ -69,7 +69,7 @@ export default function Carrinho() {
                     <div className='Test-Carrinho'>
 
 
-                        <img className='Tenis_galáxia' src="../../../../public/assets/images/tenis/Tenis_galáxia.png"></img>
+                        <img className='Tenis_galáxia' src="/assets/images/tenis/Tenis_galáxia.png"></img>
 
                         <div className='Carrinho-Info'>
 
