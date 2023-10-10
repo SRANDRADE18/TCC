@@ -20,7 +20,7 @@ export default function Admaddproduto() {
     function Adicionarproduto() {
 
 
-        
+
     }
 
 
@@ -59,7 +59,7 @@ export default function Admaddproduto() {
 
                             <div className='ADM-Pessoa-add'>
 
-                                <img src="../../../../public/assets/images/Minha_Conta/do-utilizador 3.png" />
+                                <img src="/assets/images/Minha_Conta/do-utilizador 3.png" />
                                 <h2> oLá, Sr.Andrade </h2>
 
                             </div>
@@ -67,7 +67,7 @@ export default function Admaddproduto() {
 
 
 
-                        <div>
+                        <div className='adicionar-produto'>
                             <h2>Tela De Adicionar Produto</h2>
                         </div>
 
@@ -81,10 +81,15 @@ export default function Admaddproduto() {
 
 
                                     <h2>Colar Imagem</h2>
-                                    <img src="../../../../public/assets/images/image 94.png"></img>
+                                    <img src="/assets/images/image 94.png"></img>
 
                                     <h2>Descrição</h2>
-                                    <input className='Descriçao-Input'></input>
+                                    <input></input>
+
+
+
+                                    <button>Publicar</button>
+
 
                                 </div>
 
@@ -125,22 +130,31 @@ export default function Admaddproduto() {
                                     </div>
 
                                     <div className='Tamanhos-add'>
+
                                         <h3>tamanhos</h3>
 
-                                        <div className='Tamanhos_02'>
+                                        <div className='Tamanhos-02'>
 
 
-                                            <input className='tamanho'></input>
-                                            <input className='tamanho'></input>
-                                            <input className='tamanho'></input>
-                                            <input className='tamanho'></input>
-                                            <input className='tamanho'></input>
-                                            <input className='tamanho'></input>
-                                            <input className='tamanho'></input>
-                                            <input className='tamanho'></input>
-                                            <input className='tamanho'></input>
-                                            <input className='tamanho'></input>
-                                            <input className='tamanho'></input>
+
+                                            <div>
+                                                <input ></input>
+                                                <input ></input>
+                                                <input ></input>
+                                                <input ></input>
+                                                <input ></input>
+                                            </div>
+
+                                            <div>
+                                                <input ></input>
+                                                <input ></input>
+                                                <input ></input>
+                                                <input ></input>
+                                                <input ></input>
+                                            </div>
+
+
+
 
                                         </div>
 
@@ -164,7 +178,7 @@ export default function Admaddproduto() {
 
             </div>
 
-         
+
         </div>
     )
 

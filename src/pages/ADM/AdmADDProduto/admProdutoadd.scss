@@ -1,160 +1,245 @@
-.adm-page{
-
-.ADM-add {
-    display: flex;
-    flex-direction: column;
-}
-
-.adm-add {
-    display: flex;
-    flex-direction: row;
-}
-
-.Filtro-ADM-add {
- 
-    background-color: #2A3042;
-    max-width: 100%;
-    max-height: 100%;
-    padding: 20px;
-}
-
-.Filtro-ADM-add p {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.Filtro-ADM-add h1 {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.hamburguer-icon {
-    width: 30px;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.adm-page {
 
 
-    .line {
-        width: 100%;
-        height: 4px;
-        background-color: #333;
-        border-radius: 2px;
+    .ADM-add {
+        display: flex;
+        flex-direction: column;
     }
-}
 
-.ADM-Header {
-    display: flex;
-    flex-direction: column;
-    padding: 1px;
-}
+    .adm-add {
+        display: flex;
+        flex-direction: row;
+    }
 
-.ADM-Cabecalho-add {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 4px 14px 0px rgba(36, 23, 23, 0.25);
-    padding: 5px;
-    border-radius: 10px;
-}
+    .Filtro-ADM-add {
 
-.ADM-Pessoa-add {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 100%;
-}
+        background-color: #2A3042;
+        max-width: 60%;
+        max-height: 100%;
+        padding: 20px;
 
-.ADM-Pessoa-add img {
-    width: 19px;
-    height: 19px;
-    margin: 10px;
-}
+        p {
+            color: #FFF;
+            font-family: 'Font2';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
 
-.ADM-Pessoa-add h2 {
-    color: #494949;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: 10px;
-}
+        h1 {
+            color: #ffffff77;
+            font-family: 'Font2';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-top: 10px;
+        }
 
-.VGN-Shoes-Produto {
-    display: flex;
-    border-radius: 12px;
-    background: #FFFDFD;
-    box-shadow: 0px 4px 14px 0px rgba(36, 23, 23, 0.25);
-    width: 85vw;
-    max-height: 100%;
-    padding: 5px;
-    margin-left: 10px;
-}
-
-.Colar-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    padding-left: 100px;
-}
-
-.Info-Produto {
-    display: flex;
-    flex-direction: column;
-    justify-self: flex-end;
-
-}
-
-.Flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 84vw;
-    padding: 1px;
-}
+        h1:hover {
+            transform: scale(1.1);
+            padding: auto;
+            opacity: 1;
+            color: aquamarine;
+        }
+    }
 
 
-.Tamanhos-add{
-    display: flex;
-    flex-direction: column;
-}
 
-.Tamanhos_02{
-    display: flex;
-    flex-direction: row;
+    .hamburguer-icon {
+        width: 30px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        .line {
+            width: 100%;
+            height: 4px;
+            background-color: #333;
+            border-radius: 2px;
+        }
+    }
+
+    .ADM-Header {
+        display: flex;
+        flex-direction: column;
+        padding: 1px;
+    }
+
+    .ADM-Cabecalho-add {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 4px 14px 0px rgba(36, 23, 23, 0.25);
+        border-radius: 10px;
+        max-width: 745px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .adicionar-produto{
+        padding: 10px;
+    }
+
+    .ADM-Pessoa-add {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 130px;
+        width: 100%;
+
+        img {
+            width: 19px;
+            height: 19px;
+            margin: 10px;
+        }
+
+        h2 {
+            color: #494949;
+            font-family: 'Font2';
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+            margin: 10px;
+        }
+    }
+
+
+
+    .VGN-Shoes-Produto {
+        display: flex;
+        border-radius: 12px;
+        background: #FFFDFD;
+        box-shadow: 0px 4px 14px 0px rgba(36, 23, 23, 0.25);
+        max-height: 800px;
+        max-width: 65%;
+        width: 100%;
+        height: 100%;
+        padding: 8px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .Colar-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+
+        button{
+            background-color: rgb(255, 255, 0);
+            color: #000000;
+            text-align: center;
+            border-radius: 20px;
+            cursor: pointer;
+            padding: 8px 70px;
+            border: 1px solid #fff;
+            margin-top: 10px;
+        }
+
+        button:hover{
+            background-color: chartreuse;
+        }
+
+        Input {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+        img{
+           
+            padding: 25px;
+        }
+
+        
+    }
+
+    .Info-Produto {
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-end;
+
+        h2 {
+            color: #000000;
+            font-family: 'Font3';
+            font-size: 16px;
+            font-weight: 100;
+            line-height: normal;
+            margin: 10px;
+        }
+
+    }
+
+    .Flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 84vw;
+        padding: 1px;
+    }
+
+
+    .Tamanhos-add {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Tamanhos-02 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        input {
+            display: flex;
+            flex-direction: row;
+            max-height: 55px;
+            max-width: 50px;
+            width: 100%;
+            height: 100%;
+            margin: 5px;
+        }
+
+        div { 
+            display: flex;
+            flex-direction: row;
+            max-height: 150px;
+            max-width: 500px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+
+    .Nome {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+        input {
+            max-height: 150px;
+            max-width: 100px;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        h3 {
+            color: #000000;
+            font-family: 'Font2';
+            font-size: 12px;
+            font-weight: 800;
+            line-height: normal;
+            margin: 10px;
+        }
+
+    }
+
+    
 }
-.tamanho{
-    display: flex;
-    flex-direction: row;
-    width: 30px;
-    height: 50px;
-    margin: 5px;
-}
-.Nome{
-    display: flex;
-    align-items: center;
-    margin: 10px;
-}
-.Nome input{
-    width: 150px;
-    height: 20px;
-    margin: 10px;
-}
-.Descriçao-Input{
-    width: 300px;
-    padding: 10px;
-    height: 150px;
-}
-} 
