@@ -43,8 +43,8 @@ export default function Login() {
 
                     <div className='rede-sociaveis'>
                         <img className='google' src="/assets/images/Redes_Sociais/Google.png" />
-                        <img className='rede-social'src="/assets/images/Redes_Sociais/Google.png" />
-                        <img className='rede-social' src="/assets/images/Redes_Sociais/Google.png" />
+                        <img className='rede-social'src="/assets/images/Redes_Sociais/facebook.png" />
+                        <img className='rede-social' src="/assets/images/Redes_Sociais/instagram.png" />
                     </div>
 
                     <div className='infos-cliente-login'>
