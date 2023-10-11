@@ -7,14 +7,16 @@
 
         .meu-carrinho {
             color: #38B593;
+            font:30px 'font5';
+            font-weight: 650;
 
         }
 
         .carrinho-icon {
             width: 100%;
             height: 100%;
-            max-width: 40px;
-            max-height: 50px;
+            max-width: 30px;
+            max-height: 40px;
 
         }
     }
@@ -24,14 +26,13 @@
         display: flex;
         flex-direction: column;
         margin-top: 5px;
-        justify-content: center;
         align-items: center;
 
         .test-carrinho {
             display: flex;
             flex-direction: column;
-            max-width: 1200px;
-            max-height: 900px;
+            max-width: 1080px;
+            max-height: 200px;
             height: 100%;
             width: 100%;
 
@@ -44,7 +45,7 @@
 
                 .Linha-Carrinho {
                     width: 100%;
-                    max-width: 1210px;
+                    max-width: 1100px;
                     border-bottom: 1px solid #000000;
                 }
 
@@ -59,15 +60,15 @@
         .Tenis_galáxia {
             width: 100%;
             height: 100%;
-            max-width: 190px;
-            max-height: 220px;
+            max-width: 150px;
+            max-height: 198 px;
             display: flex;
 
         }
 
         .texto-verde {
             color: #40A34C;
-            font: 22px 'Font9';
+            font: 17px 'Font9';
             line-height: normal;
             font-weight: 600;
         }
@@ -86,7 +87,7 @@
 
     .Carrinho-Info h1 {
         color: #444;
-        font: 22px 'Font9';
+        font: 18px 'Font9';
         line-height: normal;
         font-weight: 600;
     }
@@ -101,8 +102,9 @@
     .Test-Carrinho {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        padding: 50px 0px;
+        justify-content:space-between;
+       align-items: center;
+        padding: 10px;
 
     }
 
@@ -112,8 +114,8 @@
 
     }
     .salvar-icon{
-        max-width:26px ;
-        max-height:26px ;
+        max-width:19px ;
+        max-height:19px ;
         height:100% ;
         width:100% ;
        
@@ -122,7 +124,7 @@
     .Carrinho-Salvar h2 {
         color: #AE0606;
         text-align: center;
-        font: 18px 'Font9';
+        font: 16px 'Font9';
         font-style: normal;
         font-weight: 800;
         line-height: normal;
@@ -138,17 +140,28 @@
     .Carrinho-Preco h3 {
         color: #000;
         text-align: center;
-        font: 25px 'Font9';
+        font: 22px 'Font9';
         font-style: normal;
         font-weight: 1000;
         line-height: normal;
+        margin-right: 40px;
     }
 }
 
 .resumo-e-localizaçao{
     display:flex;
-    flex-direction:row;
-    justify-content: space-around;
+    flex-direction:column;
+    justify-content: space-evenly;
+
+
+    .resumo-do-pedido{
+        display: flex;
+        flex-direction: row;
+        height: ;
+        width: ;
+
+    }
+
    
 
    

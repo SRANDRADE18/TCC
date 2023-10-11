@@ -112,8 +112,11 @@ export default function Carrinho() {
             </div>
 
             <div className='resumo-e-localizaçao'>
-                <div className='localizaçao-1'>
-                 <div className='localizaçao-2'>
+                <div className='resumo-do-pedido'>
+                  <h2>RESUMO DO PEDIDO </h2>
+            
+                 <div className='localizaçao-1'>
+                  <div className='localizaçao-2'>
 
                     <h1>Escolha o tipo  de entrega na próxima etapa!</h1>
                     <h2>Entrega calculada para: </h2>
@@ -136,10 +139,9 @@ export default function Carrinho() {
 
 
                  </div>
-                </div>
+                 </div>
 
-                <div className='resumo'>
-                    <h2>RESUMO DO PEDIDO </h2>
+                 <div className='resumo'>
                     <div className='Linha-pedido'></div>
                     <div className='produto-entrega'>
                         <div className='produto'>
@@ -171,8 +173,9 @@ export default function Carrinho() {
 
 
 
-                </div>
+                 </div>
 
+               </div>
             </div>
 
 
