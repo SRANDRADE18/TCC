@@ -6,6 +6,7 @@ import Rodape from '../../../components/Rodape/rodape';
 import Header from '../../../components/Header/header';
 
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Loading from '../../../components/loading/loding';
 
@@ -13,20 +14,18 @@ import Loading from '../../../components/loading/loding';
 
 export default function landingPage() {
 
-  return (
-
-    
   function  Products (){
 
     const [loading ,setloading] = useState(false)
     
     useEffect ( () =>{
+      loading(false)
         setloading(false)
     })
     
   }
 
-    (Loading ? <Loading/> :
+  return (
 
     <div className="landing-Page">
 
@@ -259,7 +258,7 @@ export default function landingPage() {
 
     </div> 
     
-    )
+    
     
 
   );

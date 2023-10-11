@@ -1,5 +1,6 @@
 import './filtrar.scss';
 import { Link } from 'react-router-dom';
+
 import axios from 'axios';
 import { useState } from 'react';
 
@@ -8,10 +9,6 @@ import Header from '../../../components/Header/header';
 
 import { confirmAlert } from 'react-confirm-alert'; 
 import 'react-confirm-alert/src/react-confirm-alert.css'; 
-
-
-
-
 
 
 export default function Filtraproduto() {
@@ -36,13 +33,14 @@ export default function Filtraproduto() {
 
         if (filterButton) {
             filterButton.addEventListener('click', function () {
-                // Lógica para filtrar produtos aqui
+                
             });
         }
     });
 
     return (
-        <div className='ADM-page'>
+
+        <div className='adm-page-add'>
 
             <Header />
 
@@ -127,6 +125,8 @@ export default function Filtraproduto() {
 
 
             </div>
+
+            <Rodape/>
 
 
         </div>
