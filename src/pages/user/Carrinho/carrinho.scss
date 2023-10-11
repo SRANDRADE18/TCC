@@ -1,76 +1,130 @@
 .carrinho-pagina {
+    .Carrinho {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px;
+
+        .meu-carrinho {
+            color: #38B593;
+
+        }
+
+        .carrinho-icon {
+            width: 100%;
+            height: 100%;
+            max-width: 40px;
+            max-height: 50px;
+
+        }
+    }
 
 
     .Carrinho-Produto {
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
         margin-top: 5px;
-        
-        .Linha-Carrinho {
-            max-width: 1000px;
-            width: 100%;
-            height: 2px;
-            flex-shrink: 0;
-            stroke-width: 3px;
-            background-color: black;
-        }
-        .test-carrinho{
+        justify-content: center;
+        align-items: center;
+
+        .test-carrinho {
             display: flex;
-            align-items: center;
-            flex-direction: column
+            flex-direction: column;
+            max-width: 1200px;
+            max-height: 900px;
+            height: 100%;
+            width: 100%;
+
+
+            .linha {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                .Linha-Carrinho {
+                    width: 100%;
+                    max-width: 1210px;
+                    border-bottom: 1px solid #000000;
+                }
+
+            }
+
+
+
         }
-        .texto-verde{
-            font: 14px 'Font1';
+
+
+
+        .Tenis_galáxia {
+            width: 100%;
+            height: 100%;
+            max-width: 190px;
+            max-height: 220px;
+            display: flex;
+
+        }
+
+        .texto-verde {
             color: #40A34C;
+            font: 22px 'Font9';
+            line-height: normal;
+            font-weight: 600;
         }
     }
 
     .Carrinho-Info {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+        max-width: 1000px;
+        margin-left: 25px;
+    
+
 
     }
 
     .Carrinho-Info h1 {
         color: #444;
-        font: 14px 'Font1';
+        font: 22px 'Font9';
         line-height: normal;
+        font-weight: 600;
     }
 
     .Carrinho-Info span {
         color: #AE0606;
     }
 
-   
 
-    .Tenis_galáxia {
-        width: 260px;
-        height: 164px;
-    }
+
 
     .Test-Carrinho {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        padding: 50px;
-        text-align: center;
+        justify-content: space-between;
+        padding: 50px 0px;
+
     }
 
     .Carrinho-Salvar {
         display: flex;
+        align-items: center;
 
+    }
+    .salvar-icon{
+        max-width:26px ;
+        max-height:26px ;
+        height:100% ;
+        width:100% ;
+       
     }
 
     .Carrinho-Salvar h2 {
         color: #AE0606;
         text-align: center;
-        font-family: Aoboshi One;
-        font: 15px 'Font1';
+        font: 18px 'Font9';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 800;
         line-height: normal;
         margin: 10px;
     }
@@ -84,10 +138,28 @@
     .Carrinho-Preco h3 {
         color: #000;
         text-align: center;
-        font-family: Baloo Bhaina;
-        font: 25px 'Font1'; 
+        font: 25px 'Font9';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 1000;
         line-height: normal;
+    }
+}
+
+.resumo-e-localizaçao{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+   
+
+   
+
+    .localizaçao-2{
+        background-color: #EBEBEB;
+        height:100% ;
+        width:100% ;
+        max-width:500px ;
+        max-height:500px ;
+       
+      
     }
 }
