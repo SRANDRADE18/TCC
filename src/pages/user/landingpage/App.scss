@@ -62,34 +62,17 @@
     margin: -10px;
   }
 
-  .Compra-tenis {
+  .carousel{
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    padding: 10px;
-    height: 400px;
-    position: relative;
+    padding: 30px 0px;
   }
-
-  .inferno {
-    width: 270px;
-    height: 350px;
-    margin: 20px 0px;
-  }
-
-  .seta {
-    position: absolute;
-    left: 5px;
-    bottom: 50px;
-  }
-
-  .seta-2 {
-    position: absolute;
-    right: 5px;
-    bottom: 50px;
+  .ex{
+    height: 300px;
+    width: 180px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
   }
 
   .Tenis-01 {

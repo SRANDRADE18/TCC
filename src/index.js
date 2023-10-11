@@ -12,7 +12,7 @@ import MeusDados from './pages/user/Meus_Dados/dados';
 import Loginadm from './pages/user/LoginADM/loginadm';
 import Admpage from './pages/ADM/AdmPage/adm';
 import Admaddproduto from './pages/ADM/AdmADDProduto/admProdutoadd';
-import Filtraproduto from './pages/ADM/ADMFiltrarProduto/filtrar.js';
+import Filtraprodutos from './pages/ADM/ADMFiltrarProduto/filtrar';
 import Carrinho from './pages/user/Carrinho/carrinho';
 
   
@@ -32,7 +32,7 @@ root.render(
     <Route path='/LoginADM' element={<Loginadm/>}/>
     <Route path='/Admpage' element={<Admpage/>}/>
     <Route path='/Adicionar/Produto' element={<Admaddproduto/>}/>
-    <Route path='/Filtrarproduto' element={<Filtraproduto/>}/>
+    <Route path='/Filtrarproduto' element={<Filtraprodutos/>}/>
     <Route path='/Carrinho' element={<Carrinho/>}/>
   </Routes>
  </BrowserRouter>

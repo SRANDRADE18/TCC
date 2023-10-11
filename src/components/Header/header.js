@@ -35,10 +35,7 @@ export default function Header() {
 
           <img src="/assets/images/coracao 1.png" />
 
-          
-
-
-
+        
           <CartButton/>
 
 
