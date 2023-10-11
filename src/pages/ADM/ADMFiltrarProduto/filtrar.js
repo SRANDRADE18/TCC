@@ -11,7 +11,7 @@ import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css'; 
 
 
-export default function Filtraproduto() {
+export default function Filtroproduto() {
 
     document.addEventListener('DOMContentLoaded', function () {
 
@@ -88,6 +88,7 @@ export default function Filtraproduto() {
 
                             <div className='Header-Filtar'>
 
+                        
                                 <h1>nome</h1>
                                 <h1>NUMERO DO PRODUTO</h1>
                                 <h1>DATA DO CADASTRO</h1>
