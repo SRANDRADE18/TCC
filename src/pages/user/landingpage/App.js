@@ -9,27 +9,29 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-re
 
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Loading from '../../../components/loading/loding';
+import { motion } from 'framer-motion';
 
 
 
 export default function landingPage() {
 
-  function  Products (){
+  function Products() {
 
-    const [loading ,setloading] = useState(false)
-    
-    useEffect ( () =>{
+    const [loading, setloading] = useState(false)
+
+    useEffect(() => {
       loading(false)
-        setloading(false)
+      setloading(false)
     })
-    
+
   }
+
 
   return (
 
     <div className="landing-Page">
 
-    
+
 
       <Header />
 
@@ -58,159 +60,43 @@ export default function landingPage() {
         </div>
       </div>
 
+      <div className='carousel'>
+        <motion.div className='ex'
+          initial={{ scale: 1, }}
+          transition={{ duration: 0.3, }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}></motion.div>
 
-      <CarouselProvider
-        naturalSlideHeight={350}
-        naturalSlideWidth={270}
-        totalSlides={4}
-        step={1}
-        isIntrinsicHeight={true}
-        visibleSlides={4}
-        infinite={true}
-
-
-      >
-        <div className='compra-test'>
-          <ButtonBack className='seta'> antérior </ButtonBack>
-
-          <Slider>
-            <Slide index={0}>
-              <a className='inferno' href='http://localhost:3000/compra'>
-
-                <div className='Tenis-01'>
-
-                  <img className='tenis' src="/assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png"></img>
-                  <div className='infos-tenis01'>
-
-                    <div className='Infos-text'>
-                      <h1>Tênis Vegano Shoes
-                        Rocket Sport Preto</h1>
-                    </div>
+        <motion.div className='ex'
+          initial={{ scale: 1, }}
+          transition={{ duration: 0.3, }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}></motion.div>
 
 
-                    <div className='estrelas'>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                    </div>
+        <motion.div className='ex'
+          initial={{ scale: 1, }}
+          transition={{ duration: 0.3, }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}></motion.div>
 
-                    <div className='info-compra'>
-                      <h2>Frete grátis</h2>
-                      <h3>R$249,90  ou 4x de 60</h3>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </a>
-            </Slide>
-            <Slide index={1}>
-              <a className='inferno' href='http://localhost:3000/compra'>
-
-                <div className='Tenis-01'>
-
-                  <img className='tenis' src="/assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png"></img>
-                  <div className='infos-tenis01'>
-
-                    <div className='Infos-text'>
-                      <h1>Tênis Vegano Shoes
-                        Rocket Sport Preto</h1>
-                    </div>
+        <motion.div className='ex'
+          initial={{ scale: 1 }}
+          transition={{ scale: { duration: 0.5 }, border: { duration: 120 } }}
+          whileHover={{ scale: [1.1], border: '1px solid #000' }}
+          whileTap={{ scale: 0.9 }}></motion.div>
+          
+        <motion.div className='ex'
+          initial={{ scale: 1, }}
+          transition={{ duration: 1 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}></motion.div>
 
 
-                    <div className='estrelas'>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                    </div>
-
-                    <div className='info-compra'>
-                      <h2>Frete grátis</h2>
-                      <h3>R$249,90  ou 4x de 60</h3>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </a>
-            </Slide>
-            <Slide index={2}>
-              <a className='inferno' href='http://localhost:3000/compra'>
-
-                <div className='Tenis-01'>
-
-                  <img className='tenis' src="/assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png"></img>
-                  <div className='infos-tenis01'>
-
-                    <div className='Infos-text'>
-                      <h1>Tênis Vegano Shoes
-                        Rocket Sport Preto</h1>
-                    </div>
 
 
-                    <div className='estrelas'>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                    </div>
+      </div>
 
-                    <div className='info-compra'>
-                      <h2>Frete grátis</h2>
-                      <h3>R$249,90  ou 4x de 60</h3>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </a>
-            </Slide>
-            <Slide index={3}>
-              <a className='inferno' href='http://localhost:3000/compra'>
-
-                <div className='Tenis-01'>
-
-                  <img className='tenis' src="/assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png"></img>
-                  <div className='infos-tenis01'>
-
-                    <div className='Infos-text'>
-                      <h1>Tênis Vegano Shoes
-                        Rocket Sport Preto</h1>
-                    </div>
-
-
-                    <div className='estrelas'>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                      <img src="/assets/images/Vector.svg"></img>
-                    </div>
-
-                    <div className='info-compra'>
-                      <h2>Frete grátis</h2>
-                      <h3>R$249,90  ou 4x de 60</h3>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </a>
-            </Slide>
-          </Slider>
-
-          <ButtonNext className='seta-2'> próximo </ButtonNext>
-        </div>
-      </CarouselProvider>
 
 
       <div className='Promo-tenis01'>
@@ -256,10 +142,10 @@ export default function landingPage() {
       <Rodape />
 
 
-    </div> 
-    
-    
-    
+    </div>
+
+
+
 
   );
 }
