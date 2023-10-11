@@ -13,7 +13,7 @@ export default function Carrinho() {
 
     return (
         <div className='carrinho-pagina'>
-            <Header />
+            
 
             <div className='Carrinho'>
                 <h1>Meu carrinho</h1>
@@ -117,9 +117,6 @@ export default function Carrinho() {
                 </div>
 
             </div>
-
-            <Rodape />
-
 
 
         </div>

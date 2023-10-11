@@ -84,7 +84,7 @@ export default function Admaddproduto() {
                                     <img src="/assets/images/image 94.png"></img>
 
                                     <h2>Descrição</h2>
-                                    <input></input>
+                                    <input type='text'></input>
 
 
 
@@ -123,7 +123,7 @@ export default function Admaddproduto() {
 
                                     <div className='Nome'>
                                         <h3>Genero</h3>
-                                        <input></input>
+                                        <input type='select'></input>
                                         <h3>Cor</h3>
                                         <input></input>
 

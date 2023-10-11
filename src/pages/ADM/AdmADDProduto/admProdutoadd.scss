@@ -1,14 +1,15 @@
 .adm-page {
 
-
     .ADM-add {
         display: flex;
         flex-direction: column;
+        padding: 0px 0px 10px;
     }
 
     .adm-add {
         display: flex;
         flex-direction: row;
+        
     }
 
     .Filtro-ADM-add {
@@ -66,6 +67,7 @@
     .ADM-Header {
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding: 1px;
     }
 
@@ -112,6 +114,7 @@
 
     .VGN-Shoes-Produto {
         display: flex;
+        
         border-radius: 12px;
         background: #FFFDFD;
         box-shadow: 0px 4px 14px 0px rgba(36, 23, 23, 0.25);
@@ -120,7 +123,7 @@
         width: 100%;
         height: 100%;
         padding: 8px;
-        margin-left: 10px;
+       
         margin-top: 10px;
     }
 
@@ -224,7 +227,7 @@
 
         input {
             max-height: 150px;
-            max-width: 100px;
+            max-width: 120px;
             width: 100%;
             height: 100%;
 
