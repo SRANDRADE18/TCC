@@ -1,13 +1,19 @@
 .carrinho-pagina {
+    display: flex;
+    flex-direction: column;
+
     .Carrinho {
         display: flex;
         flex-direction: row;
         align-items: center;
         margin: 20px;
+        align-self: center;
+        max-width: 1080px;
+        width: 100%;
 
         .meu-carrinho {
             color: #38B593;
-            font:30px 'font5';
+            font: 30px 'font5';
             font-weight: 650;
 
         }
@@ -80,7 +86,7 @@
         width: 100%;
         max-width: 1000px;
         margin-left: 25px;
-    
+
 
 
     }
@@ -102,8 +108,8 @@
     .Test-Carrinho {
         display: flex;
         flex-direction: row;
-        justify-content:space-between;
-       align-items: center;
+        justify-content: space-between;
+        align-items: center;
         padding: 10px;
 
     }
@@ -113,12 +119,13 @@
         align-items: center;
 
     }
-    .salvar-icon{
-        max-width:19px ;
-        max-height:19px ;
-        height:100% ;
-        width:100% ;
-       
+
+    .salvar-icon {
+        max-width: 19px;
+        max-height: 19px;
+        height: 100%;
+        width: 100%;
+
     }
 
     .Carrinho-Salvar h2 {
@@ -146,33 +153,163 @@
         line-height: normal;
         margin-right: 40px;
     }
-}
 
-.resumo-e-localizaçao{
-    display:flex;
-    flex-direction:column;
-    justify-content: space-evenly;
-
-
-    .resumo-do-pedido{
+    .resumo-e-localizaçao {
         display: flex;
-        flex-direction: row;
-        height: ;
-        width: ;
+        flex-direction: column;
+        max-width: 1080px;
+        width: 100%;
+        align-self: center;
+        padding: 20px 0px;
 
     }
 
-   
+    .res {
+        align-self: center;
+        max-width: 850px;
+        width: 100%;
+        padding: 10px 0px;
+    }
 
-   
+    .resumo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-    .localizaçao-2{
+    .resumo-e-localizaçao h2 {
+        font-size: 28px;
+        color: #40A34C;
+        text-align: end;
+    }
+
+    .resumo-do-pedido {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 20px;
+
+    }
+
+    .localizaçao-2 {
         background-color: #EBEBEB;
-        height:100% ;
-        width:100% ;
-        max-width:500px ;
-        max-height:500px ;
-       
-      
+        height: 100%;
+        width: 100%;
+        max-width: 550px;
+        max-height: 500px;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+
+        border-radius: 20px ;
+
+    }
+
+    .localizaçao-2 h1 {
+        font-size: 24px;
+    }
+
+    .localizaçao-2 h2 {
+        font-size: 20px;
+        text-align: start;
+    }
+
+    .localizaçao-2 img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .localizaçao-2>p {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        color: #AE0606;
+    }
+
+    .informaçao-loc {
+        display: flex;
+        align-items: center;
+        padding: 40px 10px;
+
+        border-bottom: #000 solid 1px;
+    }
+
+    .informaçao-loc p {
+        font-size: 14px;
+    }
+
+    .produto-entrega {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 300px;
+        height: 100px;
+        padding: 10px 0px;
+
+        border-top: #000 1px solid;
+        border-bottom: #000 1px solid;
+    }
+
+    .produto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h4,
+        h5 {
+            font-size: 20px;
+        }
+    }
+
+    .valor-entrega {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h4,
+        h5 {
+            font-size: 20px;
+        }
+
+        h5 {
+            color: #40A34C;
+        }
+    }
+
+
+    .total {
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        padding: 20px 0px 0px 0px;
+
+        h3 {
+            color: #06AEAE;
+        }
+    }
+
+    .total-cartao {
+        text-align: end;
+        font-size: 18px;
+    }
+
+    .botoes{
+        display: flex;
+        flex-direction: row ;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0px;
+
+        a, button{
+            font-size: 16px;
+            color: #fff;
+            background-color: #3B0060;
+            border-radius: 14px;
+            padding: 6px 12px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+        }
     }
 }

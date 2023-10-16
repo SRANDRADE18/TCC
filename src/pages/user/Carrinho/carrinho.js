@@ -13,7 +13,8 @@ export default function Carrinho() {
 
     return (
         <div className='carrinho-pagina'>
-            
+
+            <Header />
 
             <div className='Carrinho'>
                 <h1 className='meu-carrinho'>Meu carrinho</h1>
@@ -37,7 +38,6 @@ export default function Carrinho() {
 
                             <h1>Bota Vegano Shoes Naturale Galaxía - R$349,90</h1>
 
-                            <h1>Vendido e entregue por <span className='texto-verde'>VGN Shoes</span></h1>
 
                             <h1>Entrega Normal:<span>Grátis</span></h1>
 
@@ -81,7 +81,6 @@ export default function Carrinho() {
 
                             <h1>Bota Vegano Shoes Naturale Galaxía</h1>
 
-                            <h1>Vendido e entregue por <span className='texto-verde'>VGN Shoes</span></h1>
 
                             <h1>Entrega Normal:<span>Grátis</span></h1>
 
@@ -105,79 +104,79 @@ export default function Carrinho() {
                     </div>
 
                     <div className='linha'>
-                    <div className='Linha-Carrinho'></div>
+                        <div className='Linha-Carrinho'></div>
                     </div>
                 </div>
 
             </div>
 
             <div className='resumo-e-localizaçao'>
+                <h2 className='res'>RESUMO DO PEDIDO </h2>
+
                 <div className='resumo-do-pedido'>
-                  <h2>RESUMO DO PEDIDO </h2>
-            
-                 <div className='localizaçao-1'>
-                  <div className='localizaçao-2'>
 
-                    <h1>Escolha o tipo  de entrega na próxima etapa!</h1>
-                    <h2>Entrega calculada para: </h2>
-                    <div className='informaçao-loc'>
+                    <div className='localizaçao-1'>
+                        <div className='localizaçao-2'>
 
-                        <div className='icon-localizaçao'>
-                            <img src="/assets/images/localiza-2.png" />
+                            <h1>Escolha o tipo  de entrega na próxima etapa!</h1>
+                            <h2>Entrega calculada para: </h2>
+                            <div className='informaçao-loc'>
 
-                        </div>
+                                <div className='icon-localizaçao'>
+                                    <img src="/assets/images/localiza-2.png" />
 
-                        <div>
-                            <p>Rua paraíso das garças</p>
-                            <p>Chácara do Sol, São paulo - SP</p>
-                            <p>CEP: 04857-726</p>
-                        </div>
-                    </div>
-                    <div className='Linha-loc'></div>
+                                </div>
 
-                    <p>Digitar um novo CEP</p>
+                                <div>
+                                    <p>Rua paraíso das garças</p>
+                                    <p>Chácara do Sol, São paulo - SP</p>
+                                    <p>CEP: 04857-726</p>
+                                </div>
+                            </div>
+
+                            <p>Digitar um novo CEP</p>
 
 
-                 </div>
-                 </div>
-
-                 <div className='resumo'>
-                    <div className='Linha-pedido'></div>
-                    <div className='produto-entrega'>
-                        <div className='produto'>
-                            <h4>05 Produtos</h4>
-                            <h4>entrega</h4>
-
-                        </div>
-                        <div className='valor-entrega'>
-                            <h4>R$ 600,00</h4>
-                            <h5>Grátis</h5>
-                        </div>
-                    </div>
-                    <div className='Linha-pedido'></div>
-                    <div>
-                        <div className='total'>
-                            <h4>Total</h4>
-                        </div>
-                        <div className='total-cartao'>
-                            <h3>R$ 600,00</h3>
-                            <p>no cartão ou á  vista no pix</p>
-                        </div>
-
-                        <div className='botoes'>
-                            <Link to={'/compra'}>COMPRAR MAIS</Link>
-                            <button >FINALIZAR</button>
                         </div>
                     </div>
 
+                    <div className='resumo'>
+                        <div className='produto-entrega'>
+                            <div className='produto'>
+                                <h4>05 Produtos</h4>
+                                <h4>Entrega</h4>
+
+                            </div>
+                            <div className='valor-entrega'>
+                                <h4>R$ 600,00</h4>
+                                <h5>Grátis</h5>
+                            </div>
+                        </div>
+                        <div className='finalizar'>
+                            <div className='total'>
+                                <h4>Total</h4>
+                                <h3>R$ 600,00</h3>
+
+                            </div>
+                            <div className='total-cartao'>
+                                <p>no cartão ou á  vista no pix</p>
+                            </div>
+
+                            <div className='botoes'>
+                                <Link to={'/compra'}>COMPRAR MAIS</Link>
+                                <button >FINALIZAR</button>
+                            </div>
+                        </div>
 
 
 
-                 </div>
 
-               </div>
+                    </div>
+
+                </div>
             </div>
 
+            <Rodape/>
 
         </div>
     )
