@@ -81,7 +81,7 @@ export default function Admaddproduto() {
 
 
                                     <h2>Colar Imagem</h2>
-                                    <img src="/assets/images/image 94.png"></img>
+                                    <img src="/assets/images/addprodutoADM/image 94.png"></img>
 
                                     <h2>Descrição</h2>
                                     <input type='text'></input>

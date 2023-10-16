@@ -45,16 +45,16 @@ export default function landingPage() {
         <div className='plataforma'>
 
           <div className='Quadrados'>
-            <img className='quadradinhos' src="/assets/images/qudrado.png" />
-            <img className='quadradinhos' src="/assets/images/qudrado.png" />
-            <img className='quadradinhos' src="/assets/images/qudrado.png" />
-            <img className='quadradinhos' src="/assets/images/qudrado.png" />
-            <img className='quadradinhos' src="/assets/images/qudrado.png" />
-            <img className='quadradinhos' src="/assets/images/qudrado.png" />
+            <img className='quadradinhos' src="/assets/images/landing-page/qudrado.png" />
+            <img className='quadradinhos' src="/assets/images/landing-page/qudrado.png" />
+            <img className='quadradinhos' src="/assets/images/landing-page/qudrado.png" />
+            <img className='quadradinhos' src="/assets/images/landing-page/qudrado.png" />
+            <img className='quadradinhos' src="/assets/images/landing-page/qudrado.png" />
+            <img className='quadradinhos' src="/assets/images/landing-page/qudrado.png" />
           </div>
 
 
-          <img className='Tenis-Parado' src="/assets/images/tenis na plataforma.png"></img>
+          <img className='Tenis-Parado' src="/assets/images/landing-page/tenis na plataforma.png"></img>
 
 
         </div>
@@ -128,7 +128,7 @@ export default function landingPage() {
 
         </div>
 
-        <img src="/assets/images/Tenis-Branco.png"></img>
+        <img src="/assets/images/landing-Page/Tenis-Branco.png"></img>
 
 
         <div className='Texto1'>

@@ -115,6 +115,20 @@ export default function Filtroproduto() {
 
                             </div>
 
+                              <div className='Info-Tenis-Compra'>
+
+                                <h1>Bota Vegano Shoes Cross Tanguá Premium</h1>
+                                <h1>4587</h1>
+                                <h1>09/01/2023</h1>
+                                <h1>298,90</h1>
+                                <h1>PRETO</h1>
+                                <h1>MES*** promoçao de inverno 50% de desconto</h1>
+                                <h1>298,90</h1>
+                                <h1>UNISSEX</h1>
+                                <h1>35,36,37,38,39</h1>
+
+                            </div>
+
 
 
                         </div>
