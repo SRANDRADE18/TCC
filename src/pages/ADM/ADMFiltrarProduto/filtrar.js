@@ -7,8 +7,8 @@ import { useState } from 'react';
 import Rodape from '../../../components/Rodape/rodape';
 import Header from '../../../components/Header/header';
 
-import { confirmAlert } from 'react-confirm-alert'; 
-import 'react-confirm-alert/src/react-confirm-alert.css'; 
+import { confirmAlert } from 'react-confirm-alert';
+import 'react-confirm-alert/src/react-confirm-alert.css';
 
 
 export default function Filtroproduto() {
@@ -33,7 +33,7 @@ export default function Filtroproduto() {
 
         if (filterButton) {
             filterButton.addEventListener('click', function () {
-                
+
             });
         }
     });
@@ -76,19 +76,19 @@ export default function Filtroproduto() {
                                 <h2> oLá, Sr.Andrade </h2>
 
                             </div>
+
                         </div>
 
 
 
                         <div>
-                            <h2>Tela De Adicionar Produto</h2>
+                            <h2>Tela De Filtrar Produto</h2>
                         </div>
 
                         <div className='VGN-Shoes-filtar'>
 
                             <div className='Header-Filtar'>
 
-                        
                                 <h1>nome</h1>
                                 <h1>NUMERO DO PRODUTO</h1>
                                 <h1>DATA DO CADASTRO</h1>
@@ -99,22 +99,22 @@ export default function Filtroproduto() {
                                 <h1>GENERO</h1>
                                 <h1>TAMANHOS</h1>
 
-
                             </div>
 
                             <div className='Info-Tenis-Compra'>
 
-                                <h2>Bota Vegano Shoes Cross Tanguá Premium</h2>
+                                <h1>Bota Vegano Shoes Cross Tanguá Premium</h1>
                                 <h1>4587</h1>
                                 <h1>09/01/2023</h1>
                                 <h1>298,90</h1>
                                 <h1>PRETO</h1>
-                                <h2>MES*** promoçao de inverno 50% de desconto</h2>
+                                <h1>MES*** promoçao de inverno 50% de desconto</h1>
                                 <h1>298,90</h1>
                                 <h1>UNISSEX</h1>
                                 <h1>35,36,37,38,39</h1>
 
                             </div>
+
 
 
                         </div>
@@ -127,7 +127,7 @@ export default function Filtroproduto() {
 
             </div>
 
-            <Rodape/>
+            <Rodape />
 
 
         </div>
