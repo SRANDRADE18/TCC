@@ -18,7 +18,7 @@ export default function Carrinho() {
 
             <div className='Carrinho'>
                 <h1 className='meu-carrinho'>Meu carrinho</h1>
-                <img className='carrinho-icon' src="/assets/images/carrinho-de-compras-de-design-xadrez.png" />
+                <img className='carrinho-icon' src="/assets/images/carrinho/carrinho-de-compras-de-design-xadrez.png" />
             </div>
 
             <div className='Carrinho-Produto'>
@@ -42,7 +42,7 @@ export default function Carrinho() {
                             <h1>Entrega Normal:<span>Grátis</span></h1>
 
                             <div className='Carrinho-Salvar'>
-                                <img className='salvar-icon' src="/assets/images/salvar-instagram.png" />
+                                <img className='salvar-icon' src="/assets/images/carrinho/salvar-instagram.png" />
                                 <h2>Salvar para depois</h2>
                                 <span></span>
                                 <h2>Remover</h2>
@@ -85,7 +85,7 @@ export default function Carrinho() {
                             <h1>Entrega Normal:<span>Grátis</span></h1>
 
                             <div className='Carrinho-Salvar'>
-                                <img className='salvar-icon' src="/assets/images/salvar-instagram.png" />
+                                <img className='salvar-icon' src="/assets/images/carrinho/salvar-instagram.png" />
 
                                 <h2>Salvar para depois</h2>
                                 <span></span>
@@ -118,9 +118,14 @@ export default function Carrinho() {
                     <div className='localizaçao-1'>
                         <div className='localizaçao-2'>
 
+<<<<<<< HEAD
                             <h1>Escolha o tipo  de entrega na próxima etapa!</h1>
                             <h2>Entrega calculada para: </h2>
                             <div className='informaçao-loc'>
+=======
+                        <div className='icon-localizaçao'>
+                            <img src="/assets/images/carrinho/localiza-2.png" />
+>>>>>>> 781e3401080eea9530e6d64fc6fc531df155b7c4
 
                                 <div className='icon-localizaçao'>
                                     <img src="/assets/images/localiza-2.png" />

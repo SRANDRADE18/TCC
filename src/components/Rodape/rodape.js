@@ -31,7 +31,7 @@ export default function Rodape() {
         </div>
         <div className='cards' id='card-pag'>
           <h1>Metodos de Pagamento</h1>
-          <img src="/assets/images/metodo-pag.svg"></img>
+          <img src="/assets/images/rodape/Pagamento.png"></img>
         </div>
       </div>
       <div className='linha-fantasma'></div>

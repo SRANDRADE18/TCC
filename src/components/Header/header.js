@@ -22,7 +22,7 @@ export default function Header() {
     <div className='page-header'>
       <div className='header'>
         <div className='header-logo'>
-          <img className='img-logo' src="/assets/images/logo tcc 2.png" />
+          <img className='img-logo' src="/assets/images/Header/logo tcc 2.png" />
         </div>
 
         <div className='header-input'>
@@ -33,13 +33,13 @@ export default function Header() {
         <div className='header-menu'>
 
 
-          <img src="/assets/images/coracao 1.png" />
+          <img src="/assets/images/Header/coracao 1.png" />
 
         
           <CartButton/>
 
 
-          <img onClick={BTuser} src="/assets/images/do-utilizador 2.png" />
+          <img onClick={BTuser} src="/assets/images/Header/do-utilizador 2.png" />
           <img id='menu' src="/assets/images/menu.png" />
 
 
@@ -50,7 +50,7 @@ export default function Header() {
       <div className='sub-menu'>
         <div className='sub-menu-esq'>
           <img src="/assets/images/whatsapp 1.png" />
-          <img src="/assets/images/facebook (1).png" />
+          <img src="/assets/images/Header/facebook (1).png" />
         </div>
 
         <div className='sub-menu-links'>
@@ -60,8 +60,8 @@ export default function Header() {
         </div>
 
         <div className='sub-menu-dir'>
-          <img src="/assets/images/instagram.png" />
-          <img src="/assets/images/twitter.png" />
+          <img src="/assets/images/Header/instagram.png" />
+          <img src="/assets/images/Header/twitter.png" />
         </div>
 
       </div>
