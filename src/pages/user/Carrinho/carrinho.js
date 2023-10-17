@@ -118,14 +118,14 @@ export default function Carrinho() {
                     <div className='localizaçao-1'>
                         <div className='localizaçao-2'>
 
-<<<<<<< HEAD
+
                             <h1>Escolha o tipo  de entrega na próxima etapa!</h1>
                             <h2>Entrega calculada para: </h2>
                             <div className='informaçao-loc'>
-=======
+
                         <div className='icon-localizaçao'>
                             <img src="/assets/images/carrinho/localiza-2.png" />
->>>>>>> 781e3401080eea9530e6d64fc6fc531df155b7c4
+
 
                                 <div className='icon-localizaçao'>
                                     <img src="/assets/images/localiza-2.png" />
@@ -179,6 +179,8 @@ export default function Carrinho() {
                     </div>
 
                 </div>
+            </div>
+
             </div>
 
             <Rodape/>

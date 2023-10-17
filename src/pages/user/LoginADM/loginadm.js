@@ -13,33 +13,47 @@ export default function Login_ADM(){
 
     return(
 
-        <div className='Criar-Conta'>
+        <div className='login-adm'>
             
             <Header/>
 
-            <div className='Conta-ADM'>
+            <div className='Conta-Test'>
+
+                <div className='Bem-vindo'>
+
+                    <div className='bem-vindo-login'>
+                        <h1>Seja Bem-Vindo</h1>
+                        <p>Essa é a parte de login do administrador do site, preencha as informações para se conectar na administração </p>
+
+                        
 
 
-           <div className='cadastro-ADM'>
-     
-            <div className='criar-conta'>
-                <h1>ADM LOGIN</h1>
-            </div>
+                    </div>
 
-
-                <div className='Infos-Cliente'>
-                    <input className='Input-ADM' type="search" placeholder='Nome Completo'/>
-                    <input className='Input-ADM' type="search" placeholder='Email'/>
-                    <input className='Input-ADM' type="search" placeholder='Senha'/>
                 </div>
-                
-                <br/>
 
-                <button className='cadastro-button'> Entrar </button>
-           </div>
+                <div className='cadastro'>
 
+                    <div className='img'>
 
-            </div>
+                    </div>
+
+                    <div className='criar-conta'>
+                        <h1> Login Administrativo </h1>
+                    </div>
+
+                    <div className='infos-cliente-login'>
+            
+                        <input  type="search" placeholder='Email' />
+                        <input  type="search" placeholder='Senha' />
+                    </div>
+
+                   
+                    <button> Fazer login </button>
+                    
+                </div>
+                </div>
+
 
            
             <Rodape/>
