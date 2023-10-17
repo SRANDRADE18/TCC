@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './App.scss';
 import Rodape from '../../../components/Rodape/rodape';
 import Header from '../../../components/Header/header';
@@ -13,7 +13,9 @@ import { motion } from 'framer-motion';
 
 
 
-export default function landingPage() {
+export default function LandingPage() {
+
+  const corousel = useRef(null)
 
   function Products() {
 
@@ -25,6 +27,20 @@ export default function landingPage() {
     })
 
   }
+
+  const esq = (e) => {
+    e.preventDefault();
+
+    corousel.current.scrollLeft -= corousel.current.offsetWidth;
+  }
+
+  const dir = (e) => {
+    e.preventDefault();
+
+    corousel.current.scrollLeft += corousel.current.offsetWidth;
+  }
+
+
 
 
   return (
@@ -59,45 +75,131 @@ export default function landingPage() {
 
         </div>
       </div>
+      <div className='produtos'>
 
-      <div className='carousel'>
-        <motion.div className='ex'
-          initial={{ scale: 1, }}
-          transition={{ duration: 0.3, }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}></motion.div>
+        <motion.button onClick={esq}
+        initial={{boxShadow:'none'}}
+        transition={{duration:0.5}}
+        whileHover={{scale:1.1, boxShadow:'0px 0px 14px #929292'}}
+        whileTap={{scale:0.8}}> <img src='/assets/icons/chevron.png' /> </motion.button>
 
-        <motion.div className='ex'
-          initial={{ scale: 1, }}
-          transition={{ duration: 0.3, }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}></motion.div>
+        <div className='carousel' ref={corousel}>
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>  1</motion.div>
 
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>2</motion.div>
 
-        <motion.div className='ex'
-          initial={{ scale: 1, }}
-          transition={{ duration: 0.3, }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}></motion.div>
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>3</motion.div>
 
-        <motion.div className='ex'
-          initial={{ scale: 1 }}
-          transition={{ scale: { duration: 0.5 }, border: { duration: 120 } }}
-          whileHover={{ scale: [1.1], border: '1px solid #000' }}
-          whileTap={{ scale: 0.9 }}></motion.div>
-          
-        <motion.div className='ex'
-          initial={{ scale: 1, }}
-          transition={{ duration: 1 }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}></motion.div>
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>4</motion.div>
 
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>5</motion.div>
 
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>6</motion.div>
 
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>7</motion.div>
+
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>8</motion.div>
+
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>9</motion.div>
+
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>10</motion.div>
+
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>11</motion.div>
+
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>12</motion.div>
+
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>13</motion.div>
+
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>14</motion.div>
+
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>15</motion.div>
+
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>16</motion.div>
+
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>17</motion.div>
+
+          <motion.div className='ex'
+            initial={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}>18</motion.div>
+        </div>
+
+        <motion.button onClick={dir}
+        initial={{boxShadow:'none', rotate:180}}
+        transition={{duration:0.5}}
+        whileHover={{scale:1.1, boxShadow:'0px 0px 14px #929292'}}
+        whileTap={{scale:0.8}}> <img src='/assets/icons/chevron.png' /> </motion.button>
 
       </div>
-
-
 
       <div className='Promo-tenis01'>
 

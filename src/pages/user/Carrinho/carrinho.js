@@ -2,6 +2,8 @@ import './carrinho.scss';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
+
 
 import Rodape from '../../../components/Rodape/rodape';
 import Header from '../../../components/Header/header';
@@ -24,9 +26,6 @@ export default function Carrinho() {
             <div className='Carrinho-Produto'>
 
                 <div className='test-carrinho'>
-                    <div className='linha'>
-                        <div className='Linha-Carrinho'></div>
-                    </div>
 
 
                     <div className='Test-Carrinho'>
@@ -58,9 +57,7 @@ export default function Carrinho() {
 
                         </div>
                     </div>
-                    <div className='linha'>
-                        <div className='Linha-Carrinho'></div>
-                    </div>
+
 
                 </div>
 
@@ -103,9 +100,6 @@ export default function Carrinho() {
                         </div>
                     </div>
 
-                    <div className='linha'>
-                        <div className='Linha-Carrinho'></div>
-                    </div>
                 </div>
 
             </div>
@@ -117,16 +111,9 @@ export default function Carrinho() {
 
                     <div className='localizaçao-1'>
                         <div className='localizaçao-2'>
-
-<<<<<<< HEAD
                             <h1>Escolha o tipo  de entrega na próxima etapa!</h1>
                             <h2>Entrega calculada para: </h2>
                             <div className='informaçao-loc'>
-=======
-                        <div className='icon-localizaçao'>
-                            <img src="/assets/images/carrinho/localiza-2.png" />
->>>>>>> 781e3401080eea9530e6d64fc6fc531df155b7c4
-
                                 <div className='icon-localizaçao'>
                                     <img src="/assets/images/localiza-2.png" />
 
@@ -168,8 +155,22 @@ export default function Carrinho() {
                             </div>
 
                             <div className='botoes'>
-                                <Link to={'/compra'}>COMPRAR MAIS</Link>
-                                <button >FINALIZAR</button>
+                                <Link to={'/compra'}>
+                                    <motion.button className='botaa'
+                                        initial={{ scale: 1 }}
+                                        transition={{ duration: 0.3 }}
+                                        whileHover={{ scale: 1.2 }}
+                                        whileTap={{ scale: 0.8 }}>
+                                        COMPRAR MAIS
+                                    </motion.button>
+                                </Link>
+                                <motion.button className='botaa'
+                                    initial={{ scale: 1 }}
+                                    transition={{ duration: 0.3 }}
+                                    whileHover={{ scale: 1.2 }}
+                                    whileTap={{ scale: 0.8 }}>
+                                    FINALIZAR
+                                </motion.button>
                             </div>
                         </div>
 
@@ -181,7 +182,7 @@ export default function Carrinho() {
                 </div>
             </div>
 
-            <Rodape/>
+            <Rodape />
 
         </div>
     )

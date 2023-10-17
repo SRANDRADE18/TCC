@@ -1,6 +1,10 @@
 @import url(../../../fonts.scss);
 
 .landing-Page {
+  display: flex;
+  flex-direction: column;
+  
+  
   .Promo-tenis {
     max-height: 100%;
     max-width: 100%;
@@ -62,18 +66,54 @@
     margin: -10px;
   }
 
-  .carousel{
+  .produtos{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .produtos button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: transparent;
+    margin: 0;
+    border-radius: 200px;
+    padding: 4px;
+  }
+  .produtos img{
+    width: 40px;
+    height: 40px;
+    border-radius: 200px;
+  }
+
+  .carousel{
+    align-self:center;
+
+    display: flex;
     align-items: center;
     padding: 30px 0px;
+    flex: none;
+    overflow: hidden;
+    width: 1200px;
+    scroll-behavior: smooth;
   }
+  
   .ex{
     height: 300px;
     width: 180px;
-    background-color: #f6f6f6;
+    background-color: #ff0000;
     border-radius: 10px;
+    flex: none;
+    margin: 0px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 64px;
   }
+
 
   .Tenis-01 {
     display: flex;
