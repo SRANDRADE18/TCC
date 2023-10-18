@@ -22,11 +22,13 @@ export default function Compra() {
       <Header />
 
 
+
+
       <div className='Produtos-compra'>
 
         <div className='Compra-Filtros'>
 
-          <div className='Filtro-Preco'>
+          <div className='Filtro-Preco' >
 
             <h1>PREÇOS</h1>
 
@@ -44,70 +46,17 @@ export default function Compra() {
 
             <div className='Tamanhos-tenis'>
 
-
-              <div className='test'>
-
-                <input className='check-button' type="checkbox" />
-
-                <h2>35</h2>
-
+              <div class="size-selector">
+                <div class="size-option">S</div>
+                <div class="size-option">M</div>
+                <div class="size-option">L</div>
+                <div class="size-option">XL</div>
               </div>
 
-              <div className='test'>
 
-                <input className='check-button' type="checkbox" />
 
-                <h2>35</h2>
 
-              </div>
 
-              <div className='test'>
-
-                <input className='check-button' type="checkbox" />
-
-                <h2>35</h2>
-
-              </div>
-
-              <div className='test'>
-
-                <input className='check-button' type="checkbox" />
-
-                <h2>35</h2>
-
-              </div>
-
-              <div className='test'>
-
-                <input className='check-button' type="checkbox" />
-
-                <h2>35</h2>
-
-              </div>
-
-              <div className='test'>
-
-                <input className='check-button' type="checkbox" />
-
-                <h2>35</h2>
-
-              </div>
-
-              <div className='test'>
-
-                <input className='check-button' type="checkbox" />
-
-                <h2>35</h2>
-
-              </div>
-
-              <div className='test'>
-
-                <input type="checkbox" />
-
-                <h2>35</h2>
-
-              </div>
 
             </div>
 
@@ -119,26 +68,19 @@ export default function Compra() {
 
             <div className='Filt-Genero01'>
 
-              <div className='Modelos'>
+              <select>
 
-                <input type="checkbox" />
-                <h2>Masculino</h2>
+                <option className='opitin'>Generos</option >
 
-              </div>
+                <option className='opitin'>Masculino</option >
 
-              <div className='Modelos'>
+                <option className='opitin'>Feminino</option >
 
-                <input type="checkbox" />
-                <h2>Feminino</h2>
+                <option className='opitin'>Unisex</option>
 
-              </div>
 
-              <div className='Modelos'>
 
-                <input type="checkbox" />
-                <h2>Unissex</h2>
-
-              </div>
+              </select>
 
             </div>
 
@@ -153,23 +95,23 @@ export default function Compra() {
 
               <div className='Modelos'>
 
-                <input type="checkbox" />
+
                 <h2>Tênis</h2>
 
               </div>
 
               <div className='Modelos'>
 
-                <input type="checkbox" />
+
                 <h2>Botas</h2>
 
               </div>
 
               <div className='Modelos'>
 
-                <input type="checkbox" />
+
                 <h2>Sport</h2>
-                
+
               </div>
 
             </div>
@@ -198,9 +140,6 @@ export default function Compra() {
             </div>
 
           </div>
-
-
-
 
         </div>
 
@@ -603,10 +542,6 @@ export default function Compra() {
           </div>
 
         </div>
-
-
-
-
 
       </div>
 
