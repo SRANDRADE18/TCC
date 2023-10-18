@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
+import Location from '../../../components/loacaldot/local';
 
 import Rodape from '../../../components/Rodape/rodape';
 import Header from '../../../components/Header/header';
@@ -104,35 +105,30 @@ export default function Carrinho() {
 
             </div>
 
+            <h2 className='res'>RESUMO DO PEDIDO </h2>
+
             <div className='resumo-e-localizaçao'>
-                <h2 className='res'>RESUMO DO PEDIDO </h2>
 
                 <div className='resumo-do-pedido'>
 
                     <div className='localizaçao-1'>
                         <div className='localizaçao-2'>
 
-<<<<<<< HEAD
-=======
+                            <h1>
+                                Escolha o tipo  de entrega na próxima etapa!
+                            </h1>
+                            <h2>
+                                Entrega calculada para:
+                            </h2>
 
->>>>>>> 7f44b49d3b6693988bb3242f7cfb01475915728c
-                            <h1>Escolha o tipo  de entrega na próxima etapa!</h1>
-                            <h2>Entrega calculada para: </h2>
                             <div className='informaçao-loc'>
-
-                        <div className='icon-localizaçao'>
-                            <img src="/assets/images/carrinho/localiza-2.png" />
-<<<<<<< HEAD
-=======
-
->>>>>>> 7f44b49d3b6693988bb3242f7cfb01475915728c
-
                                 <div className='icon-localizaçao'>
-                                    <img src="/assets/images/localiza-2.png" />
+
+                                    <Location />
 
                                 </div>
 
-                                <div>
+                                <div className='info-endereco'>
                                     <p>Rua paraíso das garças</p>
                                     <p>Chácara do Sol, São paulo - SP</p>
                                     <p>CEP: 04857-726</p>
@@ -141,64 +137,62 @@ export default function Carrinho() {
 
                             <p>Digitar um novo CEP</p>
 
+                        </div>
 
+
+                    </div>
+                </div>
+
+                <div className='resumo'>
+                    <div className='produto-entrega'>
+                        <div className='produto'>
+                            <h4>05 Produtos</h4>
+                            <h4>Entrega</h4>
+
+                        </div>
+                        <div className='valor-entrega'>
+                            <h4>R$ 600,00</h4>
+                            <h5>Grátis</h5>
                         </div>
                     </div>
+                    <div className='finalizar'>
+                        <div className='total'>
+                            <h4>Total</h4>
+                            <h3>R$ 600,00</h3>
 
-                    <div className='resumo'>
-                        <div className='produto-entrega'>
-                            <div className='produto'>
-                                <h4>05 Produtos</h4>
-                                <h4>Entrega</h4>
-
-                            </div>
-                            <div className='valor-entrega'>
-                                <h4>R$ 600,00</h4>
-                                <h5>Grátis</h5>
-                            </div>
                         </div>
-                        <div className='finalizar'>
-                            <div className='total'>
-                                <h4>Total</h4>
-                                <h3>R$ 600,00</h3>
+                        <div className='total-cartao'>
+                            <p>no cartão ou á  vista no pix</p>
+                        </div>
 
-                            </div>
-                            <div className='total-cartao'>
-                                <p>no cartão ou á  vista no pix</p>
-                            </div>
-
-                            <div className='botoes'>
-                                <Link to={'/compra'}>
-                                    <motion.button className='botaa'
-                                        initial={{ scale: 1 }}
-                                        transition={{ duration: 0.3 }}
-                                        whileHover={{ scale: 1.2 }}
-                                        whileTap={{ scale: 0.8 }}>
-                                        COMPRAR MAIS
-                                    </motion.button>
-                                </Link>
+                        <div className='botoes'>
+                            <Link to={'/compra'}>
                                 <motion.button className='botaa'
                                     initial={{ scale: 1 }}
                                     transition={{ duration: 0.3 }}
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{ scale: 0.8 }}>
-                                    FINALIZAR
+                                    COMPRAR MAIS
                                 </motion.button>
-                            </div>
+                            </Link>
+                            <motion.button className='botaa'
+                                initial={{ scale: 1 }}
+                                transition={{ duration: 0.3 }}
+                                whileHover={{ scale: 1.2 }}
+                                whileTap={{ scale: 0.8 }}>
+                                FINALIZAR
+                            </motion.button>
                         </div>
-
-
-
-
                     </div>
 
+
+
+
                 </div>
-            </div>
-            </div>
 
             </div>
 
-            <Rodape/>
+            <Rodape />
 
         </div>
     )

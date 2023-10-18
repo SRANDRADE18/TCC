@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Header from '../../../components/Header/header.js';
 import Rodape from '../../../components/Rodape/rodape.js';
 
+import InputMask from "react-input-mask";
 
 export default function Compra() {
 
@@ -32,7 +33,7 @@ export default function Compra() {
 
             <h1>PREÇOS</h1>
 
-            <h2>200 R$ -- 1500R$</h2>
+            <div> <input type='number' placeholder='R$200,00' /> -- <input type='number' placeholder='R$1500,00' /></div>
 
             <div className='Filter-Preco'>
               <input class="filter_range" type="range" ></input>

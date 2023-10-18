@@ -1,6 +1,7 @@
 .carrinho-pagina {
     display: flex;
     flex-direction: column;
+    
 
     .Carrinho {
         display: flex;
@@ -139,9 +140,11 @@
 
     .resumo-e-localizaçao {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         max-width: 1080px;
         width: 100%;
+        justify-content: space-around;
+
         align-self: center;
         padding: 20px 0px;
 
@@ -160,7 +163,7 @@
         align-items: center;
     }
 
-    .resumo-e-localizaçao h2 {
+    .res{
         font-size: 28px;
         color: #40A34C;
         text-align: end;
@@ -170,11 +173,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin: 20px;
-<<<<<<< HEAD
 
-=======
->>>>>>> 7f44b49d3b6693988bb3242f7cfb01475915728c
     }
 
     .localizaçao-2 {
@@ -190,21 +189,17 @@
         border-radius: 20px;
 
     }
-
     .localizaçao-2 h1 {
         font-size: 24px;
     }
-
     .localizaçao-2 h2 {
         font-size: 20px;
         text-align: start;
     }
-
     .localizaçao-2 img {
         height: 60px;
         width: 60px;
     }
-
     .localizaçao-2>p {
         display: flex;
         justify-content: center;

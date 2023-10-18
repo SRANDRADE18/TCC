@@ -3,23 +3,14 @@
 
     .Produtos-compra {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         background-color: rgba(255, 255, 255, 0.438);
-        margin-left: 100px;
-
+        padding: 20px;
     }
 
     .Compra-Filtros {
         display: flex;
         flex-direction: column;
-
-    }
-
-    .Filtro-Preco {
-        display: flex;
-
-        border-bottom: #000 1px solid;
-
 
     }
 
@@ -66,6 +57,22 @@
         width: 100%;
         max-width: 200px;
         max-height: 250px;
+        border-bottom: #000 1px solid;
+
+        h1 {
+            font-size: 24px;
+            color: #000;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+        }
+        input{
+            width: 80px;
+            padding: 4px 8px;
+            font-size: 12px;
+            text-align: center;
+        }
 
     }
 
@@ -91,7 +98,7 @@
         background-color: #000;
     }
 
-    .Filtro-Tamanho{
+    .Filtro-Tamanho {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -107,7 +114,7 @@
         height: 100%;
 
         select {
-        
+
             background-color: #ffffff;
             cursor: pointer;
             margin-top: 10px;
@@ -116,9 +123,9 @@
 
     .size-selector {
         display: flex;
-      }
-      
-      .size-option {
+    }
+
+    .size-option {
         width: 50px;
         height: 50px;
         border: 1px solid #ccc;
@@ -127,20 +134,20 @@
         align-items: center;
         margin-right: 10px;
         cursor: pointer;
-      
+
         &:hover {
-          background-color: #f0f0f0;
+            background-color: #f0f0f0;
         }
-      }
+    }
 
 
 
 
-    .option{
+    .option {
         padding: 100px;
     }
 
-    .Filtro-Genero{
+    .Filtro-Genero {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -267,26 +274,27 @@
     .Shoop-compra {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
     }
 
     .Compra-Linha01 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
         background-color: #FFF;
         height: 100%;
         width: 100%;
         max-width: 180px;
         max-height: 320px;
-        margin-top: 50px;
         padding: 22px;
-        margin: 22PX;
     }
 
     .Compra-Linha01:hover {
 
         transition: transform 0.3s ease;
-        margin-block-end: 50px;
         cursor: pointer;
         transform: scale(1.1);
         opacity: 1;
@@ -309,7 +317,7 @@
 
         h1 {
             text-align: center;
-            font: 13px 'Font4';
+            font: 14px 'Font4';
             padding: 8px;
             font-weight: bold;
         }
@@ -320,8 +328,7 @@
         width: 100%;
         max-width: 25px;
         max-height: 20px;
-        margin: 1px;
-        margin-top: 12px;
+
         cursor: pointer;
     }
 
@@ -405,28 +412,6 @@
         }
 
 
-        .Filtro-Preco {
-            display: flex;
-
-            border-bottom: #000 1px solid;
-
-        }
-
-        .Filtro-Preco h1 {
-            font-size: 15px;
-        }
-
-        .Filtro-Preco h2 {
-            font-size: 15px;
-
-        }
-
-        .Filtro-Preco {
-
-            height: 150px;
-            width: 150px;
-
-        }
 
         .Filtro-Tamanho {
 
