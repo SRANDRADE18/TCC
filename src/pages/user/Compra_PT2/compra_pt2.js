@@ -15,28 +15,25 @@ import Header from '../../../components/Header/header';
                 <Header/>
 
                 <div className='Compra-pt2'>
-
-                    <div className='Compra-imgg'>
+                    <h1 className='nomefdp'>Tênis Vegano Shoes Easeful Preto</h1>
+                    <div className='todoMundo'>
+                      <div className='Compra-imgg'>
 
                         <div className='tenis-Grande'>
 
-                        <img src="../../../../public/assets/images/tenis/tenis_vegano_shoes_easeful_preto.png"></img>
+                        <img src="../assets/images/tenis/tenis_vegano_shoes_easeful_preto.png"></img>
 
                        <div className='Tenis-Menores'>
-                         <img src="../../../../public/assets/images/compra_pt2/Tenis-img1.png"/>
-                         <img src="../../../../public/assets/images/compra_pt2/Tenis-img2.png"/>
-                     
-
-                     
-                         <img src="../../../../public/assets/images/compra_pt2/Tenis-img3.png"/>
-                         <img src="../../../../public/assets/images/compra_pt2/Tenis-img4.png"/>
+                         <img className='tenizinho' src="../assets/images/compra_pt2/Tenis-img1.png"/>
+                         <img className='tenizinho' src="../assets/images/compra_pt2/Tenis-img3.png"/>
+                         <img className='ovelha-negra' src="../assets/images/compra_pt2/Tenis-img4.png"/>
                        </div>
                      
                         </div>
 
-                    </div>
+                      </div>
 
-                    <div className='Compra-pt_info'>
+                     <div className='Compra-pt_info'>
 
                         <h1>Disponibilidade: Imediata</h1>
                         <h2>DESTAQUE</h2>
@@ -44,11 +41,11 @@ import Header from '../../../components/Header/header';
                         <h4>R$ 284,91 à vista com desconto</h4>
                         
                         <div className='Estrela-info-pt2'>
-                          <img src="../../../../public/assets/images/Vector.svg"></img>
-                          <img src="../../../../public/assets/images/Vector.svg"></img>
-                          <img src="../../../../public/assets/images/Vector.svg"></img>
-                          <img src="../../../../public/assets/images/Vector.svg"></img>
-                          <img src="../../../../public/assets/images/Vector.svg"></img>
+                          <img src="../assets/images/Vector.svg"></img>
+                          <img src="../assets/images/Vector.svg"></img>
+                          <img src="../assets/images/Vector.svg"></img>
+                          <img src="../assets/images/Vector.svg"></img>
+                          <img src="../assets/images/Vector.svg"></img>
 
                          </div>
 
@@ -120,8 +117,8 @@ import Header from '../../../components/Header/header';
                          </div>
 
 
+                      </div>
                     </div>
-
                 </div>
 
 
