@@ -25,7 +25,7 @@
 
         p {
             color: #38B593;
-            font-family: Montserrat;
+             font-family: 'Font5';
             font-size: 12px;
             font-style: normal;
             font-weight: 700;
@@ -34,18 +34,10 @@
             margin-bottom: 9px;
         }
 
-        button {
-            font-size: 12px;
-            text-align: center;
-            border-radius: 20px;
-            background: #38B593;
-            color: #FFF;
-            padding: 10px 40px;
-            border: none;
-            cursor: pointer;
-        }
+    
 
         input {
+            font-family: 'Font5';
             padding: 5px 0px 10px 0px;
             max-width: 200px;
             width: 100%;
@@ -56,15 +48,29 @@
         }
     }
 
+    .button-crie {
+               font-family: 'Font5';
+            font-size: 12px;
+            text-align: center;
+            border-radius: 20px;
+            background: #38B593;
+            color: #FFF;
+            padding: 10px 40px;
+            border: none;
+            cursor: pointer;
+    }
 
 
-    .criar-conta h1 {
-        color: #38B593;
-        font-family: Montserrat;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+
+    .criar-conta{
+        h1 {
+            color: #38B593;
+             font-family: 'Font5';
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
     }
 
     .infos-cliente-login {
@@ -76,9 +82,16 @@
         width:100% ;
         max-width:400px ;
         max-height:100px ;
-
+      
     }
 
+    .revelador{
+        background-color: transparent;
+        border: none    ;
+        cursor: pointer;
+    }
+
+   
     .rede-social {
        max-width:25px ;
        max-height:25px ;
@@ -129,6 +142,7 @@
         padding: 10px;
 
         h1 {
+            font-family: 'Font5';
             font-size: 20px;
             color: #FFF;
             margin-bottom: 20px;
@@ -137,6 +151,7 @@
         }
 
         p {
+            font-family: 'Font5';
             color: #FFF;
             font-size: 0.8em;
             font-weight: 400;
@@ -145,6 +160,7 @@
         }
 
         button {
+            font-family: 'Font5';
             text-align: center;
             border-radius: 20px;
             border-color: #FFF;

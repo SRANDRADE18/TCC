@@ -192,9 +192,12 @@ export default function Carrinho() {
 
             </div>
 
-            <Rodape />
+            </div>
+
+            <Rodape/>
 
         </div>
+        
     )
 
 
