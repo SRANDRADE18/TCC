@@ -63,15 +63,13 @@ export default function Admpage() {
                                 <form method="post" action="#">
                                     <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa" />
                                     <button class="search-box-button"><i class="search-box-icone icon icon-search"></i></button>
-
                                 </form>
                             </div>
 
                             <div>
+
                                 <div className='Sr-no'>
-
-
-                                    <h1>Sr no</h1>
+                                    <h1>Nome</h1>
                                     <h1>Organization</h1>
                                     <h1>Action</h1>
 
@@ -79,10 +77,12 @@ export default function Admpage() {
 
                                 <div className='Fulano'>
                                    
-                                    <h1>Sr no</h1>
+                                    <h1>Matheus Andrade</h1>
                                     <h1>Organization</h1>
                                     <h1>Action</h1>
+
                                 </div>
+
                             </div>
 
 
