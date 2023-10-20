@@ -15,7 +15,7 @@ import Header from '../../../components/Header/header';
                 <Header/>
 
                 <div className='Compra-pt2'>
-                    <h1 className='nomefdp'>Tênis Vegano Shoes Easeful Preto</h1>
+                    <h1 className='nome-produto'>Tênis Vegano Shoes Easeful Preto</h1>
                     <div className='todoMundo'>
                       <div className='Compra-imgg'>
 
