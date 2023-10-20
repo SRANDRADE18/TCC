@@ -33,7 +33,7 @@ export default function Compra() {
 
             <h1>PREÇOS</h1>
 
-            <div> <InputMask className='preco' type='text' placeholder='R$200,00' mask='R$999,99' /> -- <InputMask className='preco' type='text' placeholder='R$200,00' mask='R$999,99' /></div>
+            <div className='preco' > <InputMask type='text' placeholder='R$200,00' mask='R$999,99' />  <InputMask type='text' placeholder='R$200,00' mask='R$999,99' /></div>
 
             <div className='Filter-Preco'>
               <input class="filter_range" type="range" />
@@ -46,21 +46,27 @@ export default function Compra() {
 
             <h1>Tamanhos</h1>
 
-            <div className='Tamanhos-tenis'>
 
-              <div class="size-selector">
-                <div class="size-option">S</div>
-                <div class="size-option">M</div>
-                <div class="size-option">L</div>
-                <div class="size-option">XL</div>
-              </div>
+            <div class="size-selector">
 
+              <select >
+                <option> Tamanho </option>
+                <option> 35 </option>
+                <option> 36 </option>
+                <option> 37 </option>
+                <option> 38 </option>
+                <option> 39 </option>
+                <option> 40 </option>
+                <option> 41 </option>
+                <option> 42 </option>
+                <option> 43 </option>
+                <option> 44 </option>
+                <option> 45 </option>
 
-
-
-
+              </select>
 
             </div>
+
 
           </div>
 
@@ -95,31 +101,18 @@ export default function Compra() {
 
             <div className='Filt-Genero01'>
 
-              <div className='Modelos'>
+              <select>
 
+                <option> Modelos </option>
+                <option> Sportivos </option>
+                <option> Botas </option>
+                <option> Casual </option>
 
-                <h2>Tênis</h2>
-
-              </div>
-
-              <div className='Modelos'>
-
-
-                <h2>Botas</h2>
-
-              </div>
-
-              <div className='Modelos'>
-
-
-                <h2>Sport</h2>
-
-              </div>
+              </select>
 
             </div>
 
           </div>
-
 
           <div className='Filtro-Genero'>
 
