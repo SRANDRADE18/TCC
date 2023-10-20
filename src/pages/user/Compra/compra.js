@@ -33,10 +33,11 @@ export default function Compra() {
 
             <h1>PREÇOS</h1>
 
-            <div> <input type='number' placeholder='R$200,00' /> -- <input type='number' placeholder='R$1500,00' /></div>
+            <div> <InputMask className='preco' type='text' placeholder='R$200,00' mask='R$999,99' /> -- <InputMask className='preco' type='text' placeholder='R$200,00' mask='R$999,99' /></div>
 
             <div className='Filter-Preco'>
-              <input class="filter_range" type="range" ></input>
+              <input class="filter_range" type="range" />
+              <input class="filter_range" type="range" />
             </div>
 
           </div>

@@ -14,16 +14,26 @@
 
     }
 
+    .Filter-Preco{
+        align-self: flex-start;
+        position: relative;
+    }
 
     .filter_range {
+        position: absolute;
         -webkit-appearance: none;
-        width: 15vw;
+        width: 200px ;
         height: 5px;
         background: #2A972E;
         outline: none;
         opacity: 0.7;
         -webkit-transition: .2s;
         transition: opacity .2s;
+        border-radius: 20px;
+    }
+
+    .filter_range:last-child{
+        z-index: 2;
     }
 
     .filter_range:hover {
@@ -37,6 +47,7 @@
         height: 20px;
         background: #000000;
         cursor: pointer;
+        border-radius: 20px;
 
     }
 
@@ -51,6 +62,7 @@
     .Filtro-Preco {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
         background-color: #FFF;
         height: 100%;
@@ -67,7 +79,7 @@
             display: flex;
             justify-content: space-between;
         }
-        input{
+        .preco{
             width: 80px;
             padding: 4px 8px;
             font-size: 12px;
