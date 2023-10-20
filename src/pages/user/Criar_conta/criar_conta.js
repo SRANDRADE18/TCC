@@ -12,7 +12,7 @@ export default function Criar_conta() {
   //////////////////////////////////////////////////////////
   const [nome, setNome] = useState("");
   const [cpf, setCpf] = useState("");
-  const [data, setData] = useState("");
+  const [nascimento, setData] = useState("");
   const [email, setEmail] = useState("");
 
   const [senha, setSenha] = useState("");
@@ -31,12 +31,12 @@ export default function Criar_conta() {
       let cliente = {
         nome: nome,
         cpf: cpf,
-        data: data,
+        nascimento: nascimento,
         email: email,
         senha: senha,
       };
 
-      let r = await axios.post("http://localhost:7777/criarconta", cliente);
+      let r = await axios.post("http://localhost:6000/criarconta", cliente);
       console.log("Resposta do servidor:", r.data);
     } catch (error) {
       console.error("Erro ao cadastrar:", error);
@@ -107,7 +107,7 @@ export default function Criar_conta() {
               className="Input-criar_conta-data"
               type="text"
               placeholder="data"
-              value={data}
+              value={nascimento}
               onChange={(e) => setData(e.target.value)}
             />
 
