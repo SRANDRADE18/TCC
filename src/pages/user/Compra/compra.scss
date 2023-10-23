@@ -19,20 +19,34 @@
     .Filter-Preco {
         align-self: flex-start;
         position: relative;
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+    }
+
+    .center{
+        display: flex;
+        align-items: center;
+        justify-content: unset !important;
+        width: 100%;
     }
 
     .filter_range {
         z-index: 1;
         position: absolute;
         -webkit-appearance: none;
-        width: 200px;
+        width: 180px;
         height: 5px;
-        background: #2A972E;
+        background: #1c631f;
         outline: none;
-        opacity: 0.7;
         -webkit-transition: .2s;
         transition: opacity .2s;
         border-radius: 20px;
+        pointer-events: auto;
+    }
+    .filter_range:last-child{
+        left: 20px;
     }
 
     .filter_range:hover {
@@ -44,7 +58,7 @@
         appearance: none;
         width: 20px;
         height: 20px;
-        background: #000000;
+        background: #1c631f;
         cursor: pointer;
         border-radius: 20px;
         z-index: 2;
@@ -78,6 +92,7 @@
         div {
             display: flex;
             justify-content: space-between;
+            
         }
 
         .preco {
@@ -97,6 +112,7 @@
                 border: none;
                 background-color: rgba(177, 177, 177, 0.26);
                 border-radius: 5px;
+                outline: none;
             }
         }
 
@@ -215,73 +231,40 @@
 
     .Filtro-Cor {
         display: flex;
-        margin: 10px;
         align-items: center;
+        justify-content: space-between;
+        max-width: 100px;
+        width: 100%;
+    }
+    .Filtro-Cor div{
+        width: 25px;
+        height: 25px;
+        border-radius: 20px;
     }
 
     .Preto {
-        width: 25px;
-        height: 25px;
-        transform: rotate(0.211deg);
-
-
         background: #000;
-        cursor: pointer;
     }
 
     .Roxo {
-        width: 25px;
-        height: 25px;
-        transform: rotate(0.211deg);
-
-
         background: rgba(57, 53, 246, 0.78);
-        margin: 10px;
-        cursor: pointer;
     }
 
     .Rosa {
-        width: 25px;
-        height: 25px;
-        transform: rotate(0.211deg);
-
-
         background: #F095C1;
-        cursor: pointer;
     }
 
     .Marrom {
-        width: 25px;
-        height: 25px;
-        transform: rotate(0.211deg);
-
-
         background: rgba(142, 97, 97, 0.85);
-        cursor: pointer;
     }
 
     .Laranja {
-        width: 25px;
-        height: 25px;
-        transform: rotate(0.211deg);
-
-
         background: #FE764B;
-        margin: 10px;
-        cursor: pointer;
     }
 
     .Verde {
-        width: 25px;
-        height: 25px;
-        transform: rotate(0.211deg);
-
-
         background: rgba(44, 89, 46, 0.79);
-        cursor: pointer;
     }
-
-
 
     a {
         color: #000;

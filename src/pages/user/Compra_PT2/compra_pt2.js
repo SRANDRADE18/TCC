@@ -26,7 +26,7 @@ import Header from '../../../components/Header/header';
                        <div className='Tenis-Menores'>
                          <img className='tenizinho' src="../assets/images/compra_pt2/Tenis-img1.png"/>
                          <img className='tenizinho' src="../assets/images/compra_pt2/Tenis-img3.png"/>
-                         <img className='ovelha-negra' src="../assets/images/compra_pt2/Tenis-img4.png"/>
+                         <img className='tenizinho' src="../assets/images/compra_pt2/Tenis-img4.png"/>
                        </div>
                      
                         </div>

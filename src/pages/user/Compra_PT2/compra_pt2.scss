@@ -4,9 +4,8 @@
         .Compra-pt2 {
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-
-
+            justify-content: space-between;
+            min-height: 560px;
 
         }
 
@@ -16,15 +15,14 @@
             font-family: 'Inter', sans-serif;
             font-weight: 500;
             text-align: center;
-            margin-bottom: 30px;
-            margin-top: 30px;
-
+            margin: 30px 0px;
         }
 
         .todoMundo {
             display: flex;
             flex-direction: row-reverse;
-            justify-content: space-around;
+            justify-content: space-evenly;
+            align-items: center;
         }
 
 
@@ -35,30 +33,32 @@
 
         }
 
-
+        .tenis-Grande{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 350px;
+        }
 
         .tenis-Grande img {
             max-width: 325px;
             max-height: 300px;
             width: 100%;
             height: 100%;
-            margin-bottom: 60px;
-            margin-left: 35px;
-
 
         }
 
         .Tenis-Menores {
             display: flex;
-            margin-right: 30px;
-
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
 
             .tenizinho {
                 max-width: 100px;
                 max-height: 100px;
                 width: 100%;
                 height: 100%;
-                margin: 20px;
 
             }
 
@@ -83,20 +83,18 @@
         }
 
         .Compra-pt_info {
-            margin-top: 30px;
             display: flex;
             flex-direction: column;
+            justify-content: space-evenly;
             align-items: center;
             max-width: 450px;
-            max-height: 850px;
-            height: 100%;
+            height: 450px;
             width: 100%;
 
 
             h1 {
                 font: 20px 'font5';
                 font-weight: 650;
-                margin-bottom: 18px;
 
 
             }
@@ -104,13 +102,11 @@
             h2 {
                 font: 19px 'font5';
                 font-weight: 650;
-                margin-bottom: 15px;
             }
 
             h3 {
                 font: 19px 'font5';
                 font-weight: 750;
-                margin-bottom: 3px;
 
 
             }
@@ -124,7 +120,6 @@
                 font-style: normal;
                 font-weight: 550;
                 line-height: normal;
-                margin-bottom: 5px;
             }
 
         }
@@ -134,9 +129,10 @@
         .Estrela-info-pt2 {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+            min-width: 120px;
 
             img {
-                margin: 5px;
                 max-width: 40px;
                 max-height: 21px;
                 height: 100%;
@@ -159,7 +155,6 @@
             background-color: #3B0060;
             border: none;
             cursor: pointer;
-            margin-top: 20px;
             font: 15PX 'font5';
             font-weight: 500;
         }

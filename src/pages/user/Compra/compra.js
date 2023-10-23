@@ -7,6 +7,8 @@ import Header from '../../../components/Header/header.js';
 import Rodape from '../../../components/Rodape/rodape.js';
 
 import InputMask from "react-input-mask";
+import { motion } from 'framer-motion';
+
 
 export default function Compra() {
 
@@ -17,6 +19,10 @@ export default function Compra() {
       setIsSelected(!isSelected);
     };
   }
+
+  const [minpreco, setMinpreco] = useState(0)
+
+  const [maxpreco, setMaxpreco] = useState(1500)
 
   return (
     <div className='Pagina-compra'>
@@ -33,11 +39,26 @@ export default function Compra() {
 
             <h1>PREÇOS</h1>
 
-            <div className='preco' > <InputMask type='text' placeholder='R$200,00' mask='R$999,99' />  <InputMask type='text' placeholder='R$200,00' mask='R$999,99' /></div>
+            <div className='preco' >
 
-            <div className='Filter-Preco'>
-              <input class="filter_range" type="range" />
-              <input class="filter_range" type="range" />
+              <motion.input
+                initial={{ boxShadow: 'none' }}
+                transition={{ duration: 0.5 }}
+                whileFocus={{ boxShadow: '0px 0px 10px rgba(100, 100, 100, 0.60)' }}
+                type='text' min={0} max={1500} value={minpreco} onChange={(e) => setMinpreco(e.target.value)} />
+              <motion.input
+                initial={{ boxShadow: 'none' }}
+                transition={{ duration: 0.5 }}
+                whileFocus={{ boxShadow: '0px 0px 16px rgba(100, 100, 100, 0.60)' }}
+                type='text' min={0} max={1500} value={maxpreco} onChange={(e) => setMaxpreco(e.target.value)} />
+
+            </div>
+
+            <div className='center'>
+              <div className='Filter-Preco'>
+                <input class="filter_range" type="range" min={0} max={1500} value={minpreco} onChange={(e) => setMinpreco(e.target.value)} />
+                <input class="filter_range" type="range" min={0} max={1500} value={maxpreco} onChange={(e) => setMaxpreco(e.target.value)} />
+              </div>
             </div>
 
           </div>
@@ -120,17 +141,50 @@ export default function Compra() {
 
             <div className='Filtro-Cor'>
 
-              <div className='Preto'></div>
-              <div className='Roxo' ></div>
-              <div className='Rosa' ></div>
+              <motion.div
+                initial={{ border: 'none', scale: 1 }}
+                transition={{ duration: 0.3 }}
+                whileHover={{ scale: 1.2, boxShadow: '0px 0px 5px #000' }}
+                whileTap={{ scale: 0.8 }}
+                className='Preto'></motion.div>
+
+              <motion.div
+                initial={{ border: 'none', scale: 1 }}
+                transition={{ duration: 0.3 }}
+                whileHover={{ scale: 1.2, boxShadow: '0px 0px 5px #000' }}
+                whileTap={{ scale: 0.8 }}
+                className='Roxo' ></motion.div>
+
+              <motion.div
+                initial={{ border: 'none', scale: 1 }}
+                transition={{ duration: 0.3 }}
+                whileHover={{ scale: 1.2, boxShadow: '0px 0px 5px #000' }}
+                whileTap={{ scale: 0.8 }}
+                className='Rosa' ></motion.div>
 
             </div>
 
             <div className='Filtro-Cor'>
 
-              <div className='Marrom'></div>
-              <div className='Laranja' ></div>
-              <div className='Verde' ></div>
+              <motion.div
+                initial={{ border: 'none', scale: 1 }}
+                transition={{ duration: 0.3 }}
+                whileHover={{ scale: 1.2, boxShadow: '0px 0px 5px #000' }}
+                whileTap={{ scale: 0.8 }}
+                className='Marrom'></motion.div>
+
+              <motion.div
+                initial={{ border: 'none', scale: 1 }}
+                transition={{ duration: 0.3 }}
+                whileHover={{ scale: 1.2, boxShadow: '0px 0px 5px #000' }}
+                whileTap={{ scale: 0.8 }}
+                className='Laranja' ></motion.div>
+
+              <motion.div
+                initial={{ border: 'none', scale: 1 }}
+                transition={{ duration: 0.3 }}
+                whileHover={{ scale: 1.2, boxShadow: '0px 0px 5px #000' }}
+                whileTap={{ scale: 0.8 }} className='Verde' ></motion.div>
 
             </div>
 
@@ -538,14 +592,14 @@ export default function Compra() {
 
         </div>
 
-      </div>
+      </div >
 
 
       <Rodape />
 
 
 
-    </div>
+    </div >
 
   )
 
