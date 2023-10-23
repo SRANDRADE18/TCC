@@ -1,133 +1,211 @@
-.pagina-ultimopedido{
+.pagina-ultimopedido {
 
 
-.Minha-conta{
-    display: flex;
-    justify-content: center;
-    
+    .Minha-conta {
+        display: flex;
+        justify-content: center;
+        
+        h1{
+            font-family: 'Font5';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+    }
+
+    .Ultimo-Pedido {
+        display: flex;
+
+    }
+
+    .Conta-perfil {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .Conta-perfil img {
+        max-width: 50px;
+        max-height: 50px;
+        height: 100%;
+        width: 100%;
+        margin: 10px;
+    }
+
+
+    .acao-UltimoPedido {
+        display: flex;
+        flex-direction: column;
+        max-width: 25%;
+        max-height: auto;
+        border-radius: 11px;
+        border: 1px solid #BCBCBC;
+        background: #FFF;
+        margin-left: 25px;
+    }
+
+    .pedidos {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: #000000 solid 1px;
+
+        img {
+            max-width: 20px;
+            max-height: 20px;
+            height: 100%;
+            width: 100%;
+            margin: 15px;
+        }
+
+        h3{
+            font-family: 'Font2';
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+
+
+    .Pedidos01 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 950px;
+        max-height: 250px;
+        height: 100%;
+        width: 100%;
+        border-radius: 11px;
+        border: 1px solid #BCBCBC;
+        background: #FFF;
+        margin-left: 5px;
+    }
+
+    .Tenis-Pedido {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+
+        img {
+            max-width: 130px;
+            max-height: 230px;
+            height: 100%;
+            width: 100%;
+        }
+
+        h4 {
+            font-family: 'Font5';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+
+
+
+    .Linha2 {
+        width: 1px;
+        height: 460px;
+        background: #BCBCBC;
+        margin: 22px
+    }
+
+    .Status-Pedido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-left: #000000 solid 1px;
+        border-right: #000000 solid 1px;
+        max-width: 500px;
+        width: 100%;
+        margin: 10px;
+
+
+        h5{
+            font-family: 'Font5';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+         a {
+            font-family: 'Font5';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+    .Cancelar {
+        color: #000000;
+        max-width: 168px;
+        max-height: 50px;
+        height: 100%;
+        width: 100%;
+        border-radius: 40px;
+        background: #ffffff;
+        border: 1px solid #3B0060;
+        cursor: pointer;
+        margin: 10px;
+
+        font-family: 'Font5';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .Cancelar:hover {
+        background-color: #ff0000;
+    }
+
+    .Acompanhar_Entrega {
+        color: #FFF;
+        max-width: 168px;
+        max-height: 50px;
+        height: 100%;
+        width: 100%;
+        border-radius: 40px;
+        background: #3B0060;
+        cursor: pointer;
+        margin: 10px;
+
+        font-family: 'Font5';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .Acompanhar_Entrega:hover {
+        background-color: #31AA45;
+    }
+
+
+    .Status-Pedido img {
+        padding: 10px;
+    }
+
+    .resumo_do_pedido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h6{
+            font-family: 'Font5';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
 }
-
-.Ultimo-Pedido{
-    display: flex;
-    margin-top: 50px;
-    margin-block-end: 100px;
-}
-
-.Conta-perfil{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 10px;
-}
-
-.Conta-perfil img{
-    margin: 10px;
-}
-
-.Linha-pedidos{
-    width: 254px;
-height: 1px;
-background-color: #BCBCBC;
-}
-
-.acao-UltimoPedido{
-    display: flex;
-    flex-direction: column;
-    max-width: 25%;
-    max-height: auto;
-    border-radius: 11px;
-    border: 1px solid #BCBCBC;
-    background: #FFF;
-    margin-left: 25px;
-}
-
-.pedidos{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-
-.pedidos img{
-    width: 30px;
-    height: 30px;
-    margin: 20px;
-}
-
-.Pedidos{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 75vw;
-    max-height: auto;
-    border-radius: 11px;
-    border: 1px solid #BCBCBC;
-    background: #FFF;
-    margin-left: 10px;
-
-    
-}
-
-.Tenis-Pedido{
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-}
-
-.Tenis-Pedido img{
-    height: 160px;
-    width: 250px;
-}
-
-.Linha2{
-    width: 1px;
-    height: 460px;
-    background: #BCBCBC;
-    margin: 22px
-}
-
-.Status-Pedido{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Cancelar{
-    color: #000000;
-    width: 268px;
-    height: 50px;
-    border-radius: 40px;
-    background: #ffffff;
-    border: 1px solid #3B0060;
-    cursor: pointer;
-    margin: 10px;
-}
-
-.Cancelar:hover{
-    background-color: #ff0000;
-}
-
-.Acompanhar_Entrega{
-    color: #FFF;
-    width: 268px;
-    height: 50px;
-    border-radius: 40px;
-    background: #3B0060;
-    cursor: pointer;
-    margin: 10px;
-}
-
-.Acompanhar_Entrega:hover{
-    background-color: #31AA45;
-}
-
-
-.Status-Pedido img {
-    padding: 10px;
-}
-
-.resumo_do_pedido{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-} 

@@ -115,7 +115,7 @@ export default function Filtroproduto() {
 
                             </div>
 
-                              <div className='Info-Tenis-Compra'>
+                            <div className='Info-Tenis-Compra'>
 
                                 <h1>Bota Vegano Shoes Cross Tanguá Premium</h1>
                                 <h1>4587</h1>
