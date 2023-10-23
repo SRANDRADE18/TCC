@@ -171,7 +171,7 @@ export default function Carrinho() {
                                     initial={{ scale: 1 }}
                                     transition={{ duration: 0.3 }}
                                     whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.8 }}>
+                                    whileTap={{ scale: 0.1 }}>
                                     COMPRAR MAIS
                                 </motion.button>
                             </Link>
@@ -179,7 +179,7 @@ export default function Carrinho() {
                                 initial={{ scale: 1 }}
                                 transition={{ duration: 0.3 }}
                                 whileHover={{ scale: 1.2 }}
-                                whileTap={{ scale: 0.8 }}>
+                                whileTap={{ scale: 0.1}}>
                                 FINALIZAR
                             </motion.button>
                         </div>

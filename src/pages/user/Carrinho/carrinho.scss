@@ -164,9 +164,10 @@
     }
 
     .res{
-        font-size: 28px;
-        color: #40A34C;
+     font: 20px 'font4';
+        color: #012C08;
         text-align: end;
+        font-weight: 600;
     }
 
     .resumo-do-pedido {
@@ -180,20 +181,23 @@
         background-color: #EBEBEB;
         height: 100%;
         width: 100%;
-        max-width: 550px;
-        max-height: 500px;
-        padding: 10px;
+        max-width: 500px;
+        max-height: 510px;
+        padding: 12px;
         justify-content: space-between;
         align-items: center;
 
-        border-radius: 20px;
+        border-radius: 5px;
 
     }
     .localizaçao-2 h1 {
-        font-size: 24px;
+        font: 18px 'font4';
+        font-weight: 700;
+        margin-bottom: 5px;
     }
     .localizaçao-2 h2 {
-        font-size: 20px;
+        font: 18px 'font4';
+        font-weight: 700;
         text-align: start;
     }
     .localizaçao-2 img {
@@ -203,20 +207,22 @@
     .localizaçao-2>p {
         display: flex;
         justify-content: center;
-        padding: 10px;
+        padding: 14px;
         color: #AE0606;
+        font: 14px 'font6';
     }
 
     .informaçao-loc {
         display: flex;
         align-items: center;
-        padding: 40px 10px;
+        padding: 27px 5px;
 
         border-bottom: #000 solid 1px;
     }
 
     .informaçao-loc p {
-        font-size: 14px;
+        font: 14px 'font6';
+        font-weight: 400;
     }
 
     .produto-entrega {
@@ -225,7 +231,7 @@
         justify-content: space-between;
         width: 300px;
         height: 100px;
-        padding: 10px 0px;
+        padding: 30px 0px;
 
         border-top: #000 1px solid;
         border-bottom: #000 1px solid;
@@ -236,10 +242,13 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        
 
         h4,
         h5 {
-            font-size: 20px;
+            font: 17px 'font4';
+            font-weight: 700;
+            margin-bottom: 7px;
         }
     }
 
@@ -250,11 +259,15 @@
 
         h4,
         h5 {
-            font-size: 20px;
+            font: 17px 'font4';
+            font-weight: 700;
+            margin-bottom: 7px;
         }
 
         h5 {
+            font: 19px 'font4';
             color: #40A34C;
+            font-weight: 700;
         }
     }
 
@@ -268,6 +281,9 @@
 
         h3 {
             color: #06AEAE;
+            font: 20px 'font6';
+            font-weight: 800;
+            margin-bottom: 10px;
         }
     }
 
@@ -281,17 +297,17 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding-top: 40px;
+        padding-top: 35px;
 
         .botaa {
-            font-size: 16px;
+            font: 14px 'font4';
             color: #fff;
             background-color: #3B0060;
-            border-radius: 14px;
-            padding: 8px 16px;
+            border-radius: 20px;
+            padding: 10px 20px;
             text-align: center;
             text-decoration: none;
-            font-weight: bold;
+            font-weight:  500;
             border: none;
         }
     }
