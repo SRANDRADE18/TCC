@@ -4,9 +4,6 @@ import "./header.scss";
 import { Bsearch } from "react-icons";
 import CartButton from "../carrinhoT/car";
 import { AiOutlineHeart } from "react-icons/ai";
-import { AiOutlineLogin } from "react-icons/ai";
-
-import { motion } from 'framer-motion';
 
 export default function Header() {
   function BTcarrinho() {
@@ -40,11 +37,16 @@ export default function Header() {
 
         <div className="header-menu">
           <button type="button" className="heart">
-            <AiOutlineHeart />
+            <AiOutlineHeart className="red"  />
             <span className="heart-status">1</span>
           </button>
 
-          <CartButton />
+          <button type="button" className="heart">
+             <AiOutlineShoppingCart/>
+            <span className="heart-status">1</span>
+          </button>
+
+         
 
           <button type="button" className="heart" onClick={BTuser}
             src="/assets/images/Header/do-utilizador 2.png">
@@ -57,7 +59,7 @@ export default function Header() {
 
       <div className="sub-menu">
         <div className="sub-menu-esq">
-          <img src="/assets/images/whatsapp 1.png" />
+          <img src="/assets/images/Header/whatsapp 7.png" />
           <img src="/assets/images/Header/facebook (1).png" />
         </div>
 
