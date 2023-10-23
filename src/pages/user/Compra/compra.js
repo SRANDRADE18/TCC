@@ -29,8 +29,6 @@ export default function Compra() {
       <Header />
 
 
-
-
       <div className='Produtos-compra'>
 
         <div className='Compra-Filtros'>
@@ -39,20 +37,7 @@ export default function Compra() {
 
             <h1>PREÇOS</h1>
 
-            <div className='preco' >
-
-              <motion.input
-                initial={{ boxShadow: 'none' }}
-                transition={{ duration: 0.5 }}
-                whileFocus={{ boxShadow: '0px 0px 10px rgba(100, 100, 100, 0.60)' }}
-                type='text' min={0} max={1500} value={minpreco} onChange={(e) => setMinpreco(e.target.value)} />
-              <motion.input
-                initial={{ boxShadow: 'none' }}
-                transition={{ duration: 0.5 }}
-                whileFocus={{ boxShadow: '0px 0px 16px rgba(100, 100, 100, 0.60)' }}
-                type='text' min={0} max={1500} value={maxpreco} onChange={(e) => setMaxpreco(e.target.value)} />
-
-            </div>
+         
 
             <div className='center'>
               <div className='Filter-Preco'>
@@ -139,55 +124,7 @@ export default function Compra() {
 
             <h1>Cores</h1>
 
-            <div className='Filtro-Cor'>
-
-              <motion.div
-                initial={{ border: 'none', scale: 1 }}
-                transition={{ duration: 0.3 }}
-                whileHover={{ scale: 1.2, boxShadow: '0px 0px 5px #000' }}
-                whileTap={{ scale: 0.8 }}
-                className='Preto'></motion.div>
-
-              <motion.div
-                initial={{ border: 'none', scale: 1 }}
-                transition={{ duration: 0.3 }}
-                whileHover={{ scale: 1.2, boxShadow: '0px 0px 5px #000' }}
-                whileTap={{ scale: 0.8 }}
-                className='Roxo' ></motion.div>
-
-              <motion.div
-                initial={{ border: 'none', scale: 1 }}
-                transition={{ duration: 0.3 }}
-                whileHover={{ scale: 1.2, boxShadow: '0px 0px 5px #000' }}
-                whileTap={{ scale: 0.8 }}
-                className='Rosa' ></motion.div>
-
-            </div>
-
-            <div className='Filtro-Cor'>
-
-              <motion.div
-                initial={{ border: 'none', scale: 1 }}
-                transition={{ duration: 0.3 }}
-                whileHover={{ scale: 1.2, boxShadow: '0px 0px 5px #000' }}
-                whileTap={{ scale: 0.8 }}
-                className='Marrom'></motion.div>
-
-              <motion.div
-                initial={{ border: 'none', scale: 1 }}
-                transition={{ duration: 0.3 }}
-                whileHover={{ scale: 1.2, boxShadow: '0px 0px 5px #000' }}
-                whileTap={{ scale: 0.8 }}
-                className='Laranja' ></motion.div>
-
-              <motion.div
-                initial={{ border: 'none', scale: 1 }}
-                transition={{ duration: 0.3 }}
-                whileHover={{ scale: 1.2, boxShadow: '0px 0px 5px #000' }}
-                whileTap={{ scale: 0.8 }} className='Verde' ></motion.div>
-
-            </div>
-
+          
           </div>
 
         </div>

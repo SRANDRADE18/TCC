@@ -15,13 +15,14 @@ import Admaddproduto from './pages/ADM/AdmADDProduto/admProdutoadd';
 import Filtraprodutos from './pages/ADM/ADMFiltrarProduto/filtrar';
 import Carrinho from './pages/user/Carrinho/carrinho';
 
-  
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   <BrowserRouter>
   <Routes>
+    
     <Route path='' element={<Landin/>}/>
     <Route path='/compra' element={<Compra/>}/>
     <Route path='/Criar_Conta' element={<Criarconta/>}/>
@@ -34,6 +35,7 @@ root.render(
     <Route path='/Adicionar/Produto' element={<Admaddproduto/>}/>
     <Route path='/Filtrarproduto' element={<Filtraprodutos/>}/>
     <Route path='/Carrinho' element={<Carrinho/>}/>
+  
   </Routes>
  </BrowserRouter>
 </React.StrictMode>

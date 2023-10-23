@@ -4,8 +4,10 @@ import './Cart.scss';
 import CartItem from '../Cartitem/cartitem';
 import AppContext from '../../context/AppContext';
 import formatCurrency from '../../utils/formatCurrency';
+import { useState } from 'react';
 
 export default function Cart() {
+
   const { cartItems, isCartVisible } = useContext(AppContext);
 
   const totalPrice = cartItems.reduce((acc, item) => item.price + acc, 0);
@@ -19,6 +21,7 @@ export default function Cart() {
       <div className="cart-resume">{formatCurrency(totalPrice, 'BRL')}</div>
     </section>
   );
+
 }
 
 
