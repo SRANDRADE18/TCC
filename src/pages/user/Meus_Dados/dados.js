@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 import Rodape from '../../../components/Rodape/rodape';
 import Header from '../../../components/Header/header';
-import { BsPencil } from "react-icons/ai";
+import { AiFillEdit } from "react-icons/ai";
 
 
 
@@ -94,16 +94,19 @@ export default function Meusdados() {
                                 <div className='Name-dados'>
                                     <p>Nome</p>
                                     <input className='Input-dados'  />
+                                    <AiFillEdit/>
                                 </div>
 
                                 <div className='Name-dados'>
                                     <p>Data Nascimento</p>
                                     <input className='Input-dados'  />
+                                    <AiFillEdit/>
                                 </div>
 
                                 <div className='Name-dados'>
                                     <p>Senha</p>
                                     <input className='Input-dados'  />
+                                    <AiFillEdit/>
                                 </div>
                             </div>
 
@@ -112,11 +115,13 @@ export default function Meusdados() {
                                 <div className='Name-dados'>
                                     <p>CPF</p>
                                     <input className='Input-dados'  />
+                                    <AiFillEdit/>
                                 </div>
 
                                 <div className='Name-dados'>
                                     <p>E-mail</p>
                                     <input className='Input-dados'  />
+                                    <AiFillEdit/> 
                                 </div>
 
                             </div>
