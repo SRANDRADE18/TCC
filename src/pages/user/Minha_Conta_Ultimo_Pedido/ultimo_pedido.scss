@@ -39,8 +39,9 @@
     .acao-UltimoPedido {
         display: flex;
         flex-direction: column;
-        max-width: 25%;
-        max-height: auto;
+        max-width: 200px;
+		width: 100%;
+        height: 100%;
         border-radius: 11px;
         border: 1px solid #BCBCBC;
         background: #FFF;
@@ -74,10 +75,13 @@
 
     .Pedidos01 {
         display: flex;
-        flex-direction: row;
+        flex-direction: column	;
         align-items: center;
+		display: block;
+		
         max-width: 950px;
-        max-height: 250px;
+        max-height: 550px;
+		margin: 10px;
         height: 100%;
         width: 100%;
         border-radius: 11px;
@@ -192,6 +196,10 @@
 
 
     .Status-Pedido img {
+		max-width: 450px;
+        max-height: 500px;
+        height: 100%;
+        width: 100%;
         padding: 10px;
     }
 
@@ -208,4 +216,5 @@
             line-height: normal;
         }
     }
+
 }
