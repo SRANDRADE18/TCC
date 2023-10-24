@@ -7,6 +7,8 @@ import Rodape from "../../../components/Rodape/rodape";
 import Header from "../../../components/Header/header";
 import { AiFillEye} from "react-icons/ai";
 import InputMask from "react-input-mask";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Criar_conta() {
   //////////////////////////////////////////////////////////
@@ -26,21 +28,31 @@ export default function Criar_conta() {
     setMostrarSenha(!mostrarSenha);
   };
 
-  async function cadastrar() {
-    try {
-      let cliente = {
-        nome: nome,
-        cpf: cpf,
-        nascimento: nascimento,
-        email: email,
-        senha: senha,
-      };
+  function handleError() {
+    toast.error('Mensagem error');
+  }
 
-      let r = await axios.post("http://localhost:6000/criarconta", cliente);
-      console.log("Resposta do servidor:", r.data);
-    } catch (error) {
-      console.error("Erro ao cadastrar:", error);
+  async function Cadastrar() {
+   try{
+    const InfoCliente = {
+      nome: nome,
+      cpf: cpf,
+      nascimento: nascimento,
+      email: email,
+      senha: senha
     }
+
+    const url = 'http://localhost:5000/criarconta' 
+    const resposta = await axios.post(url, InfoCliente)
+
+    if(resposta.status === 200){
+      toast.success('Contra criada com sucesso');
+    }
+    
+   }
+   catch (err) {
+    toast.error(err.response.data.erro);
+  }
   }
 
   ///////////////////////////////////////////////////////////////
@@ -144,7 +156,7 @@ export default function Criar_conta() {
             Já tem uma conta? <Link to="/Login"> Entrar. </Link>
           </p>
 
-          <button className="cadastro-button" onClick={cadastrar}>
+          <button className="cadastro-button" onClick={Cadastrar}>
             {" "}
             Criar Conta{" "}
           </button>
@@ -152,6 +164,7 @@ export default function Criar_conta() {
       </div>
 
       <Rodape />
+      <ToastContainer/>
     </div>
   );
 }
