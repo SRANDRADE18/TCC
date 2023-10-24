@@ -17,6 +17,7 @@ import Carrinho from './pages/user/Carrinho/carrinho';
 import CartButton from './components/CartButton/CartButton';
 import Provider from './context/Provider';
 import Finalizar from './pages/user/Finalizar/Finalizar';
+import Carrinhouser from './pages/user/CarinhoUser/carrinhoUser';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -39,6 +40,7 @@ root.render(
           <Route path="/Carrinho" element={<Carrinho />} />
           <Route path="/carrinho" element={<CartButton />} />
           <Route path="/Finalizar/compra" element={<Finalizar />} />
+          <Route path="/carrinho/user" element={<Carrinhouser />} />
         </Routes>
       </Provider>
     </BrowserRouter>

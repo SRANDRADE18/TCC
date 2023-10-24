@@ -49,7 +49,6 @@ export default function Header() {
           <button type="button" className="heart">
             <AiOutlineShoppingCart />
             <CartButton />
-            <span className="heart-status">1</span>
           </button>
 
 

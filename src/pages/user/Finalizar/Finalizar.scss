@@ -1,18 +1,79 @@
-.inalizar-Compra{
+.Finalizar-Compra {
+    display: flex;
+    flex-direction: column;
 
-    .tenis-Preto {
+    .Tenis_galáxia {
         height: 100%;
         width: 100%;
         max-width: 140px;
         max-height: 130px;
-    
+
     }
-    
-    .tenis-Preto {
-        width: 120px;
-        height: 140px;
+
+
+    .Test-Carrinho {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+        border-bottom: #000 1px solid;
+        border-top: #000 1px solid;
     }
+
+    .Carrinho-Salvar {
+        display: flex;
+        align-items: center;
+
+        h2 {
+            color: #AE0606;
+            text-align: center;
+            font: 16px 'Font9';
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin: 10px;
+        }
+
+        span {
+            width: 2px;
+            height: 40px;
+            background-color: #000;
+        }
+
+    }
+
+    .Carrinho-Preco {
+        h3 {
+            color: #000;
+            text-align: center;
+            font: 22px 'Font9';
+            font-style: normal;
+            font-weight: 1000;
+            line-height: normal;
+        }
+    }
+
+    .Carrinho-Info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1000px;
+        margin-left: 25px;
+
+        h1 {
+            color: #444;
+            font: 18px 'Font9';
+            line-height: normal;
+            font-weight: 600;
+        }
+
+        span {
+            color: #AE0606;
+        }
+
+    }
+
+
 
 }
-
-
