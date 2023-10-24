@@ -15,6 +15,8 @@ import { motion } from 'framer-motion';
 
 export default function LandingPage() {
 
+  const hue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+
   const corousel = useRef(null)
 
   function Products() {
@@ -75,7 +77,38 @@ export default function LandingPage() {
 
         </div>
       </div>
-   
+
+      <div className='produtos'>
+        <motion.button onClick={dir}
+          initial={{ scale: 1, boxShadow: 'none' }}
+          transition={{ duration: 0.3 }}
+          whileHover={{ scale: 1.1, boxShadow: '0px 0px 5px #000' }}
+          whileTap={{ scale: 0.9 }}>
+          <img src='/assets/icons/chevron.png' alt='próximo' />
+        </motion.button>
+
+        <div className='carousel' ref={corousel}>
+
+          {hue.map(item =>
+            <motion.div className='ex'
+              animate={{ scale: 1, boxShadow: 'none' }}
+              transition={{ duration: 0.3 }}
+              whileHover={{ scale: 1.2, boxShadow: '0px 0px 10px rgba(100, 100, 100, 0.60)' }}
+              whileTap={{ scale: 0.8, boxShadow: '0px 0px 14px rgba(127, 127, 127, 0.60) ' }}>{item}</motion.div>)}
+
+
+        </div>
+
+        <motion.button onClick={dir}
+          initial={{ scale: 1, boxShadow: 'none', rotate: 180 }}
+          transition={{ duration: 0.3 }}
+          whileHover={{ scale: 1.1, boxShadow: '0px 0px 5px #000' }}
+          whileTap={{ scale: 0.9 }}>
+          <img src='/assets/icons/chevron.png' alt='próximo' />
+        </motion.button>
+
+      </div>
+
 
       <div className='Promo-tenis01'>
 

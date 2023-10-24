@@ -5,7 +5,8 @@ import { Bsearch } from "react-icons";
 import CartButton from "../CartButton/CartButton";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { AiOutlineLogin} from "react-icons/ai";
+import { AiOutlineLogin } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 
 export default function Header() {
@@ -27,21 +28,31 @@ export default function Header() {
           />
         </div>
 
+        <motion.div className="header-input">
+          <motion.input
+            initial={{ boxShadow: 'none' }}
+            transition={{ duration: 0.5 }}
+            whileFocus={{ boxShadow: '0px 0px 10px #00ffbb', border: '1px solid #d8d8d8' }}
+            placeholder="O que você está procurando?" />
+          <button>
+            < img src="/assets/images/pesq.png" />
+          </button>
+        </motion.div>
 
         <div className="header-menu">
           <button type="button" className="heart">
-            <AiOutlineHeart className="red"  />
+            <AiOutlineHeart className="red" />
             <span className="heart-status">1</span>
           </button>
 
 
           <button type="button" className="heart">
-             <AiOutlineShoppingCart/>
-             <CartButton />
+            <AiOutlineShoppingCart />
+            <CartButton />
             <span className="heart-status">1</span>
           </button>
 
-         
+
 
           <button type="button" className="heart" onClick={BTuser}
             src="/assets/images/Header/do-utilizador 2.png">

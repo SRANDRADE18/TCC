@@ -37,9 +37,24 @@ export default function Compra() {
 
             <h1>PREÇOS</h1>
 
-         
+
 
             <div className='center'>
+              <div className='preco' >
+
+                <motion.input
+                  initial={{ boxShadow: 'none' }}
+                  transition={{ duration: 0.5 }}
+                  whileFocus={{ boxShadow: '0px 0px 10px rgba(100, 100, 100, 0.60)' }}
+                  type='text' min={0} max={1500} value={minpreco} onChange={(e) => setMinpreco(e.target.value)} />
+                <motion.input
+                  initial={{ boxShadow: 'none' }}
+                  transition={{ duration: 0.5 }}
+                  whileFocus={{ boxShadow: '0px 0px 16px rgba(100, 100, 100, 0.60)' }}
+                  type='text' min={0} max={1500} value={maxpreco} onChange={(e) => setMaxpreco(e.target.value)} />
+
+              </div>
+
               <div className='Filter-Preco'>
                 <input class="filter_range" type="range" min={0} max={1500} value={minpreco} onChange={(e) => setMinpreco(e.target.value)} />
                 <input class="filter_range" type="range" min={0} max={1500} value={maxpreco} onChange={(e) => setMaxpreco(e.target.value)} />
@@ -123,8 +138,28 @@ export default function Compra() {
           <div className='Filtro-Genero'>
 
             <h1>Cores</h1>
+            <div className='Filtro-Cor'>
 
-          
+              <motion.div
+                initial={{ border: 'none', scale: 1 }}
+                transition={{ duration: 0.3 }}
+                whileHover={{ scale: 1.2, boxShadow: '0px 0px 5px #000' }}
+                whileTap={{ scale: 0.8 }}
+                className='Preto'></motion.div>
+
+              <motion.div
+                initial={{ border: 'none', scale: 1 }}
+                transition={{ duration: 0.3 }}
+                whileHover={{ scale: 1.2, boxShadow: '0px 0px 5px #000' }}
+                whileTap={{ scale: 0.8 }}
+                className='Roxo' ></motion.div>
+
+              <label class="Rosa">
+                <input type="checkbox"/>
+                  <span class="checkmark"></span>
+              </label>
+            </div>
+
           </div>
 
         </div>
