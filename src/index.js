@@ -16,6 +16,8 @@ import Filtraprodutos from './pages/ADM/ADMFiltrarProduto/filtrar';
 import Carrinho from './pages/user/Carrinho/carrinho';
 import CartButton from './components/CartButton/CartButton';
 import Provider from './context/Provider';
+import Finalizar from './pages/user/Finalizar/Finalizar';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,6 +38,7 @@ root.render(
           <Route path="/Filtrarproduto" element={<Filtraprodutos />} />
           <Route path="/Carrinho" element={<Carrinho />} />
           <Route path="/carrinho" element={<CartButton />} />
+          <Route path="/Finalizar/compra" element={<Finalizar />} />
         </Routes>
       </Provider>
     </BrowserRouter>

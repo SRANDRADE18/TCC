@@ -76,7 +76,7 @@
     
 
             .Input-criar_conta, .Input-criar_conta-data {
-            padding: 5px 0px 10px 0px;
+            padding: 5px;
             max-width: 220px;
             width: 100%;
             margin-top: 10px;
@@ -108,6 +108,7 @@
             input{
                 border: none;
                 outline: none;
+                padding: 5px;
             }
         }
     }
