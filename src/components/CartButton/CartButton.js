@@ -7,7 +7,7 @@ import AppContext from '../../context/AppContext';
 
 export default function CartButton() {
 
-  const { cartItems, isCartVisible, setIsCartVisible } = useContext=(AppContext) ;
+  const { cartItems, isCartVisible, setIsCartVisible } = useContext(AppContext) ;
 
   return (
     <button
