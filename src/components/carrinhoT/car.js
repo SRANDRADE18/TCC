@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 export default function Cart() {
 
-  const { cartItems, isCartVisible } = useContext(AppContext);
+  const { cartItems, isCartVisible } = useContext (AppContext);
 
   const totalPrice = cartItems.reduce((acc, item) => item.price + acc, 0);
 

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Landin from './pages/user/landingpage/App.js';
-import Compra from './pages/user/Compra/compra'
+import Compra from './pages/user/Compra/compra';
 import Criarconta from './pages/user/Criar_conta/criar_conta';
 import Telalogin from './pages/user/Login/login';
 import UltimoPedido from './pages/user/Minha_Conta_Ultimo_Pedido/ultimo_pedido';
@@ -14,29 +14,30 @@ import Admpage from './pages/ADM/AdmPage/adm';
 import Admaddproduto from './pages/ADM/AdmADDProduto/admProdutoadd';
 import Filtraprodutos from './pages/ADM/ADMFiltrarProduto/filtrar';
 import Carrinho from './pages/user/Carrinho/carrinho';
-
-
+import CartButton from './components/CartButton/CartButton';
+import Provider from './context/Provider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <BrowserRouter>
-  <Routes>
-    
-    <Route path='' element={<Landin/>}/>
-    <Route path='/compra' element={<Compra/>}/>
-    <Route path='/Criar_Conta' element={<Criarconta/>}/>
-    <Route path='/Login' element={<Telalogin/>}/>
-    <Route path='/UltimoPedido' element={<UltimoPedido/>}/>
-    <Route path='/comprapt2' element={<Comprapt2/>}/>
-    <Route path='/MeusDados' element={<MeusDados/>}/>
-    <Route path='/LoginADM' element={<Loginadm/>}/>
-    <Route path='/Admpage' element={<Admpage/>}/>
-    <Route path='/Adicionar/Produto' element={<Admaddproduto/>}/>
-    <Route path='/Filtrarproduto' element={<Filtraprodutos/>}/>
-    <Route path='/Carrinho' element={<Carrinho/>}/>
-  
-  </Routes>
- </BrowserRouter>
-</React.StrictMode>
+    <BrowserRouter>
+      <Provider>
+        <Routes>
+          <Route path="/" element={<Landin />} />
+          <Route path="/compra" element={<Compra />} />
+          <Route path="/Criar_Conta" element={<Criarconta />} />
+          <Route path="/Login" element={<Telalogin />} />
+          <Route path="/UltimoPedido" element={<UltimoPedido />} />
+          <Route path="/comprapt2" element={<Comprapt2 />} />
+          <Route path="/MeusDados" element={<MeusDados />} />
+          <Route path="/LoginADM" element={<Loginadm />} />
+          <Route path="/Admpage" element={<Admpage />} />
+          <Route path="/Adicionar/Produto" element={<Admaddproduto />} />
+          <Route path="/Filtrarproduto" element={<Filtraprodutos />} />
+          <Route path="/Carrinho" element={<Carrinho />} />
+          <Route path="/carrinho" element={<CartButton />} />
+        </Routes>
+      </Provider>
+    </BrowserRouter>
+  </React.StrictMode>
 );

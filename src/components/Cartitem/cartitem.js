@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 import propTypes from 'prop-types';
 import { BsCartDashFill } from 'react-icons/bs';
-
 import './cartitem.scss';
 import formatCurrency from '../../utils/formatCurrency';
 import AppContext from '../../context/AppContext';
 
+
 export default  function CartItem({ data }) {
 
-  const { cartItems, setCartItems } = useContext(AppContext);
+  const { cartItems, setCartItems } = useContext (AppContext);
   const { id, thumbnail, title, price } = data;
 
   const handleRemoveItem = () => {

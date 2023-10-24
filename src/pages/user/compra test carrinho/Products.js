@@ -10,12 +10,13 @@ import AppContext from '../../../context/AppContext';
 
 export default function Products() {
 
-  const { products, setProducts, } = useContext(AppContext);
+  const { products, setProducts, } = useContext (AppContext);
   
 
   useEffect(() => {
     fetchProducts('iphone').then((response) => {
       setProducts(response);
+      
     });
   }, []);
 
