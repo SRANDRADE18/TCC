@@ -1,301 +1,316 @@
 .carrinho-pagina {
-    
+
+    display: flex;
+    flex-direction: column;
+
+
+    .Carrinho {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px;
+        align-self: center;
+        max-width: 1080px;
+        width: 100%;
+
+        .meu-carrinho {
+            color: #38B593;
+            font: 30px 'font5';
+            font-weight: 650;
+
+        }
+
+        .carrinho-icon {
+            width: 100%;
+            height: 100%;
+            max-width: 30px;
+            max-height: 40px;
+
+        }
+    }
+
+
+    .Carrinho-Produto {
         display: flex;
         flex-direction: column;
-        
-    
-        .Carrinho {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: 20px;
-            align-self: center;
-            max-width: 1080px;
-            width: 100%;
-    
-            .meu-carrinho {
-                color: #38B593;
-                font: 30px 'font5';
-                font-weight: 650;
-    
-            }
-    
-            .carrinho-icon {
-                width: 100%;
-                height: 100%;
-                max-width: 30px;
-                max-height: 40px;
-    
-            }
-        }
-    
-    
-        .Carrinho-Produto {
+        align-items: center;
+
+        .test-carrinho {
             display: flex;
             flex-direction: column;
-            align-items: center;
-    
-            .test-carrinho {
+            max-width: 1080px;
+            max-height: 200px;
+            height: 100%;
+            width: 100%;
+
+
+
+
+
+            .Tenis_galáxia {
+                width: 100%;
+                height: 100%;
+                max-width: 150px;
+                max-height: 198 px;
                 display: flex;
-                flex-direction: column;
-                max-width: 1080px;
-                max-height: 200px;
-                height: 100%;
-                width: 100%;
-    
-    
-    
-    
-    
-                .Tenis_galáxia {
-                    width: 100%;
-                    height: 100%;
-                    max-width: 150px;
-                    max-height: 198 px;
-                    display: flex;
-    
-                }
-    
-                .texto-verde {
-                    color: #40A34C;
-                    font: 17px 'Font9';
-                    line-height: normal;
-                    font-weight: 600;
-                }
+
             }
-        }
-    
-        .Carrinho-Info {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            max-width: 1000px;
-            margin-left: 25px;
-    
-    
-    
-        }
-    
-        .Carrinho-Info h1 {
-            color: #444;
-            font: 18px 'Font9';
-            line-height: normal;
-            font-weight: 600;
-        }
-    
-        .Carrinho-Info span {
-            color: #AE0606;
-        }
-    
-    
-    
-    
-        .Test-Carrinho {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            border-bottom: #000 1px solid;
-            border-top: #000 1px solid;
-        }
-    
-        .Carrinho-Salvar {
-            display: flex;
-            align-items: center;
-    
-        }
-    
-        .salvar-icon {
-            max-width: 19px;
-            max-height: 19px;
-            height: 100%;
-            width: 100%;
-    
-        }
-    
-        .Carrinho-Salvar h2 {
-            color: #AE0606;
-            text-align: center;
-            font: 16px 'Font9';
-            font-style: normal;
-            font-weight: 800;
-            line-height: normal;
-            margin: 10px;
-        }
-    
-        .Carrinho-Salvar span {
-            width: 2px;
-            height: 40px;
-            background-color: #000;
-        }
-    
-        .Carrinho-Preco h3 {
-            color: #000;
-            text-align: center;
-            font: 22px 'Font9';
-            font-style: normal;
-            font-weight: 1000;
-            line-height: normal;
-        }
-    
-        .resumo-e-localizaçao {
-            display: flex;
-            flex-direction: row;
-            max-width: 1080px;
-            width: 100%;
-            justify-content: space-around;
-    
-            align-self: center;
-            padding: 20px 0px;
-    
-        }
-    
-        .res {
-            align-self: center;
-            max-width: 850px;
-            width: 100%;
-            padding: 10px 0px;
-        }
-    
-        .resumo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .res{
-            font-size: 28px;
-            color: #40A34C;
-            text-align: end;
-        }
-    
-        .resumo-do-pedido {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-    
-        }
-    
-        .localizaçao-2 {
-            background-color: #EBEBEB;
-            height: 100%;
-            width: 100%;
-            max-width: 550px;
-            max-height: 500px;
-            padding: 10px;
-            justify-content: space-between;
-            align-items: center;
-    
-            border-radius: 20px;
-    
-        }
-        .localizaçao-2 h1 {
-            font-size: 24px;
-        }
-        .localizaçao-2 h2 {
-            font-size: 20px;
-            text-align: start;
-        }
-        .localizaçao-2 img {
-            height: 60px;
-            width: 60px;
-        }
-        .localizaçao-2>p {
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            color: #AE0606;
-        }
-    
-        .informaçao-loc {
-            display: flex;
-            align-items: center;
-            padding: 40px 10px;
-    
-            border-bottom: #000 solid 1px;
-        }
-    
-        .informaçao-loc p {
-            font-size: 14px;
-        }
-    
-        .produto-entrega {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 300px;
-            height: 100px;
-            padding: 10px 0px;
-    
-            border-top: #000 1px solid;
-            border-bottom: #000 1px solid;
-        }
-        
-    
-        .produto {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-    
-            h4,
-            h5 {
-                font-size: 20px;
-            }
-        }
-    
-        .valor-entrega {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-    
-            h4,
-            h5 {
-                font-size: 20px;
-            }
-    
-            h5 {
+
+            .texto-verde {
                 color: #40A34C;
+                font: 17px 'Font9';
+                line-height: normal;
+                font-weight: 600;
             }
         }
-    
-    
-        .total {
-            font-size: 18px;
-            display: flex;
-            justify-content: space-between;
-            width: 300px;
-            padding: 20px 0px 0px 0px;
-    
-            h3 {
-                color: #06AEAE;
-            }
+    }
+
+    .Carrinho-Info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1000px;
+        margin-left: 25px;
+
+
+
+    }
+
+    .Carrinho-Info h1 {
+        color: #444;
+        font: 18px 'Font9';
+        line-height: normal;
+        font-weight: 600;
+    }
+
+    .Carrinho-Info span {
+        color: #AE0606;
+    }
+
+
+
+
+    .Test-Carrinho {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: #000 1px solid;
+        border-top: #000 1px solid;
+    }
+
+    .Carrinho-Salvar {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .salvar-icon {
+        max-width: 19px;
+        max-height: 19px;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .Carrinho-Salvar h2 {
+        color: #AE0606;
+        text-align: center;
+        font: 16px 'Font9';
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin: 10px;
+    }
+
+    .Carrinho-Salvar span {
+        width: 2px;
+        height: 40px;
+        background-color: #000;
+    }
+
+    .Carrinho-Preco h3 {
+        color: #000;
+        text-align: center;
+        font: 22px 'Font9';
+        font-style: normal;
+        font-weight: 1000;
+        line-height: normal;
+    }
+
+    .resumo-e-localizaçao {
+        display: flex;
+        flex-direction: row;
+        max-width: 1080px;
+        width: 100%;
+        justify-content: space-around;
+
+        align-self: center;
+        padding: 20px 0px;
+
+    }
+
+    .res {
+        align-self: center;
+        max-width: 850px;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .resumo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .res {
+        font-size: 21px;
+        color: #012C08;
+        text-align: end;
+    }
+
+    .resumo-do-pedido {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    .localizaçao-2 {
+        background-color: #EBEBEB;
+        height: 100%;
+        width: 100%;
+        max-width: 550px;
+        max-height: 500px;
+
+        justify-content: space-between;
+        align-items: center;
+
+        border-radius: 5px;
+
+    }
+
+    .localizaçao-2 h1 {
+        font: 22px 'font9';
+        font-weight: 600;
+    }
+
+    .localizaçao-2 h2 {
+        font: 22px 'font9';
+        font-weight: 600;
+        text-align: start;
+        
+    }
+
+    .localizaçao-2 img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .localizaçao-2>p {
+        display: flex;
+        justify-content: center;
+        color: #AE0606;
+    }
+
+    .informaçao-loc {
+        display: flex;
+        align-items: center;
+        padding: 24px 10px;
+
+        border-bottom: #000 solid 1px;
+    }
+
+    .informaçao-loc p {
+        font: 14px 'font6';
+        
+    }
+
+    .produto-entrega {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 300px;
+        height: 100px;
+        padding: 10px 0px;
+
+        border-top: #000 1px solid;
+        border-bottom: #000 1px solid;
+    }
+
+
+    .produto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h4,
+        h5 {
+            font: 20px 'font9';
+            font-weight: 800;
         }
-    
-        .total-cartao {
-            text-align: end;
-            font-size: 18px;
+    }
+
+    .valor-entrega {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h4,
+        h5 {
+            font: 20px 'font9';
+            font-weight: 800;
         }
-    
-        .botoes {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 40px;
-    
-            .botaa {
-                font-size: 16px;
-                color: #fff;
-                background-color: #3B0060;
-                border-radius: 14px;
-                padding: 8px 16px;
-                text-align: center;
-                text-decoration: none;
-                font-weight: bold;
-                border: none;
-            }
+
+        h5 {
+            font: 21px 'font9';
+            font-weight: 800;
+            color: #40A34C;
         }
-    
+    }
+
+
+    .total {
+        font: 22px 'font9';
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        padding: 5px 0px ;
+
+        h3 {
+            font: 25px 'font9';
+            font-weight: 800;   
+            color: #06AEAE;
+        }
+    }
+
+    .total-cartao {
+        text-align: end;
+        font: 19px 'font9';
+       
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+
+        .botaa {
+            font: 15px 'font6';
+            
+            color: #fff;
+            background-color: #3B0060;
+            border-radius: 20px;
+            padding:10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+        }
+    }
+
 
 }
