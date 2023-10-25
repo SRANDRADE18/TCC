@@ -48,6 +48,10 @@ export default function Criar_conta() {
     if(resposta.status === 200){
       toast.success('Contra criada com sucesso');
     }
+
+    if(resposta.status === 200){
+      window.location.href = 'http://localhost:3000/Login'
+    }
     
    }
    catch (err) {

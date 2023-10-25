@@ -36,7 +36,7 @@
 
     
 
-        input {
+        .inputEmail  {
             font-family: 'Font5';
             padding: 5px 0px 10px 0px;
             max-width: 200px;
@@ -45,6 +45,7 @@
             text-align: start;
             border: 2px solid #f1f1f1;
             outline: none; 
+            padding: 5px;
         }
     }
 
@@ -82,6 +83,26 @@
         width:100% ;
         max-width:400px ;
         max-height:100px ;
+
+        input{
+            max-width: 180px;
+            width: 100%;
+            outline: none; 
+            border:none;
+        }
+
+        .inputCliente{
+            display: flex;
+            flex-direction: row;
+            font-family: 'Font5';
+            padding: 5px 0px 10px 0px;
+            max-width: 200px;
+            width: 100%;
+            margin-top: 10px;
+            text-align: start;
+            border: 2px solid #f1f1f1;
+            padding: 5px;
+        }
       
     }
 

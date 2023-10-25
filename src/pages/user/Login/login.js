@@ -60,28 +60,29 @@ export default function Login() {
           </div>
 
           <div className="infos-cliente-login">
-            <input type="search" placeholder="Email" />
+            <input className="inputEmail" type="search" placeholder="Email" />
+            <div className="inputCliente">
+                <input
+                    className="Input-senha"
+                    placeholder="Senha"
+                    type={mostrarSenha ? "text" : "password"}
+                    id="senha"
+                    name="senha"
+                    value={senha}
+                    onChange={Olharsenha}
+                  />
 
-            <input
-                className="Input-senha"
-                placeholder="Senha"
-                type={mostrarSenha ? "text" : "password"}
-                id="senha"
-                name="senha"
-                value={senha}
-                onChange={Olharsenha}
-              />
-
-            <button className="revelador" onClick={handleMostrarSenhaToggle}>
-              <AiFillEye />
-            </button>
+                <button className="revelador" onClick={handleMostrarSenhaToggle}>
+                  <AiFillEye />
+                </button>
+              </div>
           </div>
 
           <p>
             Não tem uma conta? <Link to="/Criar_Conta"> Crie. </Link>
           </p>
 
-          <button className="button-crie"> Criar Conta </button>
+          <button className="button-crie"> Entrar </button>
         </div>
       </div>
 
