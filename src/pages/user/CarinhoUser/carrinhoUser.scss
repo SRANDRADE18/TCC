@@ -1,7 +1,8 @@
 .carrinho-pagina {
+
     display: flex;
     flex-direction: column;
-    
+
 
     .Carrinho {
         display: flex;
@@ -163,11 +164,10 @@
         align-items: center;
     }
 
-    .res{
-     font: 20px 'font4';
+    .res {
+        font-size: 21px;
         color: #012C08;
         text-align: end;
-        font-weight: 600;
     }
 
     .resumo-do-pedido {
@@ -181,48 +181,50 @@
         background-color: #EBEBEB;
         height: 100%;
         width: 100%;
-        max-width: 500px;
-        max-height: 510px;
-        padding: 12px;
+        max-width: 550px;
+        max-height: 500px;
+
         justify-content: space-between;
         align-items: center;
 
         border-radius: 5px;
 
     }
+
     .localizaçao-2 h1 {
-        font: 18px 'font4';
-        font-weight: 700;
-        margin-bottom: 5px;
+        font: 22px 'font9';
+        font-weight: 600;
     }
+
     .localizaçao-2 h2 {
-        font: 18px 'font4';
-        font-weight: 700;
+        font: 22px 'font9';
+        font-weight: 600;
         text-align: start;
+        
     }
+
     .localizaçao-2 img {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
     }
+
     .localizaçao-2>p {
         display: flex;
         justify-content: center;
-        padding: 14px;
         color: #AE0606;
-        font: 14px 'font6';
     }
 
     .informaçao-loc {
         display: flex;
         align-items: center;
-        padding: 27px 5px;
+        padding: 24px 10px;
 
         border-bottom: #000 solid 1px;
     }
 
     .informaçao-loc p {
         font: 14px 'font6';
-        font-weight: 400;
+        
     }
 
     .produto-entrega {
@@ -231,24 +233,22 @@
         justify-content: space-between;
         width: 300px;
         height: 100px;
-        padding: 30px 0px;
+        padding: 10px 0px;
 
         border-top: #000 1px solid;
         border-bottom: #000 1px solid;
     }
-    
+
 
     .produto {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
 
         h4,
         h5 {
-            font: 17px 'font4';
-            font-weight: 700;
-            margin-bottom: 7px;
+            font: 20px 'font9';
+            font-weight: 800;
         }
     }
 
@@ -259,37 +259,36 @@
 
         h4,
         h5 {
-            font: 17px 'font4';
-            font-weight: 700;
-            margin-bottom: 7px;
+            font: 20px 'font9';
+            font-weight: 800;
         }
 
         h5 {
-            font: 19px 'font4';
+            font: 21px 'font9';
+            font-weight: 800;
             color: #40A34C;
-            font-weight: 700;
         }
     }
 
 
     .total {
-        font-size: 18px;
+        font: 22px 'font9';
         display: flex;
         justify-content: space-between;
         width: 300px;
-        padding: 20px 0px 0px 0px;
+        padding: 5px 0px ;
 
         h3 {
+            font: 25px 'font9';
+            font-weight: 800;   
             color: #06AEAE;
-            font: 20px 'font6';
-            font-weight: 800;
-            margin-bottom: 10px;
         }
     }
 
     .total-cartao {
         text-align: end;
-        font-size: 18px;
+        font: 19px 'font9';
+       
     }
 
     .botoes {
@@ -297,17 +296,18 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding-top: 35px;
+        padding-top: 20px;
 
         .botaa {
-            font: 14px 'font4';
+            font: 15px 'font6';
+            
             color: #fff;
             background-color: #3B0060;
             border-radius: 20px;
-            padding: 10px 20px;
+            padding:10px 20px;
             text-align: center;
             text-decoration: none;
-            font-weight:  500;
+            font-weight: bold;
             border: none;
         }
     }
