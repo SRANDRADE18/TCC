@@ -28,7 +28,7 @@ root.render(
         <Routes>
           <Route path="/" element={<Landin />} />
           <Route path="/compra" element={<Compra />} />
-          <Route path="/Criar_Conta" element={<Criarconta />} />
+          <Route path="/Criar/Conta" element={<Criarconta />} />
           <Route path="/Login" element={<Telalogin />} />
           <Route path="/UltimoPedido" element={<UltimoPedido />} />
           <Route path="/comprapt2" element={<Comprapt2 />} />

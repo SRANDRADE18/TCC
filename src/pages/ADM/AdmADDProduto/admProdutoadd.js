@@ -17,7 +17,7 @@ export default function Admaddproduto() {
 
   return (
     <div className="adm-page">
-      <Header />
+     
 
       <div className="ADM-add">
         <div className="adm-add">
@@ -119,7 +119,6 @@ export default function Admaddproduto() {
         </div>
       </div>
 
-      <Rodape />
     </div>
   );
 }
