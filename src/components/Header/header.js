@@ -15,7 +15,7 @@ export default function Header() {
   }
 
   function BTuser() {
-    window.location.href = "http://localhost:3000/Criar_Conta";
+    window.location.href = "http://localhost:3000/Criar/Conta";
   }
 
   return (
@@ -42,13 +42,13 @@ export default function Header() {
         <div className="header-menu">
           <button type="button" className="heart">
             <AiOutlineHeart className="red" />
-            <span className="heart-status">1</span>
+           
           </button>
 
 
-          <button type="button" className="heart">
+          <button type="button" className="heart" onClick={CartButton}>
             <AiOutlineShoppingCart />
-            <CartButton />
+            
           </button>
 
 
