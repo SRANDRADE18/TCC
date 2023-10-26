@@ -1,6 +1,346 @@
-.products {
-    padding: 120px 20px 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+.Compra-produtos{
+  display: flex;
+  justify-content: center;   
+
+  .produtos{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;    
   }
+
+.products-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 500px;
+  flex-wrap: wrap;
+}
+.products {
+    display:flex ;
+    flex-direction: row;
+  }
+
+  .Compra-Filtros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 220px;
+    width: 200%;
+    margin-left: 50px;
+}
+
+.Filter-Preco {
+    align-self: flex-start;
+    position: relative;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between !important;
+    width: 100%;
+    height: 40%;
+}
+
+.filter_range {
+    z-index: 1;
+    position: absolute;
+    -webkit-appearance: none;
+    width: 180px;
+    height: 5px;
+    background: #1c631f;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 20px;
+    pointer-events: auto;
+}
+
+.filter_range:last-child {
+    left: 20px;
+}
+
+.filter_range:hover {
+    opacity: 1;
+}
+
+.filter_range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #1c631f;
+    cursor: pointer;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.filter_range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    cursor: pointer;
+
+}
+
+.Filtro-Preco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 250px;
+    border-bottom: #000 1px solid;
+
+    h1 {
+        font-size: 13px;
+        color: #000;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .preco {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        height: 50px;
+        width: 100%;
+
+        input {
+            width: 90px;
+            padding: 8px;
+            font-size: 16px;
+            text-align: center;
+            border: none;
+            background-color: rgba(177, 177, 177, 0.26);
+            border-radius: 5px;
+            outline: none;
+        }
+    }
+
+}
+
+
+.Filtro-Tamanho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 200px;
+    max-height: 150px;
+    width: 100%;
+    height: 100%;
+
+    border-bottom: #000 1px solid;
+
+    h1 {
+        font-size: 24px;
+        color: #000;
+    }
+}
+
+
+.test {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+    select {
+
+        background-color: #ffffff;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+}
+
+.size-selector {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    select {
+        font-size: 14px;
+        border: none;
+        background-color: rgba(177, 177, 177, 0.26);
+        padding: 4px 8px;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    option {
+        border: none;
+        text-align: center;
+    }
+}
+
+.option {
+    padding: 100px;
+}
+
+.Filtro-Genero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-height: 200px;
+    height: 150px;
+    text-align: center;
+
+    border-bottom: #000 1px solid;
+
+    h1 {
+        font-size: 24px;
+    }
+
+    select {
+        font-size: 14px;
+        border: none;
+        background-color: rgba(177, 177, 177, 0.26);
+        padding: 4px 8px;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    option {
+        border: none;
+        text-align: center;
+    }
+}
+
+
+.Filtro-Modelos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 100%;
+    max-width: 180px;
+    margin-top: 50px;
+}
+
+.Modelos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.Filtro-Cor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100px;
+    width: 100%;
+}
+
+.Filtro-Cor div {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.Preto {
+    background: #000;
+}
+
+.Roxo {
+    background: rgba(57, 53, 246, 0.78);
+}
+
+
+.Rosa {
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.Rosa input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #F095C1;
+    border-radius: 200px;
+}
+
+.Rosa:hover input~.checkmark {
+    background-color: #e94996;
+}
+
+.Rosa input:checked~.checkmark {
+    background-color: #e94996;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.Rosa input:checked~.checkmark:after {
+    display: block;
+}
+
+.Rosa .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #F095C1;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.Marrom {
+    background: rgba(142, 97, 97, 0.85);
+}
+
+.Laranja {
+    background: #FE764B;
+}
+
+.Verde {
+    background: rgba(44, 89, 46, 0.79);
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+}

@@ -6,7 +6,7 @@ import './ProductCard.scss';
 import formatCurrency from '../../../../utils/formatCurrency';
 import AppContext from '../../../../context/AppContext';
 
-function ProductCard({ data}) {
+ export default function ProductCard({ data}) {
   const { title, thumbnail, price } = data;
 
   const { cartItems, setCartItems } = useContext(AppContext);
@@ -15,7 +15,6 @@ function ProductCard({ data}) {
 
   return (
     <section className="product-card">
-      
       <img
         src={thumbnail.replace(/\w\.jpg/gi, 'W.jpg')}
         alt="product"
@@ -38,7 +37,7 @@ function ProductCard({ data}) {
   );
 }
 
-export default ProductCard;
+
 
 ProductCard.propTypes = {
   data: propTypes.shape({}),

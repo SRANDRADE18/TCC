@@ -46,9 +46,9 @@ export default function Header() {
           </button>
 
 
-          <button type="button" className="heart" onClick={CartButton}>
+          <button type="button" className="heart" >
             <AiOutlineShoppingCart />
-            
+            <CartButton/>
           </button>
 
 

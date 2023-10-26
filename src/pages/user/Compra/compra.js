@@ -9,8 +9,15 @@ import Rodape from '../../../components/Rodape/rodape.js';
 import InputMask from "react-input-mask";
 import { motion } from 'framer-motion';
 
+import formatCurrency from '../../../utils/formatCurrency';
+import AppContext from '../../../context/AppContext';
 
-export default function Compra() {
+import React, { useContext } from 'react';
+import propTypes from 'prop-types';
+import { BsFillCartPlusFill } from 'react-icons/bs';
+
+
+export default function Compra(data) {
 
   function CheckButton() {
     const [isSelected, setIsSelected] = useState(false);
@@ -23,6 +30,13 @@ export default function Compra() {
   const [minpreco, setMinpreco] = useState(0)
 
   const [maxpreco, setMaxpreco] = useState(1500)
+//////////////////////////
+  const { title, thumbnail, price } = data;
+
+  const { cartItems, setCartItems } = useContext(AppContext);
+
+  const handleAddCart = () => setCartItems([ ...cartItems, data]);
+//////////////////////////
 
   return (
     <div className='Pagina-compra'>
