@@ -5,6 +5,8 @@ import CartItem from '../Cartitem/cartitem';
 import AppContext from '../../context/AppContext';
 import formatCurrency from '../../utils/formatCurrency';
 import { useState } from 'react';
+import Carrinho from './../../pages/user/Carrinho/carrinho';
+import Compra from './../../pages/user/Compra/compra';
 
 export default function Cart() {
 
@@ -18,16 +20,24 @@ export default function Cart() {
         {cartItems.map((cartItem) => <CartItem key={cartItem.id} data={cartItem} />)}
       </div>
 
-      <div className="cart-resume">{formatCurrency(totalPrice, 'BRL')}</div>
+      <div className="cart-resume">{formatCurrency(totalPrice, 'BRL')}
 
-      <a href='/Finalizar/compra'>
+        <a className='finalizar' href='/Finalizar/compra'>
+          
+          Finalizar Compra
 
-        <button>
-          FINALIZAR
-        </button>
+        </a>
+
+        <a href="/carrinho/user">
+
+            Vizualizar Carrinho
+  
+        </a>
 
 
-      </a>
+      </div>
+
+
     </section>
   );
 

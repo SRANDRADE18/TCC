@@ -42,14 +42,18 @@ export default function Header() {
         <div className="header-menu">
           <button type="button" className="heart">
             <AiOutlineHeart className="red" />
-           
+
           </button>
 
+          <a href="/carrinho/user">
+
+          </a>
 
           <button type="button" className="heart" >
             <AiOutlineShoppingCart />
-            <CartButton/>
+            <CartButton />
           </button>
+
 
 
 

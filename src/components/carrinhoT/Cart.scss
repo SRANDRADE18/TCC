@@ -23,11 +23,64 @@
 }
 
 .cart-resume {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   font-size: 1.8rem;
   font-weight: 500;
   padding: 35px 0 15px;
   border-top: 1px solid #ddd;
+  font-family: 'Font5';
+
+  
+  a {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    font-family: 'Font6' ;
+    letter-spacing: .1em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 5px;
+    background-color: #3B0060;
+    border-radius: 10px;
+    padding: 5px 5px;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 1s, box-shadow 1s;
+  }
+
+  a:hover {
+    transition-delay: 0s, 1s;
+    color: #fff;
+    box-shadow:
+      0 0 10px #38B593,
+      0 0 20px #38B593,
+      0 0 40px #38B593,
+      0 0 80px #38B593,
+      0 0 160px #38B593;
+  }
+
+  a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background: #38B593;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: 1s;
+  }
+
+  a:hover:before {
+    width: 100%;
+  }
 }
+
+
 
 .cart-items .cart-item:last-child {
   border-bottom: none;
