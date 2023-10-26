@@ -4,11 +4,11 @@ import { BsCartDashFill } from 'react-icons/bs';
 import './cartitem.scss';
 import formatCurrency from '../../utils/formatCurrency';
 import AppContext from '../../context/AppContext';
+import { Link } from "react-router-dom";
 
+export default function CartItem({ data }) {
 
-export default  function CartItem({ data }) {
-
-  const { cartItems, setCartItems } = useContext (AppContext);
+  const { cartItems, setCartItems } = useContext(AppContext);
   const { id, thumbnail, title, price } = data;
 
   const handleRemoveItem = () => {
@@ -18,6 +18,7 @@ export default  function CartItem({ data }) {
 
   return (
     <section className="cart-item">
+
       <img
         src={thumbnail}
         alt="imagem do produto"
@@ -31,11 +32,14 @@ export default  function CartItem({ data }) {
         <button
           type="button"
           className="button__remove-item"
-          onClick={ handleRemoveItem }
+          onClick={handleRemoveItem}
         >
           <BsCartDashFill />
         </button>
       </div>
+
+
+     
     </section>
   );
 }

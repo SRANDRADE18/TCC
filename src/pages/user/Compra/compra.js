@@ -51,8 +51,6 @@ export default function Compra(data) {
 
             <h1>PREÇOS</h1>
 
-
-
             <div className='center'>
               <div className='preco' >
 
