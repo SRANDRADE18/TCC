@@ -15,6 +15,7 @@ export default function Cart() {
   const totalPrice = cartItems.reduce((acc, item) => item.price + acc, 0);
 
   return (
+    
     <section className={`cart ${isCartVisible ? 'cart--active' : ''}`}>
       <div className="cart-items">
         {cartItems.map((cartItem) => <CartItem key={cartItem.id} data={cartItem} />)}

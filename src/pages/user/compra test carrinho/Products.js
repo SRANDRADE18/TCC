@@ -18,6 +18,7 @@ import { useState } from 'react';
 export default function Products() {
 
   const { products, setProducts, } = useContext(AppContext);
+
   function CheckButton() {
     const [isSelected, setIsSelected] = useState(false);
 
@@ -31,7 +32,7 @@ export default function Products() {
   const [maxpreco, setMaxpreco] = useState(1500)
 
   useEffect(() => {
-    fetchProducts('iphone').then((response) => {
+    fetchProducts('Tenis Vegano').then((response) => {
       setProducts(response);
 
     });
