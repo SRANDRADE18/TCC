@@ -49,7 +49,7 @@ export default function Header() {
 
           </a>
 
-          <button type="button" className="heart" >
+          <button type="button" className="heart"  >
             <AiOutlineShoppingCart />
             <CartButton />
           </button>

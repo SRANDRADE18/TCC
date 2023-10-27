@@ -164,15 +164,7 @@ export default function CarrinhoUser() {
                         </div>
 
                         <div className='botoes'>
-                            <Link to={'/compra'}>
-                                <motion.button className='botaa'
-                                    initial={{ scale: 1 }}
-                                    transition={{ duration: 0.3 }}
-                                    whileHover={{ scale: 1.2 }}
-                                    whileTap={{ scale: 0.8 }}>
-                                    COMPRAR MAIS
-                                </motion.button>
-                            </Link>
+                            
                             <motion.button className='botaa'
                                 initial={{ scale: 1 }}
                                 transition={{ duration: 0.3 }}
