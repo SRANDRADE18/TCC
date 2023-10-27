@@ -17,7 +17,7 @@ import { useState } from 'react';
 
 export default function Products() {
 
-  const { products, setProducts, } = useContext(AppContext);
+
 
   function CheckButton() {
     const [isSelected, setIsSelected] = useState(false);
@@ -31,8 +31,11 @@ export default function Products() {
 
   const [maxpreco, setMaxpreco] = useState(1500)
 
+  const { products, setProducts, } = useContext(AppContext);
+
   useEffect(() => {
-    fetchProducts('Tenis Vegano').then((response) => {
+    const quantity = 10;
+    fetchProducts('tenis vegano', quantity).then((response) => {
       setProducts(response);
 
     });
@@ -176,11 +179,11 @@ export default function Products() {
 
         </div>
 
-        
+
         <section className="products-container">
           {products.map((product) => <ProductCard key={product.id} data={product} />)}
         </section>
-        
+
       </div>
 
 

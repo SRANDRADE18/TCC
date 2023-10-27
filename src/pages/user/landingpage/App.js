@@ -37,12 +37,13 @@ import Loading from "../../../components/loading/loding";
 
 import { motion } from "framer-motion";
 
-export default function LandingPage({ data }) {
+export default function LandingPage () {
 
   const { products, setProducts, } = useContext(AppContext);
 
   useEffect(() => {
-    fetchProducts('tenis vegano').then((response) => {
+    const quantity = 1 ; 
+    fetchProducts('tenis vegano', quantity).then((response) => {
       setProducts(response);
 
     });
