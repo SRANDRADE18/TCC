@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Landin from './pages/user/landingpage/App.js';
 import Compra from './pages/user/Compra/compra';
 import Criarconta from './pages/user/Criar_conta/criar_conta';
@@ -20,12 +21,14 @@ import Finalizar from './pages/user/Finalizar/Finalizar';
 import Carrinhouser from './pages/user/CarinhoUser/carrinhoUser';
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider>
         <Routes>
+          
           <Route path="/" element={<Landin />} />
           <Route path="/compra" element={<Compra />} />
           <Route path="/Criar/Conta" element={<Criarconta />} />

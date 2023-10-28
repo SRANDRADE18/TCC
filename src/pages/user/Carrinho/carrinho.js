@@ -10,7 +10,7 @@ import Header from '../../../components/Header/header';
 import Products from '../compra test carrinho/Products'
 import Cart from '../../../components/carrinhoT/car';
 import Provider from '../../../context/Provider';
-
+import LandingPage from '../landingpage/App';
 
 export default function Carrinho() {
 
