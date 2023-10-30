@@ -4,8 +4,8 @@
     .Minha-conta {
         display: flex;
         justify-content: center;
-        
-        h1{
+
+        h1 {
             font-family: 'Font5';
             font-size: 12px;
             font-style: normal;
@@ -17,6 +17,8 @@
 
     .Ultimo-Pedido {
         display: flex;
+        align-items: center;
+        justify-content: center;
 
     }
 
@@ -40,19 +42,23 @@
         display: flex;
         flex-direction: column;
         max-width: 200px;
-		width: 100%;
+        width: 100%;
         height: 100%;
-        border-radius: 11px;
+        border-radius: 8px;
         border: 1px solid #BCBCBC;
         background: #FFF;
-        margin-left: 25px;
+        margin-left: 10px;
+
+
+
     }
 
     .pedidos {
         display: flex;
         align-items: center;
-        padding: 10px;
-        border-bottom: #000000 solid 1px;
+        padding: 5px 7px 5px 5px;
+        border-bottom: #BCBCBC solid 1px;
+
 
         img {
             max-width: 20px;
@@ -62,11 +68,11 @@
             margin: 15px;
         }
 
-        h3{
-            font-family: 'Font2';
+        h3 {
+            font-family: 'Font6';
             font-size: 13px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 600;
             line-height: normal;
         }
     }
@@ -74,20 +80,18 @@
 
 
     .Pedidos01 {
-        display: flex;
-        flex-direction: column	;
-        align-items: center;
-		display: block;
-		
-        max-width: 950px;
-        max-height: 550px;
-		margin: 10px;
+
+        display: block;
+        max-width: 980px;
+        max-height: 500px;
+        margin: 10px;
         height: 100%;
         width: 100%;
-        border-radius: 11px;
+        border-radius: 10px;
         border: 1px solid #BCBCBC;
         background: #FFF;
-        margin-left: 5px;
+        margin-left: 10px;
+
     }
 
     .Tenis-Pedido {
@@ -96,17 +100,17 @@
         margin-left: 10px;
 
         img {
-            max-width: 130px;
-            max-height: 230px;
+            max-width: 140px;
+            max-height: 240px;
             height: 100%;
             width: 100%;
         }
 
         h4 {
-            font-family: 'Font5';
-            font-size: 12px;
+            font-family: 'Font4';
+            font-size: 13px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 600;
             line-height: normal;
         }
     }
@@ -115,34 +119,32 @@
 
 
     .Linha2 {
-        width: 1px;
-        height: 460px;
-        background: #BCBCBC;
-        margin: 22px
+        border-bottom: #BCBCBC solid 1px;
     }
 
     .Status-Pedido {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-left: #000000 solid 1px;
-        border-right: #000000 solid 1px;
+        border-left: #afafaf solid 1px;
+        border-right: #afafaf solid 1px;
         max-width: 500px;
         width: 100%;
-        margin: 10px;
+        margin-left: 10px;
 
 
-        h5{
-            font-family: 'Font5';
-            font-size: 12px;
+        h5 {
+            font-family: 'Font4';
+            font-size: 14px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+
         }
 
-         a {
+        a {
             font-family: 'Font5';
-            font-size: 12px;
+            font-size: 13px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -151,34 +153,27 @@
 
     .Cancelar {
         color: #000000;
-        max-width: 168px;
-        max-height: 50px;
-        height: 100%;
-        width: 100%;
-        border-radius: 40px;
+        padding: 5px 50px;
+        border-radius: 20px;
         background: #ffffff;
         border: 1px solid #3B0060;
         cursor: pointer;
         margin: 10px;
-
         font-family: 'Font5';
         font-size: 12px;
         font-style: normal;
         font-weight: 700;
-        line-height: normal;
+
     }
 
     .Cancelar:hover {
-        background-color: #ff0000;
+        background-color: #ff0000cc;
     }
 
     .Acompanhar_Entrega {
-        color: #FFF;
-        max-width: 168px;
-        max-height: 50px;
-        height: 100%;
-        width: 100%;
-        border-radius: 40px;
+        color: #fff;
+        padding: 5px 14px;
+        border-radius: 20px;
         background: #3B0060;
         cursor: pointer;
         margin: 10px;
@@ -186,35 +181,48 @@
         font-family: 'Font5';
         font-size: 12px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 600;
         line-height: normal;
     }
 
-    .Acompanhar_Entrega:hover {
-        background-color: #31AA45;
-    }
 
 
     .Status-Pedido img {
-		max-width: 450px;
-        max-height: 500px;
+        max-width: 400px;
+        max-height: 450px;
         height: 100%;
         width: 100%;
-        padding: 10px;
+       
     }
 
     .resumo_do_pedido {
         display: flex;
         flex-direction: column;
-        align-items: center;
+       margin-left: 10px;
+        
 
-        h6{
-            font-family: 'Font5';
+        h6 {
+            font-family: 'Font4';
             font-size: 12px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            text-align: start;
         }
+    }
+
+    @media (max-width: 780px){
+        .pedidos img {
+            margin: 0px;
+    
+         
+            
+    }
+    .pedidos h4 {
+        font-size: 9px;
+}
+
+   
     }
 
 }
