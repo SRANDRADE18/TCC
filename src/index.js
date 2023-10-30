@@ -41,7 +41,7 @@ root.render(
           <Route path="/Adicionar/Produto" element={<Admaddproduto />} />
           <Route path="/Filtrarproduto" element={<Filtraprodutos />} />
           <Route path="/Carrinho" element={<Carrinho />} />
-          <Route path="/carrinho" element={<CartButton />} />
+         
           <Route path="/Finalizar/compra" element={<Finalizar />} />
           <Route path="/carrinho/user" element={<Carrinhouser />} />
         </Routes>

@@ -24,8 +24,6 @@ import fetchProducts from '../compra test carrinho/api/fetchProducts';
 
 import ProductCard from '../compra test carrinho/ProductCard/ProductCard';
 
-import Provider from "../../../context/Provider";
-
 import {
   CarouselProvider,
   Slider,
@@ -56,7 +54,7 @@ export default function LandingPage() {
       fetchProducts('tenis vegano', quantity).then((response) => {
         setProducts(response);
       });
-    }, [quantity])
+    }, [quantity,setQuantity])
 
 
     //////////////////////////////////////

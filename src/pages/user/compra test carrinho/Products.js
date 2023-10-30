@@ -1,6 +1,8 @@
 import './Products.scss';
 
-import React, { useEffect, useContext } from 'react';
+import  { useEffect, useContext } from 'react';
+
+
 
 import './Products.scss';
 import fetchProducts from '../compra test carrinho/api/fetchProducts';
