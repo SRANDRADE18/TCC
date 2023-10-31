@@ -48,7 +48,7 @@ export default function LandingPage() {
 
 
   const { products, setProducts } = useContext(AppContext);
-  const [searchTerm, setSearchTerm] = useState('tenis vegano');
+  const [searchTerm, setSearchTerm] = useState('Tenis Veganos');
   const [quantity, setQuantity] = useState(1);
   const [filteredProducts, setFilteredProducts] = useState([]);
 

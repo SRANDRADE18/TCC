@@ -13,15 +13,21 @@ export default function Admaddproduto() {
   const [Email, setEmail] = useState([]);
   const [senha, setsenha] = useState([]);
 
-  function Adicionarproduto() {}
+  function Adicionarproduto() { }
 
   return (
     <div className="adm-page">
-     
+
 
       <div className="ADM-add">
         <div className="adm-add">
           <div className="Filtro-ADM-add">
+
+            <div className="ADM-Pessoa-add">
+              <img src="/assets/images/Minha_Conta/do-utilizador 3.png" />
+              <h2> oLá, Sr.Andrade </h2>
+            </div>
+
             <p>Admin Panel</p>
             <p>Menu</p>
             <h1>Organizations</h1>
@@ -38,10 +44,7 @@ export default function Admaddproduto() {
                 <div className="line"></div>
               </div>
 
-              <div className="ADM-Pessoa-add">
-                <img src="/assets/images/Minha_Conta/do-utilizador 3.png" />
-                <h2> oLá, Sr.Andrade </h2>
-              </div>
+
             </div>
 
             <div className="adicionar-produto">
@@ -51,9 +54,11 @@ export default function Admaddproduto() {
             <div className="VGN-Shoes-Produto">
               <div className="Flex">
                 <div className="Colar-img">
-                  <h2>Colar Imagem</h2>
+                  <h2> Adicionar Imagem</h2>
                   <img src="/assets/images/addprodutoADM/image 94.png"></img>
+                    
 
+        
                   <h2>Descrição</h2>
                   <input type="text"></input>
 

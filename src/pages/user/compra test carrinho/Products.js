@@ -36,7 +36,7 @@ export default function Products() {
   const { products, setProducts, } = useContext(AppContext);
 
   useEffect(() => {
-    const quantity = 10;
+    const quantity = 24;
     fetchProducts('tenis vegano', quantity).then((response) => {
       setProducts(response);
 

@@ -3,8 +3,8 @@
 .landing-Page {
   display: flex;
   flex-direction: column;
-  
-  
+
+
   .Promo-tenis {
     max-height: 100%;
     max-width: 100%;
@@ -66,40 +66,43 @@
     margin: -10px;
   }
 
-  .produtos{
+  .produtos {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
-  .produtos button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    color: transparent;
-    margin: 0;
-    border-radius: 200px;
-    padding: 4px;
-  }
-  .produtos img{
-    width: 40px;
-    height: 40px;
-    border-radius: 200px;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      color: transparent;
+      margin: 0;
+      border-radius: 200px;
+      padding: 4px;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 200px;
+    }
   }
 
-  .carousel{
-    align-self:center;
 
+  .carousel {
+    align-self: center;
     display: flex;
     align-items: center;
     padding: 30px 0px;
     flex: none;
     overflow: hidden;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     scroll-behavior: smooth;
   }
-  
-  .products-container{
+
+  .products-container {
     max-height: 300px;
     max-width: 180px;
     height: 100%;
@@ -110,7 +113,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
- 
+
 
     img {
       height: 100%;
@@ -118,6 +121,7 @@
       max-height: 180px;
       width: 100%;
     }
+
     font-size: 12px;
     color: rgba(0, 0, 0, 0.5);
     line-height: 1.5;
@@ -313,5 +317,31 @@
     .Tenis-Branco img {
       max-width: 300px;
     }
+
+    .produtos {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+  
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        color: transparent;
+        margin: 0;
+        border-radius: 200px;
+        padding: 4px;
+      }
+  
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 200px;
+      }
+    }
+
+
   }
 }
