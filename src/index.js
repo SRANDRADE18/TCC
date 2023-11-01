@@ -14,8 +14,8 @@ import Loginadm from './pages/user/LoginADM/loginadm';
 import Admpage from './pages/ADM/AdmPage/adm';
 import Admaddproduto from './pages/ADM/AdmADDProduto/admProdutoadd';
 import Filtraprodutos from './pages/ADM/ADMFiltrarProduto/filtrar';
-import Carrinho from './pages/user/Carrinho/carrinho';
-import CartButton from './components/CartButton/CartButton';
+import Carrinho from './pages/user/Compra2/carrinho';
+
 import Provider from './context/Provider';
 import Finalizar from './pages/user/Finalizar/Finalizar';
 import Carrinhouser from './pages/user/CarinhoUser/carrinhoUser';
@@ -29,7 +29,7 @@ root.render(
       <Provider>
         <Routes>
           
-          <Route path="/" element={<Landin />} />
+          <Route path="/Landin" element={<Landin />} />
           <Route path="/compra" element={<Compra />} />
           <Route path="/Criar/Conta" element={<Criarconta />} />
           <Route path="/Login" element={<Telalogin />} />

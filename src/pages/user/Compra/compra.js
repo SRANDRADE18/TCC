@@ -1,7 +1,7 @@
 import './compra.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { useState } from 'react';
+
 
 import Header from '../../../components/Header/header.js';
 import Rodape from '../../../components/Rodape/rodape.js';
@@ -10,14 +10,23 @@ import InputMask from "react-input-mask";
 import { motion } from 'framer-motion';
 
 import formatCurrency from '../../../utils/formatCurrency';
+
 import AppContext from '../../../context/AppContext';
 
 import React, { useContext } from 'react';
+
 import propTypes from 'prop-types';
+
+import { useEffect, useState, useRef } from "react";
+
 import { BsFillCartPlusFill } from 'react-icons/bs';
 
+import fetchProducts from '../compra test carrinho/api/fetchProducts';
 
-export default function Compra(data) {
+import ProductCard from '../compra test carrinho/ProductCard/ProductCard';
+
+
+export default function Compra() {
 
   function CheckButton() {
     const [isSelected, setIsSelected] = useState(false);
@@ -31,11 +40,18 @@ export default function Compra(data) {
 
   const [maxpreco, setMaxpreco] = useState(1500)
 //////////////////////////
-  const { title, thumbnail, price } = data;
 
-  const { cartItems, setCartItems } = useContext(AppContext);
+const { products, setProducts } = useContext(AppContext);
+const [searchTerm, setSearchTerm] = useState('Tenis Veganos');
+const [quantity, setQuantity] = useState(22);
+const [filteredProducts, setFilteredProducts] = useState([]);
 
-  const handleAddCart = () => setCartItems([ ...cartItems, data]);
+useEffect(() => {
+  fetchProducts(searchTerm, quantity).then((response) => {
+    setFilteredProducts(response);
+  });
+}, [searchTerm, quantity]);
+
 //////////////////////////
 
   return (
@@ -181,396 +197,11 @@ export default function Compra(data) {
 
           <div className='Shoop-compra'>
 
-            <a href='http:./localhost:3000/compra_pt2'>
-
-              <div className='Compra-Linha01'>
-
-                <img className='tenis-Preto' src="./assets/images/tenis/Tenis Rosa.png"></img>
-
-                <div className='Compra-Info'>
-
-                  <div className='Compra-Texto'>
-                    <h1>Tênis Vegano Shoes Sport Vegan Sweet Rose</h1>
-                  </div>
-
-
-                  <div className='Compra-Estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
-
-                  <div className='Compra-Preco'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$249,90  ou 4x de 62</h3>
-                  </div>
-
-
-                </div>
-
-              </div>
-
-            </a>
-
-            <a href='http:./localhost:3000/compra_pt2'>
-              <div className='Compra-Linha01'>
-
-                <img className='tenis-Preto' src="./assets/images/tenis_vegano_shoes_esportivo_preto_ 3.png"></img>
-
-                <div className='Compra-Info'>
-
-                  <div className='Compra-Texto'>
-                    <h1>Tênis Vegano Shoes Rocket Sport Preto</h1>
-                  </div>
-
-
-                  <div className='Compra-Estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
-
-                  <div className='Compra-Preco'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$249,90  ou 4x de 62</h3>
-                  </div>
-
-
-                </div>
-
-              </div>
-            </a>
-
-
-            <a href='http:./localhost:3000/compra_pt2'>
-              <div className='Compra-Linha01'>
-
-                <img className='tenis-Preto' src=".././assets/images/tenis_vegano_shoes_esportivo_preto_ 3.png"></img>
-
-                <div className='Compra-Info'>
-
-                  <div className='Compra-Texto'>
-                    <h1>Tenis Vegano Shoes Easeful Preto</h1>
-                  </div>
-
-
-                  <div className='Compra-Estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
-
-                  <div className='Compra-Preco'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$249,90  ou 4x de 62</h3>
-                  </div>
-
-
-                </div>
-
-              </div>
-            </a>
-
-            <a href='http:./localhost:3000/compra_pt2'>
-
-
-              <div className='Compra-Linha01'>
-
-                <img className='tenis-Preto' src="./assets/images/tenis/Tenis_preto_laranja.png"></img>
-
-                <div className='Compra-Info'>
-
-                  <div className='Compra-Texto'>
-                    <h1>Tênis Vegano Shoes Strong Boost Vegan Laranja</h1>
-                  </div>
-
-
-                  <div className='Compra-Estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
-
-                  <div className='Compra-Preco'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$249,90  ou 4x de 62</h3>
-                  </div>
-
-
-                </div>
-
-              </div>
-            </a>
-
-            <a href='http:./localhost:3000/compra_pt2'>
-
-              <div className='Compra-Linha01'>
-
-                <img className='tenis-Preto' src="./assets/images/tenis/Sapatilha.png"></img>
-
-                <div className='Compra-Info'>
-
-                  <div className='Compra-Texto'>
-                    <h1>Sapatilha Vegano Shoes Aquatic Vegan</h1>
-                  </div>
-
-
-                  <div className='Compra-Estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
-
-                  <div className='Compra-Preco'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$249,90  ou 4x de 62</h3>
-                  </div>
-
-
-                </div>
-
-              </div>
-
-            </a>
-
-            <a href='http:./localhost:3000/compra_pt2'>
-
-
-              <div className='Compra-Linha01'>
-
-                <img className='tenis-Preto' src="./assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 3.png"></img>
-
-                <div className='Compra-Info'>
-
-                  <div className='Compra-Texto'>
-                    <h1>Tênis Vegano Shoes Sock coral</h1>
-                  </div>
-
-
-                  <div className='Compra-Estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
-
-                  <div className='Compra-Preco'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$249,90  ou 4x de 62</h3>
-                  </div>
-
-
-                </div>
-
-              </div>
-
-            </a>
-
-            <a href='http:./localhost:3000/compra_pt2'>
-
-              <div className='Compra-Linha01'>
-
-                <img className='tenis-Preto' src="./assets/images/tenis/Tenis_galáxia.png"></img>
-
-                <div className='Compra-Info'>
-
-                  <div className='Compra-Texto'>
-                    <h1>Bota Vegano Shoes Naturale Galáxia</h1>
-                  </div>
-
-
-                  <div className='Compra-Estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
-
-                  <div className='Compra-Preco'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$249,90  ou 4x de 62</h3>
-                  </div>
-
-
-                </div>
-
-              </div>
-
-            </a>
-
-            <a href='http:./localhost:3000/compra_pt2'>
-              <div className='Compra-Linha01'>
-
-                <img className='tenis-Preto' src="./assets/images/tenis/tenis_vegano_shoes_esportivo_preto_ 4.png"></img>
-
-                <div className='Compra-Info'>
-
-                  <div className='Compra-Texto'>
-                    <h1>Bota Vegano Shoes Naturale Premium Café Noir</h1>
-                  </div>
-
-
-                  <div className='Compra-Estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
-
-                  <div className='Compra-Preco'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$249,90  ou 4x de 62</h3>
-                  </div>
-
-
-                </div>
-
-              </div>
-            </a>
-
-            <a href='http:./localhost:3000/compra_pt2'>
-
-              <div className='Compra-Linha01'>
-
-                <img className='tenis-Preto' src="./assets/images/tenis/tennis_saara.png"></img>
-
-                <div className='Compra-Info'>
-
-                  <div className='Compra-Texto'>
-                    <h1>Bota Vegano Shoes Saara Areia</h1>
-                  </div>
-
-
-                  <div className='Compra-Estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
-
-                  <div className='Compra-Preco'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$249,90  ou 4x de 62</h3>
-                  </div>
-
-
-                </div>
-
-              </div>
-
-            </a>
-
-            <a href='http:./localhost:3000/compra_pt2'>
-              <div className='Compra-Linha01'>
-
-                <img className='tenis-Preto' src="./assets/images/tenis/tennis_Camara.png"></img>
-
-                <div className='Compra-Info'>
-
-                  <div className='Compra-Texto'>
-                    <h1>Tênis Vegano Shoes Street Preto/Câmara de ar</h1>
-                  </div>
-
-
-                  <div className='Compra-Estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
-
-                  <div className='Compra-Preco'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$349,90  ou 4x de 62</h3>
-                  </div>
-
-
-                </div>
-
-              </div>
-            </a>
-
-            <a href='http:./localhost:3000/compra_pt2'>
-
-              <div className='Compra-Linha01'>
-
-                <img className='tenis-Preto' src="./assets/images/tenis/tenis_vegano_shoes_esportivo_Havana_ 5.png"></img>
-
-                <div className='Compra-Info'>
-
-                  <div className='Compra-Texto'>
-                    <h1>Tênis Vegano Shoes Street Havana</h1>
-                  </div>
-
-
-                  <div className='Compra-Estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
-
-                  <div className='Compra-Preco'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$99,90  ou 4x de 62</h3>
-                  </div>
-
-
-                </div>
-
-              </div>
-
-            </a>
-
-            <a href='http:./localhost:3000/compra_pt2'>
-
-              <div className='Compra-Linha01'>
-
-                <img className='tenis-Preto' src="./assets/images/tenis/tennis_Ultimo.png"></img>
-
-                <div className='Compra-Info'>
-
-                  <div className='Compra-Texto'>
-                    <h1>Tênis casual Vegano Shoes Street Style Verde Musgo</h1>
-                  </div>
-
-
-                  <div className='Compra-Estrelas'>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                    <img src="/assets/images/Vector.svg"></img>
-                  </div>
-
-                  <div className='Compra-Preco'>
-                    <h2>Frete grátis</h2>
-                    <h3>R$249,90  ou 4x de 62</h3>
-                  </div>
-
-
-                </div>
-
-              </div>
-
-            </a>
-
+        
+              {filteredProducts.map((product) => (
+                <ProductCard key={product.id} data={product} />
+              ))}
+           
 
           </div>
 

@@ -35,11 +35,11 @@ import {
 
 import "pure-react-carousel/dist/react-carousel.es.css";
 
-import Loading from "../../../components/loading/loding";
+
 
 import { motion } from "framer-motion";
 
-import Products from "../compra test carrinho/Products";
+
 
 export default function LandingPage() {
 
