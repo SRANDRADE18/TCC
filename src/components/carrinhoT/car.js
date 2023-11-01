@@ -5,7 +5,7 @@ import CartItem from '../Cartitem/cartitem';
 import AppContext from '../../context/AppContext';
 import formatCurrency from '../../utils/formatCurrency';
 import { useState } from 'react';
-import Carrinho from './../../pages/user/Carrinho/carrinho';
+import Carrinho from '../../pages/user/Compra2/carrinho';
 import Compra from './../../pages/user/Compra/compra';
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
