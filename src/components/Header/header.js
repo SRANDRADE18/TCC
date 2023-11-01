@@ -2,11 +2,16 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./header.scss";
 import { Bsearch } from "react-icons";
-import CartButton from "../CartButton/CartButton";
+import AppContext from '../../context/AppContext';
+import React, { useContext } from 'react';
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { AiOutlineLogin } from "react-icons/ai";
 import { motion } from "framer-motion";
+
+
+
+
 
 
 export default function Header() {
@@ -18,6 +23,7 @@ export default function Header() {
     window.location.href = "http://localhost:3000/Criar/Conta";
   }
 
+  const { cartItems, isCartVisible, setIsCartVisible } = useContext(AppContext);
   return (
     <div className="page-header">
       <div className="header">
@@ -40,20 +46,27 @@ export default function Header() {
         </motion.div>
 
         <div className="header-menu">
-          <button type="button" className="heart">
+
+          <button className="heart">
             <AiOutlineHeart className="red" />
 
           </button>
 
-          <a href="/carrinho/user">
+          <a>
+
+            <button
+              type="button"
+              className="heart"
+              onClick={() => setIsCartVisible(!isCartVisible)}
+            >
+              <AiOutlineShoppingCart />
+              {cartItems.length > 0 && <span className="cart-status">{cartItems.length}</span>}
+            </button>
+
+
+
 
           </a>
-
-          <button type="button" className="heart"  >
-            <AiOutlineShoppingCart />
-            <CartButton />
-          </button>
-
 
 
 
