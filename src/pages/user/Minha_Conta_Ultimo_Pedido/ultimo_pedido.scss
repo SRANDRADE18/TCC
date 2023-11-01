@@ -1,32 +1,18 @@
 .pagina-ultimopedido {
 
 
-    .Minha-conta {
-        display: flex;
-        justify-content: center;
-
-        h1 {
-            font-family: 'Font5';
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-        }
-
-    }
-
     .Ultimo-Pedido {
         display: flex;
         align-items: center;
-        justify-content: center;
-
+        justify-content: space-evenly;
+        padding: 10px;
     }
 
     .Conta-perfil {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-left: 10px;
+        padding: 20px;
     }
 
     .Conta-perfil img {
@@ -34,7 +20,6 @@
         max-height: 50px;
         height: 100%;
         width: 100%;
-        margin: 10px;
     }
 
 
@@ -47,16 +32,13 @@
         border-radius: 8px;
         border: 1px solid #BCBCBC;
         background: #FFF;
-        margin-left: 10px;
-
-
 
     }
 
-    .pedidos {
+    .menu {
         display: flex;
         align-items: center;
-        padding: 5px 7px 5px 5px;
+        padding: 10px;
         border-bottom: #BCBCBC solid 1px;
 
 
@@ -65,39 +47,65 @@
             max-height: 20px;
             height: 100%;
             width: 100%;
-            margin: 15px;
         }
 
         h3 {
             font-family: 'Font6';
-            font-size: 13px;
+            font-size: 12px;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
+            padding: 5px;
         }
+    }
+
+    .menu:hover {
+        cursor: pointer;
+    }
+
+    .pedidos {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        border-bottom: 1px solid #BCBCBC;
+
     }
 
 
 
     .Pedidos01 {
 
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         max-width: 980px;
-        max-height: 500px;
-        margin: 10px;
+        max-height: 420px;
         height: 100%;
         width: 100%;
-        border-radius: 10px;
         border: 1px solid #BCBCBC;
+        border-radius: 10px;
         background: #FFF;
-        margin-left: 10px;
+        overflow: auto;
 
     }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #ffffff;
+        border-radius: 10px;
+    }
+
 
     .Tenis-Pedido {
         display: flex;
         flex-direction: column;
-        margin-left: 10px;
+        align-items: center;
+        justify-content: space-around;
 
         img {
             max-width: 140px;
@@ -108,29 +116,26 @@
 
         h4 {
             font-family: 'Font4';
-            font-size: 13px;
+            font-size: 12px;
             font-style: normal;
             font-weight: 600;
-            line-height: normal;
+            line-height: 1.5;
+            text-align: start;
         }
     }
 
-
-
-
-    .Linha2 {
-        border-bottom: #BCBCBC solid 1px;
-    }
 
     .Status-Pedido {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
         border-left: #afafaf solid 1px;
         border-right: #afafaf solid 1px;
         max-width: 500px;
         width: 100%;
-        margin-left: 10px;
+        height: 180px;
+
 
 
         h5 {
@@ -158,7 +163,6 @@
         background: #ffffff;
         border: 1px solid #3B0060;
         cursor: pointer;
-        margin: 10px;
         font-family: 'Font5';
         font-size: 12px;
         font-style: normal;
@@ -166,9 +170,7 @@
 
     }
 
-    .Cancelar:hover {
-        background-color: #ff0000cc;
-    }
+
 
     .Acompanhar_Entrega {
         color: #fff;
@@ -176,7 +178,6 @@
         border-radius: 20px;
         background: #3B0060;
         cursor: pointer;
-        margin: 10px;
 
         font-family: 'Font5';
         font-size: 12px;
@@ -189,40 +190,35 @@
 
     .Status-Pedido img {
         max-width: 400px;
-        max-height: 450px;
+        max-height: 50px;
         height: 100%;
         width: 100%;
-       
+
     }
 
     .resumo_do_pedido {
         display: flex;
         flex-direction: column;
-       margin-left: 10px;
-        
+
 
         h6 {
             font-family: 'Font4';
             font-size: 12px;
             font-style: normal;
             font-weight: 700;
-            line-height: normal;
+            line-height: 1.5;
             text-align: start;
         }
     }
 
-    @media (max-width: 780px){
-        .pedidos img {
-            margin: 0px;
-    
-         
-            
-    }
-    .pedidos h4 {
-        font-size: 9px;
-}
+    @media (max-width: 780px) {
+        .pedidos img {}
 
-   
+        .pedidos h4 {
+            font-size: 9px;
+        }
+
+
     }
 
 }

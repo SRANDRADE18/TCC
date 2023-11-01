@@ -58,12 +58,13 @@ export default function Compra(data) {
                   initial={{ boxShadow: 'none' }}
                   transition={{ duration: 0.5 }}
                   whileFocus={{ boxShadow: '0px 0px 10px rgba(100, 100, 100, 0.60)' }}
+
                   type='text' min={0} max={1500} value={minpreco} onChange={(e) => setMinpreco(e.target.value)} />
                 <motion.input
                   initial={{ boxShadow: 'none' }}
                   transition={{ duration: 0.5 }}
                   whileFocus={{ boxShadow: '0px 0px 16px rgba(100, 100, 100, 0.60)' }}
-                  type='text' min={0} max={1500} value={maxpreco} onChange={(e) => setMaxpreco(e.target.value)} />
+                  type='number' min={0} max={1500} value={maxpreco} onChange={(e) => setMaxpreco(e.target.value)} />
 
               </div>
 
