@@ -13,6 +13,8 @@ export default function Admaddproduto() {
   const [Email, setEmail] = useState([]);
   const [senha, setsenha] = useState([]);
 
+  const tamanhos = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
+
   function Adicionarproduto() { }
 
   return (
@@ -54,70 +56,70 @@ export default function Admaddproduto() {
             <div className="VGN-Shoes-Produto">
               <div className="Flex">
                 <div className="Colar-img">
+
                   <h2> Adicionar Imagem</h2>
                   <img src="/assets/images/addprodutoADM/image 94.png"></img>
-                    
 
-        
-                  <h2>Descrição</h2>
-                  <input type="text"></input>
-
-                  <button>Publicar</button>
                 </div>
 
                 <div className="Info-Produto">
                   <h2>INFORMAÇÕES DO PRODUTO</h2>
 
                   <div className="Nome">
-                    <h3>Nome</h3>
-                    <input></input>
+                    <h3> Nome :</h3>
+                    <input type="text" />
                   </div>
 
                   <div className="Nome">
-                    <h3>Numero</h3>
-                    <input></input>
-                    <h3>Preço</h3>
-                    <input></input>
+
+                    <h3> Preço : </h3>
+                    <input type="number" />
                   </div>
 
                   <div className="Nome">
-                    <h3>Promoção</h3>
-                    <input></input>
+                    <h3> Promoção : </h3>
+                    <input type="text" />
                   </div>
                   <div className="Nome">
-                    <h3>Preço promoção</h3>
-                    <input></input>
+                    <h3> Preço promoção : </h3>
+                    <input type="number" />
                   </div>
 
                   <div className="Nome">
-                    <h3>Genero</h3>
-                    <input type="select"></input>
-                    <h3>Cor</h3>
-                    <input></input>
+                    <h3> Genero : </h3>
+                    <input type="select" />
+                  </div>
+
+                  <div className="Nome">
+                    <h3> cor :</h3>
+                    <input type="text" />
                   </div>
 
                   <div className="Tamanhos-add">
                     <h3>tamanhos</h3>
 
-                    <div className="Tamanhos-02">
-                      <div>
-                        <input></input>
-                        <input></input>
-                        <input></input>
-                        <input></input>
-                        <input></input>
-                      </div>
 
-                      <div>
-                        <input></input>
-                        <input></input>
-                        <input></input>
-                        <input></input>
-                        <input></input>
-                      </div>
+                    <div className='Comppra-pt_Tamanhos'>
+
+                      {tamanhos.map(item =>
+                        <label className='tamanhos'>
+                          <input type='checkbox' />
+                          <span className='selected'>{item}</span>
+                        </label>)}
+
                     </div>
+
+
                   </div>
                 </div>
+
+              </div>
+              <div className="descricao">
+                <h3> Descrição </h3>
+                <label>
+                  <input type="text" />
+                  <span className="focu"></span>
+                </label>
               </div>
             </div>
           </div>

@@ -45,6 +45,9 @@ export default function Admpage() {
             <div className="VGN-Shoes">
               <div className="Shoes">
                 <h1>lista de organizadores</h1>
+                <label className="pesq">
+                  <input type="search" placeholder="Pesquise um colaborador" />
+                </label>
               </div>
 
               <div className="user-info">
@@ -56,7 +59,7 @@ export default function Admpage() {
                     <th> Action </th>
                   </tr>
                   <tr>
-                    <td> Mahteus dos Santos Andrade</td>
+                    <td> Mahteus dos Santos Andrade  Mahteus dos Santos Andrade  Mahteus dos Santos Andrade</td>
                     <td> VGN Shoes™ </td>
                     <td> por margin o tempo TODO</td>
                   </tr>

@@ -71,7 +71,7 @@
         align-items: center;
 
     }
-    
+
 
     .ADM-Cabecalho-add {
         display: flex;
@@ -85,7 +85,7 @@
     .adicionar-produto {
         padding: 10px;
 
-        H2{
+        H2 {
             font: 24px 'Font9';
             font-weight: 700;
         }
@@ -115,7 +115,7 @@
             line-height: normal;
             margin-top: 10px;
             margin-left: 10px;
-           
+
         }
     }
 
@@ -123,11 +123,12 @@
 
     .VGN-Shoes-Produto {
         display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         border-radius: 12px;
         background: #FFFDFD;
         box-shadow: 0px 4px 14px 0px rgba(36, 23, 23, 0.25);
-        max-height: 800px;
-        max-width: 65%;
+        max-width: 1000px;
         width: 100%;
         height: 100%;
         padding: 8px;
@@ -139,12 +140,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    
-        
-                
+
+
+
 
         button {
-            background-color:#3B0060;
+            background-color: #3B0060;
             color: #ffffff;
             text-align: center;
             border-radius: 20px;
@@ -159,7 +160,7 @@
         }
 
         Input {
-          
+
             height: 25px;
             width: 150px;
             margin-top: 15px;
@@ -176,7 +177,9 @@
     .Info-Produto {
         display: flex;
         flex-direction: column;
-        justify-self: flex-end;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
 
         h2 {
             color: #000000;
@@ -191,10 +194,10 @@
 
     .Flex {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         width: 84vw;
-        padding: 1px;
+        padding: 10px;
     }
 
 
@@ -232,8 +235,12 @@
 
     .Nome {
         display: flex;
+        text-align: start;
+        justify-content: space-between;
         align-items: center;
-        margin: 10px;
+        max-width: 240px;
+        width: 100%;
+        flex-wrap: wrap;
 
         input {
             max-height: 150px;
@@ -249,10 +256,60 @@
             font-size: 12px;
             font-weight: 800;
             line-height: normal;
-            margin: 10px;
         }
 
     }
 
+    .Comppra-pt_Tamanhos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 220px;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
 
+    .tamanhos {
+        display: block;
+        position: relative;
+        height: 40px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .tamanhos input {
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .selected {
+        display: block;
+        height: 34px;
+        width: 34px;
+        margin: 2px;
+        top: 0;
+        left: 0;
+        font-size: 22px;
+        text-align: center;
+        background-color: #f6f6f6;
+        border: 2px #000 solid;
+        border-radius: 4px;
+    }
+
+    .tamanhos:hover input~.selected {
+        background-color: rgb(196, 196, 196);
+    }
+
+    .tamanhos input:checked~.selected {
+        background-color: rgb(177, 177, 177);
+    }
+
+
+    
 }
