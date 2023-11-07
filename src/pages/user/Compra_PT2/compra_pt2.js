@@ -14,7 +14,7 @@ export default function compraPt2() {
 
   return (
 
-    <div className='pagina-compra-pt2'>
+    <div className='pagina-compra-pt2' >
 
       <Header />
 

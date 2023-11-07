@@ -1,6 +1,7 @@
 import './Finalizar.scss';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+
 import { useState } from 'react';
 
 import { motion } from 'framer-motion';
@@ -11,6 +12,23 @@ import Location from '../../../components/loacaldot/local';
 
 
 export default function CarrinhoUser() {
+
+    const [cep, setCep] = useState('');
+    const [resultado, setResultado] = useState(null);
+    
+
+        const consultarCep = async () => {
+            try {
+                const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+                const data = await response.json();
+                setResultado(data);
+            } catch (error) {
+                console.error(error);
+            }
+        };
+    
+
+
 
     return (
         <div className='Finalizar'>
@@ -112,28 +130,26 @@ export default function CarrinhoUser() {
                     <div className='localizaçao-1'>
                         <div className='localizaçao-2'>
 
-                            <h1>
-                                Escolha o tipo  de entrega na próxima etapa!
-                            </h1>
-                            <h2>
-                                Entrega calculada para:
-                            </h2>
+                            <div>
+                                <h1>Consulta de CEP</h1>
+                                <input
+                                    type="text"
+                                    placeholder="Digite o CEP"
+                                    value={cep}
+                                    onChange={(e) => setCep(e.target.value)}
+                                />
+                                <button onClick={consultarCep}>Consultar</button>
 
-                            <div className='informaçao-loc'>
-                                <div className='icon-localizaçao'>
-
-                                    <Location />
-
-                                </div>
-
-                                <div className='info-endereco'>
-                                    <p>Rua paraíso das garças</p>
-                                    <p>Chácara do Sol, São paulo - SP</p>
-                                    <p>CEP: 04857-726</p>
-                                </div>
+                                {resultado && (
+                                    <div>
+                                        <p>CEP: {resultado.cep}</p>
+                                        <p>Logradouro: {resultado.logradouro}</p>
+                                        <p>Bairro: {resultado.bairro}</p>
+                                        <p>Cidade: {resultado.localidade}</p>
+                                        <p>Estado: {resultado.uf}</p>
+                                    </div>
+                                )}
                             </div>
-
-                            <p>Digitar um novo CEP</p>
 
                         </div>
 
@@ -164,7 +180,7 @@ export default function CarrinhoUser() {
                         </div>
 
                         <div className='botoes'>
-                            
+
                             <motion.button className='botaa'
                                 initial={{ scale: 1 }}
                                 transition={{ duration: 0.3 }}
@@ -186,8 +202,8 @@ export default function CarrinhoUser() {
 
             <Rodape />
 
-        </div>  
-   
+        </div>
+
 
     )
 

@@ -1,0 +1,93 @@
+
+/*const axios = require('axios');
+if (condition) {
+    const cep = '12345678'; 
+    
+    axios.get(`https://viacep.com.br/ws/${cep}/json/`)
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+} else {
+    
+}*/
+
+/*const axios = require('axios');
+
+const dadosFrete = {
+  nCdServico: '', 
+  sCepOrigem: '',
+  sCepDestino: '', 
+  nVlPeso: '', 
+  nCdFormato: '', 
+  nVlComprimento: '', 
+  nVlAltura: '', 
+  nVlLargura: '', 
+  nVlDiametro: '', 
+};
+
+axios.post('http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPrecoPrazo', dadosFrete)
+  .then(response => {
+    console.log(response.data);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+*/
+
+
+/*const axios = require('axios');
+
+const cep = '12345678'; 
+
+axios.get(`https://viacep.com.br/ws/${cep}/json/`)
+  .then(response => {
+    console.log(response.data);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+*/
+
+
+/*
+
+endpoint.put('/produto/id/imagem', upload.single('tenis'), async (req, resp) => {
+
+    try {
+        const { id } = req.params;
+        const imagem = req.file.path;
+
+        const resp = await InserirImagem(imagem, id);
+
+        if (resposta != 1)
+            throw new Error('A imagem não pode ser salva :(');
+
+
+
+        resp.status(204).send();
+
+    } catch (error) {
+        resp.status(400).send(
+            err.message
+        )
+    }
+
+})
+
+*/
+
+/*
+
+RELATORIO
+
+
+ aqui tem tudo que eu editei essa noite, se der problema, é só apagar o que esta em cima.
+ obs: TO DOENTE KKKKKKKKKKK.
+
+ ass: Sr.Andrade
+
+*/
+
