@@ -116,8 +116,13 @@ export default function compraPt2() {
 
         <div className='Descrisão-Produto'>
 
-          <h1>Gênero: Unissex <p></p> Cor:Preto <p></p> Indicado para: Dia a dia<p></p> Pisada: Neutra <p></p> Cabedal: Nylon mesh ray dublado spam 150g<p></p> Forro: Cacharréu espuma de 4mm densidade 28 <p></p>Solado: Micro expandido 3D com sulcos de escoamento de água <p></p>Palmilha: E.V.A 7mm forro em tecido</h1>
-
+          <h1>
+            Gênero: Unissex <br></br>
+            Cor:Preto <br></br>
+            Forro: Cacharréu espuma de 4mm densidade 28 <br></br>
+            Solado: Micro expandido 3D com sulcos de escoamento de água <br></br>
+            Palmilha: E.V.A 7mm forro em tecido</h1>
+            
         </div>
 
       </div>

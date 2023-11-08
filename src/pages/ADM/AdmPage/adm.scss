@@ -1,16 +1,15 @@
 .ADM-page {
 
 
-
     .ADM {
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
 
     .adm {
         display: flex;
         flex-direction: row;
-
     }
 
     .Filtro-ADM {
@@ -108,36 +107,68 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        border-radius: 12px;
+        border-radius: 5px;
+
+        background-color: #FFF;
+        box-shadow: 0px 0px 14px #333;
+
 
         max-width: 800px;
         width: 100%;
         height: 100%;
-        padding: 5px;
+        padding: 5px 0px;
+        margin: 10px 0px;
 
     }
 
     .Shoes {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
 
         h1 {
             font-family: 'Font5';
-            font-size: 13px;
+            font-size: 18px;
             font-style: normal;
             line-height: normal;
         }
     }
+    .pesq{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        max-width: 200px;
+        max-height: 20px;
+        background-color: #d6d6d6;
+        border-radius: 4px;
+        padding: 4px 8px;
+
+
+        input{
+            width: 100%;
+            height: 100%;
+
+            background: none;
+            outline: none;
+            border: none;
+        }
+        
+    }
+    
 
     .user-info{
         overflow: hidden;
         
         table{
-            width: 100%;
-            border-radius: 10px;
             background: #FFFDFD;
-            box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            max-height: 800px;
+            height: 100%;
+            width: 100%;
             overflow: hidden;
         }
         tr{
@@ -147,12 +178,25 @@
             text-align: left;
             border-collapse: collapse;
             border-bottom: 1px solid #2A3042;
-            padding: 10px 0px;
+            padding: 10px 10px;
+            position: relative;
         }
+        td{
+            max-height: 20px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
         .hed{
             background-color: #2A3042;
             color: #FFF;
             font-size: 18px;
+
+            th{
+                width: 100%;
+                height: 100%;
+            }
         }
 
     }

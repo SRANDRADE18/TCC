@@ -42,7 +42,6 @@ export default function Filtroproduto() {
 
         <div className='adm-page-add'>
 
-            <Header />
 
             <div className='ADM-add'>
 
@@ -87,49 +86,52 @@ export default function Filtroproduto() {
 
                         <div className='VGN-Shoes-filtar'>
 
-                            <div className='Header-Filtar'>
-
-                                <h1>nome</h1>
-                                <h1>NUMERO DO PRODUTO</h1>
-                                <h1>DATA DO CADASTRO</h1>
-                                <h1>PREÇO</h1>
-                                <h1>COR</h1>
-                                <h1>PROMOÇÃO</h1>
-                                <h1>PREÇO PROMOÇÃO</h1>
-                                <h1>GENERO</h1>
-                                <h1>TAMANHOS</h1>
-
-                            </div>
-
-                            <div className='Info-Tenis-Compra'>
-
-                                <h1>Bota Vegano Shoes Cross Tanguá Premium</h1>
-                                <h1>4587</h1>
-                                <h1>09/01/2023</h1>
-                                <h1>298,90</h1>
-                                <h1>PRETO</h1>
-                                <h1>MES*** promoçao de inverno 50% de desconto</h1>
-                                <h1>298,90</h1>
-                                <h1>UNISSEX</h1>
-                                <h1>35,36,37,38,39</h1>
-
-                            </div>
-
-                            <div className='Info-Tenis-Compra'>
-
-                                <h1>Bota Vegano Shoes Cross Tanguá Premium</h1>
-                                <h1>4587</h1>
-                                <h1>09/01/2023</h1>
-                                <h1>298,90</h1>
-                                <h1>PRETO</h1>
-                                <h1>MES*** promoçao de inverno 50% de desconto</h1>
-                                <h1>298,90</h1>
-                                <h1>UNISSEX</h1>
-                                <h1>35,36,37,38,39</h1>
-
-                            </div>
-
-
+                            <table>
+                                <tr>
+                                    <th> Nº  </th>
+                                    <th> Nome </th>
+                                    <th> Data </th>
+                                    <th> Cor </th>
+                                    <th> Gênero </th>
+                                    <th> Tamanhos </th>
+                                    <th> Preço </th>
+                                    <th> Pr Promoção </th>
+                                    <th> Promoção </th>
+                                </tr>
+                                <tr>
+                                    <td> 1 </td>
+                                    <td> Botas Vegano Shoes Cross Tanguá Premium </td>
+                                    <td> 09/01/2023 </td>
+                                    <td> Preto </td>
+                                    <td> Unisex </td>
+                                    <td> 35, 36, 37, 38, 39, 40 </td>
+                                    <td> 299,99 </td>
+                                    <td> 149,99 </td>
+                                    <td> 50% </td>
+                                </tr>
+                                <tr>
+                                    <td> 1 </td>
+                                    <td> Botas Vegano Shoes Cross Tanguá Premium </td>
+                                    <td> 09/01/2023 </td>
+                                    <td> Preto </td>
+                                    <td> Unisex </td>
+                                    <td> 35, 36, 37, 38, 39, 40 </td>
+                                    <td> 299,99 </td>
+                                    <td> 149,99 </td>
+                                    <td> 50% </td>
+                                </tr>
+                                <tr>
+                                    <td> 1 </td>
+                                    <td> Botas Vegano Shoes Cross Tanguá Premium </td>
+                                    <td> 09/01/2023 </td>
+                                    <td> Preto </td>
+                                    <td> Unisex </td>
+                                    <td> 35, 36, 37, 38, 39, 40 </td>
+                                    <td> 299,99 </td>
+                                    <td> 149,99 </td>
+                                    <td> 50% </td>
+                                </tr>
+                            </table>
 
                         </div>
 
