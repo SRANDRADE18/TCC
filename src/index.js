@@ -29,7 +29,7 @@ root.render(
       <Provider>
         <Routes>
           
-          <Route path="/Landin" element={<Landin />} />
+          <Route path="/" element={<Landin />} />
           <Route path="/compra" element={<Compra />} />
           <Route path="/Criar/Conta" element={<Criarconta />} />
           <Route path="/Login" element={<Telalogin />} />

@@ -1,11 +1,15 @@
 .Pagina-MeusDados {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
     .Gigiz {
         display: flex;
         width: 100%;
         height: 100%;
         flex-direction: column;
+        justify-content: space-evenly;
         
-
     }
 
     .Meus-Dados {
@@ -16,7 +20,7 @@
     .Meus-Dados h1 {
         color: #000;
         font-family: 'Font5'errat;
-        font-size: 20px;
+        font-size: 26px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -24,6 +28,8 @@
 
     .Dados-Usuario {
         display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         width: 100%;
         height: 100%;
         max-width: 1700px;
@@ -34,31 +40,24 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-left: 22px;
+        padding: 10px;
+        margin-left: 60px;
 
         img {
-            max-width:90px ;
-            max-height:90px ;
+            max-width:40px ;
+            max-height:40px ;
             width: 100%;
             height: 100%;
-            margin: 5px;
         }
 
         h2 {
             color: #000;
             font-family: 'Font5'errat;
-            font-size: 25px;
+            font-size: 22px;
             font-style: normal;
             font-weight: 500;
             padding: 10px;
         }
-    }
-
-
-    .Linha-Dados {
-        width: 254px;
-        height: 1px;
-        background-color: #BCBCBC;
     }
 
     .acao-MeusDados {
@@ -72,7 +71,6 @@
         border-radius: 11px;
         border: 1px solid #BCBCBC;
         background: #FFF;
-        margin-left: 25px;
     }
 
     .acao-MeusDados h3 {
@@ -87,7 +85,6 @@
     .acao-MeusDados img {
         width: 20px;
         height: 20px;
-        margin: 10px;
     }
 
 
@@ -95,13 +92,13 @@
     .Dados img {
         width: 30px;
         height: 30px;
-        margin: 20px;
     }
 
     .Dados {
         display: flex;
+        justify-content: space-between;
         flex-direction: row;
-        max-width: 450px;
+        max-width: 1000px;
         max-height: 250px;
         height: 100%;
         width: 100%;
@@ -109,7 +106,6 @@
         border: 1px solid #BCBCBC;
         background-color: #BCBCBC;
         background: rgba(246, 246, 246, 0.96);
-        margin-left: 10px;
         padding: 10px;
         border-radius: 11px;
     }
@@ -119,44 +115,57 @@
         flex-direction: row;
         align-items: center;
         border-bottom: #000000 solid 1px;
-        padding: 5px;
-        margin: 5px;
+        padding: 10px;
     }
-
-    .llDados {
-        display: flex;
-        justify-content: space-around;
-        padding: 1px;
+    .MeusDados:last-child{
+        border-bottom: none;
     }
 
     .Linhamento-MeusDados {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        margin: 10px;
     }
 
     .Linhamento-MeusDados02 {
         display: flex;
         flex-direction: column;
-        margin: 10px;
-        margin-left: 20px;
+        
     }
 
     .Input-dados {
-        width: 100%;
+        min-width: 400px;
         height: 100%;
-        max-width: 250px;
+        max-width: 400px;
         max-height: 30px;
-        margin-top: 20px;
         text-align: start;
+        background-color: #fff;
         border: solid #f1f1f1;
         outline: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        input{
+            width: 90%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+        svg{
+            font-size: 16px;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            right: 5px;
+        }
     }
 
     .Name-dados{
         display: flex;
         flex-direction: column;
-        justify-content: space-between
+        justify-content: space-between;
+        text-align: start;        
     }
 }

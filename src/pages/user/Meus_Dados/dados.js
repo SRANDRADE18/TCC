@@ -77,7 +77,7 @@ export default function Meusdados() {
 
                         <div className='MeusDados'>
                             <img src="/assets/images/Minha_Conta/saida.png" />
-                            
+
                             <h3>Sair</h3>
                         </div>
 
@@ -86,47 +86,55 @@ export default function Meusdados() {
 
                     <div className='Dados'>
 
-                        <div className='llDados'>
 
 
-                            <div className='Linhamento-MeusDados'>
+                        <div className='Linhamento-MeusDados'>
 
-                                <div className='Name-dados'>
-                                    <p>Nome</p>
-                                    <input className='Input-dados'  />
-                                    <AiFillEdit/>
-                                </div>
-
-                                <div className='Name-dados'>
-                                    <p>Data Nascimento</p>
-                                    <input className='Input-dados'  />
-                                    <AiFillEdit/>
-                                </div>
-
-                                <div className='Name-dados'>
-                                    <p>Senha</p>
-                                    <input className='Input-dados'  />
-                                    <AiFillEdit/>
-                                </div>
+                            <div className='Name-dados'>
+                                <p>Nome</p>
+                                <label className='Input-dados'>
+                                    <input type='text' />
+                                    <AiFillEdit />
+                                </label>
                             </div>
 
-                            <div className='Linhamento-MeusDados02'>
+                            <div className='Name-dados'>
+                                <p>Data Nascimento</p>
+                                <label className='Input-dados'>
+                                    <input type='text' />
+                                    <AiFillEdit />
+                                </label>
+                            </div>
 
-                                <div className='Name-dados'>
-                                    <p>CPF</p>
-                                    <input className='Input-dados'  />
-                                    <AiFillEdit/>
-                                </div>
+                            <div className='Name-dados'>
+                                <p>Senha</p>
+                                <label className='Input-dados'>
+                                    <input type='text' />
+                                    <AiFillEdit />
+                                </label>
+                            </div>
+                        </div>
 
-                                <div className='Name-dados'>
-                                    <p>E-mail</p>
-                                    <input className='Input-dados'  />
-                                    <AiFillEdit/> 
-                                </div>
+                        <div className='Linhamento-MeusDados02'>
 
+                            <div className='Name-dados'>
+                                <p>CPF</p>
+                                <label className='Input-dados'>
+                                    <input type='text' />
+                                    <AiFillEdit />
+                                </label>
+                            </div>
+
+                            <div className='Name-dados'>
+                                <p>E-mail</p>
+                                <label className='Input-dados'>
+                                    <input type='text' />
+                                    <AiFillEdit />
+                                </label>
                             </div>
 
                         </div>
+
 
                     </div>
 
