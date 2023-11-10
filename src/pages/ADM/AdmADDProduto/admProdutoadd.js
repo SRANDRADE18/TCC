@@ -58,7 +58,11 @@ export default function Admaddproduto() {
                 <div className="Colar-img">
 
                   <h2> Adicionar Imagem</h2>
-                  <img src="/assets/images/addprodutoADM/image 94.png"></img>
+                  <div className="arrastar"></div>
+                  <div className="Nome">
+                    <h3> Imagens :</h3>
+                    <input type="text" />
+                  </div>
 
                 </div>
 
@@ -77,15 +81,6 @@ export default function Admaddproduto() {
                   </div>
 
                   <div className="Nome">
-                    <h3> Promoção : </h3>
-                    <input type="text" />
-                  </div>
-                  <div className="Nome">
-                    <h3> Preço promoção : </h3>
-                    <input type="number" />
-                  </div>
-
-                  <div className="Nome">
                     <h3> Genero : </h3>
                     <input type="select" />
                   </div>
@@ -95,31 +90,32 @@ export default function Admaddproduto() {
                     <input type="text" />
                   </div>
 
-                  <div className="Tamanhos-add">
-                    <h3>tamanhos</h3>
-
-
-                    <div className='Comppra-pt_Tamanhos'>
-
-                      {tamanhos.map(item =>
-                        <label className='tamanhos'>
-                          <input type='checkbox' />
-                          <span className='selected'>{item}</span>
-                        </label>)}
-
-                    </div>
-
-
-                  </div>
                 </div>
 
               </div>
-              <div className="descricao">
-                <h3> Descrição </h3>
-                <label>
-                  <input type="text" />
-                  <span className="focu"></span>
-                </label>
+              <div className="desc">
+                <div className="descricao">
+                  <h3> Descrição </h3>
+                  <label>
+                    <textarea></textarea>
+                  </label>
+                </div>
+                <div className="Tamanhos-add">
+                  <h3>tamanhos</h3>
+
+
+                  <div className='Comppra-pt_Tamanhos'>
+
+                    {tamanhos.map(item =>
+                      <label className='tamanhos'>
+                        <input type='checkbox' />
+                        <span className='selected'>{item}</span>
+                      </label>)}
+
+                  </div>
+
+
+                </div>
               </div>
             </div>
           </div>
