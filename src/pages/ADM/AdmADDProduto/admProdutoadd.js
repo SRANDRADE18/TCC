@@ -17,111 +17,204 @@ export default function Admaddproduto() {
 
   function Adicionarproduto() { }
 
-  return (
-    <div className="adm-page">
+
+  //////////////////////////////////
 
 
-      <div className="ADM-add">
-        <div className="adm-add">
-          <div className="Filtro-ADM-add">
+  const [produto, setProduto] = useState({
+    nm_produto: '',
+    vl_preco: '',
+    ds_genero: '',
+    ds_cor: '',
+  });
 
-            <div className="ADM-Pessoa-add">
-              <img src="/assets/images/Minha_Conta/do-utilizador 3.png" />
-              <h2> oLá, Sr.Andrade </h2>
-            </div>
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setProduto({ ...produto, [name]: value });
+  };
 
-            <p>Admin Panel</p>
-            <p>Menu</p>
-            <h1>Organizations</h1>
-            <h1>Adicionar Produto</h1>
-            <h1>Pedidos Finalizados</h1>
-            <h1>Pedidos Realizados</h1>
-          </div>
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
-          <div className="ADM-Header">
-            <div className="ADM-Cabecalho-add">
-              <div className="hamburguer-icon">
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
+    try {
+      const response = await fetch('http://localhost:5000/cadastrar-produto', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(produto),
+      });
+
+      if (response.ok) {
+        alert('Produto cadastrado com sucesso!');
+      
+        setProduto({
+          nm_produto: '',
+          vl_preco: '',
+          ds_genero: '',
+          ds_cor: '',
+        });
+      } else {
+        const erro = await response.json();
+        alert(`Erro ao cadastrar produto: ${erro.erro}`);
+      }
+    } catch (error) {
+      console.error('Erro ao realizar a requisição:', error);
+      alert('Ocorreu um erro ao cadastrar o produto. Por favor, tente novamente.');
+    }
+  };
+
+
+  /////////////////////////////////
+
+  const [imagem, setImagem] = useState(null);
+
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    setImagem(file);
+  };
+
+  const Submit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const formData = new FormData();
+      formData.append('imagem', imagem);
+
+      const response = await fetch('http://localhost:5000/produto/:id/imagem', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+        alert('Imagem cadastrada com sucesso!');
+       
+        setImagem(null);
+      } else {
+        const erro = await response.json();
+        alert(`Erro ao cadastrar imagem: ${erro.erro}`);
+      }
+    } catch (error) {
+      console.error('Erro ao realizar a requisição:', error);
+      alert('Ocorreu um erro ao cadastrar a imagem. Por favor, tente novamente.');
+    }
+  }
+
+    ////////////////////////////////
+
+
+
+    return (
+      <div className="adm-page">
+
+
+        <div className="ADM-add">
+          <div className="adm-add">
+            <div className="Filtro-ADM-add">
+
+              <div className="ADM-Pessoa-add">
+                <img src="/assets/images/Minha_Conta/do-utilizador 3.png" />
+                <h2> oLá, Sr.Andrade </h2>
               </div>
 
-
+              <p>Admin Panel</p>
+              <p>Menu</p>
+              <h1>Organizations</h1>
+              <h1>Adicionar Produto</h1>
+              <h1>Pedidos Finalizados</h1>
+              <h1>Pedidos Realizados</h1>
             </div>
 
-            <div className="adicionar-produto">
-              <h2>Tela De Adicionar Produto</h2>
-            </div>
-
-            <div className="VGN-Shoes-Produto">
-              <div className="Flex">
-                <div className="Colar-img">
-
-                  <h2> Adicionar Imagem</h2>
-                  <div className="arrastar"></div>
-                  <div className="Nome">
-                    <h3> Imagens :</h3>
-                    <input type="text" />
-                  </div>
-
+            <div className="ADM-Header">
+              <div className="ADM-Cabecalho-add">
+                <div className="hamburguer-icon">
+                  <div className="line"></div>
+                  <div className="line"></div>
+                  <div className="line"></div>
                 </div>
 
-                <div className="Info-Produto">
-                  <h2>INFORMAÇÕES DO PRODUTO</h2>
-
-                  <div className="Nome">
-                    <h3> Nome :</h3>
-                    <input type="text" />
-                  </div>
-
-                  <div className="Nome">
-
-                    <h3> Preço : </h3>
-                    <input type="number" />
-                  </div>
-
-                  <div className="Nome">
-                    <h3> Genero : </h3>
-                    <input type="select" />
-                  </div>
-
-                  <div className="Nome">
-                    <h3> cor :</h3>
-                    <input type="text" />
-                  </div>
-
-                </div>
 
               </div>
-              <div className="desc">
-                <div className="descricao">
-                  <h3> Descrição </h3>
-                  <label>
-                    <textarea></textarea>
-                  </label>
-                </div>
-                <div className="Tamanhos-add">
-                  <h3>tamanhos</h3>
 
+              <div className="adicionar-produto">
+                <h2>Tela De Adicionar Produto</h2>
+              </div>
 
-                  <div className='Comppra-pt_Tamanhos'>
+              <div className="VGN-Shoes-Produto">
+                <div className="Flex">
+                  <div className="Colar-img">
 
-                    {tamanhos.map(item =>
-                      <label className='tamanhos'>
-                        <input type='checkbox' />
-                        <span className='selected'>{item}</span>
-                      </label>)}
+                    <form onSubmit={Submit}>
+                      <div className="Nome">
+                        <h3>Imagem:</h3>
+                        <input type="file" name="imagem" onChange={handleImageChange} />
+                      </div>
+
+                      <button type="submit">Cadastrar Imagem</button>
+                    </form>
 
                   </div>
 
+                  <div className="Info-Produto">
+                    <h2>INFORMAÇÕES DO PRODUTO</h2>
 
+                    <form onSubmit={handleSubmit}>
+                      <div className="Nome">
+                        <h3>Nome:</h3>
+                        <input type="text" name="nm_produto" value={produto.nm_produto} onChange={handleChange} />
+                      </div>
+
+                      <div className="Nome">
+                        <h3>Preço:</h3>
+                        <input type="number" name="vl_preco" value={produto.vl_preco} onChange={handleChange} />
+                      </div>
+
+                      <div className="Nome">
+                        <h3>Gênero:</h3>
+                        <input type="text" name="ds_genero" value={produto.ds_genero} onChange={handleChange} />
+                      </div>
+
+                      <div className="Nome">
+                        <h3>Cor:</h3>
+                        <input type="text" name="ds_cor" value={produto.ds_cor} onChange={handleChange} />
+                      </div>
+
+                      <button type="submit">Cadastrar Produto</button>
+                    </form>
+
+                  </div>
+
+                </div>
+                <div className="desc">
+                  <div className="descricao">
+                    <h3> Descrição </h3>
+                    <label>
+                      <textarea></textarea>
+                    </label>
+                  </div>
+                  <div className="Tamanhos-add">
+
+                    <h3>tamanhos</h3>
+
+
+                    <div className='Comppra-pt_Tamanhos'>
+
+                      {tamanhos.map(item =>
+                        <label className='tamanhos'>
+                          <input type='checkbox' />
+                          <span className='selected'>{item}</span>
+                        </label>)}
+
+                    </div>
+
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-    </div>
-  );
-}
+      </div>
+    );
+  }
