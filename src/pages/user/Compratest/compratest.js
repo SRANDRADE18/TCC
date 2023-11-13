@@ -1,25 +1,32 @@
-import './Products.scss';
+import './compratest.scss';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
-import  { useEffect, useContext } from 'react';
 
-
-
-import './Products.scss';
-import fetchProducts from '../compra test carrinho/api/fetchProducts';
-import ProductCard from './ProductCard/ProductCard';
-
-import AppContext from '../../../context/AppContext';
-
+import Header from '../../../components/Header/header.js';
+import Rodape from '../../../components/Rodape/rodape.js';
 
 import InputMask from "react-input-mask";
-
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+
+import formatCurrency from '../../../utils/formatCurrency.js';
+
+import AppContext from '../../../context/AppContext.js';
+
+import React, { useContext } from 'react';
+
+import propTypes from 'prop-types';
+
+import { useEffect, useState, useRef } from "react";
+
+import { BsFillCartPlusFill } from 'react-icons/bs';
+
+import fetchProducts from '../compra test carrinho/api/fetchProducts.js';
+
+import ProductCard from '../compra test carrinho/ProductCard/ProductCard.js';
 
 
-export default function Products() {
-
-
+export default function Compra() {
 
   function CheckButton() {
     const [isSelected, setIsSelected] = useState(false);
@@ -32,23 +39,27 @@ export default function Products() {
   const [minpreco, setMinpreco] = useState(0)
 
   const [maxpreco, setMaxpreco] = useState(1500)
+//////////////////////////
 
-  const { products, setProducts, } = useContext(AppContext);
+const { products, setProducts } = useContext(AppContext);
+const [searchTerm, setSearchTerm] = useState('Tenis Veganos');
+const [quantity, setQuantity] = useState(24);
+const [filteredProducts, setFilteredProducts] = useState([]);
 
-  useEffect(() => {
-    const quantity = 24;
-    fetchProducts('Tenis Vegano', quantity).then((response) => {
-      setProducts(response);
+useEffect(() => {
+  fetchProducts(searchTerm, quantity).then((response) => {
+    setFilteredProducts(response);
+  });
+}, [searchTerm, quantity]);
 
-    });
-  }, []);
+//////////////////////////
 
   return (
+    <div className='Pagina-compra'>
+      <Header />
 
-    <div className='Compra-produtos'>
 
-      <div className='produtos'>
-
+      <div className='Produtos-compra'>
 
         <div className='Compra-Filtros'>
 
@@ -63,12 +74,13 @@ export default function Products() {
                   initial={{ boxShadow: 'none' }}
                   transition={{ duration: 0.5 }}
                   whileFocus={{ boxShadow: '0px 0px 10px rgba(100, 100, 100, 0.60)' }}
+
                   type='text' min={0} max={1500} value={minpreco} onChange={(e) => setMinpreco(e.target.value)} />
                 <motion.input
                   initial={{ boxShadow: 'none' }}
                   transition={{ duration: 0.5 }}
                   whileFocus={{ boxShadow: '0px 0px 16px rgba(100, 100, 100, 0.60)' }}
-                  type='text' min={0} max={1500} value={maxpreco} onChange={(e) => setMaxpreco(e.target.value)} />
+                  type='number' min={0} max={1500} value={maxpreco} onChange={(e) => setMaxpreco(e.target.value)} />
 
               </div>
 
@@ -172,8 +184,8 @@ export default function Products() {
                 className='Roxo' ></motion.div>
 
               <label class="Rosa">
-                <input type="checkbox" />
-                <span class="checkmark"></span>
+                <input type="checkbox"/>
+                  <span class="checkmark"></span>
               </label>
             </div>
 
@@ -182,16 +194,29 @@ export default function Products() {
         </div>
 
 
-        <section className="products-container">
-          {products.map((product) => <ProductCard key={product.id} data={product} />)}
-        </section>
+        <div className='Shoop-Vgn'>
 
-      </div>
+          <div className='Shoop-compra'>
+
+        
+              {filteredProducts.map((product) => (
+                <ProductCard key={product.id} data={product} />
+              ))}
+           
+
+          </div>
+
+        </div>
+
+      </div >
 
 
-    </div>
+      <Rodape />
 
 
-  );
+
+    </div >
+
+  )
+
 }
-

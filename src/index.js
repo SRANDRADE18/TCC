@@ -4,7 +4,7 @@ import './index.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Landin from './pages/user/landingpage/App.js';
-import Compra from './pages/user/Compra/compra';
+import Compra from './pages/user/Compra/compra.js';
 import Criarconta from './pages/user/Criar_conta/criar_conta';
 import Telalogin from './pages/user/Login/login';
 import UltimoPedido from './pages/user/Minha_Conta_Ultimo_Pedido/ultimo_pedido';
@@ -14,7 +14,7 @@ import Loginadm from './pages/user/LoginADM/loginadm';
 import Admpage from './pages/ADM/AdmPage/adm';
 import Admaddproduto from './pages/ADM/AdmADDProduto/admProdutoadd';
 import Filtraprodutos from './pages/ADM/ADMFiltrarProduto/filtrar';
-import Carrinho from './pages/user/Compra2/carrinho';
+import Carrinho from './pages/user/Compra/compra.js';
 
 import Provider from './context/Provider';
 import Finalizar from './pages/user/Finalizar/Finalizar';
