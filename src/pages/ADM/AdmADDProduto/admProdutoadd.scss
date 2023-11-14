@@ -313,6 +313,14 @@
         background-color: rgb(177, 177, 177);
     }
 
+    .imgs{
+        height: 240px;
+        max-width: 600px;
+        width: 100%;
+        border: 1px solid #000;
+    }
+
+
     .desc{
         display: flex;
         justify-content: space-around;
