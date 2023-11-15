@@ -29,7 +29,7 @@ root.render(
       <Provider>
         <Routes>
           
-          <Route path="/" element={<Landin />} />
+          <Route path="/" element=  { <Landin />} />
           <Route path="/compra" element={<Compra />} />
           <Route path="/Criar/Conta" element={<Criarconta />} />
           <Route path="/Login" element={<Telalogin />} />
@@ -43,6 +43,7 @@ root.render(
           <Route path="/Carrinho" element={<Carrinho />} />
           <Route path="/Finalizar/compra" element={<Finalizar />} />
           <Route path="/carrinho/user" element={<Carrinhouser />} />
+          
         </Routes>
       </Provider>
     </BrowserRouter>

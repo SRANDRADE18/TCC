@@ -1,104 +1,51 @@
 import "./admProdutoadd.scss";
-import { Link } from "react-router-dom";
-import axios from "axios";
+
 import { useState } from "react";
 
-import Rodape from "../../../components/Rodape/rodape";
-import Header from "../../../components/Header/header";
+import { cadastrarProduto, enviarImagem } from "../../../api/cadastrarProduto";
+
 
 export default function Admaddproduto() {
-  const [nome, setnome] = useState([]);
-  const [cor, setcor] = useState([]);
-  const [tamanho, settamanho] = useState([]);
-  const [Email, setEmail] = useState([]);
-  const [senha, setsenha] = useState([]);
+
 
   const tamanhos = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
 
-  function Adicionarproduto() { }
+ 
 
 
   //////////////////////////////////
 
 
-  const [produto, setProduto] = useState({
-    nm_produto: '',
-    vl_preco: '',
-    ds_genero: '',
-    ds_cor: '',
-  });
+  const[nome, setnome]=useState('');
+  const [preco, setpreco]=useState(0);
+  
+  const [genero,setgenero]=useState('');
+  const [cor,setcor]=useState('');
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setProduto({ ...produto, [name]: value });
-  };
+  const [estoque,setestoque]=useState(0);
+  
+  const [disponivel, setdisponivel]=useState('');
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const [Desquicao,setdestricao]=useState('');
 
-    try {
-      const response = await fetch('http://localhost:5000/cadastrar-produto', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(produto),
-      });
+  const [precopromo, setprecopromo]=useState(0);
 
-      if (response.ok) {
-        alert('Produto cadastrado com sucesso!');
+  const [imagem,setimagem]=useState('');
 
-        setProduto({
-          nm_produto: '',
-          vl_preco: '',
-          ds_genero: '',
-          ds_cor: '',
-        });
-      } else {
-        const erro = await response.json();
-        alert(`Erro ao cadastrar produto: ${erro.erro}`);
-      }
-    } catch (error) {
-      console.error('Erro ao realizar a requisição:', error);
-      alert('Ocorreu um erro ao cadastrar o produto. Por favor, tente novamente.');
-    }
-  };
-
-
-  /////////////////////////////////
-
-  const [imagem, setImagem] = useState(null);
-
-  const handleImageChange = (event) => {
-    const file = event.target.files[0];
-    setImagem(file);
-  };
-
-  const Submit = async (event) => {
-    event.preventDefault();
+  async function salvarClick(){
 
     try {
-      const formData = new FormData();
-      formData.append('imagem', imagem);
+      const r = await cadastrarProduto(nome,preco,genero,cor,estoque,disponivel,Desquicao,precopromo);
 
-      const response = await fetch('http://localhost:5000/produto/:id/imagem', {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (response.ok) {
-        alert('Imagem cadastrada com sucesso!');
-
-        setImagem(null);
-      } else {
-        const erro = await response.json();
-        alert(`Erro ao cadastrar imagem: ${erro.erro}`);
-      }
+      alert('concluido')
     } catch (error) {
-      console.error('Erro ao realizar a requisição:', error);
-      alert('Ocorreu um erro ao cadastrar a imagem. Por favor, tente novamente.');
+
+      alert(error.menssage)
     }
+
+
   }
+
 
   ////////////////////////////////
 
@@ -144,40 +91,41 @@ export default function Admaddproduto() {
               <div className="Flex">
                 <div className="Colar-img">
 
-                  <form onSubmit={Submit}>
+                  <form>
+
                     <div className="Nome">
                       <h3>Imagem1:</h3>
-                      <input type="file" name="imagem" onChange={handleImageChange} />
+                      <input type="file" name="imagem"  />
                     </div>
 
                   </form>
 
-                  <form onSubmit={Submit}>
+                  <form>
                     <div className="Nome">
                       <h3>Imagem2:</h3>
-                      <input type="file" name="imagem" onChange={handleImageChange} />
+                      <input type="file" name="imagem"  />
                     </div>
 
                   </form>
 
-                  <form onSubmit={Submit}>
+                  <form>
                     <div className="Nome">
                       <h3>Imagem3:</h3>
-                      <input type="file" name="imagem" onChange={handleImageChange} />
+                      <input type="file" name="imagem"  />
                     </div>
 
                   </form>
 
-                  <form onSubmit={Submit}>
+                  <form>
                     <div className="Nome">
                       <h3>Imagem4:</h3>
-                      <input type="file" name="imagem" onChange={handleImageChange} />
+                      <input type="file" name="imagem"  />
                     </div>
 
                   </form>
 
                   <section className="imgs">
-                    <div className="img1-produto" style={{ `backgroundImage: url(${imagem})` }}></div>
+                  <div className="img1-produto" ></div>
                     <div className="img2-produto"></div>
                     <div className="img3-produto"></div>
                     <div className="img4-produto"></div>
@@ -188,28 +136,49 @@ export default function Admaddproduto() {
                 <div className="Info-Produto">
                   <h2>INFORMAÇÕES DO PRODUTO</h2>
 
-                  <form onSubmit={handleSubmit}>
+                  <form>
                     <div className="Nome">
                       <h3>Nome:</h3>
-                      <input type="text" name="nm_produto" value={produto.nm_produto} onChange={handleChange} />
+                      <input type="text" name="nm_produto" value={nome} onChange={e=>setnome(e.target.value)} />
                     </div>
 
                     <div className="Nome">
                       <h3>Preço:</h3>
-                      <input type="number" name="vl_preco" value={produto.vl_preco} onChange={handleChange} />
+                      <input type="number" name="vl_preco" value={preco} onChange={e=>setpreco(e.target.value)} />
                     </div>
 
                     <div className="Nome">
                       <h3>Gênero:</h3>
-                      <input type="text" name="ds_genero" value={produto.ds_genero} onChange={handleChange} />
+                      <input type="text" name="ds_genero" value={genero} onChange={e=>setgenero(e.target.value)} />
                     </div>
 
                     <div className="Nome">
                       <h3>Cor:</h3>
-                      <input type="text" name="ds_cor" value={produto.ds_cor} onChange={handleChange} />
+                      <input type="text" name="ds_cor" value={cor} onChange={e=>setcor(e.target.value)} />
                     </div>
 
-                    <button type="submit">Cadastrar Produto</button>
+                    <div className="Nome">
+                      <h3>estoque:</h3>
+                      <input type="text" name="ds_cor" value={estoque} onChange={e=>setestoque(e.target.value)} />
+                    </div>
+
+                  
+                    <div className="Nome">
+                      <h3>disponivel:</h3>
+                      <input type="checkbox" name="ds_cor" checked={disponivel} value={disponivel} onChange={e=>setdisponivel(e.target.checked)} />
+                    </div>
+
+                    <div className="Nome">
+                      <h3>Destricao:</h3>
+                      <input type="text" name="ds_cor" value={Desquicao} onChange={e=>setdestricao(e.target.value)} />
+                    </div>
+
+                    <div className="Nome">
+                      <h3>promocao:</h3>
+                      <input type="text" name="ds_cor" value={precopromo} onChange={e=>setprecopromo(e.target.value)} />
+                    </div>
+
+                    <button type="submit" onClick={salvarClick}>Cadastrar Produto</button>
                   </form>
 
                 </div>
