@@ -13,7 +13,7 @@ export async function cadastrarProduto( nome, preco, avaliacao, genero,estoque,d
             genero: genero,
             estoque: estoque,
             disponivel: disponivel,
-            descricao:{ descricao: descricao },
+            descricao:descricao ,
             forro:forro,
             solado:solado,
             palmilha:palmilha

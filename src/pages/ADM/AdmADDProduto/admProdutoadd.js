@@ -9,7 +9,7 @@ import { cadastrarProduto, enviarImagem } from "../../../api/cadastrarProduto";
 
 import { Await } from "react-router-dom";
 
-import { erro } from "jquery";
+import { erro, error } from "jquery";
 
 
 
@@ -24,6 +24,7 @@ export default function Admaddproduto() {
   const tamanhos = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
 
 
+  
 
 
   //////////////////////////////////
@@ -48,17 +49,29 @@ export default function Admaddproduto() {
 
   async function salvarClick() {
 
+    const produtoooo = await cadastrarProduto({
+      nome: nome,
+      preco: preco,
+      genero: genero,
+      estoque: estoque,
+      disponivel: disponivel,
+      descricao: descricao,
+      forro: forro,
+      solado: solado,
+      palmilha: palmilha
+    });
+
     try {
 
       if(!Imagem1)
-      throw new erro('Escolha a imagem');
+      throw new error('Escolha a imagem');
       if(!Imagem2)
-      throw new erro('Escolha a imagem');
+      throw new error('Escolha a imagem');
       if(!Imagem3)
-      throw new erro('Escolha a imagem');
+      throw new error('Escolha a imagem');
 
       if(!Imagem4)
-      throw new erro('Escolha a imagem');
+      throw new error('Escolha a imagem');
 
       
 
