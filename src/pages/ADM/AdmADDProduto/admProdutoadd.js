@@ -7,6 +7,12 @@ import { useState } from "react";
 
 import { cadastrarProduto, enviarImagem } from "../../../api/cadastrarProduto";
 
+import { Await } from "react-router-dom";
+
+import { erro } from "jquery";
+
+
+
 
 
 
@@ -29,41 +35,53 @@ export default function Admaddproduto() {
   const [genero, setgenero] = useState('');
   const [estoque, setestoque] = useState(0.0);
   const [disponivel, setdisponivel] = useState('');
-  const [Descricao, setdescricao] = useState('');
+  const [descricao, setdescricao] = useState('');
   const [forro, setforro] = useState('');
   const [solado, setsolado] = useState('');
   const [palmilha, setpalmilha] = useState('');
 
 
-  const [Imagem1, setimagem1] = useState('');
-  const [Imagem2, setimagem2] = useState('');
-  const [Imagem3, setimagem3] = useState('');
-  const [Imagem4, setimagem4] = useState('');
+  const [Imagem1, setimagem1] = useState   ();
+  const [Imagem2, setimagem2] = useState   ();
+  const [Imagem3, setimagem3] = useState   ();
+  const [Imagem4, setimagem4] = useState   ();
 
   async function salvarClick() {
 
     try {
 
-      const r = await cadastrarProduto(nome, preco, genero, estoque, disponivel, Descricao, forro, solado, palmilha);
+      if(!Imagem1)
+      throw new erro('Escolha a imagem');
+      if(!Imagem2)
+      throw new erro('Escolha a imagem');
+      if(!Imagem3)
+      throw new erro('Escolha a imagem');
 
-      toast.dark('concluido')
+      if(!Imagem4)
+      throw new erro('Escolha a imagem');
+
+      
+
+      const produto = await cadastrarProduto(nome, preco, genero, estoque, disponivel, descricao, forro, solado, palmilha);
+
+      if (produto && produto.data) { 
+        const Img1 = await enviarImagem(produto.data, Imagem1);
+        const Img2 = await enviarImagem(produto.data, Imagem2);
+        const Img3 = await enviarImagem(produto.data, Imagem3);
+        const Img4 = await enviarImagem(produto.data, Imagem4);
+  
+        toast.success('Concluído');
+      } else {
+        toast.error('Erro ao obter dados do produto');
+      }
     } catch (error) {
-
-      toast.error(error.response.data.error)
+      toast.error(error.response.data.error);
     }
-
-    try {
-
-      const v = await enviarImagem(Imagem1,Imagem2,Imagem3,Imagem4);
-
-      toast.dark('concluido')
-    } catch (error) {
-
-      toast.error(error.response.data.error)
-    }
-
 
   }
+
+
+
 
 
   ////////////////////////////////
@@ -111,34 +129,33 @@ export default function Admaddproduto() {
               <div className="Flex">
                 <div className="Colar-img">
 
-                  <div className="Nome">
+                  <div className="Nome"  >
                     <h3>img:</h3>
-                    <input type="file" name="ds_cor" value={Imagem1} onChange={e => setimagem1(e.target.value)} />
+                    <input type="file" name="ds_cor"  onChange={e => setimagem1(e.target.files[0])} />
                   </div>
 
 
-                  <div className="Nome">
+                  <div className="Nome"  >
                     <h3>img:</h3>
-                    <input type="file" name="ds_cor" value={Imagem2} onChange={e => setimagem2(e.target.value)} />
+                    <input type="file" name="ds_cor"  onChange={e => setimagem2(e.target.files[0])} />
                   </div>
 
 
-                  <div className="Nome">
+                  <div className="Nome" >
                     <h3>img:</h3>
-                    <input type="file" name="ds_cor" value={Imagem3} onChange={e => setimagem3(e.target.value)} />
+                    <input type="file" name="ds_cor"  onChange={e => setimagem3(e.target.files[0])} />
                   </div>
 
 
-                  <div className="Nome">
+                  <div className="Nome"  >
                     <h3>img:</h3>
-                    <input type="file" name="ds_cor" value={Imagem4} onChange={e => setimagem4(e.target.value)} />
+                    <input type="file" name="ds_cor"  onChange={e => setimagem4(e.target.files[0])} />
                   </div>
 
                   <section className="imgs">
-                    <div className="img1-produto" ></div>
-                    <div className="img2-produto"></div>
-                    <div className="img3-produto"></div>
-                    <div className="img4-produto"></div>
+
+                      <img src="/assets/images/addprodutoADM/image94.png" alt=""/>
+                    
                   </section>
 
                 </div>
@@ -146,7 +163,7 @@ export default function Admaddproduto() {
                 <div className="Info-Produto">
                   <h2>INFORMAÇÕES DO PRODUTO</h2>
 
-                  <form>
+                  <div>
                     <div className="Nome">
                       <h3>Nome:</h3>
                       <input type="text" name="nm_produto" value={nome} onChange={(e) => setnome(e.target.value)} />
@@ -179,7 +196,7 @@ export default function Admaddproduto() {
 
                     <div className="Nome">
                       <h3>Descrição:</h3>
-                      <input type="text" name="ds_descricao" value={Descricao} onChange={(e) => setdescricao(e.target.value)} />
+                      <input type="text" name="ds_descricao" value={descricao} onChange={(e) => setdescricao(e.target.value)} />
                     </div>
 
                     <div className="Nome">
@@ -199,8 +216,8 @@ export default function Admaddproduto() {
 
 
 
-                    <button type="submit" onClick={salvarClick}>Cadastrar Produto</button>
-                  </form>
+                    <button onClick={salvarClick}>Cadastrar Produto</button>
+                  </div>
 
                 </div>
 
