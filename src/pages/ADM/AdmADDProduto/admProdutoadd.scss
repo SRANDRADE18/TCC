@@ -331,6 +331,15 @@
         max-width: 600px;
         width: 100%;
         border: 1px solid #000;
+
+        img{
+          border: 2px #000 solid;
+            
+            height: 100px;
+            max-width: 100px;
+            width: 100%;
+            margin: 10px;
+        }
     }
 
 

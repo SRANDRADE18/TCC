@@ -24,7 +24,7 @@ export default function Admaddproduto() {
   const tamanhos = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
 
 
-  
+
 
 
   //////////////////////////////////
@@ -42,10 +42,10 @@ export default function Admaddproduto() {
   const [palmilha, setpalmilha] = useState('');
 
 
-  const [Imagem1, setimagem1] = useState   ();
-  const [Imagem2, setimagem2] = useState   ();
-  const [Imagem3, setimagem3] = useState   ();
-  const [Imagem4, setimagem4] = useState   ();
+  const [Imagem1, setimagem1] = useState();
+  const [Imagem2, setimagem2] = useState();
+  const [Imagem3, setimagem3] = useState();
+  const [Imagem4, setimagem4] = useState();
 
   async function salvarClick() {
 
@@ -63,26 +63,26 @@ export default function Admaddproduto() {
 
     try {
 
-      if(!Imagem1)
-      throw new error('Escolha a imagem');
-      if(!Imagem2)
-      throw new error('Escolha a imagem');
-      if(!Imagem3)
-      throw new error('Escolha a imagem');
+      if (!Imagem1)
+        throw new error('Escolha a imagem');
+      if (!Imagem2)
+        throw new error('Escolha a imagem');
+      if (!Imagem3)
+        throw new error('Escolha a imagem');
 
-      if(!Imagem4)
-      throw new error('Escolha a imagem');
+      if (!Imagem4)
+        throw new error('Escolha a imagem');
 
-      
+
 
       const produto = await cadastrarProduto(nome, preco, genero, estoque, disponivel, descricao, forro, solado, palmilha);
 
-      if (produto && produto.data) { 
+      if (produto && produto.data) {
         const Img1 = await enviarImagem(produto.data, Imagem1);
         const Img2 = await enviarImagem(produto.data, Imagem2);
         const Img3 = await enviarImagem(produto.data, Imagem3);
         const Img4 = await enviarImagem(produto.data, Imagem4);
-  
+
         toast.success('Concluído');
       } else {
         toast.error('Erro ao obter dados do produto');
@@ -144,32 +144,50 @@ export default function Admaddproduto() {
 
                   <div className="Nome"  >
                     <h3>img:</h3>
-                    <input className="button"  type="file" name="ds_cor"  onChange={e => setimagem1(e.target.files[0])} />
+                    <input className="button" type="file" name="ds_cor" onChange={e => setimagem1(e.target.files[0])} />
                   </div>
 
 
                   <div className="Nome"  >
                     <h3>img:</h3>
-                    <input className="button"  type="file" name="ds_cor"  onChange={e => setimagem2(e.target.files[0])} />
+                    <input className="button" type="file" name="ds_cor" onChange={e => setimagem2(e.target.files[0])} />
                   </div>
 
 
                   <div className="Nome" >
                     <h3>img:</h3>
-                    <input className="button"  type="file" name="ds_cor"  onChange={e => setimagem3(e.target.files[0])} />
+                    <input className="button" type="file" name="ds_cor" onChange={e => setimagem3(e.target.files[0])} />
                   </div>
 
 
                   <div className="Nome"  >
                     <h3>img:</h3>
-                    <input className="button" type="file" name="ds_cor"  onChange={e => setimagem4(e.target.files[0])} />
+                    <input className="button" type="file" name="ds_cor" onChange={e => setimagem4(e.target.files[0])} />
                   </div>
 
                   <section className="imgs">
 
-                      <img src="/assets/images/addprodutoADM/image94.png" alt=""/>
-                    
+                    <img src="/assets/images/addprodutoADM/image94.png" alt="" />
+
+                 
+                 
+
+                    <img src="/assets/images/addprodutoADM/image94.png" alt="" />
+
+               
+
+                  
+
+                    <img src="/assets/images/addprodutoADM/image94.png" alt="" />
+
+                
+
+                  
+
+                    <img src="/assets/images/addprodutoADM/image94.png" alt="" />
+
                   </section>
+
 
                 </div>
 
