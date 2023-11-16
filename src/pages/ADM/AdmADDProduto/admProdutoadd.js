@@ -1,8 +1,15 @@
 import "./admProdutoadd.scss";
 
+import { ToastContainer, toast } from "react-toastify";
+
+
 import { useState } from "react";
 
 import { cadastrarProduto, enviarImagem } from "../../../api/cadastrarProduto";
+
+
+
+
 
 
 export default function Admaddproduto() {
@@ -10,37 +17,39 @@ export default function Admaddproduto() {
 
   const tamanhos = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
 
- 
+
 
 
   //////////////////////////////////
 
 
-  const[nome, setnome]=useState('');
-  const [preco, setpreco]=useState(0);
-  
-  const [genero,setgenero]=useState('');
-  const [cor,setcor]=useState('');
+  const [nome, setnome] = useState('');
+  const [preco, setpreco] = useState(0.0);
+  const [avaliacao, setavaliacao] = useState(0.0);
+  const [genero, setgenero] = useState('');
+  const [estoque, setestoque] = useState(0.0);
+  const [disponivel, setdisponivel] = useState('');
+  const [Descricao, setdescricao] = useState('');
+  const [forro, setforro] = useState('');
+  const [solado, setsolado] = useState('');
+  const [palmilha, setpalmilha] = useState('');
 
-  const [estoque,setestoque]=useState(0);
-  
-  const [disponivel, setdisponivel]=useState('');
 
-  const [Desquicao,setdestricao]=useState('');
+  const [Imagem1, setimagem1] = useState('');
+  const [Imagem2, setimagem2] = useState('');
+  const [Imagem3, setimagem3] = useState('');
+  const [Imagem4, setimagem4] = useState('');
 
-  const [precopromo, setprecopromo]=useState(0);
-
-  const [imagem,setimagem]=useState('');
-
-  async function salvarClick(){
+  async function salvarClick() {
 
     try {
-      const r = await cadastrarProduto(nome,preco,genero,cor,estoque,disponivel,Desquicao,precopromo);
 
-      alert('concluido')
+      const r = await cadastrarProduto(nome, preco, genero, estoque, disponivel, Descricao, forro, solado, palmilha);
+
+      toast.dark('concluido')
     } catch (error) {
 
-      alert(error.menssage)
+      toast.error(error.response.data.error)
     }
 
 
@@ -54,6 +63,7 @@ export default function Admaddproduto() {
   return (
     <div className="adm-page">
 
+      <ToastContainer />
 
       <div className="ADM-add">
         <div className="adm-add">
@@ -91,41 +101,31 @@ export default function Admaddproduto() {
               <div className="Flex">
                 <div className="Colar-img">
 
-                  <form>
+                  <div className="Nome">
+                    <h3>Cor:</h3>
+                    <input type="file" name="ds_cor" value={Imagem1} onChange={e => setimagem1(e.target.value)} />
+                  </div>
 
-                    <div className="Nome">
-                      <h3>Imagem1:</h3>
-                      <input type="file" name="imagem"  />
-                    </div>
 
-                  </form>
+                  <div className="Nome">
+                    <h3>Cor:</h3>
+                    <input type="file" name="ds_cor" value={Imagem2} onChange={e => setimagem2(e.target.value)} />
+                  </div>
 
-                  <form>
-                    <div className="Nome">
-                      <h3>Imagem2:</h3>
-                      <input type="file" name="imagem"  />
-                    </div>
 
-                  </form>
+                  <div className="Nome">
+                    <h3>Cor:</h3>
+                    <input type="file" name="ds_cor" value={Imagem3} onChange={e => setimagem3(e.target.value)} />
+                  </div>
 
-                  <form>
-                    <div className="Nome">
-                      <h3>Imagem3:</h3>
-                      <input type="file" name="imagem"  />
-                    </div>
 
-                  </form>
-
-                  <form>
-                    <div className="Nome">
-                      <h3>Imagem4:</h3>
-                      <input type="file" name="imagem"  />
-                    </div>
-
-                  </form>
+                  <div className="Nome">
+                    <h3>Cor:</h3>
+                    <input type="file" name="ds_cor" value={Imagem4} onChange={e => setimagem4(e.target.value)} />
+                  </div>
 
                   <section className="imgs">
-                  <div className="img1-produto" ></div>
+                    <div className="img1-produto" ></div>
                     <div className="img2-produto"></div>
                     <div className="img3-produto"></div>
                     <div className="img4-produto"></div>
@@ -139,44 +139,55 @@ export default function Admaddproduto() {
                   <form>
                     <div className="Nome">
                       <h3>Nome:</h3>
-                      <input type="text" name="nm_produto" value={nome} onChange={e=>setnome(e.target.value)} />
+                      <input type="text" name="nm_produto" value={nome} onChange={(e) => setnome(e.target.value)} />
                     </div>
 
                     <div className="Nome">
                       <h3>Preço:</h3>
-                      <input type="number" name="vl_preco" value={preco} onChange={e=>setpreco(e.target.value)} />
+                      <input type="number" name="vl_preco" value={preco} onChange={(e) => setpreco(e.target.value)} />
+                    </div>
+
+                    <div className="Nome">
+                      <h3>Avaliação:</h3>
+                      <input type="number" name="nr_avaliacao" value={avaliacao} onChange={(e) => setavaliacao(e.target.value)} />
                     </div>
 
                     <div className="Nome">
                       <h3>Gênero:</h3>
-                      <input type="text" name="ds_genero" value={genero} onChange={e=>setgenero(e.target.value)} />
+                      <input type="text" name="ds_genero" value={genero} onChange={(e) => setgenero(e.target.value)} />
                     </div>
 
                     <div className="Nome">
-                      <h3>Cor:</h3>
-                      <input type="text" name="ds_cor" value={cor} onChange={e=>setcor(e.target.value)} />
+                      <h3>Estoque:</h3>
+                      <input type="number" name="nr_estoque" value={estoque} onChange={(e) => setestoque(e.target.value)} />
                     </div>
 
                     <div className="Nome">
-                      <h3>estoque:</h3>
-                      <input type="text" name="ds_cor" value={estoque} onChange={e=>setestoque(e.target.value)} />
-                    </div>
-
-                  
-                    <div className="Nome">
-                      <h3>disponivel:</h3>
-                      <input type="checkbox" name="ds_cor" checked={disponivel} value={disponivel} onChange={e=>setdisponivel(e.target.checked)} />
+                      <h3>Disponível:</h3>
+                      <input type="checkbox" name="bt_disponivel" checked={disponivel} onChange={(e) => setdisponivel(e.target.checked)} />
                     </div>
 
                     <div className="Nome">
-                      <h3>Destricao:</h3>
-                      <input type="text" name="ds_cor" value={Desquicao} onChange={e=>setdestricao(e.target.value)} />
+                      <h3>Descrição:</h3>
+                      <input type="text" name="ds_descricao" value={Descricao} onChange={(e) => setdescricao(e.target.value)} />
                     </div>
 
                     <div className="Nome">
-                      <h3>promocao:</h3>
-                      <input type="text" name="ds_cor" value={precopromo} onChange={e=>setprecopromo(e.target.value)} />
+                      <h3>Forro:</h3>
+                      <input type="text" name="ds_forro" value={forro} onChange={(e) => setforro(e.target.value)} />
                     </div>
+
+                    <div className="Nome">
+                      <h3>Solado:</h3>
+                      <input type="text" name="ds_solado" value={solado} onChange={(e) => setsolado(e.target.value)} />
+                    </div>
+
+                    <div className="Nome">
+                      <h3>Palmilha:</h3>
+                      <input type="text" name="ds_palmilha" value={palmilha} onChange={(e) => setpalmilha(e.target.value)} />
+                    </div>
+
+
 
                     <button type="submit" onClick={salvarClick}>Cadastrar Produto</button>
                   </form>
