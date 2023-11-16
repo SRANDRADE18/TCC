@@ -39,7 +39,7 @@ export default function Cart() {
         {cartItems.map((cartItem) => <CartItem key={cartItem.id} data={cartItem} />)}
       </div>
 
-      <div className="cart-resume">{formatCurrency(totalPrice, 'BRL')}
+      <div className="cart-resume"> {formatCurrency(totalPrice, 'BRL')}
 
         <a className='finalizar' href='/Finalizar/compra'>
 

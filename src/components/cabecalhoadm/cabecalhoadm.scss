@@ -1,0 +1,36 @@
+.ADM-Cabecalho-add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.ADM-Pessoa-add {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 130px;
+    width: 100%;
+
+    img {
+        margin-top: 10px;
+        height: 45px;
+        width: 45px;
+        background-color: #fff;
+        border-radius: 40px;
+    }
+
+    h2 {
+        color: #ffffff;
+        font-family: 'Font2';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 10px;
+        margin-left: 10px;
+
+    }
+}

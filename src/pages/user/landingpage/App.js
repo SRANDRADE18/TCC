@@ -134,6 +134,7 @@ export default function LandingPage() {
         </div>
       </div>
 
+
       <div className="produtos">
         <motion.button
           onClick={esq}
@@ -150,9 +151,14 @@ export default function LandingPage() {
 
 
             <section className="products-container">
-              {filteredProducts.map((product) => (
-                <ProductCard key={product.id} data={product} />
-              ))}
+              <a href="/compra">
+
+                {filteredProducts.map((product) => (
+                  <ProductCard key={product.id} data={product} />
+                ))}
+                
+              </a>
+
             </section>
 
 

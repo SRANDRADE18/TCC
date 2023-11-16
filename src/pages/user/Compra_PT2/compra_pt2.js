@@ -7,6 +7,10 @@ import Rodape from '../../../components/Rodape/rodape';
 import Header from '../../../components/Header/header';
 
 
+import Cart from '../../../components/carrinhoT/car';
+
+
+
 export default function compraPt2() {
 
   const tamanhos = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
@@ -17,6 +21,8 @@ export default function compraPt2() {
     <div className='pagina-compra-pt2' >
 
       <Header />
+
+
 
       <div className='Compra-pt2'>
         <h1 className='nome-produto'>Tênis Vegano Shoes Easeful Preto</h1>
@@ -52,9 +58,11 @@ export default function compraPt2() {
               <img src="../assets/images/Vector.svg"></img>
 
             </div>
-
-            <button className='Button-compra'>Comprar</button>
-
+            <a href='/Finalizar/compra'>
+              <button className='Button-compra'
+              > Comprar
+              </button>
+            </a>
             <h1>Cores</h1>
             <div className='Filtro-Cor-pt2'>
 
@@ -122,7 +130,7 @@ export default function compraPt2() {
             Forro: Cacharréu espuma de 4mm densidade 28 <br></br>
             Solado: Micro expandido 3D com sulcos de escoamento de água <br></br>
             Palmilha: E.V.A 7mm forro em tecido</h1>
-            
+
         </div>
 
       </div>

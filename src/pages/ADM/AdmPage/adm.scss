@@ -13,37 +13,74 @@
         flex-direction: row;
     }
 
-    .Filtro-ADM {
-        background: #2A3042;
+    .Filtro-ADM-add {
+
+        background-color: #2A3042;
+        max-width: 60%;
+        max-height: 100%;
         padding: 20px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;  
-
-        img {
-            width: 45px;
-            height: 46px
-        }
 
         p {
             color: #FFF;
-            font-family: 'Font5';
+            font-family: 'Font2';
             font-size: 12px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-            text-decoration: underline;
         }
 
         h1 {
-            color: #FFF;
-            font-family: 'Font5';
-            font-size: 14px;
+            color: #ffffff77;
+            font-family: 'Font2';
+            font-size: 12px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
-            text-decoration: underline;
+            margin-top: 10px;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+            padding: auto;
+            opacity: 1;
+            color: aquamarine;
+        }
+    }
+
+    .ADM-Cabecalho-add {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .ADM-Pessoa-add {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 130px;
+        width: 100%;
+
+        img {
+            margin-top: 10px;
+            height: 45px;
+            width: 45px;
+            background-color: #fff;
+            border-radius: 40px;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-family: 'Font2';
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 10px;
+            margin-left: 10px;
+
         }
     }
 
@@ -99,7 +136,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-image: linear-gradient( to bottom, #d6d6d6, #e7e7e7,  #f6f6f6);
+        background-color: #ffffff;
     }
 
 
