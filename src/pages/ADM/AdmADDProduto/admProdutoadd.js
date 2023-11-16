@@ -52,6 +52,16 @@ export default function Admaddproduto() {
       toast.error(error.response.data.error)
     }
 
+    try {
+
+      const v = await enviarImagem(Imagem1,Imagem2,Imagem3,Imagem4);
+
+      toast.dark('concluido')
+    } catch (error) {
+
+      toast.error(error.response.data.error)
+    }
+
 
   }
 
@@ -102,25 +112,25 @@ export default function Admaddproduto() {
                 <div className="Colar-img">
 
                   <div className="Nome">
-                    <h3>Cor:</h3>
+                    <h3>img:</h3>
                     <input type="file" name="ds_cor" value={Imagem1} onChange={e => setimagem1(e.target.value)} />
                   </div>
 
 
                   <div className="Nome">
-                    <h3>Cor:</h3>
+                    <h3>img:</h3>
                     <input type="file" name="ds_cor" value={Imagem2} onChange={e => setimagem2(e.target.value)} />
                   </div>
 
 
                   <div className="Nome">
-                    <h3>Cor:</h3>
+                    <h3>img:</h3>
                     <input type="file" name="ds_cor" value={Imagem3} onChange={e => setimagem3(e.target.value)} />
                   </div>
 
 
                   <div className="Nome">
-                    <h3>Cor:</h3>
+                    <h3>img:</h3>
                     <input type="file" name="ds_cor" value={Imagem4} onChange={e => setimagem4(e.target.value)} />
                   </div>
 
