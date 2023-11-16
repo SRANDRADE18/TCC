@@ -128,7 +128,7 @@
         border-radius: 12px;
         background: #FFFDFD;
         box-shadow: 0px 4px 14px 0px rgba(36, 23, 23, 0.25);
-        max-width: 1000px;
+        max-width: 1010px;
         width: 100%;
         height: 100%;
         padding: 8px;
@@ -141,23 +141,23 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        max-height: 250px;
+        max-height: 255px;
         height: 100%;
 
 
 
-        button {
-            background-color: #3B0060;
+        .button {
+            font-family: 'Font3';
+            font-size: 12px;
             color: #ffffff;
             text-align: center;
-            border-radius: 20px;
             cursor: pointer;
-            padding: 8px 70px;
-            border: 1px solid #fff;
+            padding: 1px 1px;
+            
             margin-top: 10px;
         }
 
-        button:hover {
+        .button:hover {
             background-color: chartreuse;
         }
 
@@ -182,6 +182,8 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+       
+     
         height: 100%;
 
         h2 {
@@ -238,28 +240,36 @@
 
     .Nome {
         display: flex;
+        flex-direction: row;
         text-align: start;
         justify-content: space-between;
         align-items: center;
         max-width: 240px;
         width: 100%;
-        flex-wrap: wrap;
+        
 
         input {
+
+            
             max-height: 150px;
             max-width: 120px;
             width: 100%;
             height: 100%;
+            font-family: 'Font5';
+            margin-left: 50px;
 
         }
 
         h3 {
             color: #000000;
             font-family: 'Font2';
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 800;
             line-height: normal;
+            margin-right: 5px;
+
         }
+        
 
     }
 
@@ -314,6 +324,9 @@
     }
 
     .imgs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 240px;
         max-width: 600px;
         width: 100%;

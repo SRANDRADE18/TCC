@@ -144,25 +144,25 @@ export default function Admaddproduto() {
 
                   <div className="Nome"  >
                     <h3>img:</h3>
-                    <input type="file" name="ds_cor"  onChange={e => setimagem1(e.target.files[0])} />
+                    <input className="button"  type="file" name="ds_cor"  onChange={e => setimagem1(e.target.files[0])} />
                   </div>
 
 
                   <div className="Nome"  >
                     <h3>img:</h3>
-                    <input type="file" name="ds_cor"  onChange={e => setimagem2(e.target.files[0])} />
+                    <input className="button"  type="file" name="ds_cor"  onChange={e => setimagem2(e.target.files[0])} />
                   </div>
 
 
                   <div className="Nome" >
                     <h3>img:</h3>
-                    <input type="file" name="ds_cor"  onChange={e => setimagem3(e.target.files[0])} />
+                    <input className="button"  type="file" name="ds_cor"  onChange={e => setimagem3(e.target.files[0])} />
                   </div>
 
 
                   <div className="Nome"  >
                     <h3>img:</h3>
-                    <input type="file" name="ds_cor"  onChange={e => setimagem4(e.target.files[0])} />
+                    <input className="button" type="file" name="ds_cor"  onChange={e => setimagem4(e.target.files[0])} />
                   </div>
 
                   <section className="imgs">
