@@ -42,10 +42,10 @@ export default function Admaddproduto() {
   const [palmilha, setpalmilha] = useState('');
 
 
-  const [Imagem1, setimagem1] = useState();
-  const [Imagem2, setimagem2] = useState();
-  const [Imagem3, setimagem3] = useState();
-  const [Imagem4, setimagem4] = useState();
+  const [Imagem1, setimagem1] = useState('');
+  const [Imagem2, setimagem2] = useState('');
+  const [Imagem3, setimagem3] = useState('');
+  const [Imagem4, setimagem4] = useState('');
 
   async function salvarClick() {
 
@@ -55,10 +55,7 @@ export default function Admaddproduto() {
       genero: genero,
       estoque: estoque,
       disponivel: disponivel,
-      descricao: descricao,
-      forro: forro,
-      solado: solado,
-      palmilha: palmilha
+      descricao: descricao
     });
 
     try {
