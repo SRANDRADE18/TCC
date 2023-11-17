@@ -37,11 +37,19 @@ export default function Login() {
         email: email,
         senha: senha
       });
+
+      if (data.response.status !== 204) {
+        throw new error('Não autorizado')
+      }
       storage('login', re);
 
       navigate("/Meusdados")
-    } catch (error) {
-      toast.error('deu merda')
+    } catch (err) {
+      if (error.response.status !== 401) {
+        seterro(error.response.data.erro);
+
+        toast.error({ erro })
+      }
 
     }
   }
