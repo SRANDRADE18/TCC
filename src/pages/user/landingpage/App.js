@@ -24,13 +24,6 @@ import fetchProducts from '../compra test carrinho/api/fetchProducts';
 
 import ProductCard from '../compra test carrinho/ProductCard/ProductCard';
 
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-} from "pure-react-carousel";
 
 
 import "pure-react-carousel/dist/react-carousel.es.css";

@@ -58,45 +58,8 @@ export default function compraPt2() {
               <img src="../assets/images/Vector.svg"></img>
 
             </div>
-            <a href='/Finalizar/compra'>
-              <button className='Button-compra'
-              > Comprar
-              </button>
-            </a>
-            <h1>Cores</h1>
-            <div className='Filtro-Cor-pt2'>
 
-              <label className='cores'>
-                <input type='checkbox' />
-                <span className='checkmark'></span>
-              </label>
-
-              <label className='cores'>
-                <input type='checkbox' checked="checked" />
-                <span className='checkmark'></span>
-              </label>
-
-              <label className='cores'>
-                <input type='checkbox' />
-                <span className='checkmark'></span>
-              </label>
-
-              <label className='cores'>
-                <input type='checkbox' />
-                <span className='checkmark'></span>
-              </label>
-
-              <label className='cores'>
-                <input type='checkbox' checked="checked" />
-                <span className='checkmark'></span>
-              </label>
-
-              <label className='cores'>
-                <input type='checkbox' />
-                <span className='checkmark'></span>
-              </label>
-
-            </div>
+            <button className='Button-compra'>Comprar</button>
 
             <div className='Comppra-pt_Tamanhos'>
 

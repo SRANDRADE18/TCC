@@ -7,6 +7,9 @@ import { useState } from "react";
 
 import { cadastrarProduto, enviarImagem } from "../../../api/cadastrarProduto";
 
+import storage from 'local-storage';
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Await } from "react-router-dom";
 
 import { erro, error } from "jquery";
@@ -40,94 +43,57 @@ export default function Admaddproduto() {
   const [Imagem2, setimagem2] = useState('');
   const [previewImagem2, setPreviewImagem2] = useState("");
 
-  const [Imagem3, setimagem3] = useState('');
-  const [previewImagem3, setPreviewImagem3] = useState("");
+  const [Imagem1, setimagem1] = useState();
+  const [Imagem2, setimagem2] = useState();
+  const [Imagem3, setimagem3] = useState();
+  const [Imagem4, setimagem4] = useState();
 
-  const [Imagem4, setimagem4] = useState('');
-  const [previewImagem4, setPreviewImagem4] = useState("");
+  async function salvarClick() {
 
-  async function cadastraProduto() {
+    const produtoooo = await cadastrarProduto({
+      nome: nome,
+      preco: preco,
+      genero: genero,
+      estoque: estoque,
+      disponivel: disponivel,
+      descricao: descricao,
+      forro: forro,
+      solado: solado,
+      palmilha: palmilha
+    });
+
     try {
-      let produto = {
-        nome: nome.trim(),
-        preco: preco.trim(),
-        avaliacao: avaliacao,
-        genero: genero,
-        estoque: estoque.trim(),
-        disponivel: disponivel,
-        descricao: descricao.trim()
+
+      if (!Imagem1)
+        throw new error('Escolha a imagem');
+      if (!Imagem2)
+        throw new error('Escolha a imagem');
+      if (!Imagem3)
+        throw new error('Escolha a imagem');
+
+      if (!Imagem4)
+        throw new error('Escolha a imagem');
 
 
-      };
 
-      const comand = await axios.post("http://localhost:5000/cadastrar-produto", produto);
-      toast.success("Produto cadastrado");
+      const produto = await cadastrarProduto(nome, preco, genero, estoque, disponivel, descricao, forro, solado, palmilha);
 
-      const idp = comand.data;
+      if (produto && produto.data) {
+        const Img1 = await enviarImagem(produto.data, Imagem1);
+        const Img2 = await enviarImagem(produto.data, Imagem2);
+        const Img3 = await enviarImagem(produto.data, Imagem3);
+        const Img4 = await enviarImagem(produto.data, Imagem4);
 
-      const imgsend1 = enviarImagem(idp.id, Imagem1, "Imagem1", 'ds_Imagem1');
-      const imgsend2 = enviarImagem(idp.id, Imagem2, "Imagem2", 'ds_Imagem2');
-      const imgsend3 = enviarImagem(idp.id, Imagem3, "Imagem3", 'ds_Imagem3');
-      const imgsen4  = enviarImagem(idp.id, Imagem4, "Imagem4", 'ds_Imagem4');
-    } 
-    
-    
-    catch (error) {
-      toast.error(error.response.data.erro)
+        toast.success('Concluído');
+      } else {
+        toast.error('Erro ao obter dados do produto');
+      }
+    } catch (error) {
+      toast.error(error.response.data.error);
     }
 
   }
 
-
-  function imagemselc(e, identificador, imagemraz) {
-    const selectedFile = e.target.files[0];
-    imagemraz(selectedFile)
-    if (selectedFile) {
-      const fileUrl = URL.createObjectURL(selectedFile);
-      identificador(fileUrl);
-    }
-  }
-
-  function limparImagem(indentificador, imagemraz, idinput) {
-    indentificador('');
-    imagemraz('');
-
-    const novoInput = document.createElement('input');
-    novoInput.type = 'file';
-    novoInput.id = idinput;
-    novoInput.addEventListener('change', (e) => imagemselc(e, indentificador, imagemraz));
-    const inputAntigo = document.getElementById(idinput);
-    inputAntigo.parentNode.removeChild(novoInput, inputAntigo);
-
-  };
-
-  async function enviarImagensProduto(id, imagem, texdt) {
-    try {
-        if (!imagem) {
-            toast.warning("Não foi possível cadastrar: "+`${texdt}`)
-        }
-        else {
-            const formData = new FormData();
-            formData.append('prodimg', imagem);
-        
-            const command = await axios.post(`http://localhost:5000/produto/${id}/imagens`, formData, {
-                headers: {
-                    "Content-Type": "multipart/form-data"
-                },
-            });
-
-            toast.success("Imagem Cadastrada: "+`${texdt}`);
-        }
-    }
-    catch (err) {
-        toast.error(err.response.data.erro)
-    }
-}
-
-
-  function escolherImg() {
-    document.getElementById('imagemcapa').click();
-  }
 
 
 
