@@ -58,6 +58,7 @@ export default function Criar_conta() {
     toast.error(err.response.data.erro);
   }
   }
+  const navigate= useNavigate();
 
   ///////////////////////////////////////////////////////////////
 
@@ -74,7 +75,7 @@ export default function Criar_conta() {
               informações pessoais
             </p>
 
-            <button className="login-button"> Login </button>
+            <button onClick={() => { navigate("/login")}} className="login-button"> Login </button>
           </div>
         </div>
 

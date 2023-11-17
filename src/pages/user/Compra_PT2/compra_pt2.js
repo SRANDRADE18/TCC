@@ -55,41 +55,6 @@ export default function compraPt2() {
 
             <button className='Button-compra'>Comprar</button>
 
-            <h1>Cores</h1>
-            <div className='Filtro-Cor-pt2'>
-
-              <label className='cores'>
-                <input type='checkbox' />
-                <span className='checkmark'></span>
-              </label>
-
-              <label className='cores'>
-                <input type='checkbox' checked="checked" />
-                <span className='checkmark'></span>
-              </label>
-
-              <label className='cores'>
-                <input type='checkbox' />
-                <span className='checkmark'></span>
-              </label>
-
-              <label className='cores'>
-                <input type='checkbox' />
-                <span className='checkmark'></span>
-              </label>
-
-              <label className='cores'>
-                <input type='checkbox' checked="checked" />
-                <span className='checkmark'></span>
-              </label>
-
-              <label className='cores'>
-                <input type='checkbox' />
-                <span className='checkmark'></span>
-              </label>
-
-            </div>
-
             <div className='Comppra-pt_Tamanhos'>
 
               {tamanhos.map(item =>

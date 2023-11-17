@@ -1,15 +1,20 @@
 import "./login.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 
-import { AiFillEye} from "react-icons/ai";
+import { ToastContainer, toast } from 'react-toastify';
+
+import storage from 'local-storage';
+
+import { AiFillEye } from "react-icons/ai";
 import Rodape from "../../../components/Rodape/rodape";
 import Header from "../../../components/Header/header";
 
 export default function Login() {
 
-    const [senha, setSenha] = useState("");
+  const [email, setemail] = useState("")
+  const [senha, setSenha] = useState("");
   const [mostrarSenha, setMostrarSenha] = useState(false);
 
   const Olharsenha = (e) => {
@@ -19,7 +24,28 @@ export default function Login() {
   const handleMostrarSenhaToggle = () => {
     setMostrarSenha(!mostrarSenha);
   };
-  
+
+  const navigate = useNavigate();
+
+
+
+
+
+  async function fazerLogin() {
+    try {
+      const re = await axios.post('http://localhost:5000/login-user', {
+        email: email,
+        senha: senha
+      });
+      storage('login', re);
+
+      navigate("/Meusdados")
+    } catch (error) {
+      toast.error('deu merda')
+
+    }
+  }
+
   return (
     <div className="tela-login">
       <Header />
@@ -30,10 +56,10 @@ export default function Login() {
             <h1>Seja Bem-Vindo</h1>
             <p>
               Para se manter conectado conosco faça seu login com suas
-              informações pessoais
+              informações pessoais <br></br> <br></br> Não possuí uma conta?
             </p>
 
-            <button> Login </button>
+            <button onClick={() => { navigate("/Criar/conta") }}> Criar conta </button>
           </div>
         </div>
 
@@ -60,33 +86,30 @@ export default function Login() {
           </div>
 
           <div className="infos-cliente-login">
-            <input className="inputEmail" type="search" placeholder="Email" />
+            <input className="inputEmail" type="search" placeholder="Email" value={email} onChange={(e) => setemail(e.target.value)} />
             <div className="inputCliente">
-                <input
-                    className="Input-senha"
-                    placeholder="Senha"
-                    type={mostrarSenha ? "text" : "password"}
-                    id="senha"
-                    name="senha"
-                    value={senha}
-                    onChange={Olharsenha}
-                  />
+              <input
+                className="Input-senha"
+                placeholder="Senha"
+                type={mostrarSenha ? "text" : "password"}
+                id="senha"
+                name="senha"
+                value={senha}
+                onChange={(e) => setSenha(e.target.value)}
+              />
 
-                <button className="revelador" onClick={handleMostrarSenhaToggle}>
-                  <AiFillEye />
-                </button>
-              </div>
+              <button className="revelador" onClick={handleMostrarSenhaToggle}>
+                <AiFillEye />
+              </button>
+            </div>
           </div>
 
-          <p>
-            Não tem uma conta? <Link to="/Criar_Conta"> Crie. </Link>
-          </p>
-
-          <button className="button-crie"> Entrar </button>
+          <button onClick={fazerLogin} className="button-crie"> Entrar </button>
         </div>
       </div>
 
       <Rodape />
+      <ToastContainer />
     </div>
   );
 }

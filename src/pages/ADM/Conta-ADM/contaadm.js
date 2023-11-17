@@ -3,9 +3,22 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
 
-export default function Conta_adm(){
+import storage from 'local-storage';
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
-    return(
+export default function Conta_adm() {
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (!storage('login-adm')) {
+
+            navigate('/Loginadm')
+        }
+    })
+
+    return (
         <div></div>
     )
 

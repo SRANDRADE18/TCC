@@ -7,7 +7,9 @@ import { useState } from "react";
 
 import { cadastrarProduto, enviarImagem } from "../../../api/cadastrarProduto";
 
-
+import storage from 'local-storage';
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -54,7 +56,7 @@ export default function Admaddproduto() {
 
     try {
 
-      const v = await enviarImagem(Imagem1,Imagem2,Imagem3,Imagem4);
+      const v = await enviarImagem(Imagem1, Imagem2, Imagem3, Imagem4);
 
       toast.dark('concluido')
     } catch (error) {
@@ -65,6 +67,14 @@ export default function Admaddproduto() {
 
   }
 
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!storage('login-adm')) {
+
+      navigate('/Loginadm')
+    }
+  })
 
   ////////////////////////////////
 

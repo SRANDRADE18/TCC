@@ -1,7 +1,9 @@
 import './dados.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+
+import storage from 'local-storage';
 
 import Rodape from '../../../components/Rodape/rodape';
 import Header from '../../../components/Header/header';
@@ -10,6 +12,20 @@ import { AiFillEdit } from "react-icons/ai";
 
 
 export default function Meusdados() {
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (!storage('login')) {
+
+            navigate('/Login')
+        }
+    })
+
+    function remove() {
+        storage.remove('login');
+        navigate('/');
+    }
 
     return (
 
@@ -75,7 +91,7 @@ export default function Meusdados() {
 
 
 
-                        <div className='MeusDados'>
+                        <div onClick={remove} className='MeusDados'>
                             <img src="/assets/images/Minha_Conta/saida.png" />
 
                             <h3>Sair</h3>

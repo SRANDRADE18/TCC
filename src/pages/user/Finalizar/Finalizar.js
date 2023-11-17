@@ -58,9 +58,7 @@ export default function CarrinhoUser() {
                             <h1>Entrega Normal:<span>Grátis</span></h1>
 
                             <div className='Carrinho-Salvar'>
-                                <img className='salvar-icon' src="/assets/images/carrinho/salvar-instagram.png" />
-                                <h2>Salvar para depois</h2>
-                                <span></span>
+                                
                                 <h2>Remover</h2>
 
                             </div>
@@ -99,10 +97,7 @@ export default function CarrinhoUser() {
                             <h1>Entrega Normal:<span>Grátis</span></h1>
 
                             <div className='Carrinho-Salvar'>
-                                <img className='salvar-icon' src="/assets/images/carrinho/salvar-instagram.png" />
 
-                                <h2>Salvar para depois</h2>
-                                <span></span>
                                 <h2>Remover</h2>
 
                             </div>

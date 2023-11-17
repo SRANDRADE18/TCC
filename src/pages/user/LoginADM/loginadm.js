@@ -1,7 +1,11 @@
 import './loginadm.scss';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
+
+import storage from 'local-storage';
+import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+
 
 import Rodape from '../../../components/Rodape/rodape';
 import Header from '../../../components/Header/header';
@@ -9,24 +13,43 @@ import Header from '../../../components/Header/header';
 
 
 
-export default function Login_ADM(){
+export default function Login_ADM() {
 
-    return(
+    const [login, setlogin] = useState("");
+    const [senha, setsenha] = useState("");
+
+    const navigate = useNavigate();
+
+
+    async function fazerLoginadm() {
+      try {
+        const add = await axios.post('http://localhost:5000/login-adm', {
+          login: login,
+          senha: senha
+        });
+        storage('login-adm', add);
+  
+        navigate("/Admpage")
+      } catch (error) {
+        toast.error('deu merda')
+  
+      }
+    }
+
+    return (
 
         <div className='login-adm'>
-            
-            <Header/>
+
+            <Header />
 
             <div className='Conta-Test'>
 
                 <div className='Bem-vindo'>
 
                     <div className='bem-vindo-login'>
+
                         <h1>Seja Bem-Vindo</h1>
                         <p>Essa é a parte de login do administrador do site, preencha as informações para se conectar na administração </p>
-
-                        
-
 
                     </div>
 
@@ -43,21 +66,22 @@ export default function Login_ADM(){
                     </div>
 
                     <div className='infos-cliente-login'>
-            
-                        <input  type="search" placeholder='Email' />
-                        <input  type="search" placeholder='Senha' />
+
+                        <input type="search" placeholder='Email' value={login} onChange={(e) => setlogin(e.target.value)} />
+                        <input type="search" placeholder='Senha' value={senha} onChange={(e) => setsenha(e.target.value)} />
+
                     </div>
 
-                   
-                    <button> Fazer login </button>
-                    
+
+                    <button onClick={fazerLoginadm}> Fazer login </button>
+
                 </div>
-                </div>
+            </div>
 
 
-           
-            <Rodape/>
 
+            <Rodape />
+            <ToastContainer/>
 
         </div>
     )

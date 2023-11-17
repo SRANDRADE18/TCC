@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
 
+import storage from 'local-storage';
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 import Rodape from '../../../components/Rodape/rodape';
 import Header from '../../../components/Header/header';
 
@@ -37,6 +41,16 @@ export default function Filtroproduto() {
             });
         }
     });
+
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (!storage('login-adm')) {
+
+            navigate('/Loginadm')
+        }
+    })
 
     return (
 
