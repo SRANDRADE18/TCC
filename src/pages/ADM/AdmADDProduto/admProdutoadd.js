@@ -16,12 +16,6 @@ import { erro, error } from "jquery";
 import axios from "axios";
 
 
-
-
-
-
-
-
 export default function Admaddproduto() {
 
 
@@ -55,8 +49,8 @@ export default function Admaddproduto() {
 
 
 
-  function escolherImg() {
-    document.getElementById('imagemcapa').click();
+  function escolherImg(inputfileId) {
+    document.getElementById(inputfileId).click();
   }
 
 
@@ -103,10 +97,15 @@ export default function Admaddproduto() {
 
       const idp = command.data;
 
-      const imgsend1 = enviarImagensProduto(idp.id, Imagem1, "Imagem1", 'ds_imagem1');
-      const imgsend2 = enviarImagensProduto(idp.id, Imagem2, "Imagem2", 'ds_imagem2');
-      const imgsend3 = enviarImagensProduto(idp.id, Imagem3, "Imagem3", 'ds_imagem3');
-      const imgsend4 = enviarImagensProduto(idp.id, Imagem4, "Imagem4", 'ds_imagem4');
+      alert(Imagem1);
+      alert(Imagem2);
+      alert(Imagem3);
+      alert(Imagem4);
+
+      const imgsend1 = await enviarImagensProduto(idp.id, Imagem1, "Imagem1", 'ds_imagem1');
+      const imgsend2 = await enviarImagensProduto(idp.id, Imagem2, "Imagem2", 'ds_imagem2');
+      const imgsend3 = await enviarImagensProduto(idp.id, Imagem3, "Imagem3", 'ds_imagem3');
+      const imgsend4 = await enviarImagensProduto(idp.id, Imagem4, "Imagem4", 'ds_imagem4');
     }
 
     catch (err) {
@@ -145,6 +144,8 @@ export default function Admaddproduto() {
     <div className="adm-page">
 
       <ToastContainer />
+
+      <img src="http://localhost:5000/storage/tenis/87d3a3ea93ce341a7a31aa7641813fab" alt=""/>
 
       <div className="ADM-add">
         <div className="adm-add">
@@ -186,37 +187,37 @@ export default function Admaddproduto() {
 
 
                   <div className="addimg" >
-                    <input type="file" id='imagemcapa' onChange={e => imagemselc(e, setPreviewImagem1, setimagem1)} />
+                    <input type="file" id='imagemcapa1' onChange={e => imagemselc(e, setPreviewImagem1, setimagem1)} />
                     <label>Imagem 1</label>
-                    <img src={previewImagem1} alt="Imagem1" onClick={() => escolherImg('imagem1')} />
-                    <button onClick={() => limparImagem(setPreviewImagem1, setimagem1, 'imagem1')}>Remover</button>
+                    <img src={previewImagem1} alt="Imagem1" onClick={() => escolherImg('imagemcapa1')} />
+                    <button onClick={() => limparImagem(setPreviewImagem1, setimagem1, 'imagemcapa1')}>Remover</button>
 
                   </div>
 
 
                   <div className="addimg" >
-                    <input type="file" id='imagemcapa' onChange={e => imagemselc(e, setPreviewImagem2, setimagem2)} />
+                    <input type="file" id='imagemcapa2' onChange={e => imagemselc(e, setPreviewImagem2, setimagem2)} />
                     <label>Imagem 2</label>
-                    <img src={previewImagem2} alt="Imagem2" onClick={() => escolherImg('imagem2')} />
-                    <button onClick={() => limparImagem(setPreviewImagem2, setimagem2, 'imagem2')}>Remover</button>
+                    <img src={previewImagem2} alt="Imagem2" onClick={() => escolherImg('imagemcapa2')} />
+                    <button onClick={() => limparImagem(setPreviewImagem2, setimagem2, 'imagemcapa2')}>Remover</button>
 
                   </div>
                 
 
                   <div className="addimg" >
 
-                    <input type="file" id='imagemcapa' onChange={e => imagemselc(e, setPreviewImagem3, setimagem3)} />
+                    <input type="file" id='imagemcapa3' onChange={e => imagemselc(e, setPreviewImagem3, setimagem3)} />
                     <label>Imagem 3</label>
-                    <img src={previewImagem3} alt="Imagem2" onClick={() => escolherImg('imagem3')} />
-                    <button onClick={() => limparImagem(setPreviewImagem3, setimagem3, 'imagem3')}>Remover</button>
+                    <img src={previewImagem3} alt="Imagem2" onClick={() => escolherImg('imagemcapa3')} />
+                    <button onClick={() => limparImagem(setPreviewImagem3, setimagem3, 'imagemcapa3')}>Remover</button>
 
                   </div>
 
                   <div className="addimg" >
-                    <input type="file" id='imagemcapa' onChange={e => imagemselc(e, setPreviewImagem4, setimagem4)} />
+                    <input type="file" id='imagemcapa4' onChange={e => imagemselc(e, setPreviewImagem4, setimagem4)} />
                     <label>Imagem 4</label>
-                    <img src={previewImagem4} alt="Imagem4" onClick={() => escolherImg('imagem4')} />
-                    <button onClick={() => limparImagem(setPreviewImagem4, setimagem4, 'imagem4')}>Remover</button>
+                    <img src={previewImagem4} alt="Imagem4" onClick={() => escolherImg('imagemcapa4')} />
+                    <button onClick={() => limparImagem(setPreviewImagem4, setimagem4, 'imagemcapa3')}>Remover</button>
 
                   </div>
 
