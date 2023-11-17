@@ -26,13 +26,17 @@ export default function Admpage() {
   return (
     <div className="ADM-page">
 
+      <Header />
+
       <div className="ADM">
         <div className="adm">
-          <div className="Filtro-ADM">
-            <img
-              className="logo"
-              src="/assets/images/Header/logo tcc 2.png"
-            ></img>
+          <div className="Filtro-ADM-add">
+
+            <div className="ADM-Pessoa-add">
+              <img src="/assets/images/Minha_Conta/do-utilizador 3.png" />
+              <h2> oLá, Sr.Andrade </h2>
+            </div>
+
             <p>Admin Panel</p>
             <p>Menu</p>
             <h1>Organizations</h1>
@@ -43,20 +47,6 @@ export default function Admpage() {
 
           <div className="content-adm">
 
-            <div className="ADM-Header">
-              <div className="ADM-Cabecalho">
-                <div className="hamburguer-icon">
-                  <div className="line"></div>
-                  <div className="line"></div>
-                  <div className="line"></div>
-                </div>
-
-                <div className="ADM-Pessoa">
-                  <img src="/assets/images/Minha_Conta/do-utilizador 3.png" />
-                  <h2> oLá, Sr.Andrade </h2>
-                </div>
-              </div>
-            </div>
 
             <div className="VGN-Shoes">
               <div className="Shoes">
@@ -77,18 +67,65 @@ export default function Admpage() {
                   <tr>
                     <td> Mahteus dos Santos Andrade  Mahteus dos Santos Andrade  Mahteus dos Santos Andrade</td>
                     <td> VGN Shoes™ </td>
-                    <td> por margin o tempo TODO</td>
+                    <td> Trabalhar</td>
                   </tr>
                   <tr>
                     <td> Mahteus dos Santos Andrade</td>
                     <td> VGN Shoes™ </td>
-                    <td> por margin o tempo TODO</td>
+                    <td> Trabalhar</td>
                   </tr>
                   <tr>
                     <td> Mahteus dos Santos Andrade</td>
                     <td> VGN Shoes™ </td>
-                    <td> por margin o tempo TODO</td>
+                    <td> Trabalhar</td>
                   </tr>
+                  <tr>
+                    <td> Mahteus dos Santos Andrade</td>
+                    <td> VGN Shoes™ </td>
+                    <td> Trabalhar</td>
+                  </tr>
+                  <tr>
+                    <td> Mahteus dos Santos Andrade</td>
+                    <td> VGN Shoes™ </td>
+                    <td> Trabalhar</td>
+                  </tr>
+                  <tr>
+                    <td> Mahteus dos Santos Andrade</td>
+                    <td> VGN Shoes™ </td>
+                    <td> Trabalhar</td>
+                  </tr>
+                  <tr>
+                    <td> Mahteus dos Santos Andrade</td>
+                    <td> VGN Shoes™ </td>
+                    <td> Trabalhar</td>
+                  </tr>
+                  <tr>
+                    <td> Mahteus dos Santos Andrade</td>
+                    <td> VGN Shoes™ </td>
+                    <td> Trabalhar</td>
+                  </tr>
+                  <tr>
+                    <td> Mahteus dos Santos Andrade</td>
+                    <td> VGN Shoes™ </td>
+                    <td> Trabalhar</td>
+                  </tr>
+                  <tr>
+                    <td> Mahteus dos Santos Andrade</td>
+                    <td> VGN Shoes™ </td>
+                    <td> Trabalhar</td>
+                  </tr>
+                  <tr>
+                    <td> Mahteus dos Santos Andrade</td>
+                    <td> VGN Shoes™ </td>
+                    <td> Trabalhar</td>
+                  </tr>
+                  <tr>
+                    <td> Mahteus dos Santos Andrade</td>
+                    <td> VGN Shoes™ </td>
+                    <td> Trabalhar</td>
+                  </tr>
+
+                  
                 </table>
 
               </div>

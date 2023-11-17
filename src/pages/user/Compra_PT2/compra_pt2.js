@@ -7,6 +7,10 @@ import Rodape from '../../../components/Rodape/rodape';
 import Header from '../../../components/Header/header';
 
 
+import Cart from '../../../components/carrinhoT/car';
+
+
+
 export default function compraPt2() {
 
   const tamanhos = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
@@ -17,6 +21,8 @@ export default function compraPt2() {
     <div className='pagina-compra-pt2' >
 
       <Header />
+
+
 
       <div className='Compra-pt2'>
         <h1 className='nome-produto'>Tênis Vegano Shoes Easeful Preto</h1>
@@ -52,8 +58,50 @@ export default function compraPt2() {
               <img src="../assets/images/Vector.svg"></img>
 
             </div>
+<<<<<<< HEAD
 
             <button className='Button-compra'>Comprar</button>
+=======
+            <a href='/Finalizar/compra'>
+              <button className='Button-compra'
+              > Comprar
+              </button>
+            </a>
+            <h1>Cores</h1>
+            <div className='Filtro-Cor-pt2'>
+
+              <label className='cores'>
+                <input type='checkbox' />
+                <span className='checkmark'></span>
+              </label>
+
+              <label className='cores'>
+                <input type='checkbox' checked="checked" />
+                <span className='checkmark'></span>
+              </label>
+
+              <label className='cores'>
+                <input type='checkbox' />
+                <span className='checkmark'></span>
+              </label>
+
+              <label className='cores'>
+                <input type='checkbox' />
+                <span className='checkmark'></span>
+              </label>
+
+              <label className='cores'>
+                <input type='checkbox' checked="checked" />
+                <span className='checkmark'></span>
+              </label>
+
+              <label className='cores'>
+                <input type='checkbox' />
+                <span className='checkmark'></span>
+              </label>
+
+            </div>
+>>>>>>> f6d2d48090ff6823d15cd6f802df370a8321b7a2
 
             <div className='Comppra-pt_Tamanhos'>
 
@@ -87,7 +135,7 @@ export default function compraPt2() {
             Forro: Cacharréu espuma de 4mm densidade 28 <br></br>
             Solado: Micro expandido 3D com sulcos de escoamento de água <br></br>
             Palmilha: E.V.A 7mm forro em tecido</h1>
-            
+
         </div>
 
       </div>

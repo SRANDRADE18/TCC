@@ -23,7 +23,7 @@ export default function Header() {
     <div className="page-header">
       <div className="header">
         <div className="header-logo">
-          <a href="/Landin">
+          <a href="/">
             <img
               className="img-logo"
               src="/assets/images/Header/logo tcc 2.png"

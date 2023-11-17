@@ -2,16 +2,25 @@ import './Finalizar.scss';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-import { useState } from 'react';
+import { useState,useContext } from 'react';
 
 import { motion } from 'framer-motion';
 import Rodape from '../../../components/Rodape/rodape';
 import Header from '../../../components/Header/header';
 import Location from '../../../components/loacaldot/local';
+import formatCurrency from '../../../utils/formatCurrency';
+
+import AppContext from '../../../context/AppContext';
 
 
 
 export default function CarrinhoUser() {
+
+    
+
+    const { cartItems, isCartVisible, setIsCartVisible } = useContext(AppContext);
+
+    const totalPrice = cartItems.reduce((acc, item) => item.price + acc, 0);
 
     const [cep, setCep] = useState('');
     const [resultado, setResultado] = useState(null);
@@ -36,8 +45,8 @@ export default function CarrinhoUser() {
             <Header />
 
             <div className='Carrinho'>
-                <h1 className='meu-carrinho'>Meu carrinho</h1>
-                <img className='carrinho-icon' src="/assets/images/carrinho/carrinho-de-compras-de-design-xadrez.png" />
+                <h1 className='meu-carrinho'>Finalizar Pedido </h1>
+                <img className='carrinho-icon' src="/assets/images/carrinho/carrinho-de-compras-de-design-xadrez.png" /> 
             </div>
 
             <div className='Carrinho-Produto'>
@@ -47,12 +56,12 @@ export default function CarrinhoUser() {
 
                     <div className='Test-Carrinho'>
 
-                        <img className='Tenis_galáxia' src="/assets/images/tenis/Tenis_galáxia.png"></img>
+                        <img className='Tenis_galáxia' src="../assets/images/compra_pt2/Tenis-img1.png"></img>
 
 
                         <div className='Carrinho-Info'>
 
-                            <h1>Bota Vegano Shoes Naturale Galaxía - R$349,90</h1>
+                            <h1>Tênis Vegano Shoes Easeful Preto</h1>
 
 
                             <h1>Entrega Normal:<span>Grátis</span></h1>
@@ -87,11 +96,11 @@ export default function CarrinhoUser() {
                     <div className='Test-Carrinho'>
 
 
-                        <img className='Tenis_galáxia' src="/assets/images/tenis/Tenis_galáxia.png"></img>
+                        <img className='Tenis_galáxia' src="../assets/images/compra_pt2/Tenis-img1.png"></img>
 
                         <div className='Carrinho-Info'>
 
-                            <h1>Bota Vegano Shoes Naturale Galaxía</h1>
+                            <h1>Tênis Vegano Shoes Easeful Preto</h1>
 
 
                             <h1>Entrega Normal:<span>Grátis</span></h1>
@@ -160,14 +169,16 @@ export default function CarrinhoUser() {
 
                         </div>
                         <div className='valor-entrega'>
-                            <h4>R$ 600,00</h4>
+
+                       
+                            <h4> {formatCurrency(totalPrice, 'BRL')} </h4>
                             <h5>Grátis</h5>
                         </div>
                     </div>
                     <div className='finalizar'>
                         <div className='total'>
                             <h4>Total</h4>
-                            <h3>R$ 600,00</h3>
+                            <h3> {formatCurrency(totalPrice, 'BRL')} </h3>
 
                         </div>
                         <div className='total-cartao'>
