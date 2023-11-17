@@ -140,6 +140,8 @@ export default function LandingPage() {
         </motion.button>
 
         <div className="carousel" ref={corousel}>
+
+          
           {hue.map((item) => (
 
 

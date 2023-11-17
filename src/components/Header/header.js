@@ -19,6 +19,8 @@ export default function Header() {
   }
 
   const { cartItems, isCartVisible, setIsCartVisible } = useContext(AppContext);
+
+
   return (
     <div className="page-header">
       <div className="header">
@@ -51,10 +53,11 @@ export default function Header() {
             <AiOutlineHeart className="red" />
           </button>
 
-          <a>
+         
             <button
               type="button"
               className="heart"
+              onClick={BTcarrinho}
               onClick={() => setIsCartVisible(!isCartVisible)}
             >
               <AiOutlineShoppingCart />
@@ -62,7 +65,8 @@ export default function Header() {
                 <span className="cart-status">{cartItems.length}</span>
               )}
             </button>
-          </a>
+        
+
 
           <button
             type="button"
