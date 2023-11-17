@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 import { useState } from "react";
 
-import { cadastrarProduto, enviarImagem } from "../../../api/cadastrarProduto";
+import { cadastrarProdut, cadastrarProduto, enviarImagem } from "../../../api/cadastrarProduto";
 
 import storage from 'local-storage';
 import { useEffect } from "react";
@@ -38,65 +38,95 @@ export default function Admaddproduto() {
   const [descricao, setdescricao] = useState('');
 
   const [Imagem1, setimagem1] = useState('');
-  const [previewImagem1, setPreviewImagem1] = useState("");
+
+  const [previewImagem1, setPreviewImagem1] = useState('');
 
   const [Imagem2, setimagem2] = useState('');
-  const [previewImagem2, setPreviewImagem2] = useState("");
+  const [previewImagem2, setPreviewImagem2] = useState('');
 
-  const [Imagem1, setimagem1] = useState();
-  const [Imagem2, setimagem2] = useState();
-  const [Imagem3, setimagem3] = useState();
-  const [Imagem4, setimagem4] = useState();
+  const [Imagem3, setimagem3] = useState('');
+  const [previewImagem3, setPreviewImagem3] = useState('');
 
-  async function salvarClick() {
+  const [Imagem4, setimagem4] = useState('');
+  const [previewImagem4, setPreviewImagem4] = useState('');
 
-    const produtoooo = await cadastrarProduto({
-      nome: nome,
-      preco: preco,
-      genero: genero,
-      estoque: estoque,
-      disponivel: disponivel,
-      descricao: descricao,
-      forro: forro,
-      solado: solado,
-      palmilha: palmilha
-    });
-
-    try {
-
-      if (!Imagem1)
-        throw new error('Escolha a imagem');
-      if (!Imagem2)
-        throw new error('Escolha a imagem');
-      if (!Imagem3)
-        throw new error('Escolha a imagem');
-
-      if (!Imagem4)
-        throw new error('Escolha a imagem');
+  
 
 
 
-      const produto = await cadastrarProduto(nome, preco, genero, estoque, disponivel, descricao, forro, solado, palmilha);
 
-      if (produto && produto.data) {
-        const Img1 = await enviarImagem(produto.data, Imagem1);
-        const Img2 = await enviarImagem(produto.data, Imagem2);
-        const Img3 = await enviarImagem(produto.data, Imagem3);
-        const Img4 = await enviarImagem(produto.data, Imagem4);
+  function escolherImg(identificador){
+    document.getElementById(identificador).click();
+}
 
-        toast.success('Concluído');
-      } else {
-        toast.error('Erro ao obter dados do produto');
-      }
-    } catch (error) {
-      toast.error(error.response.data.error);
+function imagemselc(e, identificador, imagemraiz) {
+    const selectedFile = e.target.files[0];
+    imagemraiz(selectedFile)
+    if (selectedFile) {
+        const fileUrl = URL.createObjectURL(selectedFile);
+        identificador(fileUrl);
     }
+}
 
-  }
+function limparImagem(identificador, imagemraiz, idinpt) {
+    identificador('');
+    imagemraiz('');
+    const novoInput = document.createElement('input');
+    novoInput.type = 'file';
+    novoInput.id = idinpt; // Defina o mesmo ID ou atributos necessários
+    novoInput.addEventListener('change', (e) => imagemselc(e, identificador, imagemraiz));
+    const inputAntigo = document.getElementById(idinpt); // Substitua 'capa' pelo ID correto
+    inputAntigo.parentNode.replaceChild(novoInput, inputAntigo);
+};
 
+async function CadastrarProduto(){
+    try {
+        let produto = {
+            nome: nome.trim(),
+            genero: genero,
+            estoque: estoque,
+            disponivel:disponivel,
+            preco: preco.trim(),
+            descricao: descricao.trim()
+        };
+        const command = await axios.post("http://localhost:5000/cadastrar-produto", produto);
+        toast.success("Produto Cadastrado");
 
+        const idp = command.data;
+      
+        const imgsend1 = enviarImagensProduto(idp.id, Imagem1, "Imagem1", 'ds_imagem1');
+        const imgsend2 = enviarImagensProduto(idp.id, Imagem2, "Imagem2", 'ds_imagem2');
+        const imgsend3 = enviarImagensProduto(idp.id, Imagem3, "Imagem3", 'ds_imagem3');
+        const imgsend4 = enviarImagensProduto(idp.id, Imagem4, "Imagem4", 'ds_imagem4');
+    }
+    
+    catch (err) {
+        toast.error(err.response.data.erro)
+    }
+};
 
+async function enviarImagensProduto(id, imagem, texdt) {
+    try {
+        if (!imagem) {
+            toast.warning("Não foi possível cadastrar: "+`${texdt}`)
+        }
+        else {
+            const formData = new FormData();
+            formData.append('prodimg', imagem);
+        
+            const command = await axios.post(`http://localhost:5000/produto/${id}/imagens`, formData, {
+                headers: {
+                    "Content-Type": "multipart/form-data"
+                },
+            });
 
+            toast.success("Imagem Cadastrada: "+`${texdt}`);
+        }
+    }
+    catch (err) {
+        toast.error(err.response.data.erro)
+    }
+}
 
   ////////////////////////////////
 
@@ -215,7 +245,7 @@ export default function Admaddproduto() {
                       <input type="checkbox" name="bt_disponivel" checked={disponivel} onChange={(e) => setdisponivel(e.target.checked)} />
                     </div>
 
-                    <button onClick={cadastraProduto}>Cadastrar Produto</button>
+                    <button onClick={cadastrarProduto}>Cadastrar Produto</button>
 
                   </div>
 
