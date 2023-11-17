@@ -40,11 +40,13 @@ export default function Login() {
       storage('login', re);
 
       navigate("/Meusdados")
-    } catch (error) {
-      toast.error('deu merda')
+    } catch (err) {
+
+        toast.error( 'deu merda' )
+      }
 
     }
-  }
+  
 
   return (
     <div className="tela-login">

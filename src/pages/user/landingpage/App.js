@@ -94,6 +94,9 @@ export default function LandingPage() {
 
         <div className="plataforma">
           <div className="Quadrados">
+
+          
+
             <img
               className="quadradinhos"
               src="/assets/images/landing-page/qudrado.png"
