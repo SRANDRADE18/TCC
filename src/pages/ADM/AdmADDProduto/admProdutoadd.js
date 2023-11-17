@@ -10,6 +10,7 @@ import { cadastrarProduto, enviarImagem } from "../../../api/cadastrarProduto";
 import { Await } from "react-router-dom";
 
 import { erro, error } from "jquery";
+import axios from "axios";
 
 
 
@@ -24,75 +25,109 @@ export default function Admaddproduto() {
   const tamanhos = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
 
 
-
-
-
   //////////////////////////////////
-
-
   const [nome, setnome] = useState('');
-  const [preco, setpreco] = useState(0.0);
-  const [avaliacao, setavaliacao] = useState(0.0);
+  const [preco, setpreco] = useState(0);
+  const [avaliacao, setavaliacao] = useState(0);
   const [genero, setgenero] = useState('');
   const [estoque, setestoque] = useState(0.0);
   const [disponivel, setdisponivel] = useState('');
   const [descricao, setdescricao] = useState('');
-  const [forro, setforro] = useState('');
-  const [solado, setsolado] = useState('');
-  const [palmilha, setpalmilha] = useState('');
 
+  const [Imagem1, setimagem1] = useState('');
+  const [previewImagem1, setPreviewImagem1] = useState("");
 
-  const [Imagem1, setimagem1] = useState();
-  const [Imagem2, setimagem2] = useState();
-  const [Imagem3, setimagem3] = useState();
-  const [Imagem4, setimagem4] = useState();
+  const [Imagem2, setimagem2] = useState('');
+  const [previewImagem2, setPreviewImagem2] = useState("");
 
-  async function salvarClick() {
+  const [Imagem3, setimagem3] = useState('');
+  const [previewImagem3, setPreviewImagem3] = useState("");
 
-    const produtoooo = await cadastrarProduto({
-      nome: nome,
-      preco: preco,
-      genero: genero,
-      estoque: estoque,
-      disponivel: disponivel,
-      descricao: descricao,
-      forro: forro,
-      solado: solado,
-      palmilha: palmilha
-    });
+  const [Imagem4, setimagem4] = useState('');
+  const [previewImagem4, setPreviewImagem4] = useState("");
 
+  async function cadastraProduto() {
     try {
-
-      if (!Imagem1)
-        throw new error('Escolha a imagem');
-      if (!Imagem2)
-        throw new error('Escolha a imagem');
-      if (!Imagem3)
-        throw new error('Escolha a imagem');
-
-      if (!Imagem4)
-        throw new error('Escolha a imagem');
+      let produto = {
+        nome: nome.trim(),
+        preco: preco.trim(),
+        avaliacao: avaliacao,
+        genero: genero,
+        estoque: estoque.trim(),
+        disponivel: disponivel,
+        descricao: descricao.trim()
 
 
+      };
 
-      const produto = await cadastrarProduto(nome, preco, genero, estoque, disponivel, descricao, forro, solado, palmilha);
+      const comand = await axios.post("http://localhost:5000/cadastrar-produto", produto);
+      toast.success("Produto cadastrado");
 
-      if (produto && produto.data) {
-        const Img1 = await enviarImagem(produto.data, Imagem1);
-        const Img2 = await enviarImagem(produto.data, Imagem2);
-        const Img3 = await enviarImagem(produto.data, Imagem3);
-        const Img4 = await enviarImagem(produto.data, Imagem4);
+      const idp = comand.data;
 
-        toast.success('Concluído');
-      } else {
-        toast.error('Erro ao obter dados do produto');
-      }
-    } catch (error) {
-      toast.error(error.response.data.error);
+      const imgsend1 = enviarImagem(idp.id, Imagem1, "Imagem1", 'ds_Imagem1');
+      const imgsend2 = enviarImagem(idp.id, Imagem2, "Imagem2", 'ds_Imagem2');
+      const imgsend3 = enviarImagem(idp.id, Imagem3, "Imagem3", 'ds_Imagem3');
+      const imgsen4  = enviarImagem(idp.id, Imagem4, "Imagem4", 'ds_Imagem4');
+    } 
+    
+    
+    catch (error) {
+      toast.error(error.response.data.erro)
     }
 
   }
 
+
+  function imagemselc(e, identificador, imagemraz) {
+    const selectedFile = e.target.files[0];
+    imagemraz(selectedFile)
+    if (selectedFile) {
+      const fileUrl = URL.createObjectURL(selectedFile);
+      identificador(fileUrl);
+    }
+  }
+
+  function limparImagem(indentificador, imagemraz, idinput) {
+    indentificador('');
+    imagemraz('');
+
+    const novoInput = document.createElement('input');
+    novoInput.type = 'file';
+    novoInput.id = idinput;
+    novoInput.addEventListener('change', (e) => imagemselc(e, indentificador, imagemraz));
+    const inputAntigo = document.getElementById(idinput);
+    inputAntigo.parentNode.removeChild(novoInput, inputAntigo);
+
+  };
+
+  async function enviarImagensProduto(id, imagem, texdt) {
+    try {
+        if (!imagem) {
+            toast.warning("Não foi possível cadastrar: "+`${texdt}`)
+        }
+        else {
+            const formData = new FormData();
+            formData.append('prodimg', imagem);
+        
+            const command = await axios.post(`http://localhost:5000/produto/${id}/imagens`, formData, {
+                headers: {
+                    "Content-Type": "multipart/form-data"
+                },
+            });
+
+            toast.success("Imagem Cadastrada: "+`${texdt}`);
+        }
+    }
+    catch (err) {
+        toast.error(err.response.data.erro)
+    }
+}
+
+
+  function escolherImg() {
+    document.getElementById('imagemcapa').click();
+  }
 
 
 
@@ -140,54 +175,43 @@ export default function Admaddproduto() {
 
             <div className="VGN-Shoes-Produto">
               <div className="Flex">
-                <div className="Colar-img">
-
-                  <div className="Nome"  >
-                    <h3>img:</h3>
-                    <input className="button" type="file" name="ds_cor" onChange={e => setimagem1(e.target.files[0])} />
-                  </div>
-
-
-                  <div className="Nome"  >
-                    <h3>img:</h3>
-                    <input className="button" type="file" name="ds_cor" onChange={e => setimagem2(e.target.files[0])} />
-                  </div>
-
-
-                  <div className="Nome" >
-                    <h3>img:</h3>
-                    <input className="button" type="file" name="ds_cor" onChange={e => setimagem3(e.target.files[0])} />
-                  </div>
-
-
-                  <div className="Nome"  >
-                    <h3>img:</h3>
-                    <input className="button" type="file" name="ds_cor" onChange={e => setimagem4(e.target.files[0])} />
-                  </div>
-
-                  <section className="imgs">
-
-                    <img src="/assets/images/addprodutoADM/image94.png" alt="" />
+                <div className="Colar-img"  >
 
                  
-                 
+                <div className="addimg" >
+                                <input type="file" id='imagemcapa' onChange={e => imagemselc(e, setPreviewImagem1, setimagem1)} />
+                                <label>Imagem 1</label>
+                                <img src={Imagem1} alt="Imagem1" onClick={() => escolherImg('imagem1')} />
+                                <button onClick={() => limparImagem(setPreviewImagem1, setimagem1,'imagem1')}>Remover</button>
 
-                    <img src="/assets/images/addprodutoADM/image94.png" alt="" />
-
-               
-
-                  
-
-                    <img src="/assets/images/addprodutoADM/image94.png" alt="" />
-
-                
+                  </div>
 
                   
+                  <div className="addimg" >
+                                <input type="file" id='imagemcapa' onChange={e => imagemselc(e, setPreviewImagem4, setimagem4)} />
+                                <label>Imagem 2</label>
+                                <img src={Imagem2} alt="Imagem2" onClick={() => escolherImg('imagem2')} />
+                                <button onClick={() => limparImagem(setPreviewImagem2, setimagem2,'imagem2')}>Remover</button>
 
-                    <img src="/assets/images/addprodutoADM/image94.png" alt="" />
+                  </div>
 
-                  </section>
+                  
+                  <div className="addimg" >
 
+                                <input type="file" id='imagemcapa' onChange={e => imagemselc(e, setPreviewImagem4, setimagem4)} />
+                                <label>Imagem 2</label>
+                                <img src={Imagem2} alt="Imagem2" onClick={() => escolherImg('imagem2')} />
+                                <button onClick={() => limparImagem(setPreviewImagem2, setimagem2,'imagem2')}>Remover</button>
+
+                  </div>
+
+                  <div className="addimg" >
+                                <input type="file" id='imagemcapa' onChange={e => imagemselc(e, setPreviewImagem4, setimagem4)} />
+                                <label>Imagem 4</label>
+                                <img src={Imagem4} alt="Imagem4" onClick={() => escolherImg('imagem4')} />
+                                <button onClick={() => limparImagem(setPreviewImagem4, setimagem4,'imagem4')}>Remover</button>
+
+                  </div>
 
                 </div>
 
@@ -225,41 +249,24 @@ export default function Admaddproduto() {
                       <input type="checkbox" name="bt_disponivel" checked={disponivel} onChange={(e) => setdisponivel(e.target.checked)} />
                     </div>
 
-                    <div className="Nome">
-                      <h3>Descrição:</h3>
-                      <input type="text" name="ds_descricao" value={descricao} onChange={(e) => setdescricao(e.target.value)} />
-                    </div>
+                    <button onClick={cadastraProduto}>Cadastrar Produto</button>
 
-                    <div className="Nome">
-                      <h3>Forro:</h3>
-                      <input type="text" name="ds_forro" value={forro} onChange={(e) => setforro(e.target.value)} />
-                    </div>
-
-                    <div className="Nome">
-                      <h3>Solado:</h3>
-                      <input type="text" name="ds_solado" value={solado} onChange={(e) => setsolado(e.target.value)} />
-                    </div>
-
-                    <div className="Nome">
-                      <h3>Palmilha:</h3>
-                      <input type="text" name="ds_palmilha" value={palmilha} onChange={(e) => setpalmilha(e.target.value)} />
-                    </div>
-
-
-
-                    <button onClick={salvarClick}>Cadastrar Produto</button>
                   </div>
 
                 </div>
 
               </div>
               <div className="desc">
+
                 <div className="descricao">
                   <h3> Descrição </h3>
+
                   <label>
-                    <textarea></textarea>
+                    <textarea value={descricao} onChange={(e) => setdescricao(e.target.value)} />
                   </label>
+
                 </div>
+
                 <div className="Tamanhos-add">
 
                   <h3>tamanhos</h3>

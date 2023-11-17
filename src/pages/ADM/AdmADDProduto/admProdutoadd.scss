@@ -139,6 +139,7 @@
     .Colar-img {
         display: flex;
         flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         max-height: 255px;
@@ -174,6 +175,12 @@
             background-clip: padding-box;
         }
 
+
+    }
+
+    #imagemcapa{
+        visibility: hidden;
+        position: absolute;
 
     }
 
@@ -246,7 +253,39 @@
         align-items: center;
         max-width: 240px;
         width: 100%;
+        margin-right: 50px;
+
+        input {
+
+            
+            
+            font-family: 'Font5';
+            
+
+        }
+
+        h3 {
+            color: #000000;
+            font-family: 'Font2';
+            font-size: 13px;
+            font-weight: 800;
+            line-height: normal;
+            
+
+        }
         
+    }
+
+    .addimg{
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 240px;
+        width: 100%;
+        border: 2px #000 solid;
+        margin: 5px;
 
         input {
 
@@ -269,8 +308,6 @@
             margin-right: 5px;
 
         }
-        
-
     }
 
     .Comppra-pt_Tamanhos {
