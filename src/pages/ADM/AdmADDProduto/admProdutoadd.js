@@ -7,15 +7,16 @@ import { useState } from "react";
 
 import { cadastrarProduto, enviarImagem } from "../../../api/cadastrarProduto";
 
+import storage from 'local-storage';
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Await } from "react-router-dom";
 
 import { erro, error } from "jquery";
 
 
 
-import storage from 'local-storage';
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+
 
 
 
@@ -51,19 +52,37 @@ export default function Admaddproduto() {
 
   async function salvarClick() {
 
+    const produtoooo = await cadastrarProduto({
+      nome: nome,
+      preco: preco,
+      genero: genero,
+      estoque: estoque,
+      disponivel: disponivel,
+      descricao: descricao
+    });
+
     try {
 
-      const r = await cadastrarProduto(nome, preco, genero, estoque, disponivel, Descricao, forro, solado, palmilha);
+      const v = await enviarImagem(Imagem1, Imagem2, Imagem3, Imagem4);
+      if (!Imagem1)
+        throw new error('Escolha a imagem');
+      if (!Imagem2)
+        throw new error('Escolha a imagem');
+      if (!Imagem3)
+        throw new error('Escolha a imagem');
 
-      toast.dark('concluido')
-    } catch (error) {
+      if (!Imagem4)
+        throw new error('Escolha a imagem');
 
-      toast.error(error.response.data.error)
-    }
 
-    try {
 
-      const v = await enviarImagem(Imagem1,Imagem2,Imagem3,Imagem4);
+      const produto = await cadastrarProduto(nome, preco, genero, estoque, disponivel, descricao, forro, solado, palmilha);
+
+      if (produto && produto.data) {
+        const Img1 = await enviarImagem(produto.data, Imagem1);
+        const Img2 = await enviarImagem(produto.data, Imagem2);
+        const Img3 = await enviarImagem(produto.data, Imagem3);
+        const Img4 = await enviarImagem(produto.data, Imagem4);
 
         toast.success('Concluído');
       } else {
@@ -74,6 +93,17 @@ export default function Admaddproduto() {
     }
 
   }
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!storage('login-adm')) {
+
+      navigate('/Loginadm')
+    }
+  })
+
+
 
 
   ////////////////////////////////
