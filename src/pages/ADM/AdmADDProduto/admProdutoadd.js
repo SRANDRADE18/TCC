@@ -1,3 +1,4 @@
+
 import "./admProdutoadd.scss";
 
 import { ToastContainer, toast } from "react-toastify";
@@ -7,13 +8,10 @@ import { useState } from "react";
 
 
 
-import storage from 'local-storage';
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { Await } from "react-router-dom";
 
-import { erro, error } from "jquery";
 import axios from "axios";
+import Header from "../../../components/Header/header";
+import Rodape from './../../../components/Rodape/rodape';
 
 
 export default function Admaddproduto() {
@@ -75,7 +73,7 @@ export default function Admaddproduto() {
     imagemraiz('');
     const novoInput = document.createElement('input');
     novoInput.type = 'file';
-    novoInput.id = idinpt; // Defina o mesmo ID ou atributos necessários
+    novoInput.id = idinpt; 
     novoInput.addEventListener('change', (e) => imagemselc(e, identificador, imagemraiz));
     const inputAntigo = document.getElementById(idinpt); // Substitua 'capa' pelo ID correto
     inputAntigo.parentNode.replaceChild(novoInput, inputAntigo);
@@ -143,6 +141,8 @@ export default function Admaddproduto() {
   return (
     <div className="adm-page">
 
+      <Header/>
+
       <ToastContainer />
 
       <img src="http://localhost:5000/storage/tenis/87d3a3ea93ce341a7a31aa7641813fab" alt=""/>
@@ -152,6 +152,7 @@ export default function Admaddproduto() {
           <div className="Filtro-ADM-add">
 
             <div className="ADM-Pessoa-add">
+              
               <img src="/assets/images/Minha_Conta/do-utilizador 3.png" />
 
              
@@ -189,7 +190,7 @@ export default function Admaddproduto() {
                   <div className="addimg" >
                     <input type="file" id='imagemcapa1' onChange={e => imagemselc(e, setPreviewImagem1, setimagem1)} />
                     <label>Imagem 1</label>
-                    <img src={previewImagem1} alt="Imagem1" onClick={() => escolherImg('imagemcapa1')} />
+                    <img src={previewImagem1} onClick={() => escolherImg('imagemcapa1')} />
                     <button onClick={() => limparImagem(setPreviewImagem1, setimagem1, 'imagemcapa1')}>Remover</button>
 
                   </div>
@@ -198,7 +199,7 @@ export default function Admaddproduto() {
                   <div className="addimg" >
                     <input type="file" id='imagemcapa2' onChange={e => imagemselc(e, setPreviewImagem2, setimagem2)} />
                     <label>Imagem 2</label>
-                    <img src={previewImagem2} alt="Imagem2" onClick={() => escolherImg('imagemcapa2')} />
+                    <img src={previewImagem2} onClick={() => escolherImg('imagemcapa2')} />
                     <button onClick={() => limparImagem(setPreviewImagem2, setimagem2, 'imagemcapa2')}>Remover</button>
 
                   </div>
@@ -208,7 +209,7 @@ export default function Admaddproduto() {
 
                     <input type="file" id='imagemcapa3' onChange={e => imagemselc(e, setPreviewImagem3, setimagem3)} />
                     <label>Imagem 3</label>
-                    <img src={previewImagem3} alt="Imagem2" onClick={() => escolherImg('imagemcapa3')} />
+                    <img src={previewImagem3}  onClick={() => escolherImg('imagemcapa3')} />
                     <button onClick={() => limparImagem(setPreviewImagem3, setimagem3, 'imagemcapa3')}>Remover</button>
 
                   </div>
@@ -216,7 +217,7 @@ export default function Admaddproduto() {
                   <div className="addimg" >
                     <input type="file" id='imagemcapa4' onChange={e => imagemselc(e, setPreviewImagem4, setimagem4)} />
                     <label>Imagem 4</label>
-                    <img src={previewImagem4} alt="Imagem4" onClick={() => escolherImg('imagemcapa4')} />
+                    <img src={previewImagem4} onClick={() => escolherImg('imagemcapa4')} />
                     <button onClick={() => limparImagem(setPreviewImagem4, setimagem4, 'imagemcapa3')}>Remover</button>
 
                   </div>
@@ -292,10 +293,17 @@ export default function Admaddproduto() {
 
 
                 </div>
+
+               
               </div>
+              
             </div>
+
+            
           </div>
+          
         </div>
+        <Rodape/>
       </div >
 
     </div >

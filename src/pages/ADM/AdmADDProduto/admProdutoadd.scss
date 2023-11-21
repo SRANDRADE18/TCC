@@ -3,7 +3,7 @@
     .ADM-add {
         display: flex;
         flex-direction: column;
-        padding: 0px 0px 10px;
+       
     }
 
     .adm-add {
@@ -124,25 +124,21 @@
     .VGN-Shoes-Produto {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         border-radius: 12px;
         background: #FFFDFD;
         box-shadow: 0px 4px 14px 0px rgba(36, 23, 23, 0.25);
-        max-width: 1010px;
+        max-width: 100%;
         width: 100%;
         height: 100%;
         padding: 8px;
-
-        margin-top: 10px;
     }
 
     .Colar-img {
         display: flex;
-        flex-direction: column;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        max-height: 255px;
+        max-height: 280px;
         height: 100%;
 
 
@@ -169,7 +165,6 @@
             padding: 25px;
             width: 150px;
             height: 150px;
-            background-image: url(../../../../public/assets/images/addprodutoADM/image94.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-clip: padding-box;
@@ -208,8 +203,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 84vw;
-        padding: 10px;
+        width: 65vw;
+        
     }
 
 
@@ -278,18 +273,18 @@
 
     .addimg{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         text-align: start;
-        justify-content: space-between;
         align-items: center;
-        max-width: 240px;
+        max-width: 100px;
+        max-height: 100px;
+        height: 100%;
         width: 100%;
         border: 2px #000 solid;
         margin: 5px;
 
         input {
-
-            
+            display: none;
             max-height: 150px;
             max-width: 120px;
             width: 100%;
@@ -298,8 +293,19 @@
             margin-left: 50px;
 
         }
+        button{
+            display: none;
+        }
+
+        img{
+            max-height: 200px;
+            max-width: 100px;
+            width: 100%;
+            height: 100%;
+        }
 
         h3 {
+            display: none;
             color: #000000;
             font-family: 'Font2';
             font-size: 13px;

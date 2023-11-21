@@ -4,7 +4,9 @@ import './index.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Landin from './pages/user/landingpage/App.js';
+
 import Compra from './pages/user/Compra/compra.js';
+
 import Criarconta from './pages/user/Criar_conta/criar_conta';
 import Telalogin from './pages/user/Login/login';
 import UltimoPedido from './pages/user/Minha_Conta_Ultimo_Pedido/ultimo_pedido';

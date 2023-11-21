@@ -20,7 +20,7 @@ import AppContext from "../../../context/AppContext.js";
 
 import propTypes from "prop-types";
 
-import fetchProducts from '../compra test carrinho/api/fetchProducts';
+import fetchProducts from '../compra test carrinho/api/apitestProducts.js';
 
 import ProductCard from '../compra test carrinho/ProductCard/ProductCard';
 
@@ -147,7 +147,6 @@ export default function LandingPage() {
           
           {hue.map((item) => (
 
-
             <section className="products-container">
               <a href="/compra">
 
@@ -158,9 +157,6 @@ export default function LandingPage() {
               </a>
 
             </section>
-
-
-
 
           ))}
 

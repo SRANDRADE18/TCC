@@ -1,11 +1,11 @@
 import './Products.scss';
 
-import  { useEffect, useContext } from 'react';
+import { useEffect, useContext } from 'react';
 
 
 
 import './Products.scss';
-import fetchProducts from '../compra test carrinho/api/fetchProducts';
+import fetchProducts from '../compra test carrinho/api/apitestProducts';
 import ProductCard from './ProductCard/ProductCard';
 
 import AppContext from '../../../context/AppContext';
@@ -18,16 +18,6 @@ import { useState } from 'react';
 
 
 export default function Products() {
-
-
-
-  function CheckButton() {
-    const [isSelected, setIsSelected] = useState(false);
-
-    const toggleSelection = () => {
-      setIsSelected(!isSelected);
-    };
-  }
 
   const [minpreco, setMinpreco] = useState(0)
 
@@ -181,10 +171,19 @@ export default function Products() {
 
         </div>
 
+      
 
-        <section className="products-container">
-          {products.map((product) => <ProductCard key={product.id} data={product} />)}
-        </section>
+          <section className="products-container">
+
+            {products.map((product) => 
+            
+            <ProductCard 
+            
+            key={product.id}
+            
+            data={product} />)}
+          </section>
+
 
       </div>
 

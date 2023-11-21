@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useContext } from 'react';
 
 import './Produtos.scss';
@@ -14,11 +12,11 @@ export default function Products() {
   
 
   useEffect(() => {
-    fetchProducts('iphone').then((response) => {
+    fetchProducts('Tenis vegano').then((response) => {
       setProducts(response);
       
     });
-  }, []);
+  }, );
 
   return (
      (
@@ -29,4 +27,3 @@ export default function Products() {
     
   );
 }
-

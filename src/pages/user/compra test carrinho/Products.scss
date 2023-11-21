@@ -21,6 +21,7 @@
     flex-direction: row;
   }
 
+
   .Compra-Filtros {
     display: flex;
     flex-direction: column;
@@ -28,6 +29,17 @@
     max-width: 220px;
     width: 200%;
     margin-left: 50px;
+}
+
+.prod {
+    display: flex;
+    flex-direction: column;
+
+    p{
+        font-family: 'Font5';
+        font-size: 15px;
+        color: #000;
+    }
 }
 
 .Filter-Preco {
@@ -342,5 +354,15 @@
 a {
     color: #000;
     text-decoration: none;
+}
+
+@media screen and (max-width:700px) {
+    .filter_range {
+       
+        width: 100px;
+        height: 5px;
+      
+    }
+
 }
 }

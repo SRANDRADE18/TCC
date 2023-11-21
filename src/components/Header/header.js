@@ -57,7 +57,6 @@ export default function Header() {
             <button
               type="button"
               className="heart"
-              onClick={BTcarrinho}
               onClick={() => setIsCartVisible(!isCartVisible)}
             >
               <AiOutlineShoppingCart />
@@ -72,7 +71,7 @@ export default function Header() {
             type="button"
             className="heart"
             onClick={BTuser}
-            src="/assets/images/Header/do-utilizador 2.png"
+            
           >
             <AiOutlineLogin />
           </button>

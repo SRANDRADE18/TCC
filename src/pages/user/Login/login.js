@@ -27,10 +27,6 @@ export default function Login() {
 
   const navigate = useNavigate();
 
-
-
-
-
   async function fazerLogin() {
     try {
       const re = await axios.post('http://localhost:5000/login-user', {

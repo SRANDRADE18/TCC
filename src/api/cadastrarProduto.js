@@ -36,3 +36,10 @@ export async function enviarImagem (id, Imagem ) {
     return resposta.status;
 
 }
+
+export async function ListarProdutos (  ){
+    const resposta = await api.get('/produto');
+    return resposta.data;
+}
+
+

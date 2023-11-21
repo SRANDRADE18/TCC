@@ -13,6 +13,10 @@ import Cart from '../../../components/carrinhoT/car';
 
 export default function compraPt2() {
 
+  function BTfinalizar() {
+    window.location.href = "http://localhost:3000/Finalizar/compra";
+  }
+
   const tamanhos = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
 
 
@@ -59,7 +63,7 @@ export default function compraPt2() {
 
             </div>
 
-            <button className='Button-compra'>Comprar</button>
+            <button onClick={BTfinalizar} className='Button-compra'>Comprar</button>
 
             <div className='Comppra-pt_Tamanhos'>
 

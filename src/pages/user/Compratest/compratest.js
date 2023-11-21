@@ -1,15 +1,16 @@
 import './compratest.scss';
-import { Link } from 'react-router-dom';
+
+
 import axios from 'axios';
 
 
 import Header from '../../../components/Header/header.js';
 import Rodape from '../../../components/Rodape/rodape.js';
 
-import InputMask from "react-input-mask";
+
 import { motion } from 'framer-motion';
 
-import formatCurrency from '../../../utils/formatCurrency.js';
+
 
 import AppContext from '../../../context/AppContext.js';
 
@@ -17,42 +18,35 @@ import React, { useContext } from 'react';
 
 import propTypes from 'prop-types';
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState} from "react";
 
 import { BsFillCartPlusFill } from 'react-icons/bs';
 
-import fetchProducts from '../compra test carrinho/api/fetchProducts.js';
+import fetchProducts from '../compra test carrinho/api/apitestProducts.js';
 
 import ProductCard from '../compra test carrinho/ProductCard/ProductCard.js';
 
 
 export default function Compra() {
 
-  function CheckButton() {
-    const [isSelected, setIsSelected] = useState(false);
-
-    const toggleSelection = () => {
-      setIsSelected(!isSelected);
-    };
-  }
-
+  
   const [minpreco, setMinpreco] = useState(0)
 
   const [maxpreco, setMaxpreco] = useState(1500)
-//////////////////////////
+  //////////////////////////
 
-const { products, setProducts } = useContext(AppContext);
-const [searchTerm, setSearchTerm] = useState('Tenis Veganos');
-const [quantity, setQuantity] = useState(24);
-const [filteredProducts, setFilteredProducts] = useState([]);
+  const { products, setProducts } = useContext(AppContext);
+  const [searchTerm, setSearchTerm] = useState('Tenis Veganos');
+  const [quantity, setQuantity] = useState(24);
+  const [filteredProducts, setFilteredProducts] = useState([]);
 
-useEffect(() => {
-  fetchProducts(searchTerm, quantity).then((response) => {
-    setFilteredProducts(response);
-  });
-}, [searchTerm, quantity]);
+  useEffect(() => {
+    fetchProducts(searchTerm, quantity).then((response) => {
+      setFilteredProducts(response);
+    });
+  }, [searchTerm, quantity]);
 
-//////////////////////////
+  //////////////////////////
 
   return (
     <div className='Pagina-compra'>
@@ -184,8 +178,8 @@ useEffect(() => {
                 className='Roxo' ></motion.div>
 
               <label class="Rosa">
-                <input type="checkbox"/>
-                  <span class="checkmark"></span>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
               </label>
             </div>
 
@@ -198,11 +192,11 @@ useEffect(() => {
 
           <div className='Shoop-compra'>
 
-        
-              {filteredProducts.map((product) => (
-                <ProductCard key={product.id} data={product} />
-              ))}
-           
+
+            {filteredProducts.map((product) => (
+              <ProductCard key={product.id} data={product} />
+            ))}
+
 
           </div>
 
