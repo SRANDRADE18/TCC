@@ -14,6 +14,10 @@ import Header from "../../../components/Header/header";
 
 export default function Admpage() {
 
+  function BTaddproduto() {
+    window.location.href = "http://localhost:3000/Adicionar/Produto";
+  }
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -40,7 +44,7 @@ export default function Admpage() {
             <p>Admin Panel</p>
             <p>Menu</p>
             <h1>Organizations</h1>
-            <h1>Adicionar Produto</h1>
+            <h1 onClick={BTaddproduto} >Adicionar Produto</h1>
             <h1>Pedidos Finalizados</h1>
             <h1>Pedidos Realizados</h1>
           </div>

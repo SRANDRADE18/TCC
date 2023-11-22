@@ -1,14 +1,19 @@
 import "./criar_conta.scss";
+
+
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
-
 import Rodape from "../../../components/Rodape/rodape";
 import Header from "../../../components/Header/header";
-import { AiFillEye} from "react-icons/ai";
+import { AiFillEye } from "react-icons/ai";
 import InputMask from "react-input-mask";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import storage from "local-storage"
+
+
+
 
 export default function Criar_conta() {
   //////////////////////////////////////////////////////////
@@ -33,35 +38,62 @@ export default function Criar_conta() {
   }
 
   async function Cadastrar() {
-   try{
-    const InfoCliente = {
-      nome: nome,
-      cpf: cpf,
-      nascimento: nascimento,
-      email: email,
-      senha: senha
+
+
+    try {
+
+      const InfoCliente = {
+        nome: nome,
+        cpf: cpf,
+        nascimento: nascimento,
+        email: email,
+        senha: senha
+
+      }
+
+      const url = 'http://localhost:5000/criarconta'
+      const resposta = await axios.post(url, InfoCliente)
+
+      if (resposta.status === 204) {
+        toast.success('Conta criada com sucesso');
+      
+        navigate(`/Meusdados/${encodeURIComponent(email)}`, { state: { novoUsuario: InfoCliente } });
+
+        if (resposta.status === 204) {
+          toast.success('Conta criada com sucesso');
+        
+          // Armazenar informações no local-storage
+          const userData = {
+            nome: nome,
+            nascimento: nascimento,
+            senha: senha,
+            cpf: cpf,
+            email: email
+          };
+          storage('user-info', userData);
+        
+          // Redirecionar para a página de Meus Dados
+          navigate('/MeusDados');
+        }
+
+      }
+
+      if (resposta.status === 204) {
+        setTimeout(function () {
+          window.location.href = "http://localhost:3000/Login";
+        }, 2000);
+        toast.loading('voce sera Redirecionado a pagina de login')
+      }
+
+    }
+    catch (err) {
+      toast.error(err.response.data.erro);
     }
 
-    const url = 'http://localhost:5000/criarconta' 
-    const resposta = await axios.post(url, InfoCliente)
 
-    if(resposta.status === 204){
-      toast.success('Conta criada com sucesso');
-    }
 
-    if(resposta.status === 204){
-      setTimeout(function() {
-        window.location.href = "http://localhost:3000/Login";
-    }, 2000);
-      toast.loading('voce sera Redirecionado a pagina de login')
-    }
-    
-   }
-   catch (err) {
-    toast.error(err.response.data.erro);
   }
-  }
-  const navigate= useNavigate();
+  const navigate = useNavigate();
 
   ///////////////////////////////////////////////////////////////
 
@@ -78,7 +110,7 @@ export default function Criar_conta() {
               informações pessoais
             </p>
 
-            <button onClick={() => { navigate("/login")}} className="login-button"> Login </button>
+            <button onClick={() => { navigate("/login") }} className="login-button"> Login </button>
           </div>
         </div>
 
@@ -152,7 +184,7 @@ export default function Criar_conta() {
 
 
               <button
-              className="revelador" onClick={handleMostrarSenhaToggle}
+                className="revelador" onClick={handleMostrarSenhaToggle}
               >
                 <AiFillEye />
               </button>
@@ -172,7 +204,7 @@ export default function Criar_conta() {
       </div>
 
       <Rodape />
-      <ToastContainer/>
+      <ToastContainer />
     </div>
   );
 }

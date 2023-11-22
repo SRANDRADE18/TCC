@@ -171,19 +171,13 @@ export default function Products() {
 
         </div>
 
-      
 
-          <section className="products-container">
 
-            {products.map((product) => 
-            
-            <ProductCard 
-            
-            key={product.id}
-            
-            data={product} />)}
-          </section>
-
+        <section className="products-container">
+          {products.map((product) => (
+            <ProductCard key={product.id_produto} data={product} />
+          ))}
+        </section>
 
       </div>
 
