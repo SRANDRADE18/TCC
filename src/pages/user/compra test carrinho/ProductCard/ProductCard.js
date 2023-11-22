@@ -3,6 +3,7 @@ import propTypes from 'prop-types';
 import { BsFillCartPlusFill } from 'react-icons/bs';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
+
 import './ProductCard.scss';
 import storage from "local-storage"
 
