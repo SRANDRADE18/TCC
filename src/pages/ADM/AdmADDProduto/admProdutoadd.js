@@ -54,15 +54,15 @@ export default function Admaddproduto() {
 
   function imagemselc(e, identificador, imagemraiz) {
     const selectedFile = e.target.files[0];
-  
+
     if (selectedFile) {
       const reader = new FileReader();
-      
+
       reader.onloadend = () => {
         const fileUrl = reader.result; // Aqui está a URL base64
         identificador(fileUrl);
       };
-  
+
       reader.readAsDataURL(selectedFile);
       imagemraiz(selectedFile);
     }
@@ -73,7 +73,7 @@ export default function Admaddproduto() {
     imagemraiz('');
     const novoInput = document.createElement('input');
     novoInput.type = 'file';
-    novoInput.id = idinpt; 
+    novoInput.id = idinpt;
     novoInput.addEventListener('change', (e) => imagemselc(e, identificador, imagemraiz));
     const inputAntigo = document.getElementById(idinpt); // Substitua 'capa' pelo ID correto
     inputAntigo.parentNode.replaceChild(novoInput, inputAntigo);
@@ -83,13 +83,13 @@ export default function Admaddproduto() {
     try {
       let produto = {
         nome: nome,
-        preco:preco,
-        avaliacao:avaliacao,
-        genero:genero,
-        estoque:estoque,
-        disponivel:disponivel,
+        preco: preco,
+        avaliacao: avaliacao,
+        genero: genero,
+        estoque: estoque,
+        disponivel: disponivel,
         descricao: descricao
-        };
+      };
       const command = await axios.post("http://localhost:5000/produto/registrar", produto);
       toast.success("Produto Cadastrado");
 
@@ -141,21 +141,21 @@ export default function Admaddproduto() {
   return (
     <div className="adm-page">
 
-      <Header/>
+      <Header />
 
       <ToastContainer />
 
-      <img src="http://localhost:5000/storage/tenis/87d3a3ea93ce341a7a31aa7641813fab" alt=""/>
+      <img src="http://localhost:5000/storage/tenis/87d3a3ea93ce341a7a31aa7641813fab" alt="" />
 
       <div className="ADM-add">
         <div className="adm-add">
           <div className="Filtro-ADM-add">
 
             <div className="ADM-Pessoa-add">
-              
+
               <img src="/assets/images/Minha_Conta/do-utilizador 3.png" />
 
-             
+
               <h2> oLá, Sr.Andrade </h2>
             </div>
 
@@ -184,50 +184,57 @@ export default function Admaddproduto() {
 
             <div className="VGN-Shoes-Produto">
               <div className="Flex">
-                <div className="Colar-img"  >
+                <div className="imgs">
+                  <div className="Colar-img"  >
 
 
-                  <div className="addimg" >
-                    <input type="file" id='imagemcapa1' onChange={e => imagemselc(e, setPreviewImagem1, setimagem1)} />
-                    <label>Imagem 1</label>
-                    <img src={previewImagem1} onClick={() => escolherImg('imagemcapa1')} />
+                    <div className="addimg" >
+                      <input type="file" id='imagemcapa1' onChange={e => imagemselc(e, setPreviewImagem1, setimagem1)} />
+                      <label>Imagem 1</label>
+                      <img src={previewImagem1} onClick={() => escolherImg('imagemcapa1')} />
+
+                    </div>
+
+
+                    <div className="addimg" >
+                      <input type="file" id='imagemcapa2' onChange={e => imagemselc(e, setPreviewImagem2, setimagem2)} />
+                      <label>Imagem 2</label>
+                      <img src={previewImagem2} onClick={() => escolherImg('imagemcapa2')} />
+
+                    </div>
+
+
+                    <div className="addimg" >
+
+                      <input type="file" id='imagemcapa3' onChange={e => imagemselc(e, setPreviewImagem3, setimagem3)} />
+                      <label>Imagem 3</label>
+                      <img src={previewImagem3} onClick={() => escolherImg('imagemcapa3')} />
+
+                    </div>
+
+                    <div className="addimg" >
+                      <input type="file" id='imagemcapa4' onChange={e => imagemselc(e, setPreviewImagem4, setimagem4)} />
+                      <label>Imagem 4</label>
+                      <img src={previewImagem4} onClick={() => escolherImg('imagemcapa4')} />
+
+                    </div>
+
+                  </div>
+
+                  <div className="removerImgs">
+
                     <button onClick={() => limparImagem(setPreviewImagem1, setimagem1, 'imagemcapa1')}>Remover</button>
-
-                  </div>
-
-
-                  <div className="addimg" >
-                    <input type="file" id='imagemcapa2' onChange={e => imagemselc(e, setPreviewImagem2, setimagem2)} />
-                    <label>Imagem 2</label>
-                    <img src={previewImagem2} onClick={() => escolherImg('imagemcapa2')} />
                     <button onClick={() => limparImagem(setPreviewImagem2, setimagem2, 'imagemcapa2')}>Remover</button>
-
-                  </div>
-                
-
-                  <div className="addimg" >
-
-                    <input type="file" id='imagemcapa3' onChange={e => imagemselc(e, setPreviewImagem3, setimagem3)} />
-                    <label>Imagem 3</label>
-                    <img src={previewImagem3}  onClick={() => escolherImg('imagemcapa3')} />
                     <button onClick={() => limparImagem(setPreviewImagem3, setimagem3, 'imagemcapa3')}>Remover</button>
+                    <button onClick={() => limparImagem(setPreviewImagem4, setimagem4, 'imagemcapa4')}>Remover</button>
 
                   </div>
-
-                  <div className="addimg" >
-                    <input type="file" id='imagemcapa4' onChange={e => imagemselc(e, setPreviewImagem4, setimagem4)} />
-                    <label>Imagem 4</label>
-                    <img src={previewImagem4} onClick={() => escolherImg('imagemcapa4')} />
-                    <button onClick={() => limparImagem(setPreviewImagem4, setimagem4, 'imagemcapa3')}>Remover</button>
-
-                  </div>
-
                 </div>
 
                 <div className="Info-Produto">
                   <h2>INFORMAÇÕES DO PRODUTO</h2>
 
-                  <div>
+                  <div className="infos">
                     <div className="Nome">
                       <h3>Nome:</h3>
                       <input type="text" name="nm_produto" value={nome} onChange={(e) => setnome(e.target.value)} />
@@ -258,7 +265,6 @@ export default function Admaddproduto() {
                       <input type="checkbox" name="bt_disponivel" checked={disponivel} onChange={(e) => setdisponivel(e.target.checked)} />
                     </div>
 
-                    <button onClick={CadastrarProduto}>Cadastrar Produto</button>
 
                   </div>
 
@@ -294,16 +300,17 @@ export default function Admaddproduto() {
 
                 </div>
 
-               
-              </div>
-              
-            </div>
 
-            
+              </div>
+
+            </div>
+            <div className=" cadastro">
+              <button onClick={CadastrarProduto}>Cadastrar Produto</button>
+            </div>
           </div>
-          
+
         </div>
-        <Rodape/>
+        <Rodape />
       </div >
 
     </div >
