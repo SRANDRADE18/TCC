@@ -1,20 +1,11 @@
 import './ProductCard.scss';
 
 
-
 import React, { useContext, useEffect, useState } from 'react';
-
-import propTypes from 'prop-types';
-
 import { BsFillCartPlusFill } from 'react-icons/bs';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
-
-
-
 import storage from 'local-storage';
-
-
 import AppContext from '../../../../context/AppContext';
 
 
