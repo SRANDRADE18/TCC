@@ -24,32 +24,71 @@ import fetchProducts from '../compra test carrinho/api/apitestProducts.js';
 
 import ProductCard from '../compra test carrinho/ProductCard/ProductCard';
 
-
+import { useNavigate, useParams } from 'react-router-dom';
 
 import "pure-react-carousel/dist/react-carousel.es.css";
 
+
+import storage from 'local-storage';
 
 
 import { motion } from "framer-motion";
 
 
 
-export default function LandingPage() {
+export default function LandingPage({ data }) {
 
   //////////////////////////////////
 
 
 
-  const { products, setProducts } = useContext(AppContext);
-  const [searchTerm, setSearchTerm] = useState('Tenis Veganos');
-  const [quantity, setQuantity] = useState(1);
-  const [filteredProducts, setFilteredProducts] = useState([]);
+  const { cartItems, setCartItems } = useContext(AppContext);
+  const [userInfo, setUserInfo] = useState('');
+  const [produtos, setProdutos] = useState([]);
+  const [produtoImagem, setProdutoImagem] = useState("");
+  const navigate = useNavigate();
+  const { id } = useParams();
 
   useEffect(() => {
-    fetchProducts(searchTerm, quantity).then((response) => {
-      setFilteredProducts(response);
-    });
-  }, [searchTerm, quantity]);
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/produto');
+        setProdutos(response.data);
+      } catch (error) {
+        console.error('Erro ao buscar dados:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  async function BuscarInfos(id) {
+    try {
+      const response = await axios.get(`http://localhost:5000/produto/${id}`);
+      const data = response.data;
+
+      setProdutoImagem(data.ds_imagem1);
+
+    } catch (error) {
+      console.error('Erro ao buscar informações do produto:', error);
+    }
+  }
+
+  useEffect(() => {
+    BuscarInfos(id);
+    if (!storage('user-info')) {
+      setUserInfo('');
+    } else {
+      setUserInfo(storage('user-info'));
+    }
+  }, [id]);
+
+  const handleAddCart = () => setCartItems([...cartItems, data]);
+
+  function BTcarrinho() {
+    window.location.href = "http://localhost:5000/comprapt2";
+  }
+
 
 
 
@@ -95,7 +134,7 @@ export default function LandingPage() {
         <div className="plataforma">
           <div className="Quadrados">
 
-          
+
 
             <img
               className="quadradinhos"
@@ -144,17 +183,19 @@ export default function LandingPage() {
 
         <div className="carousel" ref={corousel}>
 
-          
-          {hue.map((item) => (
+
+          {produtos.map((produto) => (
+
+
 
             <section className="products-container">
-              <a href="/compra">
+              
+              <BsFillCartPlusFill className='button__add-cart' onClick={handleAddCart} />
 
-                {filteredProducts.map((product) => (
-                  <ProductCard key={product.id} data={product} />
-                ))}
-                
-              </a>
+              <img src={produtoImagem || produto.ds_imagem} alt="" />
+              <h2>{produto.nm_produto}</h2>
+              <h2>{produto.vl_preco}</h2>
+              <button onClick={BTcarrinho}>Compra</button>
 
             </section>
 

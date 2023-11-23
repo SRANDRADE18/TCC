@@ -93,8 +93,6 @@ export default function CartItem({ data }) {
 
         <div className='prod' key={produto.id_produto}>
 
-
-
           <img src={`http://localhost:5000/storage/tenis${produtoimagem1}`} alt="" />
 
           <h3 className="cart-item-title"> {produto.nm_produto}</h3>
