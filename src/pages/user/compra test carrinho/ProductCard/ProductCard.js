@@ -72,8 +72,11 @@ export default function ProductCard({ data }) {
 
   return (
     <section className="product-card">
+
       <div className="card__infos">
-        <BsFillCartPlusFill onClick={handleAddCart} />
+
+        <BsFillCartPlusFill className='button__add-cart' onClick={handleAddCart} />
+
         {produtos.map((produto) => (
           <div className='prod' key={produto.id_produto}>
        
@@ -83,8 +86,11 @@ export default function ProductCard({ data }) {
             <h2>{produto.vl_preco}</h2>
             <button onClick={BTcarrinho}>Compra</button>
           </div>
+          
         ))}
+
       </div>
+
     </section>
   );
 }
