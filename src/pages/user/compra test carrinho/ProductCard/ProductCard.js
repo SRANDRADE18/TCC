@@ -24,6 +24,7 @@ import AppContext from '../../../../context/AppContext';
 // ...
 
 export default function ProductCard({ data }) {
+  
   const { cartItems, setCartItems } = useContext(AppContext);
   const [userInfo, setUserInfo] = useState('');
   const [produtos, setProdutos] = useState([]);
