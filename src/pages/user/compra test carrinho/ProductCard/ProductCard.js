@@ -21,22 +21,15 @@ import AppContext from '../../../../context/AppContext';
 
 
 
+// ...
 
 export default function ProductCard({ data }) {
-
-
   const { cartItems, setCartItems } = useContext(AppContext);
   const [userInfo, setUserInfo] = useState('');
-  const [produtos, setProdutos] = useState([]);  
+  const [produtos, setProdutos] = useState([]);
   const [produtoImagem, setProdutoImagem] = useState(""); 
-
-
-
   const navigate = useNavigate();
   const { id } = useParams();
-
- 
-
 
   useEffect(() => {
     const fetchData = async () => {
@@ -70,38 +63,31 @@ export default function ProductCard({ data }) {
     } else {
       setUserInfo(storage('user-info'));
     }
-  }, [id]); 
-
+  }, [id]);
 
   const handleAddCart = () => setCartItems([...cartItems, data]);
-
 
   function BTcarrinho() {
     window.location.href = "http://localhost:5000/comprapt2";
   }
 
-
   return (
     <section className="product-card">
-    
       <div className="card__infos">
-        
-          <BsFillCartPlusFill  onClick={handleAddCart} />
-       
+        <BsFillCartPlusFill onClick={handleAddCart} />
         {produtos.map((produto) => (
           <div className='prod' key={produto.id_produto}>
-            <img src={produto.ds_imagem1} alt="" />
+       
+
+            <img src={produtoImagem || produto.ds_imagem} alt="" />
             <h2>{produto.nm_produto}</h2>
             <h2>{produto.vl_preco}</h2>
             <button onClick={BTcarrinho}>Compra</button>
           </div>
         ))}
-        
       </div>
-
     </section>
   );
-
 }
 
 
