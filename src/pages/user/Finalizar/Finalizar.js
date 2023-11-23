@@ -2,7 +2,7 @@ import './Finalizar.scss';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-import { useState,useContext } from 'react';
+import { useState, useContext } from 'react';
 
 import { motion } from 'framer-motion';
 import Rodape from '../../../components/Rodape/rodape';
@@ -10,13 +10,14 @@ import Header from '../../../components/Header/header';
 import Location from '../../../components/loacaldot/local';
 import formatCurrency from '../../../utils/formatCurrency';
 
+import InputMask from 'react-input-mask'
 import AppContext from '../../../context/AppContext';
 
 
 
 export default function CarrinhoUser() {
 
-    
+
 
     const { cartItems, isCartVisible, setIsCartVisible } = useContext(AppContext);
 
@@ -46,7 +47,7 @@ export default function CarrinhoUser() {
 
             <div className='Carrinho'>
                 <h1 className='meu-carrinho'>Finalizar Pedido </h1>
-                <img className='carrinho-icon' src="/assets/images/carrinho/carrinho-de-compras-de-design-xadrez.png" /> 
+                <img className='carrinho-icon' src="/assets/images/carrinho/carrinho-de-compras-de-design-xadrez.png" />
             </div>
 
             <div className='Carrinho-Produto'>
@@ -67,7 +68,7 @@ export default function CarrinhoUser() {
                             <h1>Entrega Normal:<span>Grátis</span></h1>
 
                             <div className='Carrinho-Salvar'>
-                                
+
                                 <h2>Remover</h2>
 
                             </div>
@@ -136,7 +137,8 @@ export default function CarrinhoUser() {
 
                             <div>
                                 <h1>Consulta de CEP</h1>
-                                <input
+                                <InputMask
+                                    mask="99999-999"
                                     type="text"
                                     placeholder="Digite o CEP"
                                     value={cep}
@@ -147,10 +149,10 @@ export default function CarrinhoUser() {
                                 {resultado && (
                                     <div>
                                         <p>CEP: {resultado.cep}</p>
-                                        <p>Logradouro: {resultado.logradouro}</p>
-                                        <p>Bairro: {resultado.bairro}</p>
-                                        <p>Cidade: {resultado.localidade}</p>
                                         <p>Estado: {resultado.uf}</p>
+                                        <p>Cidade: {resultado.localidade}</p>
+                                        <p>Bairro: {resultado.bairro}</p>
+                                        <p>Rua: {resultado.logradouro}</p>
                                     </div>
                                 )}
                             </div>
@@ -170,7 +172,7 @@ export default function CarrinhoUser() {
                         </div>
                         <div className='valor-entrega'>
 
-                       
+
                             <h4> {formatCurrency(totalPrice, 'BRL')} </h4>
                             <h5>Grátis</h5>
                         </div>
