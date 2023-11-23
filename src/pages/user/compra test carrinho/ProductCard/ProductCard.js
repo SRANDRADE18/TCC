@@ -12,10 +12,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 
 
-
 import storage from 'local-storage';
 
-import formatCurrency from '../../../../utils/formatCurrency';
 
 import AppContext from '../../../../context/AppContext';
 
