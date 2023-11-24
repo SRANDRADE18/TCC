@@ -218,12 +218,18 @@ export default function LandingPage({ data }) {
               
               <BsFillCartPlusFill className='button__add-cart' onClick={handleAddCart} />
 
-              <img src="/assets/images/tenis/tenis_vegano_shoes_easeful_preto.png"/>
-              
-              <h2>{produto.nm_produto}</h2>
-              <h2>{produto.vl_preco}</h2>
-              <button onClick={BTcarrinho}>Compra</button>
 
+              <div className="info-compra">
+                  <img id="img-produto" src="/assets/images/tenis/tenis_vegano_shoes_easeful_preto.png"/>
+
+              <h2>{produto.nm_produto}</h2>
+              <h3>{produto.vl_preco}</h3>
+
+              <button className="" onClick={BTcarrinho}>Compra</button>
+
+              </div>
+
+            
             </section>
 
           ))}
