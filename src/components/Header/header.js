@@ -45,6 +45,7 @@ export default function Header() {
           />
           <button>
             <img src="/assets/images/pesq.png" />
+            
           </button>
         </motion.div>
 

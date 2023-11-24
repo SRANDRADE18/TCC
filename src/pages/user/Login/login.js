@@ -30,19 +30,26 @@ export default function Login() {
 
   async function fazerLogin() {
     try {
-      const re = await axios.post('https://129.148.42.252:5021/login-user', {
+      const re = await axios.post('http://129.148.42.252:5021/login-user', {
         email: email,
         senha: senha
       });
-      storage('login', re);
-
-      navigate("/Meusdados")
-    } catch (err) {
-
-        toast.error(err.response.data.erro)
+  
+      console.log('Resposta da API:', re);
+  
+      if (re && re.data) {
+        storage('login', re.data);
+        navigate("/Meusdados");
+      } else {
+        console.error('A resposta ou a propriedade data é undefined.');
       }
-
+    } catch (err) {
+      console.error('Erro ao fazer login:', err);
+      toast.error(err.response.data.erro);
     }
+  }
+  
+  
   
 
   return (

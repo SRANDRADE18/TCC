@@ -89,8 +89,7 @@ export default function Meusdados() {
                 <div className='Conta-Dados'>
 
                     <img src="/assets/images/Minha_Conta/do-utilizador 3.png" />
-                    <h2> OLá,
-                        <input type='text' value={userName} onChange={e => setUserName(e.target.value)} />
+                    <h2> Olá,{userName}
                        
                     </h2>
 
