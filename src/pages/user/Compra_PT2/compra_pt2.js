@@ -26,7 +26,7 @@ export default function CompraPt2({ data }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/produto');
+        const response = await axios.get('http://localhost:5021/produto');
         setProduto(response.data);
       } catch (error) {
         console.error('Erro ao buscar dados:', error);
@@ -38,7 +38,7 @@ export default function CompraPt2({ data }) {
 
   async function BuscarInfos(id) {
     try {
-      const response = await axios.get(`http://localhost:5000/produto/${id}`);
+      const response = await axios.get(`http://localhost:5021/produto/${id}`);
       const data = response.data;
 
       setProdutoImagem(data.ds_imagem1);

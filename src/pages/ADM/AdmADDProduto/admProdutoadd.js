@@ -45,8 +45,6 @@ export default function Admaddproduto() {
 
 
 
-
-
   function escolherImg(inputfileId) {
     document.getElementById(inputfileId).click();
   }
@@ -90,7 +88,7 @@ export default function Admaddproduto() {
         disponivel: disponivel,
         descricao: descricao
       };
-      const command = await axios.post("http://localhost:5000/produto/registrar", produto);
+      const command = await axios.post("http://localhost:5021/produto/registrar", produto);
       toast.success("Produto Cadastrado");
 
       const idp = command.data;
@@ -120,7 +118,7 @@ export default function Admaddproduto() {
         const formData = new FormData();
         formData.append('prodimg', imagem);
 
-        const command = await axios.post(`http://localhost:5000/produto/${id}/imagens/${campo}`, formData, {
+        const command = await axios.post(`http://localhost:5021/produto/${id}/imagens/${campo}`, formData, {
           headers: {
             "Content-Type": "multipart/form-data"
           },

@@ -89,5 +89,18 @@ RELATORIO
 
  ass: Sr.Andrade
 
+
+
+    {produtos.map((produto) => (
+
+            <section className="products-container"> 
+              <BsFillCartPlusFill className='button__add-cart' onClick={handleAddCart} />
+              <img id="img-produto" src={produtoImagem || produto.ds_imagem} alt="" />
+              <h2>{produto.nm_produto}</h2>
+              <h2>{produto.vl_preco}</h2>
+              <button onClick={BTcarrinho}>Compra</button>
+            </section>
+          ))}
+
 */
 

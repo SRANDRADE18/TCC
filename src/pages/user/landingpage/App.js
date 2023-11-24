@@ -49,22 +49,20 @@ export default function LandingPage({ data }) {
   const navigate = useNavigate();
   const { id } = useParams();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('http://localhost:5000/produto');
-        setProdutos(response.data);
-      } catch (error) {
-        console.error('Erro ao buscar dados:', error);
-      }
-    };
 
-    fetchData();
-  }, []);
-
+  async function Testproduto (id) {
+    try {
+      const response = await axios.get(`http://localhost:5021/produto/${id}`);
+      setProdutos(response.data);
+    } catch (error) {
+      console.error('Erro ao buscar dados:', error);
+    }
+  };
+   
+  
   async function BuscarInfos(id) {
     try {
-      const response = await axios.get(`http://localhost:5000/produto/${id}`);
+      const response = await axios.get(`http://localhost:5021/produto/${id}`);
       const data = response.data;
 
       setProdutoImagem(data.ds_imagem1);
@@ -73,6 +71,17 @@ export default function LandingPage({ data }) {
       console.error('Erro ao buscar informações do produto:', error);
     }
   }
+
+  useEffect(() => {
+     Testproduto(id);
+
+    if (!storage('user-info')) {
+      setUserInfo('');
+    } else {
+      setProdutos(storage('user-info'));
+    }
+   
+  }, [id]);
 
   useEffect(() => {
     BuscarInfos(id);
@@ -86,10 +95,8 @@ export default function LandingPage({ data }) {
   const handleAddCart = () => setCartItems([...cartItems, data]);
 
   function BTcarrinho() {
-    window.location.href = "http://localhost:5000/comprapt2";
+    window.location.href = "http://localhost:3000/compra";
   }
-
-
 
 
   //////////////////////////////////////
@@ -184,22 +191,7 @@ export default function LandingPage({ data }) {
         <div className="carousel" ref={corousel}>
 
 
-          {produtos.map((produto) => (
-
-
-
-            <section className="products-container">
-              
-              <BsFillCartPlusFill className='button__add-cart' onClick={handleAddCart} />
-
-              <img src={produtoImagem || produto.ds_imagem} alt="" />
-              <h2>{produto.nm_produto}</h2>
-              <h2>{produto.vl_preco}</h2>
-              <button onClick={BTcarrinho}>Compra</button>
-
-            </section>
-
-          ))}
+       
 
         </div>
 
