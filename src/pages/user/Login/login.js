@@ -30,7 +30,7 @@ export default function Login() {
 
   async function fazerLogin() {
     try {
-      const re = await axios.post('http://129.148.42.252:3021/login-user', {
+      const re = await axios.post('http://129.148.42.252:5021/login-user', {
         email: email,
         senha: senha
       });

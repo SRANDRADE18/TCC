@@ -26,7 +26,7 @@ export default function CompraPt2({ data }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://129.148.42.252:3021/produto');
+        const response = await axios.get('http://129.148.42.252:5021/produto');
         setProduto(response.data);
       } catch (error) {
         console.error('Erro ao buscar dados:', error);
@@ -38,7 +38,7 @@ export default function CompraPt2({ data }) {
 
   async function BuscarInfos(id) {
     try {
-      const response = await axios.get(`http://129.148.42.252:3021/produto/${id}`);
+      const response = await axios.get(`http://129.148.42.252:5021/produto/${id}`);
       const data = response.data;
 
       setProdutoImagem(data.ds_imagem1);

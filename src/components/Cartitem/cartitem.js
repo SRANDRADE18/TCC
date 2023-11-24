@@ -34,7 +34,7 @@ export default function CartItem({ data }) {
   async function BuscarInfos(id) {
 
 
-    const command = await axios.get(`http://129.148.42.252:3021/produto/${id}`)
+    const command = await axios.get(`http://129.148.42.252:5021/produto/${id}`)
 
     const data = command.data;
 
@@ -69,7 +69,7 @@ export default function CartItem({ data }) {
 
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://129.148.42.252:3021/produto');
+        const response = await axios.get('http://129.148.42.252:5021/produto');
         setProdutos(response.data);
       } catch (error) {
         console.error('Erro ao buscar dados:', error);
@@ -83,7 +83,7 @@ export default function CartItem({ data }) {
   const getImageUrl = (imageName) => {
     // Substitua as barras invertidas (\) por barras normais (/)
     const normalizedPath = imageName.replace(/\\/g, '/');
-    return `http://129.148.42.252:3021/storage/tenis/${normalizedPath}`;
+    return `http://129.148.42.252:5021/storage/tenis/${normalizedPath}`;
   };
 
   return (
