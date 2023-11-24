@@ -1,6 +1,6 @@
 import axios from 'axios'
 const api = axios.create({
-    baseURL:'http://localhost:5000'
+    baseURL:'http://129.148.42.252:5000'
 })
 
 export async function cadastrarProduto( nome, preco, avaliacao, genero,estoque,disponivel,descricao ){

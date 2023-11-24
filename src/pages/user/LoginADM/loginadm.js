@@ -23,7 +23,7 @@ export default function Login_ADM() {
 
     async function fazerLoginadm() {
       try {
-        const add = await axios.post('http://localhost:5000/login-adm', {
+        const add = await axios.post('http://129.148.42.252:5000/login-adm', {
           login: login,
           senha: senha
         });

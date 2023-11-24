@@ -94,7 +94,7 @@ export default function ProductCard({ data }) {
       <div className="card__infos">
 
 
-        <BsFillCartPlusFill className='button__add-cart' onClick={handleAddCart} />
+       
 
         {produtos.map((produto) => (
 

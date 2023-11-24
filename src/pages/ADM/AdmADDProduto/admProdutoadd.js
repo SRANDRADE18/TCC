@@ -88,7 +88,7 @@ export default function Admaddproduto() {
         disponivel: disponivel,
         descricao: descricao
       };
-      const command = await axios.post("http://localhost:5021/produto/registrar", produto);
+      const command = await axios.post("http://129.148.42.252:5021/produto/registrar", produto);
       toast.success("Produto Cadastrado");
 
       const idp = command.data;
@@ -114,7 +114,7 @@ export default function Admaddproduto() {
         const formData = new FormData();
         formData.append('prodimg', imagem);
 
-        const command = await axios.post(`http://localhost:5021/produto/${id}/imagens/${campo}`, formData, {
+        const command = await axios.post(`http://129.148.42.252:5021/produto/${id}/imagens/${campo}`, formData, {
           headers: {
             "Content-Type": "multipart/form-data"
           },
@@ -139,7 +139,7 @@ export default function Admaddproduto() {
 
       <ToastContainer />
 
-      <img src="http://localhost:5000/storage/tenis/87d3a3ea93ce341a7a31aa7641813fab" alt="" />
+      <img src="http://129.148.42.252:5000/storage/tenis/87d3a3ea93ce341a7a31aa7641813fab" alt="" />
 
       <div className="ADM-add">
         <div className="adm-add">

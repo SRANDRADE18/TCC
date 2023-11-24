@@ -15,7 +15,7 @@ import Header from "../../../components/Header/header";
 export default function Admpage() {
 
   function BTaddproduto() {
-    window.location.href = "http://localhost:3000/Adicionar/Produto";
+    window.location.href = "http://129.148.42.252:3000/Adicionar/Produto";
   }
 
   const navigate = useNavigate();
