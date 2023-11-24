@@ -51,7 +51,7 @@ export default function Criar_conta() {
 
       }
 
-      const url = 'http://localhost:5000/criarconta'
+      const url = 'https://129.148.42.252:5021/criarconta'
       const resposta = await axios.post(url, InfoCliente)
 
       if (resposta.status === 204) {
