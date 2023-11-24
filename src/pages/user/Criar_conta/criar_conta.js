@@ -80,7 +80,7 @@ export default function Criar_conta() {
 
       if (resposta.status === 204) {
         setTimeout(function () {
-          window.location.href = "http://localhost:3000/Login";
+          window.location.href = "/Login";
         }, 2000);
         toast.loading('voce sera Redirecionado a pagina de login')
       }

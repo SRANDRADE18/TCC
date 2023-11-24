@@ -11,11 +11,11 @@ import { motion } from "framer-motion";
 
 export default function Header() {
   function BTcarrinho() {
-    window.location.href = "http://localhost:3000/Carrinho";
+    window.location.href = "/Carrinho";
   }
 
   function BTuser() {
-    window.location.href = "https://129.148.42.252:3021/Criar/Conta";
+    window.location.href = "/Criar/Conta";
   }
 
   const { cartItems, isCartVisible, setIsCartVisible } = useContext(AppContext);

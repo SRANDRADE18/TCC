@@ -86,7 +86,7 @@ export default function LandingPage({ data }) {
   const handleAddCart = () => setCartItems([...cartItems, data]);
 
   function BTcarrinho() {
-    window.location.href = "http://localhost:5000/comprapt2";
+    window.location.href = "/comprapt2";
   }
 
 
