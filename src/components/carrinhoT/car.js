@@ -52,6 +52,7 @@ export default function Cart() {
           Vizualizar Carrinho
 
         </a>
+        
       </div>
 
     </section>
