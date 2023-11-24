@@ -39,7 +39,7 @@ export default function Login() {
       navigate("/Meusdados")
     } catch (err) {
 
-        toast.error()
+        toast.error(err.response.data.erro)
       }
 
     }
