@@ -93,10 +93,6 @@ export default function Admaddproduto() {
 
       const idp = command.data;
 
-      alert(Imagem1);
-      alert(Imagem2);
-      alert(Imagem3);
-      alert(Imagem4);
 
       const imgsend1 = await enviarImagensProduto(idp.id, Imagem1, "Imagem1", 'ds_imagem1');
       const imgsend2 = await enviarImagensProduto(idp.id, Imagem2, "Imagem2", 'ds_imagem2');

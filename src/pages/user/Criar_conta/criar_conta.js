@@ -51,7 +51,7 @@ export default function Criar_conta() {
 
       }
 
-      const url = 'http://localhost:5000/criarconta'
+      const url = 'https://129.148.42.252:5021/criarconta'
       const resposta = await axios.post(url, InfoCliente)
 
       if (resposta.status === 204) {
@@ -80,7 +80,7 @@ export default function Criar_conta() {
 
       if (resposta.status === 204) {
         setTimeout(function () {
-          window.location.href = "http://localhost:3000/Login";
+          window.location.href = "/Login";
         }, 2000);
         toast.loading('voce sera Redirecionado a pagina de login')
       }
