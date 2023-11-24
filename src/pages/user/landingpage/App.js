@@ -114,7 +114,7 @@ export default function LandingPage({ data }) {
   const handleAddCart = () => setCartItems([...cartItems, data]);
 
   function BTcarrinho() {
-    window.location.href = "http://129.148.42.252:5021/comprapt2";
+    window.location.href = "http://129.148.42.252:5021/compra";
   }
 
 
