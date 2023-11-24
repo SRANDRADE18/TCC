@@ -15,7 +15,7 @@ export default function Header() {
   }
 
   function BTuser() {
-    window.location.href = "/Criar/Conta";
+    window.location.href = "https://129.148.42.252:3021/Criar/Conta";
   }
 
   const { cartItems, isCartVisible, setIsCartVisible } = useContext(AppContext);

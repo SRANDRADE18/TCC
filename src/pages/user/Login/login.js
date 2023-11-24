@@ -10,6 +10,7 @@ import storage from 'local-storage';
 import { AiFillEye } from "react-icons/ai";
 import Rodape from "../../../components/Rodape/rodape";
 import Header from "../../../components/Header/header";
+import { error } from "jquery";
 
 export default function Login() {
 
@@ -29,7 +30,7 @@ export default function Login() {
 
   async function fazerLogin() {
     try {
-      const re = await axios.post('http://localhost:5000/login-user', {
+      const re = await axios.post('https://129.148.42.252:5021/login-user', {
         email: email,
         senha: senha
       });
@@ -38,7 +39,7 @@ export default function Login() {
       navigate("/Meusdados")
     } catch (err) {
 
-        toast.error( 'deu merda' )
+        toast.error()
       }
 
     }
