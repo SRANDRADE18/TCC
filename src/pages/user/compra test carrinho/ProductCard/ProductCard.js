@@ -100,7 +100,7 @@ export default function ProductCard({ data }) {
 
           <div className='prod' key={produto.id_produto}>
 
-            <img src={(produto.ds_Imagem1)} />
+            <img src="/assets/images/tenis/tenis_vegano_shoes_easeful_preto.png"/>
 
             <h2>{produto.nm_produto}</h2>
             <h2>{produto.vl_preco}</h2>

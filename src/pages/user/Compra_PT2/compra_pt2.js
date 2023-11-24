@@ -58,7 +58,7 @@ export default function CompraPt2({ data }) {
   }, [id]);
 
   function BTfinalizar() {
-    window.location.href = "http://localhost:3000/Finalizar/compra";
+    window.location.href = "http://localhost:5021/Finalizar/compra";
   }
 
   const tamanhos = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44];
@@ -74,14 +74,7 @@ export default function CompraPt2({ data }) {
           <div className="Compra-imgg">
             <div className="tenis-Grande">
 
-              {produto.map((produto) => (
-                <div key={produto.id_produto}>
-
-                  <img src={produtoImagem || produto.ds_imagem} alt="" />
-
-                </div>
-              ))}
-
+            <img src="/assets/images/tenis/tenis_vegano_shoes_easeful_preto.png"/>
 
               <div className="Tenis-Menores">
 
@@ -93,15 +86,7 @@ export default function CompraPt2({ data }) {
             <h1>Disponibilidade: Imediata</h1>
             <h2>DESTAQUE</h2>
 
-            {produto.map((produto) => (
-              <div className='prod' key={produto.id_produto}>
-
-
-
-                <h3>{produto.vl_preco}</h3>
-
-              </div>
-            ))}
+          
 
             <h4>R$ 284,91 à vista com desconto</h4>
 
@@ -132,32 +117,22 @@ export default function CompraPt2({ data }) {
       <div className="Descrisão">
         <div className="Descrição-compra">
 
-          {produto.map((produto) => (
-            <div className='prod' key={produto.id_produto}>
 
-
-              <h1>{produto.ds_descricao}</h1>
-
-
-            </div>
-          ))}
-
+        <h1>O tênis Easeful da Vegano Shoes é um calçado esportivo vegano que está em alta na moda. Destaca-se pelo seu conforto, leveza e respirabilidade.</h1>
+    
 
         </div>
 
 
         <div className="Descrisão-Produto">
 
-          {produto.map((produto) => (
-            <div className='prod' key={produto.id_produto}>
-
-
-              <h1>{produto.ds_descricao}</h1>
-
-
-            </div>
-          ))}
-
+          
+        <h1>
+            Gênero: Unissex <br></br>
+            Cor:Preto <br></br>
+            Forro: Cacharréu espuma de 4mm densidade 28 <br></br>
+            Solado: Micro expandido 3D com sulcos de escoamento de água <br></br>
+            Palmilha: E.V.A 7mm forro em tecido</h1>
   
         </div>
       </div>
