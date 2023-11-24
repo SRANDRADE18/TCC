@@ -48,7 +48,7 @@ export default function LandingPage({ data }) {
   const [produtoImagem, setProdutoImagem] = useState([]);
 
 
-  const imagemUrl = `http://129.148.42.252:5021`;
+  const imagemUrl = `http://129.148.42.252:3021`;
 
   console.log(imagemUrl);
 
@@ -58,7 +58,7 @@ export default function LandingPage({ data }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://129.148.42.252:5021/produto');
+        const response = await axios.get('http://129.148.42.252:3021/produto');
         setProdutos(response.data);
       } catch (error) {
         console.error('Erro ao buscar dados:', error);
@@ -73,7 +73,7 @@ export default function LandingPage({ data }) {
   useEffect((id) => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://129.148.42.252:5021/produto/img/${id}');
+        const response = await axios.get('http://129.148.42.252:3021/produto/img/${id}');
         setProdutoImagem(response.data);
       } catch (error) {
         console.error('Erro ao buscar dados:', error);
@@ -87,7 +87,7 @@ export default function LandingPage({ data }) {
   async function BuscarInfos(id) {
 
     try {
-      const response = await axios.get(`http://129.148.42.252:5021/produto/img/${id}`);
+      const response = await axios.get(`http://129.148.42.252:3021/produto/img/${id}`);
       const data = response.data;
 
       setProdutoImagem(data.ds_imagem1);
@@ -114,7 +114,7 @@ export default function LandingPage({ data }) {
   const handleAddCart = () => setCartItems([...cartItems, data]);
 
   function BTcarrinho() {
-    window.location.href = "http://129.148.42.252:5021/compra";
+    window.location.href = "http://129.148.42.252:3021/compra";
   }
 
 

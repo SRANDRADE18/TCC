@@ -88,7 +88,7 @@ export default function Admaddproduto() {
         disponivel: disponivel,
         descricao: descricao
       };
-      const command = await axios.post("http://129.148.42.252:5021/produto/registrar", produto);
+      const command = await axios.post("http://129.148.42.252:3021/produto/registrar", produto);
       toast.success("Produto Cadastrado");
 
       const idp = command.data;
@@ -114,7 +114,7 @@ export default function Admaddproduto() {
         const formData = new FormData();
         formData.append('prodimg', imagem);
 
-        const command = await axios.post(`http://129.148.42.252:5021/produto/${id}/imagens/${campo}`, formData, {
+        const command = await axios.post(`http://129.148.42.252:3021/produto/${id}/imagens/${campo}`, formData, {
           headers: {
             "Content-Type": "multipart/form-data"
           },
